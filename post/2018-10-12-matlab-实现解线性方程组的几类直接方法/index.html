@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        Matlab 实现解线性方程组的几类直接法 - Timegg
+      </title>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="通过 Matlab 实现数值分析中解线性方程组的直接方法，该方法是解线性方程组的最基础的方法。" />
+  <meta name="generator" content="Hugo 0.69.0 with theme pure" />
+  <title>Matlab 实现解线性方程组的几类直接法 - Timegg</title>
+  
+  
+  <link rel="stylesheet" href="https://timegg.top/css/style.min.f27e1bd7295edd18f04283f07d8dc430700e7d0e06d6ec68b15c52d049174c81.css">
+  
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+  <meta property="og:title" content="Matlab 实现解线性方程组的几类直接法" />
+<meta property="og:description" content="通过 Matlab 实现数值分析中解线性方程组的直接方法，该方法是解线性方程组的最基础的方法。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://timegg.top/post/2018-10-12-matlab-%E5%AE%9E%E7%8E%B0%E8%A7%A3%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E7%9A%84%E5%87%A0%E7%B1%BB%E7%9B%B4%E6%8E%A5%E6%96%B9%E6%B3%95/" />
+<meta property="article:published_time" content="2018-10-12T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-10-12T00:00:00+00:00" />
+<meta itemprop="name" content="Matlab 实现解线性方程组的几类直接法">
+<meta itemprop="description" content="通过 Matlab 实现数值分析中解线性方程组的直接方法，该方法是解线性方程组的最基础的方法。">
+<meta itemprop="datePublished" content="2018-10-12T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-10-12T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="2250">
+
+
+
+<meta itemprop="keywords" content="Matlab,Math," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Matlab 实现解线性方程组的几类直接法"/>
+<meta name="twitter:description" content="通过 Matlab 实现数值分析中解线性方程组的直接方法，该方法是解线性方程组的最基础的方法。"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://timegg.top/" target="_blank">
+            <img class="img-circle img-rotate" src="https://timegg.top/avatar.jpg" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Chuanbo HUA</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">HIT, KAIST</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Daejeon, South Korea</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/post/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>Timegg has been renew at 2020.04, welcome!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> Categories</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://timegg.top/categories/dairy/" class="category-list-link">dairy</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://timegg.top/categories/essay/" class="category-list-link">essay</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://timegg.top/categories/lecture/" class="category-list-link">lecture</a><span class="category-list-count">6</span></li>
+            <li class="category-list-item"><a href="https://timegg.top/categories/read/" class="category-list-link">read</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://timegg.top/categories/tutorial/" class="category-list-link">tutorial</a><span class="category-list-count">5</span></li>
+        </ul>
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2020-04-15-%E6%9B%B4%E6%96%B0%E6%8A%A5%E5%91%8A/" class="title">更新报告 Update Reports</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-04-15 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-15</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2020-03-10-kdd2019/" class="title">2019 KDD Recommendation System Review</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-02-15 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-02-15</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2019-11-28-%E5%9B%9B%E5%8F%A0%E5%8D%8A/" class="title">森见登美彦作品《四叠半神话大系》</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-11-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-11-28</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2019-10-10-%E6%98%A5%E5%AE%B5%E8%8B%A6%E7%9F%AD/" class="title">森见登美彦作品《春宵苦短，少女前进吧》</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-10-10 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-10-10</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2019-05-09-%E4%BF%A1%E6%81%AF%E8%AE%BA%E5%AE%9E%E9%AA%8C/" class="title">信息论实验</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-05-03 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-05-03</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/post/2018-10-12-matlab-%E5%AE%9E%E7%8E%B0%E8%A7%A3%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E7%9A%84%E5%87%A0%E7%B1%BB%E7%9B%B4%E6%8E%A5%E6%96%B9%E6%B3%95/"
+    >Matlab 实现解线性方程组的几类直接法</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://timegg.top/post/2018-10-12-matlab-%E5%AE%9E%E7%8E%B0%E8%A7%A3%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E7%9A%84%E5%87%A0%E7%B1%BB%E7%9B%B4%E6%8E%A5%E6%96%B9%E6%B3%95/" class="article-date">
+  <time datetime="2018-10-12 00:00:00 &#43;0000 UTC" itemprop="datePublished">2018-10-12</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/lecture/"> Lecture </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/matlab/"> Matlab </a>
+    <a class="article-tag-link" href="/tags/math/"> Math </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/post/2018-10-12-matlab-%E5%AE%9E%E7%8E%B0%E8%A7%A3%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E7%9A%84%E5%87%A0%E7%B1%BB%E7%9B%B4%E6%8E%A5%E6%96%B9%E6%B3%95/#comments"
+            class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 2250words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 5minutes </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h1 id="问题">问题</h1>
+<p>求解线性方程组</p>
+<p>$$
+\left{
+\begin{array}{c}
+a_{11}x_1+a_{12}x_2+&hellip;+a_{1n}x_n=b_1 \
+a_{21}x_1+a_{22}x_2+&hellip;+a_{2n}x_n=b_2 \<br>
+&hellip; \
+a_{n1}x_1+a_{n2}x_2+&hellip;+a_{nn}x_n=b_n
+\end{array}
+\right.
+$$</p>
+<p>其中方程组系数 $a_{ij}(i,j=1,2,3,&hellip;,n)$ 与右端项 $b_i(i=1,2,3,&hellip;,n)$ 均为实数，且 $b_1,b_2,&hellip;,b_n$ 不全为零，上述方程组简记为
+$$
+Ax=b
+$$
+其中
+$$
+A=\begin{bmatrix} a_{11} &amp; a_{12} &amp; &hellip; &amp; a_{1n} \ a_{21} &amp; a_{22} &amp; &hellip; &amp; a_{2n} \ &hellip;&amp;&hellip;&amp;&hellip;&amp;&hellip; \ a_{n1} &amp; a_{n2} &amp; &hellip; &amp; a_{nn} \ \end{bmatrix},
+x=\begin{bmatrix} x_{1}\ x_{2}\ &hellip; \ x_{n}\ \end{bmatrix},
+b=\begin{bmatrix} b_{1}\ b_{2}\ &hellip; \ b_{n}\ \end{bmatrix}.
+$$
+解线性方程组直接法（也称精确解法）的定义为：</p>
+<blockquote>
+<p>若计算过程中没有舍入误差，则经过有限次的算术运算可以求得方程组的准确解的方法。</p>
+</blockquote>
+<p>其主要有两类方法：</p>
+<ul>
+<li>Gauss 消去法
+<ul>
+<li>Gauss 消去法</li>
+<li>Gauss 列主元消去法</li>
+<li>Gauss 按比例列主元消去法</li>
+<li>Gauss-Jordan 消去法</li>
+</ul>
+</li>
+<li>直接三角分解法
+<ul>
+<li>Corut 方法</li>
+<li>$L^TDL$ 分解</li>
+<li>追赶法</li>
+</ul>
+</li>
+</ul>
+<p>本篇只用 Matlab <strong>实现</strong>上述算法，<strong>不涉及算法的介绍与证明</strong>，如果对证明与原理比较感兴趣，详情参考：</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Gaussian_elimination">Wiki - Gaussian elimination</a></li>
+<li><a href="https://en.wikipedia.org/wiki/LU_decomposition">Wiki - LU decomposition</a></li>
+</ul>
+<p>并且事实上这些算法在 Matlab 中都有既成的函数或者工具包，虽然 CS 里面有一句话：“如果有现成的轮子那么绝对不自己造。”很有道理，但是对于算法的理解还是需要亲自尝试，这样才能比较好的理解。</p>
+<p>在最初编写这些算法时，我的 Matlab 代码风格还没有确定，以至相比于后续算法的源码，这些源码会显得比较的不规范，我会进行一部分的修正，但是毕竟时间比较久，修正程度可能比较有限，如果有一些问题，欢迎联系。</p>
+<h1 id="正文">正文</h1>
+<h2 id="gauss-消去法">Gauss 消去法</h2>
+<h3 id="gauss-消去法-1">Gauss 消去法</h3>
+<pre><code class="language-matlab">function x = Gaussian_elimination( A, b )
+% 高斯消去法解线性方程组
+% Input: A: 系数矩阵; b: 方程组右端项;
+% Output: x: 线性方程组解;
+
+n = size(A, 1); % 矩阵 A 阶数
+
+if size(A,1)~=size(A,2) || size(A,1)~=n
+    error('Matrix does not match') 
+end
+
+for k = 1 : n - 1
+    if A(k, k) == 0 % 检测 A 是否为正定矩阵
+        for i = k + 1 : n
+            if A(i, k) ~= 0
+                for j = k : n
+                    t = A(k, j); A(k, j) = A(i, j); A(i, j) = t;
+                end % for
+            else
+                error('A is singular.');
+            end % if
+        end % for
+    end % if
+    for i = k + 1 : n
+        l(i, k) = A(i, k) / A(k, k);
+        for j = k : n
+            A(i, j) = A(i, j) - l(i, k) * A(k, j);
+        end % for
+        b(i) = b(i) - A(i, k) * b(k);
+    end % for
+end % for
+
+x(n) = b(n) / A(n, n);
+for k = n - 1 : -1 : 1
+    sum = 0;
+    for i = k + 1 : n
+        sum = sum + A(k, j) * x(j);
+    end % for
+    x(k) = (b(k) - sum) / A(k, k);
+end % for
+
+end % function
+</code></pre>
+<p>Gauss 消去法就非常的基础了，不过是平时我们解方程的固有过程，用来练习一下 Matlab 基本语言的使用。</p>
+<p>当初在做这些课题的时候对代码的健壮性考虑的较少，主要是来理解算法的。如果有相应的需求，需要进一步的修改。</p>
+<h3 id="gauss-列主元消去法">Gauss 列主元消去法</h3>
+<pre><code class="language-matlab">function x = Gaussian_principal_element_elimination( A, b )
+% 高斯列主元消去法解线性方程组
+% Input: A: 系数矩阵; b: 方程组右端项;
+% Output: x: 线性方程组解;
+
+n = size(A, 1); % 矩阵 A 阶数
+
+if size(A, 1) ~= size(A, 2) || size(A, 1) ~= n
+    error('Matrix does not match') 
+end % if
+
+for i = 1 : n
+    [ap, p] = max(abs(A(i : n, i)));
+    p = p + i - 1;
+    
+    if ap == 0 
+        error('divide by zero!')
+    end % if
+    if p &gt; i
+        t = A(i, :);
+        A(i, :) = A(p, :);
+        A(p, :) = t;
+        
+        t = b(i);
+        b(i) = b(p);
+        b(p) = t; 
+    end % if
+    %消元计算
+    m = A(i+1:n, i) ./ A(i, i);
+    A(i+1:n, i+1:n) = A(i+1:n, i+1:n) - m * A(i, i+1:n);
+    b(i+1:n) = b(i+1:n) - m * b(i);
+    A(i+1:n, i) = zeros(n-i, 1);
+end % for
+
+x = zeros(n, 1);
+x(n) = b(n) / A(n, n);
+for i = (n - 1) : -1 : 1
+    x(i) = (b(i) - A(i, i+1:n) * x(i+1:n)) / A(i, i); 
+end % for
+end % function
+</code></pre>
+<h3 id="gauss-按比例列主元消去法">Gauss 按比例列主元消去法</h3>
+<pre><code class="language-matlab">function x = Gauss_proportional_column_principal_elimination( A, b )
+% 高斯消去法解线性方程组
+% Input: A: 系数矩阵; b: 方程组右端项;
+% Output: x: 线性方程组解;
+
+n = size(A, 1); % 矩阵 A 阶数
+
+if size(A, 1) ~= size(A, 2) || size(A, 1) ~= n
+    error('Matrix does not match') 
+end
+
+A_max = max(A, [], 2); % A 行最大值
+for i = 1 : n
+    s(i) = A_max(i);
+    if s(i) == 0
+        error('A is singular.')
+    end % if
+    p(i) = i;
+end % for
+
+for k = 1 : n - 1
+    %%%%%%%%%% 待完成
+    r = 1; % 解 abs(a(p(r), k)) / s(p(r)) = max_k&lt;=1&lt;=n (abs(a(p(i), k)) / s(p(i));
+    %%%%%%%%%%
+    if A(p(r), k) == 0
+        error('A is singular.')
+    end % if
+    if k ~= r
+        temp = p(r);
+        p(k) = p(r);
+        p(r) = temp;
+    end % if
+    for i = k + 1 : n
+        A(p(i), k) = A(p(i), k) / A(p(k), k);
+        for j = k + 1 : n
+            A(p(i), j) = A(p(i), j) - A(p(i), k) * A(p(i), j);
+        end % for
+    end % for
+end % for
+
+b2(p(2)) = b(P(1));
+for i = 2 : n
+    sum = 0;
+    for j = 1 : i - 1
+        sum = sum + A(p(i), j) * b2(p(j));
+    end % for
+    b2(p(i)) = b(p(i)) - sum;
+end % for
+
+if A(p(n), n) == 0
+    error('A is singular.')
+end % if
+
+x(n) = b2(p(n)) / A(p(n), n);
+for i = n - 1 : -1 : 1
+    sum = 0;
+    for j = i + 1 : n
+        sum = sum + a(p(i), j) * x(j);
+    end % for 
+    x(i) = (b2(p(i)) - sum) / a(p(i), i);
+end % for 
+
+end % function
+</code></pre>
+<h3 id="gauss-jordan-消去法">Gauss-Jordan 消去法</h3>
+<p>Gauss-Jordan 消去法就是在上述任一方法之中，消去步骤中对主元行外的所有行进行操作，其他没有任何变化，代码依方法选择而变，在此不进一步考虑。</p>
+<h2 id="直接三角形分解法">直接三角形分解法</h2>
+<h3 id="crout-方法">Crout 方法：</h3>
+<pre><code class="language-matlab">function x = Court( A, b )
+% Court  方法解线性方程组
+% Input: A: 系数矩阵; b: 方程组右端项;
+% Output: x: 线性方程组解;
+
+n = size(A);
+L = zeros(n, n);
+U = zeros(n, n);
+for i = 1 : n
+    L(i, i) = 1;
+end % for
+for k = 1 : n
+    for j = k : n
+        U(k, j) = A(k, j) - sum(L(k, 1 : k - 1) .* U(1 : k - 1, j)');
+    end % for
+    for i = k + 1 : n
+        L(i, k) = (A(i, k) - sum(L(i, 1 : k - 1) .* U(1 : k - 1 , k)')) / U(k, k);
+    end % for
+end % for
+
+[L,U] = myLU(A);
+[n,m] = size(A);
+y(1) = b(1);
+for i = 2 : n    
+    for j = 1 : i - 1
+        b(i) = b(i) - L(i, j) * y(j);
+    end
+    y(i) = b(i);
+end % for
+ 
+x(n) = y(n) / U(n, n);
+for i = (n - 1) : -1 : 1
+    for j = n : -1 : i + 1
+        y(i) = y(i) - U(i, j) * x(j);
+    end
+    x(i) = y(i) / U(i, i);
+end % for
+
+end % function
+</code></pre>
+<p>Court 方法是三角分解法中最简单的一种，计算量会大一些，但该方法适用于任意情况的方程组。</p>
+<h3 id="ltdl-分解法">$L^TDL$ 分解法</h3>
+<p>$L^TDL$ 分解法适用面比较窄：必须是实对称矩阵。此时使用这种方法可以比较好的减少计算量，增加计算速度，但实际原理与 LU 分解法类似。</p>
+<p>若是追求比较通用的方法，LDU 分解法是 LU 分解法的优化，但整体上大同小异，在此不占用篇幅专门书写它们的算法了。</p>
+<h3 id="追赶法">追赶法</h3>
+<p>追赶法的适用范围也相当的窄：三对角实线性方程组。其本质就是 $LU$ 分解法在这里的运用，解这样的方程非常的迅速，需求的计算量也非常的小。</p>
+<p>对于追赶法有一篇比较好的文章可以参考：Thomas, L.H., <em>Elliptic Problems in Linear Differential Equations over a Network</em>. Watson Science Computer Laboratory Report, 1949.</p>
+<p>其中追赶法在国外常称为“Thomas 方法”，在热传导方程等物理方面有着非常广泛的用处。</p>
+<h1 id="结尾">结尾</h1>
+<p>对于实线性方程组，通过恰当的变换，都可以得到任意精确度的数值解或者直接获得解析解，在数值处理上属于最简单的一个类型。</p>
+<p>在数值分析中，这些过程需要交给计算机计算，所以就需要着重考虑其中会由计算机计算产生的误差。因此诞生出了诸多的方法并不断优化，避免了 7种情况 带来的计算误差，使得数据处理更加精确可信。</p>
+<p>数值分析也研究了常微分方程组、函数逼近、超越方程寻根等问题。在这些问题的算法中更加体现出了数值分析的精妙逻辑与魅力，我们使用精妙的方法通过计算机去一步步逼近真实结果，以此用于实际问题中的复杂方程求解。</p>
+<p>这是非常有现实价值与研究价值的，之后我也会分别总结这些方面涉及到的一些算法，本次的线性方程组就是一个简单的入门。</p>
+
+    </div>
+    <div class="article-footer">
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://timegg.top/post/2018-07-27-%E4%BD%BF%E7%94%A8-python-%E7%88%AC%E5%8F%96-vol.moe-%E6%BC%AB%E7%94%BB/" title="爬取 Vol.moe 的漫画资源"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            <li class="next">
+                <a href="https://timegg.top/post/2018-11-02-matlab-%E5%AE%9E%E7%8E%B0%E6%8F%92%E5%80%BC%E6%B3%95%E4%B8%8E%E5%87%BD%E6%95%B0%E9%80%BC%E8%BF%91/"
+                    title="Matlab 实现几种常用插值法"><span>Newer&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="Catalogue" role="button">
+                    <span>[&nbsp;</span><span>Catalogue</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/chuanbohua" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://timegg.top/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+    <li><a href="https://twitter.com/huachuanbo" target="_blank" title="twitter" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-twitter"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2017  -
+    2020 Timegg
+    
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://timegg.top/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://timegg.top/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            ROOT_URL: 'https:\/\/timegg.top\/',
+            CONTENT_URL: 'https:\/\/timegg.top\/\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://timegg.top/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+  </body>
+</html>

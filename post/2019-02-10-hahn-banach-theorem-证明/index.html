@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        Hahn-Banach 定理证明 - Timegg
+      </title>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="哈恩-巴拿赫定理的证明，该定理被用于金融相关的模型，为泛函分析中的一个重要工具。" />
+  <meta name="generator" content="Hugo 0.69.0 with theme pure" />
+  <title>Hahn-Banach 定理证明 - Timegg</title>
+  
+  
+  <link rel="stylesheet" href="https://timegg.top/css/style.min.f27e1bd7295edd18f04283f07d8dc430700e7d0e06d6ec68b15c52d049174c81.css">
+  
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+  <meta property="og:title" content="Hahn-Banach 定理证明" />
+<meta property="og:description" content="哈恩-巴拿赫定理的证明，该定理被用于金融相关的模型，为泛函分析中的一个重要工具。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://timegg.top/post/2019-02-10-hahn-banach-theorem-%E8%AF%81%E6%98%8E/" />
+<meta property="article:published_time" content="2019-02-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-02-10T00:00:00+00:00" />
+<meta itemprop="name" content="Hahn-Banach 定理证明">
+<meta itemprop="description" content="哈恩-巴拿赫定理的证明，该定理被用于金融相关的模型，为泛函分析中的一个重要工具。">
+<meta itemprop="datePublished" content="2019-02-10T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-02-10T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1127">
+
+
+
+<meta itemprop="keywords" content="Math," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hahn-Banach 定理证明"/>
+<meta name="twitter:description" content="哈恩-巴拿赫定理的证明，该定理被用于金融相关的模型，为泛函分析中的一个重要工具。"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://timegg.top/" target="_blank">
+            <img class="img-circle img-rotate" src="https://timegg.top/avatar.jpg" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Chuanbo HUA</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">HIT, KAIST</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Daejeon, South Korea</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/post/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>Timegg has been renew at 2020.04, welcome!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> Categories</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://timegg.top/categories/dairy/" class="category-list-link">dairy</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://timegg.top/categories/essay/" class="category-list-link">essay</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://timegg.top/categories/lecture/" class="category-list-link">lecture</a><span class="category-list-count">6</span></li>
+            <li class="category-list-item"><a href="https://timegg.top/categories/read/" class="category-list-link">read</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://timegg.top/categories/tutorial/" class="category-list-link">tutorial</a><span class="category-list-count">5</span></li>
+        </ul>
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2020-04-15-%E6%9B%B4%E6%96%B0%E6%8A%A5%E5%91%8A/" class="title">更新报告 Update Reports</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-04-15 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-15</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2020-03-10-kdd2019/" class="title">2019 KDD Recommendation System Review</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-02-15 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-02-15</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2019-11-28-%E5%9B%9B%E5%8F%A0%E5%8D%8A/" class="title">森见登美彦作品《四叠半神话大系》</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-11-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-11-28</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2019-10-10-%E6%98%A5%E5%AE%B5%E8%8B%A6%E7%9F%AD/" class="title">森见登美彦作品《春宵苦短，少女前进吧》</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-10-10 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-10-10</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2019-05-09-%E4%BF%A1%E6%81%AF%E8%AE%BA%E5%AE%9E%E9%AA%8C/" class="title">信息论实验</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-05-03 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-05-03</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/post/2019-02-10-hahn-banach-theorem-%E8%AF%81%E6%98%8E/"
+    >Hahn-Banach 定理证明</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://timegg.top/post/2019-02-10-hahn-banach-theorem-%E8%AF%81%E6%98%8E/" class="article-date">
+  <time datetime="2019-02-10 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-02-10</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/lecture/"> Lecture </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/math/"> Math </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/post/2019-02-10-hahn-banach-theorem-%E8%AF%81%E6%98%8E/#comments"
+            class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 1127words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 3minutes </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <p>过年在家出于兴趣阅读了一些金融相关的书籍，其中提到了很多数学原理，作为一个数学系的学生，我觉得非常的有趣，感受到了数学在真实生活中的应用。</p>
+<p>在这些内容中，有一部分涉及到了我在上一个学期在泛函分析中的一个定理：<a href="https://en.wikipedia.org/wiki/Hahn%E2%80%93Banach_theorem">Hahn-Banach Theorem(English)</a> 即 <a href="https://zh.wikipedia.org/wiki/%E5%93%88%E6%81%A9%EF%BC%8D%E5%B7%B4%E6%8B%BF%E8%B5%AB%E5%AE%9A%E7%90%86">哈恩-巴拿赫定理(中文)</a> 。这个定理被称为泛函分析三大定理之一，是泛函分析中极为重要的一个工具。在经济学中 Hahn-Banach Theorem 与市场经济的福利经济学第二定理有着密切的关系。</p>
+<p>在假期中想到这个定理，但是记不得定理的证明了，在 Google 上搜索了许多，但是关于这个定理的中文资料很少，而且大部分都是定理的应用。于是回到学校之后参考老师的讲义，将这个定理的证明记录下来。并不是说我自己对掌握这个定理的证明有多大的执念，只是想留下这一篇 Post 来提示自己好好学习数学，诸多学科都会要求一定的数学功底。</p>
+<h1 id="正文">正文</h1>
+<p><em>引理</em>  设 $f$ 是赋范空间 $X$ 上的有界泛函，令 $\varphi (x)=Ref(x)$ ，则 $\varphi (x)$ 是 $X$ 上的有界线性泛函且</p>
+<p>$$f(x)=\varphi (x)-i\varphi (ix), || \varphi ||\le ||f||.$$</p>
+<p><strong>证明</strong>  设 $f(x)=\varphi (x)-i\psi (ix)$ ，这里 $\varphi (x), \psi (x)$ 分别是 $f(x)$ 的实部与虚部。显然 $\varphi , \psi$  是实线性泛函。</p>
+<p>$$\varphi (ix)+i\psi (ix)=f(ix)=if(x)=i\varphi (x)-\psi (x).$$</p>
+<p>故</p>
+<p>$$\varphi (ix)=-\psi (x)$$</p>
+<p>因此</p>
+<p>$$f(x)=\varphi (x)-i\varphi (ix).$$</p>
+<p>$$|\varphi (x)|=|Ref(x)|\le |f(x)|\le ||f||||x||$. 故 $||\varphi||\le ||f||.$$</p>
+<p><em>定理</em>  设 $M$ 是线性空间 $X$ 的子空间，$f$ 是 $M$ 上的线性泛函，$p$ 是 $X$ 上的半范数，对 $x\in M$，有 $|f(x)|\le p(x)$，则 $f$ 可以延拓为 $X$ 上的线性泛函 $F$ 且对任意 $x\in X$，有 $|F(x)|\le p(x)$.</p>
+<p><strong>证明</strong>  若标量域 $\mathbb{K}=\mathbb{R}$ ，由于 $p$ 是次可加正齐次泛函，故存在 $F$ 是 $X$ 上的线性泛函，是 $f$ 的延拓.</p>
+<p>则</p>
+<p>$$-p(x)=-p(-x)\le -F(-x)=F(x)\le p(x)$. 故 $|F(x)|\le p(x).$$</p>
+<p>若标量域 $\mathbb{K}=\mathbb{C}$ ，令 ${\varphi}_0=Ref$ 是 $M$ 上的实线性泛函且 $||{\varphi}_0||\le |f(x)|\le p(x)$. 故存在 ${\varphi _0} $在 $X$ 上的延拓 $\varphi$ ，使得 $\varphi (x)\le p(x)$.</p>
+<p>作 $F(x)=\varphi (x)-i\varphi (ix)$ ，则 $F$ 是 $f$ 在 $X$ 上的延拓且复线性泛函：</p>
+<p>$$F(ix)=\varphi (ix)-i\varphi (-x)=iF(x).$$</p>
+<p>由于存在单位复数 $\beta$ ，使得 $|F(x)|=\beta F(x)$. 故</p>
+<p>$$|F(x)|=\beta F(x)=F(\beta x)=\varphi (\beta x)\le p(\beta x)=|\beta|p(x)=p(x).$$</p>
+<p><em>定理</em>  设 $G$ 是赋范空间 $X$ 的线性子空间，$f$ 是 $G$ 上的有界线性泛函，则存在 $X$ 上的线性泛函 $F$ 是 $f$ 的延拓且 $||F||=||f||$.</p>
+<p><strong>证明</strong>  记 $p(x)=||f||·||x||$ 是 $X$ 上的半范数且 $|f(x)|\le p(x)$. 故存在 $X$ 上的线性泛函 $F$ 是 $f$ 的延拓，使得 $|F(x)|\le p(x)=||f||·||x||$. 故 $||F||\le ||f||$.</p>
+<p>显然</p>
+<p>$$||F||=sup_{x\ne 0}\frac{|F(x)|}{||x||}\ge sup_{G\ni x\ne0}\frac{|f(x)|}{||x||}=||f||.$$</p>
+<p>故 $||F||=||f||$.</p>
+<p><em>定理</em>  设 $G$ 是赋范空间 $X$ 的线性子空间，$x_0 \in X$，$d\triangleq inf_{f\in G}||x_0-y||&gt;0$，则存在 $f\in X^*$，使得对 $x\in G$，有 $f(x)=0; f(x_0)=d; ||f||=1$.</p>
+<p><strong>证明</strong>  显然 $x_0\notin G$. 记 $G_1={\alpha x_0 + x\ |\ x\in G, \alpha \in \mathbb{K}}$ 是线性子空间。</p>
+<p>作 $g:G_1\ni \alpha x_0 + x\mapsto \alpha d\in \mathbb{K}$ 是线性泛函。</p>
+<p>对 $x\in G$，有 $g(x)=0; g(x_0)=d$;</p>
+<p>$$|g(\alpha x_0+x)|=|\alpha|d\le |\alpha|·||x_0-(-x)/\alpha||=||\alpha x_0+x||$$</p>
+<p>故</p>
+<p>$$||g||\le 1$$</p>
+<p>$$d=g(x_0)=g(x_0-x)\le ||g||||x_0-x||$$</p>
+<p>故</p>
+<p>$$d\le ||g||inf_{x\in G}||x_0-x||=||g||d$. 故 $1\le ||g||$$</p>
+<p>因此 $||g||=1$.</p>
+<p>存在 $g$ 的延拓 $f\in X^*$，使得 $||f||=||g||=1$.</p>
+<p><strong>推论</strong>  设 $X$ 是赋范线性空间，$x_0\in X, x_0 \ne 0$，则存在 $f\in X^*$，使得 $f(x_0)=||x_0||$ 且 $||f||=1$.</p>
+<p><strong>推论</strong>  设 $X$ 是赋范线性空间，$x\in X$，则 $||x||=sup_{f\in X^*}\frac{|f(x)|}{||f||}$.</p>
+<h1 id="其他">其他</h1>
+<p>泛函分析在经济学中的应用很广泛，更多内容可以参考知乎的问题 <a href="https://www.zhihu.com/question/31913447/answer/53821730">https://www.zhihu.com/question/31913447/answer/53821730</a>。</p>
+
+    </div>
+    <div class="article-footer">
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://timegg.top/post/2019-02-08-%E5%8D%97%E6%96%B9%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6%E5%8C%96%E6%A2%A6%E5%AA%9B%E8%AF%BE%E9%A2%98%E7%BB%84%E6%8B%9B%E7%94%9F/" title="南方科技大学化梦媛课题组招生"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            <li class="next">
+                <a href="https://timegg.top/post/2019-02-11-%E6%88%91%E7%9A%84%E7%A7%91%E5%B9%BB%E6%97%85%E7%A8%8B/"
+                    title="我所读过的一些刘慈欣的作品"><span>Newer&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="Catalogue" role="button">
+                    <span>[&nbsp;</span><span>Catalogue</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/chuanbohua" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://timegg.top/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+    <li><a href="https://twitter.com/huachuanbo" target="_blank" title="twitter" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-twitter"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2017  -
+    2020 Timegg
+    
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://timegg.top/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://timegg.top/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            ROOT_URL: 'https:\/\/timegg.top\/',
+            CONTENT_URL: 'https:\/\/timegg.top\/\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://timegg.top/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+  </body>
+</html>

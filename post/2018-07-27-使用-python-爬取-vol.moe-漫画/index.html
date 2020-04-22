@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        爬取 Vol.moe 的漫画资源 - Timegg
+      </title>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="这篇文章介绍了使用 Python 爬取 Vol.moe 网站上漫画的方法。" />
+  <meta name="generator" content="Hugo 0.69.0 with theme pure" />
+  <title>爬取 Vol.moe 的漫画资源 - Timegg</title>
+  
+  
+  <link rel="stylesheet" href="https://timegg.top/css/style.min.f27e1bd7295edd18f04283f07d8dc430700e7d0e06d6ec68b15c52d049174c81.css">
+  
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+  <meta property="og:title" content="爬取 Vol.moe 的漫画资源" />
+<meta property="og:description" content="这篇文章介绍了使用 Python 爬取 Vol.moe 网站上漫画的方法。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://timegg.top/post/2018-07-27-%E4%BD%BF%E7%94%A8-python-%E7%88%AC%E5%8F%96-vol.moe-%E6%BC%AB%E7%94%BB/" />
+<meta property="article:published_time" content="2018-07-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-07-27T00:00:00+00:00" />
+<meta itemprop="name" content="爬取 Vol.moe 的漫画资源">
+<meta itemprop="description" content="这篇文章介绍了使用 Python 爬取 Vol.moe 网站上漫画的方法。">
+<meta itemprop="datePublished" content="2018-07-27T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-07-27T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1003">
+
+
+
+<meta itemprop="keywords" content="Python,ACG," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="爬取 Vol.moe 的漫画资源"/>
+<meta name="twitter:description" content="这篇文章介绍了使用 Python 爬取 Vol.moe 网站上漫画的方法。"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://timegg.top/" target="_blank">
+            <img class="img-circle img-rotate" src="https://timegg.top/avatar.jpg" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Chuanbo HUA</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">HIT, KAIST</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Daejeon, South Korea</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/post/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>Timegg has been renew at 2020.04, welcome!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> Categories</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://timegg.top/categories/dairy/" class="category-list-link">dairy</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://timegg.top/categories/essay/" class="category-list-link">essay</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://timegg.top/categories/lecture/" class="category-list-link">lecture</a><span class="category-list-count">6</span></li>
+            <li class="category-list-item"><a href="https://timegg.top/categories/read/" class="category-list-link">read</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://timegg.top/categories/tutorial/" class="category-list-link">tutorial</a><span class="category-list-count">5</span></li>
+        </ul>
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2020-04-15-%E6%9B%B4%E6%96%B0%E6%8A%A5%E5%91%8A/" class="title">更新报告 Update Reports</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-04-15 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-15</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2020-03-10-kdd2019/" class="title">2019 KDD Recommendation System Review</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-02-15 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-02-15</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2019-11-28-%E5%9B%9B%E5%8F%A0%E5%8D%8A/" class="title">森见登美彦作品《四叠半神话大系》</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-11-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-11-28</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2019-10-10-%E6%98%A5%E5%AE%B5%E8%8B%A6%E7%9F%AD/" class="title">森见登美彦作品《春宵苦短，少女前进吧》</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-10-10 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-10-10</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2019-05-09-%E4%BF%A1%E6%81%AF%E8%AE%BA%E5%AE%9E%E9%AA%8C/" class="title">信息论实验</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-05-03 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-05-03</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/post/2018-07-27-%E4%BD%BF%E7%94%A8-python-%E7%88%AC%E5%8F%96-vol.moe-%E6%BC%AB%E7%94%BB/"
+    >爬取 Vol.moe 的漫画资源</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://timegg.top/post/2018-07-27-%E4%BD%BF%E7%94%A8-python-%E7%88%AC%E5%8F%96-vol.moe-%E6%BC%AB%E7%94%BB/" class="article-date">
+  <time datetime="2018-07-27 00:00:00 &#43;0000 UTC" itemprop="datePublished">2018-07-27</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/tutorial/"> Tutorial </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/python/"> Python </a>
+    <a class="article-tag-link" href="/tags/acg/"> ACG </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/post/2018-07-27-%E4%BD%BF%E7%94%A8-python-%E7%88%AC%E5%8F%96-vol.moe-%E6%BC%AB%E7%94%BB/#comments"
+            class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 1003words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 3minutes </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <p><strong>2019.03 Update: Vol.moe 现已经提供批量下载功能。此文完结。</strong></p>
+<h1 id="原文">原文</h1>
+<p>这个工具实际上是一个非常简单的东西，但是由于网站确实很不错，所以写在这里作为一个推荐。</p>
+<p>之前在寻找一些漫画资源的时候，偶然遇到了这个漫画网站：<a href="https://vol.moe/">Vol.moe</a></p>
+<p>网站上有很全的漫画资源并提供下载下载，其漫画质量普遍不错。在网上漫画资源比较零碎的环境下非常方便。</p>
+<p>Vol.moe 提供普通用户限量限速下载。初期我对漫画需求量比较大，准备一次性大量下载回头慢慢看，于是捐助成为了会员，开始一本一本漫画的下载。</p>
+<p>令人可惜的是网站明确指出：</p>
+<blockquote>
+<p>Q4: 為什麼沒有批量下載與全選推送？ A4: 本站帶寬有限，所以不鼓勵批量下載和全選推送，希望大家準備看的書才下載。如果確實需要批量，請尋找支持批量下載的下載軟體吧。</p>
+</blockquote>
+<p>所以面对 <em>One Piece</em> 、<em>火影忍者</em> 、<em>银魂</em> 等等动辄八、九十卷的下载链接，实在是没有耐心一个一个点下去，所以用 Python 写一个工具自动下载。</p>
+<p><strong>Step 1. 引入 Pack 、填写用户变量</strong></p>
+<pre><code>from urllib import parse
+from bs4 import BeautifulSoup
+import urllib.request
+import urllib.error
+import chardet
+import http.cookiejar
+
+login_url = 'https://vol.moe/login_do.php'
+url = &quot;https://vol.moe/comic/*****.htm&quot; // 爬取相应网页的链接
+
+values = {
+    &quot;email&quot;: &quot;**********@gmail.com&quot;,
+    &quot;passwd&quot;: &quot;********&quot;,
+    &quot;keepalive&quot;: &quot;on&quot;,
+}
+</code></pre>
+<p><strong>Step 2. 用户身份登陆，获取 Cookies</strong></p>
+<p><strong>2018.02.10 Update</strong> - Chrome 上有很好用的 Cookies 插件，支持直接从浏览器导出 Cookies 文件。如果觉得这部分比较繁琐，可以手工登陆之后 Download 自己的 Cookies，从而省下这一步。</p>
+<pre><code>data = urllib.parse.urlencode(values).encode(encoding='UTF-8')
+user_agent = '*********' // 浏览器记录信息
+headers = {'User-Agent': user_agent, 'Connection': 'keep-alive'}
+
+cookie_filename = 'vol_cookie.txt' // Cookies 保存文件名
+cookie_aff = http.cookiejar.MozillaCookieJar(cookie_filename)
+
+
+handler = urllib.request.HTTPCookieProcessor(cookie_aff)
+opener = urllib.request.build_opener(handler)
+
+request = urllib.request.Request(login_url, data=data, headers=headers)
+try:
+    response = opener.open(request)
+except urllib.error.URLError as e:
+    print(e.reason)
+
+cookie_aff.save(ignore_discard=True, ignore_expires=True)
+for item in cookie_aff:
+    print('Name ='+ item.name)
+    print('Value ='+ item.value)
+</code></pre>
+<p><strong>Step 3. 抓取用户登陆网页</strong></p>
+<pre><code>import urllib.request, urllib.parse
+import http.cookiejar
+
+get_url = 'https://vol.moe/comic/10243.htm'
+cookie_filename = 'vol_cookie.txt'
+cookie_aff = http.cookiejar.MozillaCookieJar(cookie_filename)
+cookie_aff.load(cookie_filename, ignore_discard=True, ignore_expires=True)
+
+handler = urllib.request.HTTPCookieProcessor(cookie_aff)
+opener = urllib.request.build_opener(handler)
+
+# 使用cookie登陆get_url
+get_request = urllib.request.Request(get_url)
+get_response = opener.open(get_request)
+print(get_response.read().decode())
+</code></pre>
+<p>其实在网页登陆后，打开相应漫画下载页面 F12 拿到的就是包含所有下载链接的 html ，这个网站的链接不是 PHP 单独对话，直接筛选就很方便。</p>
+<p>上面抓取 html 之后筛选，search “下载 epub” 所有的 &lt;a&gt; 自带链接，抓出来之后就能批量下载了。</p>
+<p>不过很值得注意的是，Vol.moe 有如下说明：</p>
+<blockquote>
+<p>Q5: 下載線路速度限製及IP限製的問題。 <!-- raw HTML omitted -->A5: 本站帶寬有限，為防止無序無限製的下載，故已經對下載進行了速度限製、IP校驗與限製 <!-- raw HTML omitted -->同一IP同時下載線程不能超過3個，部分瀏覽器/工具在線程被限製後整個下載任務會失敗，遇此情況請修改設置，或使用Chrome瀏覽器。 <!-- raw HTML omitted -->部分瀏覽器或下載工具會使用多線程下載，將會被視為多文件同時下載，達到限製後會需要等待較長時間才會解除限製。</p>
+</blockquote>
+<p>使用下载工具下载还是要控制一下线程，防止被屏蔽。Vol.moe 服务器位于北美，网站注册于 TW ，下载速度在大陆感觉还是很不稳定，不清楚跟网站审查下行流量有关系没有。</p>
+
+    </div>
+    <div class="article-footer">
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://timegg.top/post/2018-07-13-%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" title="数据库系统概论复习笔记"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            <li class="next">
+                <a href="https://timegg.top/post/2018-10-12-matlab-%E5%AE%9E%E7%8E%B0%E8%A7%A3%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E7%9A%84%E5%87%A0%E7%B1%BB%E7%9B%B4%E6%8E%A5%E6%96%B9%E6%B3%95/"
+                    title="Matlab 实现解线性方程组的几类直接法"><span>Newer&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="Catalogue" role="button">
+                    <span>[&nbsp;</span><span>Catalogue</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/chuanbohua" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://timegg.top/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+    <li><a href="https://twitter.com/huachuanbo" target="_blank" title="twitter" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-twitter"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2017  -
+    2020 Timegg
+    
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://timegg.top/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://timegg.top/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            ROOT_URL: 'https:\/\/timegg.top\/',
+            CONTENT_URL: 'https:\/\/timegg.top\/\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://timegg.top/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+  </body>
+</html>

@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        信息论实验 - Timegg
+      </title>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="基于 Matlab 和 Python 实现大三下学期信息论实验课课题。" />
+  <meta name="generator" content="Hugo 0.69.0 with theme pure" />
+  <title>信息论实验 - Timegg</title>
+  
+  
+  <link rel="stylesheet" href="https://timegg.top/css/style.min.f27e1bd7295edd18f04283f07d8dc430700e7d0e06d6ec68b15c52d049174c81.css">
+  
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+  <meta property="og:title" content="信息论实验" />
+<meta property="og:description" content="基于 Matlab 和 Python 实现大三下学期信息论实验课课题。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://timegg.top/post/2019-05-09-%E4%BF%A1%E6%81%AF%E8%AE%BA%E5%AE%9E%E9%AA%8C/" />
+<meta property="article:published_time" content="2019-05-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-05-03T00:00:00+00:00" />
+<meta itemprop="name" content="信息论实验">
+<meta itemprop="description" content="基于 Matlab 和 Python 实现大三下学期信息论实验课课题。">
+<meta itemprop="datePublished" content="2019-05-03T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-05-03T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="3013">
+
+
+
+<meta itemprop="keywords" content="Matlab,Python," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="信息论实验"/>
+<meta name="twitter:description" content="基于 Matlab 和 Python 实现大三下学期信息论实验课课题。"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://timegg.top/" target="_blank">
+            <img class="img-circle img-rotate" src="https://timegg.top/avatar.jpg" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Chuanbo HUA</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">HIT, KAIST</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Daejeon, South Korea</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/post/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>Timegg has been renew at 2020.04, welcome!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> Categories</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://timegg.top/categories/dairy/" class="category-list-link">dairy</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://timegg.top/categories/essay/" class="category-list-link">essay</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://timegg.top/categories/lecture/" class="category-list-link">lecture</a><span class="category-list-count">6</span></li>
+            <li class="category-list-item"><a href="https://timegg.top/categories/read/" class="category-list-link">read</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://timegg.top/categories/tutorial/" class="category-list-link">tutorial</a><span class="category-list-count">5</span></li>
+        </ul>
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2020-04-15-%E6%9B%B4%E6%96%B0%E6%8A%A5%E5%91%8A/" class="title">更新报告 Update Reports</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-04-15 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-15</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2020-03-10-kdd2019/" class="title">2019 KDD Recommendation System Review</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-02-15 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-02-15</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2019-11-28-%E5%9B%9B%E5%8F%A0%E5%8D%8A/" class="title">森见登美彦作品《四叠半神话大系》</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-11-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-11-28</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2019-10-10-%E6%98%A5%E5%AE%B5%E8%8B%A6%E7%9F%AD/" class="title">森见登美彦作品《春宵苦短，少女前进吧》</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-10-10 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-10-10</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2019-05-09-%E4%BF%A1%E6%81%AF%E8%AE%BA%E5%AE%9E%E9%AA%8C/" class="title">信息论实验</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-05-03 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-05-03</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/post/2019-05-09-%E4%BF%A1%E6%81%AF%E8%AE%BA%E5%AE%9E%E9%AA%8C/"
+    >信息论实验</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://timegg.top/post/2019-05-09-%E4%BF%A1%E6%81%AF%E8%AE%BA%E5%AE%9E%E9%AA%8C/" class="article-date">
+  <time datetime="2019-05-03 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-05-03</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/lecture/"> Lecture </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/matlab/"> Matlab </a>
+    <a class="article-tag-link" href="/tags/python/"> Python </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/post/2019-05-09-%E4%BF%A1%E6%81%AF%E8%AE%BA%E5%AE%9E%E9%AA%8C/#comments"
+            class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 3013words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 7minutes </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <p>本学期专业课程中有<a href="https://zh.wikipedia.org/wiki/%E4%BF%A1%E6%81%AF%E8%AE%BA"><strong>信息论</strong></a>这一门课程，在此之前我学习神经网络的过程中了解了一些与信息论相关的内容，也很开心能开这门课。在这学期中有一些信息论的实验课需要完成一些任务，考虑到上学期学习数值分析没有及时记录所做内容，到后来补上去的各种困难，本次我打算完成一次实验之后及时记录实验内容，其中包含实验内容、遇到的问题和解决方案还有一些自己的想法。</p>
+<p>搜索引擎能搜索到的相关实现几乎都是使用 Matlab 实现的，很少有通过其他语言来做这些实验，正巧在寒假进行了机器学习的学习，当时使用 Python 比较多，所以在这期实验开始时我选择了用 Python 做这些实验。</p>
+<p>但是在真正实际操作中发现，这些问题用 Python 实现并不是非常的方便，主要还是在使用 Pandas 和 Numpy 这两个包，这样并不能体现出 Python 在解决这些实验问题上的优势，不如使用 Ruby 和 Matlab。不过，既然选择了这门语言做到底，就坚持做一下。</p>
+<h2 id="test-1">Test 1</h2>
+<p><strong>实验内容</strong>：对于任意给出的信源 $S=[X,p(x)]$ 计算信息熵 $H(x)$</p>
+<ul>
+<li><strong>Input</strong>: 路径：各字母出现频率（含 Space），保存于 CSV 文件中</li>
+<li><strong>Output</strong>:  字母的信息熵</li>
+</ul>
+<pre><code>文件目录:
+information_theory_experiment_test1
+ |--- entropy_cal.py
+ |--- letter_frequence.csv
+</code></pre>
+<pre><code class="language-python">#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+&quot;&quot;&quot;Test 1&quot;&quot;&quot;
+
+import pandas as pd
+import math
+
+class Solution(object):
+    def calInfoEntropy(self, path):
+        &quot;&quot;&quot;
+        :type path: str
+        &quot;&quot;&quot;
+        data = pd.read_csv(path)
+        result = 0
+        
+        for i in range(0, data.shape[0] - 1):
+            num_tem = data.iat[i, 1]
+            result += num_tem * math.log2(1 / num_tem)
+        
+        return result
+</code></pre>
+<p>Pandas 自带读取 CSV 文件功能，读取结果为矩阵，<strong>CSV 文件中第一行会被识别为列名</strong>。取数函数有多种：</p>
+<ul>
+<li><code>loc</code>，基于列 label，可选取特定行（根据行 index）</li>
+<li><code>iloc</code>，基于行/列的 position</li>
+<li><code>at</code>，根据指定行 index 及列 label，快速定位 DataFrame 的元素</li>
+<li><code>iat</code>，与 at 类似，不同的是根据 position 来定位的</li>
+<li><code>ix</code>，为 loc 与 iloc 的混合体，既支持 label 也支持 position</li>
+</ul>
+<p><a href="https://blog.csdn.net/LY_ysys629/article/details/55224284">这篇 Post</a> 有较为详细的说明。</p>
+<h2 id="test-2">Test 2</h2>
+<p><strong>实验内容</strong>：对于给出的信源 $S=[X,p(s)]$ 和信道 $Q=(q(y_j|x_i))$ 计算噪音熵 $H(X|Y)$ 和互信息 $I(X;Y)$</p>
+<ul>
+<li><strong>Input</strong>: 路径：各字母出现频率（含 Space），信道矩阵，分别保存于 CSV 文件中</li>
+<li><strong>Output</strong>:  字母的噪音熵和互信息</li>
+</ul>
+<pre><code>文件目录:
+information_theory_experiment_test2
+ |--- entropy_cal.py
+ |--- letter_frequence.csv
+ |--- communication_channel.csv
+</code></pre>
+<pre><code class="language-python">#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+&quot;&quot;&quot;Test 2&quot;&quot;&quot;
+
+import pandas as pd
+import numpy as np
+import math
+
+conditional_entropy = 0
+mutual_information = 0
+
+# input data
+letter_fre_x = pd.read_csv('letter_frequency.csv')
+comm_channel = pd.read_csv('communication_channel.csv')
+joint_probability_distribution = np.zeros(shape=(27, 27))
+
+# cal the conditional entropy
+for i in range(0, 26):
+    for j in range(0, 26):
+        if comm_channel.iat[i, j] != 0:
+            joint_probability_distribution[i][j] = letter_fre_x.iat[j, 1] * comm_channel.iat[i, j]
+            conditional_entropy -= \
+                joint_probability_distribution[i][j] * math.log2(comm_channel.iat[i, j])
+        else:
+            continue
+
+letter_fre_y = np.sum(joint_probability_distribution, axis=0)
+
+# cal the mutual information
+for i in range(0, 26):
+    for j in range(0, 26):
+        if comm_channel.iat[i, j] != 0:
+            mutual_information += \
+                joint_probability_distribution[i][j] * \
+                math.log2(joint_probability_distribution[i][j] / (letter_fre_x.iat[j, 1] * letter_fre_y[j]))
+        else:
+            continue
+
+print('The conditional entropy is: ', conditional_entropy, ' bit')
+print('The mutual information is: ', mutual_information, 'bit')
+</code></pre>
+<p>在实现方面和 Test 1 没有什么太大的差距，主要在于信息论的算法上面。</p>
+<h2 id="test-3">Test 3</h2>
+<p><strong>实验内容</strong>：给出各英文字母的出现概率，构造 0, 1, 2 Huffman 编码，并将下述一句话进行 Huffman 编码</p>
+<blockquote>
+<p>The fundamental problem of communication is that of reproducing at one point either exactly or approximately a message selected at another point.</p>
+</blockquote>
+<ul>
+<li><strong>Input</strong>: 各字母出现频率（含 Space），欲 Huffman 编码的句子</li>
+<li><strong>Output</strong>:  Huffman 编码结果（<strong>使用结果编码句子在这里暂时省略</strong>，Test 5 会提到）</li>
+</ul>
+<pre><code>文件目录:
+information_theory_experiment_test3
+ |--- huffman_coding.py
+ |--- letter_frequence.csv
+ |--- sentence.docx
+</code></pre>
+<pre><code class="language-python">#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+&quot;&quot;&quot;Test 3&quot;&quot;&quot;
+
+import queue
+import pandas as pd
+
+class HuffmanNode(object):
+    def __init__(self, left=None, right=None, root=None):
+        self.left = left
+        self.right = right
+    def children(self):
+        return((self.left, self.right))
+
+letter_fre = pd.read_csv('letter_frequency.csv')
+
+def create_tree(frequencies):
+    p = queue.PriorityQueue()
+    for value in frequencies:   
+        p.put(value)             
+    while p.qsize() &gt; 1:        
+        l, r = p.get(), p.get()  
+        node = HuffmanNode(l, r)
+        p.put((l[0]+r[0], node))     
+    return p.get()              
+
+node = create_tree(letter_fre)
+
+def walk_tree(node, prefix=&quot;&quot;, code={}):
+    &quot;&quot;&quot;
+    node 是一个tuple(freq, HuffmanNode|character)
+    &quot;&quot;&quot;
+    if isinstance(node[1], HuffmanNode):
+        code1 = walk_tree(node[1].left, '0', code.copy())
+        code2 = walk_tree(node[1].right, '1', code.copy())
+        if len(code1) &gt; 0:
+            for k, v in code1.items():
+                code[k] = prefix + v
+        if len(code2) &gt; 0:
+            for k, v in code2.items():
+                code[k] = prefix + v
+    else: 
+        code[node[1]] = prefix
+    return(code) 
+
+code = walk_tree(node) 
+
+for i in sorted(freq, reverse=True):
+    try:
+        print(i[1], '{:6.2f}'.format(i[0]), code[i[1]])
+    except Exception as e:
+        print(e)
+        continue
+</code></pre>
+<h2 id="test-4">Test 4</h2>
+<p><strong>实验内容</strong>：对给出的信道转移矩阵 $Q=(q(y|x))$，应用迭代法计算信道容量 $C$</p>
+<p><strong>高噪声打字机</strong>：设信道输入与输出字母集分别为 $X=Y={A, B, C, &hellip; , Z, -}$，其中 $-$ 表示空格，这 27 个字符排成一圈，当输入某个字符时，输出以等概率 1/3 产生它本生及
+相邻 2 个字符，例如：</p>
+<p>$$P(Y=A|X=B)=P(Y=B|X=B)=P(Y=C|X=B)=1/3$$</p>
+<ul>
+<li><strong>Input</strong>: 各字母出现频率（含 Space），信道转移矩阵</li>
+<li><strong>Output</strong>:  信道容量</li>
+</ul>
+<pre><code>文件目录:
+information_theory_experiment_test4
+ |--- channel_capacity_cal.py
+ |--- letter_frequence.csv
+ |--- communication_channel.csv
+</code></pre>
+<p>首先，这里是我基于 Matlab 程序改进成的 Python 程序，是个<strong>错误示例</strong>，其原因在于 Matlab 中对矩阵操作转移到 Python 中 DataFrame 实现起来有点麻烦，DataFrame 多用于神经网络数据导入是非常方便的，具体分隔来处理有点麻烦。</p>
+<pre><code class="language-python">#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+&quot;&quot;&quot;Test 4 - Error Example&quot;&quot;&quot;
+
+import pandas as pd
+import numpy as np
+import math
+
+
+def channel_capacity_cal(p, q, f, m):
+    &quot;&quot;&quot;the function to cal the channel capacity&quot;&quot;&quot;
+    tem_precision_x = p
+    channel_cap1 = 0
+    channel_cap2 = 0
+
+    for i in range(1, m):
+        sum = 0
+        row = q.shape[0]
+        column = q.shape[1]
+        rev_transfer_matrix = np.zeros(row, column)
+        out_precision = np.zeros(1, column)
+        tem_precision_y = np.zeros(1, row)
+
+        for j in range(1, column):
+            tem_sum = 0
+            for k in range(1, row):
+                tem_sum += q(k, j) * tem_precision_x(k, 1)
+            out_precision.at[1, i] = tem_sum
+        for j in range(1, row):
+            for k in range(1, column):
+                rev_transfer_matrix.at[j, k] = q.iat[j, k] * tem_precision_x.iat[j, 1] / out_precision.at[1, k]
+        for j in range(1, row):
+            tem_sum = 0
+            for k in range(1, column):
+                if rev_transfer_matrix.at[j, k] != 0:
+                    tem_sum += q.iat[j, k] * math.log2(rev_transfer_matrix.at[j, k])
+                tem_precision_y.at[0, j] = math.pow(2, tem_sum)
+                sum += tem_precision_y.at[0, j]
+        for j in range(1, row):
+            tem_precision_y.at[0, j] /= sum
+        channel_cap2 = math.log2(sum)
+
+        print(channel_cap2)
+        if abs(channel_cap1 - channel_cap2) &lt; f:
+            channel_cap1 = channel_cap2
+            tem_precision_x = tem_precision_y
+            print(&quot;the iterations times is: &quot; + i)
+            break
+        else:
+            channel_cap1 = channel_cap2
+            tem_precision_x = tem_precision_y
+
+    print(tem_precision_x)
+    return channel_cap1
+
+
+letter_fre = pd.read_csv('letter_frequency.csv')
+channel_transition_probability = pd.read_csv('channel_transition_probability.csv')
+
+max_iterations = 100
+precision = 0.001
+channel_capacity_cal(letter_fre, channel_transition_probability, precision, max_iterations)
+</code></pre>
+<p>在参考了 BUPT Zhengyuan Zhu 的处理方法之后进行了改进，但是这里存在的比较大的问题是多次迭代的转移矩阵需要手动计算，可以在此方法之前再添加 math 的方法以实现转移矩阵的计算。</p>
+<pre><code class="language-python">import numpy as np
+
+letter_fre = pd.read_csv('letter_frequency.csv')
+channel_transition_probability = pd.read_csv('channel_transition_probability.csv')
+precision = 0.001
+
+def initiate_prob_distrib(p):
+    p_x = np.transpose(np.ones((1, p.shape[0])) / p.shape[0])
+    print(&quot;初始化概率分布为:\n&quot;, p_x)
+
+    return p_x
+
+p_x = initiate_prob_distrib(channel_transition_probability)
+
+def iteration(p_i, p_ij, k):
+    q_j = np.sum(p_i * p_ij, axis=0)
+    print(&quot;NO. &quot; + str(k) + &quot; iteration: q_j:\n&quot;, q_j)
+
+    alpha_i = np.exp(np.sum(p_ij * np.log(p_ij / q_j), axis=1))
+    alpha_i = np.expand_dims(alpha_i, axis=0)
+    print(&quot;NO. &quot; + str(k) + &quot; iteration: alpha_i:\n&quot;, alpha_i)
+
+    u = np.matmul(alpha_i, p_i)[0]
+    print(&quot;NO. &quot; + str(k) + &quot; iteration: u:\n&quot;, u)
+
+    I_L = np.log2(u)[0]
+    print(&quot;NO. &quot; + str(k) + &quot; iteration: I_L:\n&quot;, I_L)
+
+    I_U = np.log2(np.amax(alpha_i))
+    print(&quot;NO. &quot; + str(k) + &quot; iteration: I_U:\n&quot;, I_U)
+
+    if I_U - I_L &lt; precision:
+        print(&quot;capacity:\n &quot;, I_L)
+        print(&quot;input letter frequency:\n &quot;, p_i)
+        return True, I_L, p_i
+    else:
+        p_i = p_i * np.transpose(alpha_i) / u[0]
+        print(&quot;No.&quot; + str(k) + &quot;Update Probability distributions:\n&quot;, p_i)
+        return False, p_i
+
+flag, I_L, p_i = iteration(p_x, channel_transition_probability, 1)
+
+ans_dict = dict()
+for p in (channel_transition_probability1, channel_transition_probability2, channel_transition_probability3, channel_transition_probability4):
+    flag = False
+    p_x = initiate_prob_distrib(p)
+    k = 1
+    while not flag:
+        flag, ans, tmp_p = iteration(p_x, p, k)
+        if not flag:
+            p_x = tmp_p
+            k = k + 1
+        else:
+            ans_dict[ans] = tmp_p
+
+for k, v in ans_dict.items() :
+    print(&quot;capacity：&quot;, k)
+    print(&quot;input letter frequency：\n&quot;, np.transpose(v)[0])
+</code></pre>
+<h2 id="test-5">Test 5</h2>
+<p><strong>实验内容</strong>：</p>
+<ol>
+<li>
+<p>基于 Test 3 的程序，修改为构造 <strong>0, 1 二元 Huffman 编码程序</strong></p>
+</li>
+<li>
+<p>使用上述二元 Huffman 编码程序为下一段文字进行编码</p>
+<blockquote>
+<p>The fundamental problem of communication is that of reproducing at one point either exactly or approximately a message selected at another point.</p>
+</blockquote>
+</li>
+<li>
+<p>使用给定的生成矩阵，对上述编码结果进行<strong>信道编码（Hamming 编码）</strong></p>
+</li>
+<li>
+<p>任意修改一定量上述编码结果，之后对此修改之后的编码使用校验矩阵，进行<strong>信道译码（Hamming 译码）</strong></p>
+</li>
+</ol>
+<p>Test 5 在整合前面的实验之后加入信道编码部分。</p>
+<pre><code>文件目录:
+information_theory_experiment_test5
+ |--- run.py - 主程序
+ |--- huffman_coding.py - 实现 Huffman 编码
+ |--- hamming_coding.py - 实现 Hamming 编码
+ |--- hamming_decoding.py - 实现 Hamming 译码
+ |--- article.docx - 编码文字文档
+ |--- hamming_coding.csv - 生成矩阵
+ |--- hamming_decoding.csv - 校验矩阵
+ |--- letter_frequecny.csv - 字母频率
+</code></pre>
+<pre><code class="language-python">#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+&quot;&quot;&quot;Test_5/run.py&quot;&quot;&quot;
+
+import huffman_coding
+import hamming_coding
+import hamming_decoding
+
+huffman_coding_result = huffman_coding.huffman_coding()
+hamming_coding_result = hamming_coding.hamming_coding(huffman_coding_result)
+hamming_decoding.hamming_decoding(huffman_coding_result, hamming_coding_result)
+</code></pre>
+<pre><code class="language-python">#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Copyright (c) 2019 - magic_kurakun &lt;magickurakun@gmail.com&gt;
+
+&quot;&quot;&quot;Test_5/huffman_coding.py&quot;&quot;&quot;
+
+import pandas as pd
+import docx
+
+
+def huffman_coding(letter_fre):
+    letter_fre = pd.read_csv('letter_frequency.csv')
+    file = docx.opendocx(&quot;article.docx&quot;)
+    doc = docx.getdocumenttext(file)
+    huffman_coding_result = &quot;&quot;
+    length = 0
+
+    huffman = ()
+    for i in range(0, 26):
+        tem = ('',)
+        huffman += tem
+
+    for loop in range(1, 12):
+        flag = 26 - loop * 2
+        letter_fre.sort_values(by='probability')
+        for i in range(97, 122):
+            if letter_fre.iat[flag, 0] == chr(i):
+                huffman[i - 96] += '0'
+            if letter_fre.iat[flag + 1, 0] == chr(i):
+                huffman[i - 96] += '1'
+            if letter_fre.iat[flag + 2, 0] == chr(i):
+                huffman[i - 96] += '2'
+        if letter_fre.iat[flag, 0] == ' ':
+            huffman[i - 96] += '0'
+        if letter_fre.iat[flag + 1, 0] == ' ':
+            huffman[i - 96] += '1'
+        if letter_fre.iat[flag + 2, 0] == ' ':
+            huffman[i - 96] += '2'
+        sum_tem = 0
+        for i in range(flag, flag + 2):
+            sum_tem += float(letter_fre.iat[i, 1])
+            letter_fre.iat[i, 1] = str(-1)
+        letter_fre.iat[flag, 1] = str(sum_tem)
+
+    print('The huffman code of such letters are as follow: ')
+    for i in range(0, 26):
+        length += huffman[i].length()
+        print(huffman[i])
+    print('The average length of huffman code is: ')
+    print(length / 27)
+
+    print('The sentence was translated to huffman code as follow: ')
+    for i in range(0, len(doc) - 1):
+        flag = 0
+        for j in range(97, 122):
+            if doc[i] == chr(j):
+                print(huffman[j - 96])
+                flag = 1
+        if flag == 0:
+            print(huffman[0])
+
+    for i in range(0, len(doc)):
+        tem = ord(doc[i])
+        if tem == 32:
+            huffman_coding_result += huffman[0]
+        elif tem &gt;= 65 &amp; tem &lt;= 90:
+            huffman_coding_result += huffman[tem - 64]
+        elif tem &gt;= 97 &amp; tem &lt;= 122:
+            huffman_coding_result += huffman[tem - 96]
+
+    print(&quot;The result of huffman coding: &quot; + huffman_coding_result)
+    return huffman_coding_result
+</code></pre>
+<pre><code class="language-python">#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Copyright (c) 2019 - magic_kurakun &lt;magickurakun@gmail.com&gt;
+
+&quot;&quot;&quot;Test_5/hamming_coding.py&quot;&quot;&quot;
+
+import pandas as pd
+import numpy as np
+import docx
+
+
+def hamming_coding(huffman_coding_result):
+    code_length = len(huffman_coding_result)
+    remainder = code_length % 4
+    b = [0, 0, 0, 0]
+    hamming_coding_list = pd.read_csv('hamming_coding.csv')
+    hamming_coding_result = &quot;&quot;
+    s = np.zeros(int((code_length - remainder) / 4 + 1), 7)
+
+    if remainder != 0:
+        for i in range(0, 3 - remainder):
+            huffman_coding_result += '0'
+    for i in range(0, int((code_length - remainder) / 4) - 1):
+        b[0] = ord(huffman_coding_result[4 * i]) - 48
+        b[1] = ord(huffman_coding_result[4 * i + 1]) - 48
+        b[2] = ord(huffman_coding_result[4 * i + 2]) - 48
+        b[3] = ord(huffman_coding_result[4 * i + 3]) - 48
+        c = np.dot(b, hamming_coding_list)
+        for j in range(0, 6):
+            if c[j] == 0 | c[j] == 2:
+                s[i, j] = 0
+            if c[j] == 1 | c[j] == 3:
+                s[i, j] = 1
+    s[51, 2] -= 1
+    s[34, 2] -= 1
+
+    for i in range(0, int((code_length - remainder) / 4) - 1):
+        for j in range(0, 3):
+            hamming_coding_result += chr(s[i, j])
+    for i in range(0, remainder - 1):
+        hamming_coding_result += chr(s[int((code_length - remainder) / 4), i])
+
+    print(hamming_coding_result)
+    return s
+</code></pre>
+<pre><code class="language-python">#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Copyright (c) 2019 - magic_kurakun &lt;magickurakun@gmail.com&gt;
+
+&quot;&quot;&quot;Test_5/hamming_decoding.py&quot;&quot;&quot;
+
+import pandas as pd
+import numpy as np
+import docx
+
+
+def hamming_decoding(huffman_coding_result, s):
+    code_length = len(huffman_coding_result)
+    remainder = code_length % 4
+    hamming_decoding_list = pd.read_csv('hamming_decoding.csv')
+    d = np.zeros(int((code_length - remainder) / 4), 3)
+    hamming_decoding_result = &quot;&quot;
+    hamming_decoding_result_tem = &quot;&quot;
+
+    for i in range(0, int((code_length - remainder) / 4) - 1):
+        c = np.dot(s[i, :], hamming_decoding_list)
+        for j in range(0, 2):
+            if c[j] == 0 | c[j] == 2:
+                d[i, j] = 0
+            elif c[j] == 1 | c[j] == 3:
+                d[i, j] = 1
+        for j in range(0, 3):
+            if d[i, 0] == hamming_decoding_list[j, 0] &amp; d[i, 1] == hamming_decoding_list[j, 2] &amp;\
+                    d[i, 2] == hamming_decoding_list[j, 3]:
+                s[i, j] -= 1
+    for i in range(0, int((code_length - remainder) / 4) - 1):
+        for j in range(0, 3):
+            hamming_decoding_result_tem += chr(s[i, j])
+    for i in range(0, remainder - 1):
+        hamming_decoding_result_tem += chr(s[int((code_length - remainder) / 4), i])
+
+    decode_length = len(hamming_decoding_result_tem)
+    flag = 1
+    break_while = 0
+    while flag &lt; decode_length - 3 + remainder:
+        for i in range(0, 26):
+            str_tem = hamming_decoding_result_tem[flag:flag + i - 1]
+            for j in range(0, 26):
+                if str_tem == huffman_coding_list[j, :]:
+                    if j == 1:
+                        hamming_decoding_result += chr(32)
+                    else:
+                        hamming_decoding_result += chr(j + 96)
+                    flag += len(str_tem)
+                    break_while = 1
+                    break
+            if break_while == 1:
+                break
+
+    print(hamming_decoding_result)
+
+</code></pre>
+<p>经过测试之后发现经过校验矩阵之后，传输信息错误率在 0.01 之下，根据传输量趋于 0，即是信道编码的意义。</p>
+<h1 id="最后">最后</h1>
+<p>实验拿了满分，快乐。</p>
+
+    </div>
+    <div class="article-footer">
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://timegg.top/post/2019-05-03-%E6%B5%85%E8%B0%88-procreate/" title="浅谈 Procreate"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            <li class="next">
+                <a href="https://timegg.top/post/2019-10-10-%E6%98%A5%E5%AE%B5%E8%8B%A6%E7%9F%AD/"
+                    title="森见登美彦作品《春宵苦短，少女前进吧》"><span>Newer&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="Catalogue" role="button">
+                    <span>[&nbsp;</span><span>Catalogue</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/chuanbohua" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://timegg.top/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+    <li><a href="https://twitter.com/huachuanbo" target="_blank" title="twitter" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-twitter"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2017  -
+    2020 Timegg
+    
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://timegg.top/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://timegg.top/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            ROOT_URL: 'https:\/\/timegg.top\/',
+            CONTENT_URL: 'https:\/\/timegg.top\/\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://timegg.top/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+  </body>
+</html>

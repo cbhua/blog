@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        在 Linux 平台创建 Tencent QQ 机器人 - Timegg
+      </title>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="本篇关于如何在 Linux 平台运行一个可以提供自动回复、消息管理、群小游戏等功能的 QQ 机器人。" />
+  <meta name="generator" content="Hugo 0.69.0 with theme pure" />
+  <title>在 Linux 平台创建 Tencent QQ 机器人 - Timegg</title>
+  
+  
+  <link rel="stylesheet" href="https://timegg.top/css/style.min.f27e1bd7295edd18f04283f07d8dc430700e7d0e06d6ec68b15c52d049174c81.css">
+  
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+  <meta property="og:title" content="在 Linux 平台创建 Tencent QQ 机器人" />
+<meta property="og:description" content="本篇关于如何在 Linux 平台运行一个可以提供自动回复、消息管理、群小游戏等功能的 QQ 机器人。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://timegg.top/post/2019-03-16-tencent-robot/" />
+<meta property="article:published_time" content="2019-03-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-03-16T00:00:00+00:00" />
+<meta itemprop="name" content="在 Linux 平台创建 Tencent QQ 机器人">
+<meta itemprop="description" content="本篇关于如何在 Linux 平台运行一个可以提供自动回复、消息管理、群小游戏等功能的 QQ 机器人。">
+<meta itemprop="datePublished" content="2019-03-16T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-03-16T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="2635">
+
+
+
+<meta itemprop="keywords" content="Linux," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="在 Linux 平台创建 Tencent QQ 机器人"/>
+<meta name="twitter:description" content="本篇关于如何在 Linux 平台运行一个可以提供自动回复、消息管理、群小游戏等功能的 QQ 机器人。"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://timegg.top/" target="_blank">
+            <img class="img-circle img-rotate" src="https://timegg.top/avatar.jpg" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Chuanbo HUA</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">HIT, KAIST</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Daejeon, South Korea</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/post/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>Timegg has been renew at 2020.04, welcome!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> Categories</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://timegg.top/categories/dairy/" class="category-list-link">dairy</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://timegg.top/categories/essay/" class="category-list-link">essay</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://timegg.top/categories/lecture/" class="category-list-link">lecture</a><span class="category-list-count">6</span></li>
+            <li class="category-list-item"><a href="https://timegg.top/categories/read/" class="category-list-link">read</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://timegg.top/categories/tutorial/" class="category-list-link">tutorial</a><span class="category-list-count">5</span></li>
+        </ul>
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2020-04-15-%E6%9B%B4%E6%96%B0%E6%8A%A5%E5%91%8A/" class="title">更新报告 Update Reports</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-04-15 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-15</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2020-03-10-kdd2019/" class="title">2019 KDD Recommendation System Review</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-02-15 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-02-15</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2019-11-28-%E5%9B%9B%E5%8F%A0%E5%8D%8A/" class="title">森见登美彦作品《四叠半神话大系》</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-11-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-11-28</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2019-10-10-%E6%98%A5%E5%AE%B5%E8%8B%A6%E7%9F%AD/" class="title">森见登美彦作品《春宵苦短，少女前进吧》</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-10-10 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-10-10</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://timegg.top/post/2019-05-09-%E4%BF%A1%E6%81%AF%E8%AE%BA%E5%AE%9E%E9%AA%8C/" class="title">信息论实验</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-05-03 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-05-03</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/post/2019-03-16-tencent-robot/"
+    >在 Linux 平台创建 Tencent QQ 机器人</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://timegg.top/post/2019-03-16-tencent-robot/" class="article-date">
+  <time datetime="2019-03-16 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-03-16</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/tutorial/"> Tutorial </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/linux/"> Linux </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/post/2019-03-16-tencent-robot/#comments"
+            class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 2635words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 6minutes </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <p>由于学校的情况，我在日常生活中更多使用 Tencent QQ，也加入了很多的 QQ 群。有老师建立的学术交流群，也有一群相同爱好的人组成的兴趣群。</p>
+<p>这些群之中有不少有群机器人，这些 QQ 机器人功能多种多样，有的可以帮助管理群，有的可以提供一些有趣的游戏或者抽卡模拟。这样的机器人可以非常好的活跃群气氛，提供一些游戏或者好玩的功能大家一起参与。</p>
+<p>被这些功能打动，并且想到可以把这个机器人放到和一些关系不错的同学创建的群中玩，于是就产生了拥有自己的 QQ 机器人的想法，并大概花了两天的时间去配置这样的机器人，并完成了这篇文章。</p>
+<p>在遇到各式各样的问题时，我们都会去搜索引擎寻找解决方案。对于遇到的问题，我们也经常碰到一些让人难以理解的回答，这些回答要么是过于简略，这样的解决方案多是由当事者事后回忆并撰写的，经常略过了不少关键细节，也有的答案本身就是错误的，这种多是回答者从其他地方参考过来，而并没有亲自去尝试带来的结果。</p>
+<p>这样的解决方案反而会给我们解决问题带来反作用。所以，在我撰写这篇教程时，尽可能的用到“提问的艺术”和“回答的艺术”，尽可能精确的去展示问题的解决方案，我也会将亲自完成这篇教程时遇到的问题记录下来，以备大家参考。</p>
+<h2 id="part-1-启用属于自己的-qq-机器人">Part 1. 启用属于自己的 QQ 机器人</h2>
+<p>在最初开始了解 QQ 机器人的时候，发现有很多种类的 QQ 机器人可供选用，编写语言、平台、功能也各不相同，有的是 Github 项目，有的则是商业网站提供的。</p>
+<p>但是之后我了解到一个事实，非常多的 QQ 机器人都是基于 <a href="https://zh.wikipedia.org/wiki/Smart_QQ">Smart QQ</a> 建立的，也就是不少人熟悉的 Web 版 QQ ，而 <strong>WebQQ 该功能已于2019年1月1日停止运营</strong>。所以此前很多的 QQ 机器人都无法使用了，在选择机器人平台的时候需要了解到位。</p>
+<p>Smart QQ 的停用对我编写 QQ 机器人带来了一些麻烦，本身 WebQQ 的消息传输可以直接转换为 HTML 代码过滤，来作为接收的信息。这项服务关闭之后就需要考虑其他的过滤信息的方法了。我没有这么多的耐心去自己写一个机器人，也算遵守“有轮子就不自己造”的态度，选择了既有的机器人服务进行使用。</p>
+<p>最后选用的是很广泛使用的 <a href="https://cqp.cc/">酷Q</a> 社区提供的 QQ 机器人，该社区提供 Air 版（Free）和 Pro 版（Charges）。差别在于 Air 版无法发语音与图片，仅能以文字或者 emoji 进行交互。</p>
+<p>酷Q 社区提供了比较丰富的 应用/App，都是由用户贡献。比较好的是该论坛下载是免费的（下载文件消耗 2CP，评论一次获得 2CP，等价于可以任意下载）。</p>
+<p>由于是稳定的 QQ 机器人社区，酷Q 的使用非常简单，自带有教程插件，运行之后会有细致的教程教你使用。但是，<strong>如果你使用的 QQ 号是新号，强烈建议不要启用该教程，有极高的概率被冻结账号</strong>。原因在于教程中该账号会高频率发送信息，新账号容易被判定为广告而被冻结。</p>
+<p>在论坛寻找下载并调试一些自己感兴趣的功能插件之后，我们就可以准备将机器人托管到云服务器上了。</p>
+<h2 id="part-2-启用云服务器">Part 2. 启用云服务器</h2>
+<p><strong>如果你已经有自己的云服务器并已经调试好，这一部分可以跳过。</strong></p>
+<hr>
+<p>准备工作：</p>
+<ul>
+<li>了解基础的 Linux 语句</li>
+</ul>
+<hr>
+<p><strong>部署服务器</strong></p>
+<p>服务器商家有很多种，可以按照自己的喜欢选择。这里我是用的是 <a href="https://www.aliyun.com/product/swas?spm=5176.8499797.selected.11.563d1a3f6CUrq1"><strong>阿里云轻量级应用服务器</strong></a>，学生云翼计划年费 ￥100 多一些。入门级的服务器托管酷Q也几乎不占用服务器的内存与 CPU，云服务器可以做很多其他事情的，比如托管自己的网站，做云计算等等（如果你的服务器是境外的，当然要用来搭梯子）。</p>
+<p>当然 ECS 也是可以的，不过云服务器比较的简单。当然如果愿意折腾和更自由一些，ECS 是很好的选择。</p>
+<p>操作系统可以自由选择，完成本教程都是大同小异，这里选用的是 CentOS。也便于未来其他方面的使用。</p>
+<p><strong>连接服务器</strong></p>
+<p>部署完初始化之后就可以用 SHH 连接了，方法可以参考 <a href="https://help.aliyun.com/document_detail/59083.html?spm=5176.10173289.107.1.2be62e77NNKrRh#windows">Putty 配置说明</a>。但是 SSH 连接工具还是 <a href="https://mobaxterm.mobatek.net/">MobaXTerm</a> 更好用一些。</p>
+<ul>
+<li>
+<p><strong>注意</strong>：阿里云有三种方式进行远程连接：1. 浏览器直接连接；2. 客户端密匙连接；3. 客户端账号密码连接；</p>
+<p>在生成密匙后再使用账号密码登陆时会出现 <code>Disconnected:No supported authentication methods available</code> 问题，解决方案参考 <a href="https://help.aliyun.com/knowledge_detail/41489.html">解决方案</a>。</p>
+</li>
+</ul>
+<h2 id="part-3-部署酷q至云服务器">Part 3. 部署酷Q至云服务器</h2>
+<pre><code>系统：CentOS 7.4
+
+SSH App：MobaXterm
+
+环境：Docker cotainer
+
+下述 Linux 操作：用户 - root；主机名 - CentOS；
+</code></pre>
+<p><strong>Step 1. 配置 Docker</strong></p>
+<p>安装 Docker：</p>
+<p><code>[root@CentOS ~]# sudo yum install docker</code></p>
+<p>安装完成之后启动 Docker：</p>
+<p><code>[root@CentOS ~]# sudo systemctl start docker</code></p>
+<p>查看 Docker 运行情况：</p>
+<p><code>[root@CentOS ~]# docker info</code></p>
+<hr>
+<p><strong>Step 2. 配置 CoolQ (酷Q) 镜像</strong></p>
+<p>下载 CoolQ 镜像（coolq.io）：</p>
+<p><code>[root@CentOS ~]# sudo docker pull coolq/wine-coolq</code></p>
+<p>查看镜像情况：</p>
+<p><code>[root@CentOS ~]# sudo docker images</code></p>
+<p>创建一个用以存放数据的 coolq-data 文件夹，创建的路径可以任意选择，这里为最顶层目录：</p>
+<p><code>[root@CentOS ~]# sudo mkdir /coolq-data</code></p>
+<p>运行 CoolQ 容器，这是最关键的一步，请仔细按照下述参数说明进行操作：</p>
+<pre><code>[root@CentOS ~]# docker run --restart=always --name wine-coolq -d \
+-p 8080:9000 \
+-v /coolq-data:/home/user/coolq \
+-e VNC_PASSWD=12345678 \
+-e COOLQ_ACCOUNT=1000000000 \
+coolq/wine-coolq
+</code></pre>
+<p>参数说明 (其余部分均不需要修改)：</p>
+<pre><code>8080 - 远程监听端口,此端口需要云服务器防火墙通过,请参考你选择的服务商提供的信息
+/coolq-data - 刚才创建的存放数据的文件夹路径
+12345678 - 过一会需要登陆一个东西,这里是你要设置的登陆密码(不超8位)
+1000000000 - 用以登陆酷Q的QQ号
+</code></pre>
+<ul>
+<li><strong>注意</strong>：远程监听端口设置的合适与否关系着后面能否连接酷Q，请务必选择防火墙开放的端口。以阿里云为例，选择 <code>概览 -&gt; 服务器安全设置 -&gt; 防火墙</code> 其中 HTTP 这一行的端口范围就是服务器开放的端口，这样上述操作中就用 <code>-p 80:9000</code> 即可。</li>
+</ul>
+<p><strong>Step 3. 连接 CoolQ 并调整</strong></p>
+<p>使用浏览器打开 <code>http://0.0.0.0:8080</code> ，其中 0.0.0.0 是你主机的公网 IP，8080 是你刚才设置的端口。如果前面一切顺利，你会打开一个 noVNC 的界面。</p>
+<p>连接需要输入上述 <code>VNC_PASSWD</code> 设置的密码，之后酷Q就会自动启动，正常登陆之后就完成了酷Q的连接。</p>
+<ul>
+<li><strong>注意</strong>：在这里登陆酷Q需要QQ号已经开启设备锁，请用手机登陆一次QQ，在设置中将设备锁打开</li>
+</ul>
+<p>之后对酷Q的调整就与 Windows 上一样了，文件就在之前所创建的 <code>/coolq-data</code> 里面，将你所需要的插件上传上去之后就可以在 VNC 上面如 Windows 一般进行调整。</p>
+<p>新版本的 wine-coolq 容器自带重启功能：被关闭之后 10 秒之后自动重启，以支持长期后台运行。</p>
+<ul>
+<li><strong>注意</strong>：目前 VNC 存在比较严重的问题：中文输入乱码，目前没有找到比较成熟的解决方案，可以考虑在windows 本地将 <code>ini</code> 设置文件配置好，再上传上去。</li>
+</ul>
+<p>至此，酷Q配置完毕。</p>
+<h2 id="part-4-后续调整">Part 4. 后续调整</h2>
+<p>参考 <a href="https://legacy.gitbook.com/book/yeasy/docker_practice/details">Docker 从入门到实践</a> 控制容器运行与停止：</p>
+<p><code>[root@CentOS ~]# docker start coolq</code></p>
+<p><code>[root@CentOS ~]# docker stop coolq</code></p>
+<p>当然，比较好的选择就是在酷Q中安装一个机器人控制插件，这样就可以比较方便的启用和关闭机器人，并且监控机器人状态。</p>
+<p>稳定性方面，依服务器的带宽而定，反应偶有延迟，其中的一些需要联网的功能偶尔会宕机，整体上影响不大。</p>
+<p><strong>2019.3.25 Update</strong> - 经过一段时间的测试，酷Q的回复延迟越来越长，最后稳定在 20s 左右，具体原因是系统问题、主机问题还是网络问题还在分析。另一个遇到的问题就是酷Q更新之后是需要重新登陆的，在远程的情况下需要定期连接，是比较麻烦的，而酷Q也不提供停止更新或者静默更新，目前还没有比较好的解决方法。</p>
+
+    </div>
+    <div class="article-footer">
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://timegg.top/post/2019-02-11-%E6%88%91%E7%9A%84%E7%A7%91%E5%B9%BB%E6%97%85%E7%A8%8B/" title="我所读过的一些刘慈欣的作品"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            <li class="next">
+                <a href="https://timegg.top/post/2019-04-15-centos-%E6%90%AD%E5%BB%BA%E9%A5%A5%E8%8D%92%E6%9C%8D%E5%8A%A1%E5%99%A8/"
+                    title="在 Linux 平台创建 DST 多人服务器"><span>Newer&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="Catalogue" role="button">
+                    <span>[&nbsp;</span><span>Catalogue</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/chuanbohua" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://timegg.top/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+    <li><a href="https://twitter.com/huachuanbo" target="_blank" title="twitter" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-twitter"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2017  -
+    2020 Timegg
+    
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://timegg.top/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://timegg.top/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            ROOT_URL: 'https:\/\/timegg.top\/',
+            CONTENT_URL: 'https:\/\/timegg.top\/\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://timegg.top/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+  </body>
+</html>
