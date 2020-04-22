@@ -2,191 +2,191 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Read on Timegg</title>
-    <link>http://localhost:1313/categories/read/</link>
+    <link>https://chuanbohua.github.io/categories/read/</link>
     <description>Recent content in Read on Timegg</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 28 Nov 2019 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="http://localhost:1313/categories/read/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://chuanbohua.github.io/categories/read/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>更新报告 Update Reports</title>
-      <link>http://localhost:1313/post/2020-04-15-%E6%9B%B4%E6%96%B0%E6%8A%A5%E5%91%8A/</link>
+      <link>https://chuanbohua.github.io/post/2020-04-15-%E6%9B%B4%E6%96%B0%E6%8A%A5%E5%91%8A/</link>
       <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2020-04-15-%E6%9B%B4%E6%96%B0%E6%8A%A5%E5%91%8A/</guid>
+      <guid>https://chuanbohua.github.io/post/2020-04-15-%E6%9B%B4%E6%96%B0%E6%8A%A5%E5%91%8A/</guid>
       <description>这里是网站的更新报告。 2020/04/15 网站基于 Hugo 重建，托管于 Github。重建后网站结构如下： Home：主页，7篇为一组展示所有文章； Archives：按</description>
     </item>
     
     <item>
       <title>2019 KDD Recommendation System Review</title>
-      <link>http://localhost:1313/post/2020-03-10-kdd2019/</link>
+      <link>https://chuanbohua.github.io/post/2020-03-10-kdd2019/</link>
       <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2020-03-10-kdd2019/</guid>
+      <guid>https://chuanbohua.github.io/post/2020-03-10-kdd2019/</guid>
       <description>KDD 2019 有不少 RS 的文章是围绕 Ratings and Reviews Information 进行的，这两种内容慢慢加入 RS 的考虑当中，以获得更好的稳定性和动态性能。依然有少数的文章在讨论 RS 的鲁棒性。 更多</description>
     </item>
     
     <item>
       <title>森见登美彦作品《四叠半神话大系》</title>
-      <link>http://localhost:1313/post/2019-11-28-%E5%9B%9B%E5%8F%A0%E5%8D%8A/</link>
+      <link>https://chuanbohua.github.io/post/2019-11-28-%E5%9B%9B%E5%8F%A0%E5%8D%8A/</link>
       <pubDate>Thu, 28 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2019-11-28-%E5%9B%9B%E5%8F%A0%E5%8D%8A/</guid>
+      <guid>https://chuanbohua.github.io/post/2019-11-28-%E5%9B%9B%E5%8F%A0%E5%8D%8A/</guid>
       <description>《四叠半神话大系》的主题与《春宵苦短，少女前进吧》接近，但是又非常不同。就表达形式上，两部作品都是基于“我”的大学生活，以大学校园为舞台；就</description>
     </item>
     
     <item>
       <title>森见登美彦作品《春宵苦短，少女前进吧》</title>
-      <link>http://localhost:1313/post/2019-10-10-%E6%98%A5%E5%AE%B5%E8%8B%A6%E7%9F%AD/</link>
+      <link>https://chuanbohua.github.io/post/2019-10-10-%E6%98%A5%E5%AE%B5%E8%8B%A6%E7%9F%AD/</link>
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2019-10-10-%E6%98%A5%E5%AE%B5%E8%8B%A6%E7%9F%AD/</guid>
+      <guid>https://chuanbohua.github.io/post/2019-10-10-%E6%98%A5%E5%AE%B5%E8%8B%A6%E7%9F%AD/</guid>
       <description>森见登美彦是一个“不正经的天才”。 至今为止，我几乎通读了他的全部作品，沉迷于他所描绘的吸引人的奇幻京都：鲤鱼、宵山、天狗、狸猫、鸭川、电气白</description>
     </item>
     
     <item>
       <title>信息论实验</title>
-      <link>http://localhost:1313/post/2019-05-09-%E4%BF%A1%E6%81%AF%E8%AE%BA%E5%AE%9E%E9%AA%8C/</link>
+      <link>https://chuanbohua.github.io/post/2019-05-09-%E4%BF%A1%E6%81%AF%E8%AE%BA%E5%AE%9E%E9%AA%8C/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2019-05-09-%E4%BF%A1%E6%81%AF%E8%AE%BA%E5%AE%9E%E9%AA%8C/</guid>
+      <guid>https://chuanbohua.github.io/post/2019-05-09-%E4%BF%A1%E6%81%AF%E8%AE%BA%E5%AE%9E%E9%AA%8C/</guid>
       <description>本学期专业课程中有信息论这一门课程，在此之前我学习神经网络的过程中了解了一些与信息论相关的内容，也很开心能开这门课。在这学期中有一些信息论的</description>
     </item>
     
     <item>
       <title>浅谈 Procreate</title>
-      <link>http://localhost:1313/post/2019-05-03-%E6%B5%85%E8%B0%88-procreate/</link>
+      <link>https://chuanbohua.github.io/post/2019-05-03-%E6%B5%85%E8%B0%88-procreate/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2019-05-03-%E6%B5%85%E8%B0%88-procreate/</guid>
+      <guid>https://chuanbohua.github.io/post/2019-05-03-%E6%B5%85%E8%B0%88-procreate/</guid>
       <description>Procreate® is the most powerful and intuitive digital illustration app available for iPad. It&amp;rsquo;s packed with features artists love, and it&amp;rsquo;s an iPad exclusive. 在 iPad 上进行画画，被推荐最多的软件就是 Procreate。作为一个移动端的创</description>
     </item>
     
     <item>
       <title>在 Linux 平台创建 DST 多人服务器</title>
-      <link>http://localhost:1313/post/2019-04-15-centos-%E6%90%AD%E5%BB%BA%E9%A5%A5%E8%8D%92%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <link>https://chuanbohua.github.io/post/2019-04-15-centos-%E6%90%AD%E5%BB%BA%E9%A5%A5%E8%8D%92%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2019-04-15-centos-%E6%90%AD%E5%BB%BA%E9%A5%A5%E8%8D%92%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <guid>https://chuanbohua.github.io/post/2019-04-15-centos-%E6%90%AD%E5%BB%BA%E9%A5%A5%E8%8D%92%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description>在此之前我在阿里云服务器上托管了我们的群机器人，这些天突然想到可以使用服务器剩余的算力进行开服，和小伙伴们一起玩一些游戏。 最先想到的就是《饥</description>
     </item>
     
     <item>
       <title>在 Linux 平台创建 Tencent QQ 机器人</title>
-      <link>http://localhost:1313/post/2019-03-16-tencent-robot/</link>
+      <link>https://chuanbohua.github.io/post/2019-03-16-tencent-robot/</link>
       <pubDate>Sat, 16 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2019-03-16-tencent-robot/</guid>
+      <guid>https://chuanbohua.github.io/post/2019-03-16-tencent-robot/</guid>
       <description>由于学校的情况，我在日常生活中更多使用 Tencent QQ，也加入了很多的 QQ 群。有老师建立的学术交流群，也有一群相同爱好的人组成的兴趣群。 这些群之中有不少</description>
     </item>
     
     <item>
       <title>我所读过的一些刘慈欣的作品</title>
-      <link>http://localhost:1313/post/2019-02-11-%E6%88%91%E7%9A%84%E7%A7%91%E5%B9%BB%E6%97%85%E7%A8%8B/</link>
+      <link>https://chuanbohua.github.io/post/2019-02-11-%E6%88%91%E7%9A%84%E7%A7%91%E5%B9%BB%E6%97%85%E7%A8%8B/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2019-02-11-%E6%88%91%E7%9A%84%E7%A7%91%E5%B9%BB%E6%97%85%E7%A8%8B/</guid>
+      <guid>https://chuanbohua.github.io/post/2019-02-11-%E6%88%91%E7%9A%84%E7%A7%91%E5%B9%BB%E6%97%85%E7%A8%8B/</guid>
       <description>前言 The vast ocean of stars can always carry our infinite imagination. 浩瀚的星空永远是我们无穷的想象力的归宿。 —— 刘慈欣，于克拉克想象力社会贡献奖颁奖仪式 正如 2006 年，刘慈欣作品《地球往事</description>
     </item>
     
     <item>
       <title>Hahn-Banach 定理证明</title>
-      <link>http://localhost:1313/post/2019-02-10-hahn-banach-theorem-%E8%AF%81%E6%98%8E/</link>
+      <link>https://chuanbohua.github.io/post/2019-02-10-hahn-banach-theorem-%E8%AF%81%E6%98%8E/</link>
       <pubDate>Sun, 10 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2019-02-10-hahn-banach-theorem-%E8%AF%81%E6%98%8E/</guid>
+      <guid>https://chuanbohua.github.io/post/2019-02-10-hahn-banach-theorem-%E8%AF%81%E6%98%8E/</guid>
       <description>过年在家出于兴趣阅读了一些金融相关的书籍，其中提到了很多数学原理，作为一个数学系的学生，我觉得非常的有趣，感受到了数学在真实生活中的应用。 在</description>
     </item>
     
     <item>
       <title>南方科技大学化梦媛课题组招生</title>
-      <link>http://localhost:1313/post/2019-02-08-%E5%8D%97%E6%96%B9%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6%E5%8C%96%E6%A2%A6%E5%AA%9B%E8%AF%BE%E9%A2%98%E7%BB%84%E6%8B%9B%E7%94%9F/</link>
+      <link>https://chuanbohua.github.io/post/2019-02-08-%E5%8D%97%E6%96%B9%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6%E5%8C%96%E6%A2%A6%E5%AA%9B%E8%AF%BE%E9%A2%98%E7%BB%84%E6%8B%9B%E7%94%9F/</link>
       <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2019-02-08-%E5%8D%97%E6%96%B9%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6%E5%8C%96%E6%A2%A6%E5%AA%9B%E8%AF%BE%E9%A2%98%E7%BB%84%E6%8B%9B%E7%94%9F/</guid>
+      <guid>https://chuanbohua.github.io/post/2019-02-08-%E5%8D%97%E6%96%B9%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6%E5%8C%96%E6%A2%A6%E5%AA%9B%E8%AF%BE%E9%A2%98%E7%BB%84%E6%8B%9B%E7%94%9F/</guid>
       <description>学校简介 南方科技大学（简称南科大）是深圳在中国高等教育改革发展的宏观背景下，创建的一所高起点、高定位的公办创新型大学，它肩负着为我国高等教育</description>
     </item>
     
     <item>
       <title>2019 MCM/ICM 总结</title>
-      <link>http://localhost:1313/post/2019-01-29-2019-mcmicm-summary/</link>
+      <link>https://chuanbohua.github.io/post/2019-01-29-2019-mcmicm-summary/</link>
       <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2019-01-29-2019-mcmicm-summary/</guid>
+      <guid>https://chuanbohua.github.io/post/2019-01-29-2019-mcmicm-summary/</guid>
       <description>2019 MCM/ICM 于 2019.1.26 开始、2019.1.29结束，四天四夜的建模比赛给我和我的队友都留下了很多回忆。在此次建模竞赛之前，我参加过一次 MCM/ICM、一次</description>
     </item>
     
     <item>
       <title>2018 年我听的一些歌</title>
-      <link>http://localhost:1313/post/2019-01-25-2018-%E5%B9%B4%E6%88%91%E5%96%9C%E6%AC%A2%E7%9A%84%E6%AD%8C/</link>
+      <link>https://chuanbohua.github.io/post/2019-01-25-2018-%E5%B9%B4%E6%88%91%E5%96%9C%E6%AC%A2%E7%9A%84%E6%AD%8C/</link>
       <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2019-01-25-2018-%E5%B9%B4%E6%88%91%E5%96%9C%E6%AC%A2%E7%9A%84%E6%AD%8C/</guid>
+      <guid>https://chuanbohua.github.io/post/2019-01-25-2018-%E5%B9%B4%E6%88%91%E5%96%9C%E6%AC%A2%E7%9A%84%E6%AD%8C/</guid>
       <description>2018 年就这样过去了，在这一年里，发生了很多的事情。有值得纪念的，有不愿回想的，有些在我十几年的成长中可以称为里程碑，剩下的很多是简单、重复又无</description>
     </item>
     
     <item>
       <title>Matlab 实现几种常用插值法</title>
-      <link>http://localhost:1313/post/2018-11-02-matlab-%E5%AE%9E%E7%8E%B0%E6%8F%92%E5%80%BC%E6%B3%95%E4%B8%8E%E5%87%BD%E6%95%B0%E9%80%BC%E8%BF%91/</link>
+      <link>https://chuanbohua.github.io/post/2018-11-02-matlab-%E5%AE%9E%E7%8E%B0%E6%8F%92%E5%80%BC%E6%B3%95%E4%B8%8E%E5%87%BD%E6%95%B0%E9%80%BC%E8%BF%91/</link>
       <pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2018-11-02-matlab-%E5%AE%9E%E7%8E%B0%E6%8F%92%E5%80%BC%E6%B3%95%E4%B8%8E%E5%87%BD%E6%95%B0%E9%80%BC%E8%BF%91/</guid>
+      <guid>https://chuanbohua.github.io/post/2018-11-02-matlab-%E5%AE%9E%E7%8E%B0%E6%8F%92%E5%80%BC%E6%B3%95%E4%B8%8E%E5%87%BD%E6%95%B0%E9%80%BC%E8%BF%91/</guid>
       <description>插值法 在数值算例中有广泛的应用。 插值的作法，很直觀地來講，就是，(1) 先從表列值來獲得函數 f(x)，再 (2) 用函數 f(x) 求出我們所要的任何特定 x 之 f(x)</description>
     </item>
     
     <item>
       <title>Matlab 实现解线性方程组的几类直接法</title>
-      <link>http://localhost:1313/post/2018-10-12-matlab-%E5%AE%9E%E7%8E%B0%E8%A7%A3%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E7%9A%84%E5%87%A0%E7%B1%BB%E7%9B%B4%E6%8E%A5%E6%96%B9%E6%B3%95/</link>
+      <link>https://chuanbohua.github.io/post/2018-10-12-matlab-%E5%AE%9E%E7%8E%B0%E8%A7%A3%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E7%9A%84%E5%87%A0%E7%B1%BB%E7%9B%B4%E6%8E%A5%E6%96%B9%E6%B3%95/</link>
       <pubDate>Fri, 12 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2018-10-12-matlab-%E5%AE%9E%E7%8E%B0%E8%A7%A3%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E7%9A%84%E5%87%A0%E7%B1%BB%E7%9B%B4%E6%8E%A5%E6%96%B9%E6%B3%95/</guid>
+      <guid>https://chuanbohua.github.io/post/2018-10-12-matlab-%E5%AE%9E%E7%8E%B0%E8%A7%A3%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E7%9A%84%E5%87%A0%E7%B1%BB%E7%9B%B4%E6%8E%A5%E6%96%B9%E6%B3%95/</guid>
       <description>问题 求解线性方程组 $$ \left{ \begin{array}{c} a_{11}x_1+a_{12}x_2+&amp;hellip;+a_{1n}x_n=b_1 \ a_{21}x_1+a_{22}x_2+&amp;hellip;+a_{2n}x_n=b_2 \ &amp;hellip; \ a_{n1}x_1+a_{n2}x_2+&amp;hellip;+a_{nn}x_n=b_n \end{array} \right. $$ 其中方程组系数 $a_{ij}(i,j=1,2,3,&amp;hellip;,n)$ 与右端项 $b_i(i=1,2,3,&amp;hellip;,n)$ 均为实数，且 $b_1,b_2,&amp;hellip;,b_n$ 不全为零，上述方程组简记为 $$ Ax=b $$ 其中 $$ A=\begin{bmatrix} a_{11} &amp;amp; a_{12} &amp;amp; &amp;hellip; &amp;amp; a_{1n} \</description>
     </item>
     
     <item>
       <title>爬取 Vol.moe 的漫画资源</title>
-      <link>http://localhost:1313/post/2018-07-27-%E4%BD%BF%E7%94%A8-python-%E7%88%AC%E5%8F%96-vol.moe-%E6%BC%AB%E7%94%BB/</link>
+      <link>https://chuanbohua.github.io/post/2018-07-27-%E4%BD%BF%E7%94%A8-python-%E7%88%AC%E5%8F%96-vol.moe-%E6%BC%AB%E7%94%BB/</link>
       <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2018-07-27-%E4%BD%BF%E7%94%A8-python-%E7%88%AC%E5%8F%96-vol.moe-%E6%BC%AB%E7%94%BB/</guid>
+      <guid>https://chuanbohua.github.io/post/2018-07-27-%E4%BD%BF%E7%94%A8-python-%E7%88%AC%E5%8F%96-vol.moe-%E6%BC%AB%E7%94%BB/</guid>
       <description>2019.03 Update: Vol.moe 现已经提供批量下载功能。此文完结。 原文 这个工具实际上是一个非常简单的东西，但是由于网站确实很不错，所以写在这里作为一个推荐。 之前在寻找</description>
     </item>
     
     <item>
       <title>数据库系统概论复习笔记</title>
-      <link>http://localhost:1313/post/2018-07-13-%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</link>
+      <link>https://chuanbohua.github.io/post/2018-07-13-%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2018-07-13-%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://chuanbohua.github.io/post/2018-07-13-%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</guid>
       <description>前言 这学期参选了数据库系统概论这门课程，虽然最后拿到了还行的成绩，但是因为复习仓促跳过了很多知识点。 由于 9 月要参加计算机四级(数据库)的考试</description>
     </item>
     
     <item>
       <title>Windows 常用软件记录</title>
-      <link>http://localhost:1313/post/2018-05-05-windows-app/</link>
+      <link>https://chuanbohua.github.io/post/2018-05-05-windows-app/</link>
       <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2018-05-05-windows-app/</guid>
+      <guid>https://chuanbohua.github.io/post/2018-05-05-windows-app/</guid>
       <description>Linux 真的是越用越喜欢，或许过一阵子会转战 Linux，在此之前我先把自己 Win 平台上常用的软件列出来，以作备份，也供未来参考。 由于软件的替换与不断地</description>
     </item>
     
     <item>
       <title>关于 Photoshop 的学习</title>
-      <link>http://localhost:1313/post/2018-04-03-%E5%85%B3%E4%BA%8E-photoshop-%E7%9A%84%E5%AD%A6%E4%B9%A0/</link>
+      <link>https://chuanbohua.github.io/post/2018-04-03-%E5%85%B3%E4%BA%8E-photoshop-%E7%9A%84%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2018-04-03-%E5%85%B3%E4%BA%8E-photoshop-%E7%9A%84%E5%AD%A6%E4%B9%A0/</guid>
+      <guid>https://chuanbohua.github.io/post/2018-04-03-%E5%85%B3%E4%BA%8E-photoshop-%E7%9A%84%E5%AD%A6%E4%B9%A0/</guid>
       <description>我接触 Photoshop (PS) 大概已经一年了，在此期间断断续续地学了一些东西，也教了一些身边的朋友去使用 PS。为了方便别人和自己，之前写过一些教程，不过效果并不</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://chuanbohua.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://chuanbohua.github.io/about/</guid>
       <description>About  Experience does for the soul, education does for the mind.
  Hello, here is Chuanbo HUA.
 I am now an undergraduate student, majoring in Information &amp;amp; Computing Science (HIT) and Computer Science &amp;amp; Engineering (POSTECH). I am going to enroll in KAIST, majoring in Industry &amp;amp; System Engineering, focusing on Graphic Neural Network Optimization.
