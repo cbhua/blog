@@ -4,27 +4,55 @@
   
   <url>
     <loc>https://chuanbohua.github.io/categories/</loc>
-    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://chuanbohua.github.io/categories/dairy/</loc>
-    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
+    <loc>https://chuanbohua.github.io/tags/linux/</loc>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://chuanbohua.github.io/post/</loc>
-    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/tags/</loc>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://chuanbohua.github.io/</loc>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/categories/tutorial/</loc>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/post/2020-04-21-zerotier/</loc>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/categories/dairy/</loc>
     <lastmod>2020-04-15T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -39,13 +67,6 @@
   
   <url>
     <loc>https://chuanbohua.github.io/tags/life/</loc>
-    <lastmod>2020-04-07T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chuanbohua.github.io/tags/</loc>
     <lastmod>2020-04-07T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -87,21 +108,7 @@
   </url>
   
   <url>
-    <loc>https://chuanbohua.github.io/tags/linux/</loc>
-    <lastmod>2020-02-15T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://chuanbohua.github.io/tags/research/</loc>
-    <lastmod>2020-02-15T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chuanbohua.github.io/categories/tutorial/</loc>
     <lastmod>2020-02-15T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

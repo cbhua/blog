@@ -42,7 +42,7 @@
 <meta itemprop="description" content="在 Linux 平台上运行一个具有 Forge 框架的 Minecraft 服务器供朋友之间联机。">
 <meta itemprop="datePublished" content="2020-02-15T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-02-15T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="2995">
+<meta itemprop="wordCount" content="3171">
 
 
 
@@ -176,7 +176,7 @@
             <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/essay/" class="category-list-link">essay</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/lecture/" class="category-list-link">lecture</a><span class="category-list-count">13</span></li>
             <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/read/" class="category-list-link">read</a><span class="category-list-count">5</span></li>
-            <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/tutorial/" class="category-list-link">tutorial</a><span class="category-list-count">6</span></li>
+            <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/tutorial/" class="category-list-link">tutorial</a><span class="category-list-count">7</span></li>
         </ul>
     </div>
 </div>
@@ -185,6 +185,16 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget-body">
         <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li class="recent-post-li">
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chuanbohua.github.io/post/2020-04-21-zerotier/" class="title">ZeroTier 建立虚拟局域网</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-04-21 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-21</time>
+                    </p>
+                </div>
+            </li>
             <li class="recent-post-li">
                 <div class="item-inner">
                     <p class="item-title">
@@ -219,16 +229,6 @@
                 <div class="item-inner">
                     <p class="item-title">
                         <a href="https://chuanbohua.github.io/post/2020-03-10-kdd2019/" class="title">2019 KDD Recommendation System Review</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-02-15 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-02-15</time>
-                    </p>
-                </div>
-            </li>
-            <li class="recent-post-li">
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://chuanbohua.github.io/post/2020-02-15-minecraft-server/" class="title">在 Linux 平台创建 Minecraft Forge 服务器</a>
                     </p>
                     <p class="item-date">
                         <time datetime="2020-02-15 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-02-15</time>
@@ -284,8 +284,8 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/post/2020-02-15-minecraft-server/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 2995words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 6minutes </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 3171words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 7minutes </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
@@ -307,6 +307,7 @@
 <li>阅读者有朋友一起玩 Minecraft，鸽了的话你这个服务器也就白搭（两种意思）；</li>
 </ul>
 <p>那我们开始。</p>
+<p><strong>2020.02.18 Update</strong> - 在联机尝试了两天之后，发现阿里云的服务器的算力实在不足（不得不说我用阿里云搞联机一次没成过，都是卡在性能上），所以拿手里的开发笔记本来当服务器。所以说如果是和朋友联机，为了游戏体验，如果有一台多余的电脑，让它做服务器是最好了。过程上只需要在下面教程顺利完成之后在家里路由器添加一个虚拟服务器转发 25565 端口到你的开服电脑上，之后把家里的公网 IP 发个同学。</p>
 <h2 id="准备-minecraft-server-本体">准备 Minecraft Server 本体</h2>
 <p><strong>N.B.</strong> <em>步骤 2 准备 Minecraft Server 本体</em> 和 <em>步骤 3 加入 Forge 框架</em> 可以不在服务器中进行，可以选择在 Windows 下完成之后通过 ftp 上传。在这里<strong>我更加推荐在 Windows 下进行这一部分</strong>。</p>
 <p>你可以在 <a href="https://mirror.zerodream.net/">Sakura’s Mirror by Akkariin</a> 这个网站找到各种各样的 Minecraft Server 镜像源，在这里我选用官方的原版服务器：选择右上角“选择分类”、Minecraft Server、选择需要的版本进行下载。</p>
