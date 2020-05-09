@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        Linux 备忘录 - Timegg
+      </title>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="记录我使用 Ubuntu 和 CentOS 做过的一些内容和踩过的坑，以方便之后查阅。" />
+  <meta name="generator" content="Hugo 0.69.0 with theme pure" />
+  <title>Linux 备忘录 - Timegg</title>
+  
+  
+  <link rel="stylesheet" href="https://chuanbohua.github.io/css/style.min.5b4c067c98e322626060c3037927c72fec8325ef47442db2f15558981536a23e.css">
+  
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+  <meta property="og:title" content="Linux 备忘录" />
+<meta property="og:description" content="记录我使用 Ubuntu 和 CentOS 做过的一些内容和踩过的坑，以方便之后查阅。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chuanbohua.github.io/post/2020-04-28-linux-%E5%A4%87%E5%BF%98%E5%BD%95/" />
+<meta property="article:published_time" content="2020-04-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-28T00:00:00+00:00" />
+<meta itemprop="name" content="Linux 备忘录">
+<meta itemprop="description" content="记录我使用 Ubuntu 和 CentOS 做过的一些内容和踩过的坑，以方便之后查阅。">
+<meta itemprop="datePublished" content="2020-04-28T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-04-28T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="733">
+
+
+
+<meta itemprop="keywords" content="Linux," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux 备忘录"/>
+<meta name="twitter:description" content="记录我使用 Ubuntu 和 CentOS 做过的一些内容和踩过的坑，以方便之后查阅。"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+
+  
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?329fd26ee41f86707c3f7e99ff3405c8";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</head>
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://timegg.top/" target="_blank">
+            <img class="img-circle img-rotate" src="https://chuanbohua.github.io/avatar.jpg" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Chuanbo HUA</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">HIT, KAIST</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Daejeon, South Korea</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/post/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p><img id='board-img' src="https://chuanbohua.github.io/img/favicon.png"  alt="logo-timegg" /><br>Timegg has been renewed at 2020.04. Welcome!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> Categories</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/dairy/" class="category-list-link">dairy</a><span class="category-list-count">7</span></li>
+            <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/essay/" class="category-list-link">essay</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/lecture/" class="category-list-link">lecture</a><span class="category-list-count">13</span></li>
+            <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/read/" class="category-list-link">read</a><span class="category-list-count">5</span></li>
+            <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/store/" class="category-list-link">store</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/tutorial/" class="category-list-link">tutorial</a><span class="category-list-count">7</span></li>
+        </ul>
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li class="recent-post-li">
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chuanbohua.github.io/post/2020-05-09-%E9%94%AE%E7%9B%98/" class="title">国内老土键盘 Niz plum</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-09 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-09</time>
+                    </p>
+                </div>
+            </li>
+            <li class="recent-post-li">
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chuanbohua.github.io/post/2020-05-07-%E6%9C%9F%E5%BE%85/" class="title">生活需要一些期待</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-07 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-07</time>
+                    </p>
+                </div>
+            </li>
+            <li class="recent-post-li">
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chuanbohua.github.io/post/2020-04-28-linux-%E5%A4%87%E5%BF%98%E5%BD%95/" class="title">Linux 备忘录</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-04-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-28</time>
+                    </p>
+                </div>
+            </li>
+            <li class="recent-post-li">
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chuanbohua.github.io/post/2020-04-21-zerotier/" class="title">ZeroTier 建立虚拟局域网</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-04-21 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-21</time>
+                    </p>
+                </div>
+            </li>
+            <li class="recent-post-li">
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chuanbohua.github.io/post/2020-04-15-%E6%9B%B4%E6%96%B0%E6%8A%A5%E5%91%8A/" class="title">更新报告 Update Reports</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-04-15 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-15</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/post/2020-04-28-linux-%E5%A4%87%E5%BF%98%E5%BD%95/"
+    >Linux 备忘录</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://chuanbohua.github.io/post/2020-04-28-linux-%E5%A4%87%E5%BF%98%E5%BD%95/" class="article-date">
+  <time datetime="2020-04-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-28</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/dairy/"> Dairy </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/linux/"> Linux </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/post/2020-04-28-linux-%E5%A4%87%E5%BF%98%E5%BD%95/#comments"
+            class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 733words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <p>我的手上现在有四台电脑：</p>
+<ul>
+<li>主力日常 Lenovo idea pad 14&rsquo;，平台为 Windows；</li>
+<li>主力开发 Lenovo Thinkpad x260，平台为 Ubuntu 18.04 LTS；</li>
+<li>一个配置不太高的台式机，作为实验平台，平台为 Ubuntu 20.04（没错，头铁）；</li>
+<li>Ali Cloud ECS 1核 2G，作为实验平台和托管平台，平台为 CentOS 7；</li>
+</ul>
+<p>作为一个有电子洁癖的人，我在做一些不太熟悉的开发前，会选择先在实验平台做实验，等摸索得差不多了，能够整体掌握的时候再转到主力开发机进行下一步的工作。也有时候开发环境出了一些问题，必须要重新安装镜像。</p>
+<p>在这些情况下常常面临着重复操作（即使是备份镜像），有时候时间比较长会忘记操作的方法。所以简单记一些功能的实现方法，之后不用每次都 Google。</p>
+<h2 id="解决方案">解决方案</h2>
+<h3 id="ssr-的解决方案">SSR 的解决方案</h3>
+<p>下载 electron SSR deb 自行安装；配置 electron SSR 默认端口；<code>Settings - Network</code> 设置 Proxy 为手动，参数为：</p>
+<pre><code>http proxy: http://127.0.0.1, port: 12333
+https proxy: https://127.0.0.1, port: 12333
+socks host: 127.0.0.1, port: 1080
+ignore host: localhost, 127.0.0.1/8, ::1
+</code></pre>
+<p><strong>N.B.</strong> 推荐使用 Chromium，一般不需要再手动配置浏览器 Proxy。</p>
+<h3 id="装字体">装字体</h3>
+<p>直接装给系统，用户共享，自己电脑就不纠结安装给个别用户了。流程：把字体拷贝到 usr 下特定目录；刷新字体缓存即可。</p>
+<pre><code class="language-Githu">sudo mkdir -p /usr/share/fonts/custom
+sudo mv *.ttf /usr/share/fonts/custom
+sudo chmod 744 /usr/share/fonts/custom/*.ttf
+
+sudo mkfontscale
+sudo mkfontdir
+sudo fc-cache -fv
+</code></pre>
+<h2 id="避免踩坑--小问题">避免踩坑 &amp; 小问题</h2>
+<h3 id="pytorch-安装的问题">Pytorch 安装的问题</h3>
+<p>经测试，清华的源最快，推荐使用 <code>pip3 install torch --user -i https://pypi.tuna.tsinghua.edu.cn/simple</code> 来安装 torch；</p>
+<p>不推荐和 torchvision 一起安装（指放在一个指令行里安装），偶尔会出问题。</p>
+<h3 id="使用-pip-安装包">使用 pip 安装包</h3>
+<p>都记着加 <code>--user</code> ，搞不好和 root 的包版本冲突搞得各种问题。</p>
+<h3 id="pylint-误报-module-torch-has-no--member-">pylint 误报 <code>Module torch has no ... member ...</code></h3>
+<p>VS Code 的 Settings.json 中添加 <code>&quot;python.linting.pylintArgs&quot;: [&quot;–unsafe-load-any-extension=xxx&quot;]</code> 即可。</p>
+<h3 id="查看文件数量--查看目录数量">查看文件数量 &amp; 查看目录数量</h3>
+<p><code>ls /data/ -l | grep &quot;^-&quot; | wc -l</code> &amp; <code>ls /data/ -l | grep &quot;^d&quot; | wc -l</code></p>
+<p><strong>解释</strong>：<code>ls -l</code> 把所有文件和目录按行输出，<code>grep &quot;^-&quot;</code> 过滤出文件 <code>grep &quot;^d&quot;</code> 过滤出目录，<code>wc -l</code> 统计输出的行数，达到统计文件数量的目的。</p>
+<hr>
+<p>[working]</p>
+
+    </div>
+    <div class="article-footer">
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://chuanbohua.github.io/post/2020-04-21-zerotier/" title="ZeroTier 建立虚拟局域网"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            <li class="next">
+                <a href="https://chuanbohua.github.io/post/2020-05-07-%E6%9C%9F%E5%BE%85/"
+                    title="生活需要一些期待"><span>Newer&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="Catalogue" role="button">
+                    <span>[&nbsp;</span><span>Catalogue</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/chuanbohua" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://chuanbohua.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+    <li><a href="https://twitter.com/huachuanbo" target="_blank" title="twitter" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-twitter"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2017  -
+    2020 Timegg
+    
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://chuanbohua.github.io/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://chuanbohua.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            ROOT_URL: 'https:\/\/chuanbohua.github.io\/',
+            CONTENT_URL: 'https:\/\/chuanbohua.github.io\/\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://chuanbohua.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-164502321-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

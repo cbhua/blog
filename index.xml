@@ -5,10 +5,37 @@
     <link>https://chuanbohua.github.io/</link>
     <description>Recent content on Timegg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 21 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://chuanbohua.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>国内老土键盘 Niz plum</title>
+      <link>https://chuanbohua.github.io/post/2020-05-09-%E9%94%AE%E7%9B%98/</link>
+      <pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://chuanbohua.github.io/post/2020-05-09-%E9%94%AE%E7%9B%98/</guid>
+      <description>年轻人不要碰的东西系列：国外老土键盘、塑料玩具小人、暖儿罩子、大功率电暖风、截图神器、电疗入门教程……。 现在看来，上面的东西里面似乎只有大功</description>
+    </item>
+    
+    <item>
+      <title>生活需要一些期待</title>
+      <link>https://chuanbohua.github.io/post/2020-05-07-%E6%9C%9F%E5%BE%85/</link>
+      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://chuanbohua.github.io/post/2020-05-07-%E6%9C%9F%E5%BE%85/</guid>
+      <description>在这个时代，希望是和钻石一样稀有的东西。 流浪地球中这么说。 虽然在现实生活中我们并没有面临那么严峻的未来，但是存有一些对未来的期待总是一件有价</description>
+    </item>
+    
+    <item>
+      <title>Linux 备忘录</title>
+      <link>https://chuanbohua.github.io/post/2020-04-28-linux-%E5%A4%87%E5%BF%98%E5%BD%95/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://chuanbohua.github.io/post/2020-04-28-linux-%E5%A4%87%E5%BF%98%E5%BD%95/</guid>
+      <description>我的手上现在有四台电脑： 主力日常 Lenovo idea pad 14&amp;rsquo;，平台为 Windows； 主力开发 Lenovo Thinkpad x260，平台为 Ubuntu 18.04 LTS； 一个配置不太高的台式</description>
+    </item>
     
     <item>
       <title>ZeroTier 建立虚拟局域网</title>
@@ -161,33 +188,6 @@
       
       <guid>https://chuanbohua.github.io/post/2019-05-09-%E4%BF%A1%E6%81%AF%E8%AE%BA%E5%AE%9E%E9%AA%8C/</guid>
       <description>本学期专业课程中有信息论这一门课程，在此之前我学习神经网络的过程中了解了一些与信息论相关的内容，也很开心能开这门课。在这学期中有一些信息论的</description>
-    </item>
-    
-    <item>
-      <title>浅谈 Procreate</title>
-      <link>https://chuanbohua.github.io/post/2019-05-03-%E6%B5%85%E8%B0%88-procreate/</link>
-      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://chuanbohua.github.io/post/2019-05-03-%E6%B5%85%E8%B0%88-procreate/</guid>
-      <description>Procreate® is the most powerful and intuitive digital illustration app available for iPad. It&amp;rsquo;s packed with features artists love, and it&amp;rsquo;s an iPad exclusive. 在 iPad 上进行画画，被推荐最多的软件就是 Procreate。作为一个移动端的创</description>
-    </item>
-    
-    <item>
-      <title>在 Linux 平台创建 DST 多人服务器</title>
-      <link>https://chuanbohua.github.io/post/2019-04-15-centos-%E6%90%AD%E5%BB%BA%E9%A5%A5%E8%8D%92%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
-      <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://chuanbohua.github.io/post/2019-04-15-centos-%E6%90%AD%E5%BB%BA%E9%A5%A5%E8%8D%92%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
-      <description>在此之前我在阿里云服务器上托管了我们的群机器人，这些天突然想到可以使用服务器剩余的算力进行开服，和小伙伴们一起玩一些游戏。 最先想到的就是《饥</description>
-    </item>
-    
-    <item>
-      <title>在 Linux 平台创建 Tencent QQ 机器人</title>
-      <link>https://chuanbohua.github.io/post/2019-03-16-tencent-robot/</link>
-      <pubDate>Sat, 16 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://chuanbohua.github.io/post/2019-03-16-tencent-robot/</guid>
-      <description>由于学校的情况，我在日常生活中更多使用 Tencent QQ，也加入了很多的 QQ 群。有老师建立的学术交流群，也有一群相同爱好的人组成的兴趣群。 这些群之中有不少</description>
     </item>
     
   </channel>
