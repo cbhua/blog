@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        拓扑学笔记 - Timegg
+        PyTorch 针对 IDX 类型数据文件创建 Dataset - Timegg
       </title>
     <head>
   <meta charset="utf-8">
@@ -23,32 +23,32 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <meta name="description" content="大三下学期课程拓扑学的相关笔记。" />
+  <meta name="description" content="创建 dataset 类解析 IDX 文件以供 PyTorch 模型使用。" />
   <meta name="generator" content="Hugo 0.69.0 with theme pure" />
-  <title>拓扑学笔记 - Timegg</title>
+  <title>PyTorch 针对 IDX 类型数据文件创建 Dataset - Timegg</title>
   
   
   <link rel="stylesheet" href="https://chuanbohua.github.io/css/style.min.5b4c067c98e322626060c3037927c72fec8325ef47442db2f15558981536a23e.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-  <meta property="og:title" content="拓扑学笔记" />
-<meta property="og:description" content="大三下学期课程拓扑学的相关笔记。" />
+  <meta property="og:title" content="PyTorch 针对 IDX 类型数据文件创建 Dataset" />
+<meta property="og:description" content="创建 dataset 类解析 IDX 文件以供 PyTorch 模型使用。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://chuanbohua.github.io/post/2019-08-14-%E6%8B%93%E6%89%91%E5%AD%A6%E7%AC%94%E8%AE%B0/" />
-<meta property="article:published_time" content="2019-08-04T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-08-04T00:00:00+00:00" />
-<meta itemprop="name" content="拓扑学笔记">
-<meta itemprop="description" content="大三下学期课程拓扑学的相关笔记。">
-<meta itemprop="datePublished" content="2019-08-04T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2019-08-04T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="279">
+<meta property="og:url" content="https://chuanbohua.github.io/post/2020-05-11-dataset/" />
+<meta property="article:published_time" content="2020-05-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-05-11T00:00:00+00:00" />
+<meta itemprop="name" content="PyTorch 针对 IDX 类型数据文件创建 Dataset">
+<meta itemprop="description" content="创建 dataset 类解析 IDX 文件以供 PyTorch 模型使用。">
+<meta itemprop="datePublished" content="2020-05-11T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-05-11T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1622">
 
 
 
-<meta itemprop="keywords" content="Math," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="拓扑学笔记"/>
-<meta name="twitter:description" content="大三下学期课程拓扑学的相关笔记。"/>
+<meta itemprop="keywords" content="Python,ML," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="PyTorch 针对 IDX 类型数据文件创建 Dataset"/>
+<meta name="twitter:description" content="创建 dataset 类解析 IDX 文件以供 PyTorch 模型使用。"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -260,8 +260,8 @@
       <h1 itemprop="name">
   <a
     class="article-title"
-    href="/post/2019-08-14-%E6%8B%93%E6%89%91%E5%AD%A6%E7%AC%94%E8%AE%B0/"
-    >拓扑学笔记</a
+    href="/post/2020-05-11-dataset/"
+    >PyTorch 针对 IDX 类型数据文件创建 Dataset</a
   >
 </h1>
 
@@ -269,37 +269,227 @@
         
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://chuanbohua.github.io/post/2019-08-14-%E6%8B%93%E6%89%91%E5%AD%A6%E7%AC%94%E8%AE%B0/" class="article-date">
-  <time datetime="2019-08-04 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-08-04</time>
+<a href="https://chuanbohua.github.io/post/2020-05-11-dataset/" class="article-date">
+  <time datetime="2020-05-11 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-11</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/lecture/"> Lecture </a>
+  <a class="article-category-link" href="/categories/tutorial/"> Tutorial </a>
 </span>  
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/math/"> Math </a>
+    <a class="article-tag-link" href="/tags/python/"> Python </a>
+    <a class="article-tag-link" href="/tags/ml/"> ML </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/post/2019-08-14-%E6%8B%93%E6%89%91%E5%AD%A6%E7%AC%94%E8%AE%B0/#comments"
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/post/2020-05-11-dataset/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 279words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 1622words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 4minutes </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <p>Topology, I think it is the top course in the field of Algebra. “Top” not only means that it can be widely used in many aspects, including the finance, the computer network, etc but is really hard to learn and understand because it is too abstract.</p>
-<p>But it does not matter that topology is an interesting course. For example, topology space is always called “Plasticine Space” which means it can be stretched and reshaped to any other “shapes” with the properties never changed. Just like the plasticine which we played in the early ages.</p>
-<p>The key to comprehend topology is remembering the defines well. Also, understanding them is also important. Only if you can repeat these defines without thinking and understand what it is can you get to master some really hard theories without obstacles.</p>
-<p>It may be a hard time to remember all the defines because the defines in the latter part always rely on the fore ones. And it will spend a really long time to achieve the level of recalling a define when you hear the name.</p>
-<p>So, here is a summary of various defines in topology. This would be useful to remember them and hope this will be useful for your revision.</p>
-<p>By away, as for the theories of topology, the handout we used is written by a really excellent professor and I am not sure can I upload his handout here. So, please reference the textbook more and master the theories there.</p>
-<hr>
-<p><a href="https://github.com/chuanbohua/note/blob/master/Topology/Topology%20Note%20Definitions.pdf">Topology Note Definitions.pdf</a></p>
-<hr>
-<p><a href="https://github.com/chuanbohua/note/blob/master/Topology/Topology%20Lecture%20.pdf">Topology Lecture .pdf</a></p>
-<hr>
+      <p>众所周知的 MNIST 数据集的源文件就是以 IDX 数据形式存放的，其文件名为：</p>
+<ul>
+<li><code>train-images-idx3-ubyte</code></li>
+<li><code>train-labels-idx1-ubyte</code></li>
+<li><code>t10k-images-idx3-ubyte</code></li>
+<li><code>t10k-labels-idx1-ubyte</code></li>
+</ul>
+<p>MINST 数据集的<a href="http://yann.lecun.com/exdb/mnist/">官方网页</a>有写明其 IDX3 文件和 IDX1 文件的具体内部结构。但是大家一般使用 MNIST 数据集都是直接用 PyTorch 提供的 MNIST Class，似乎没有很多人研究直接从 IDX3 和 IDX1 文件中读取数据。</p>
+<p>从源文件读数据的方法在一定情况下是需要的，毕竟也有很多数据集是以 IDX 类型文件提供的。这里构建了一个（个人感觉）较为完备和易用的方法来读数据。</p>
+<p><strong>N.B.</strong> 太长不看可以直接拉到最后。</p>
+<h2 id="正文">正文</h2>
+<h3 id="idx1-和-idx3-文件结构">IDX1 和 IDX3 文件结构</h3>
+<p>内容结构在上面提到的官方网站写的很清楚了：</p>
+<blockquote>
+<p>The IDX file format is a simple format for vectors and multidimensional matrices of various numerical types.</p>
+<p>The basic format is:</p>
+<p>magic number</p>
+<p>size in dimension 0</p>
+<p>size in dimension 1</p>
+<p>size in dimension 2</p>
+<p>&hellip;</p>
+<p>size in dimension N</p>
+<p>data</p>
+<p>The magic number is an integer (MSB first). The first 2 bytes are always 0.</p>
+<p>The third byte codes the type of the data:</p>
+<p>0x08: unsigned byte</p>
+<p>0x09: signed byte</p>
+<p>0x0B: short (2 bytes)</p>
+<p>0x0C: int (4 bytes)</p>
+<p>0x0D: float (4 bytes)</p>
+<p>0x0E: double (8 bytes)</p>
+<p>The 4-th byte codes the number of dimensions of the vector/matrix: 1 for vectors, 2 for matrices&hellip;.</p>
+<p>The sizes in each dimension are 4-byte integers (MSB first, high endian, like in most non-Intel processors).</p>
+<p>The data is stored like in a C array, i.e. the index in the last dimension changes the fastest.</p>
+</blockquote>
+<p>总结下来就是一个 IDX 文件头部的一些二进制数据说明了这个文件的<em>数据类型</em>、<em>数据量</em>和<em>每个数据的大小</em>，之后每个数据就一个挨一个以二进制数据排列。</p>
+<p>例子：具体到 MNIST 数据集：</p>
+<pre><code>[offset] [type]          [value]          [description]
+0000     32 bit integer  0x00000803(2051) magic number
+0004     32 bit integer  60000            number of images
+0008     32 bit integer  28               number of rows
+0012     32 bit integer  28               number of columns
+0016     unsigned byte   ??               pixel
+0017     unsigned byte   ??               pixel
+........
+xxxx     unsigned byte   ??               pixel
+</code></pre>
+<p>0000 到 0004 位置上的数据是 magic number，也就是说明本数据集的数据类型；</p>
+<p>0005 到 0008 位置上的数据值是这个数据集的数据量，在 MNIST 中的值为 60000，说明这个 MNIST 数据集有 60000 个数据；</p>
+<p>随后 0009 到 0012 和 0013 到 0016 的数据分别指图像的高和宽.</p>
+<p>再往后每个二进制表示一个像素，中间没有隔断，需要自己按照头部数据裁剪。比如这里就可以从 0016 这个二进制数据开始，每 28 * 28 个二进制数据可以转换为一个图片，一直进行下去。</p>
+<p>了解源数据结构之后就容易下手了。</p>
+<h3 id="初始化-dataset-类">初始化 Dataset 类</h3>
+<p>毕竟数据要自己处理成数据集，所以 Dataset 类要继承着 <code>torch.utils.data</code> 的 <code>Dataset</code> 写一个：</p>
+<p>N.B. 这个数据集的类姑且命名为 MNIST</p>
+<pre><code class="language-python">#!/usr/bin/env python3
+# -*- coding:utf-8 -*-
+# author: Chuanbo HUA
+# date: 2020-05-06
+# update: 2020-05-10
+'''
+Data Processing.
+
+Decode IDX files to dataset. 
+- IDX3: images.
+- IDX1: labels.
+'''
+
+from torch.utils import data
+
+
+class MNIST(data.Dataset):
+
+
+    def __init__(self):
+        pass
+    
+    
+    def __getitem__(self, index):
+        pass
+    
+    
+    def __len__(self):
+        pass
+</code></pre>
+<p>之后定义头部数据的 Offset，可以看到 IDX3 的头部是 4 个 int，IDX1 的头部是 2 个 int。这里涉及 <code>struct</code> 的 <code>calcsize</code> 函数，之后裁剪图片数据的时候也会用到，可参考 <a href="https://docs.python.org/3.7/library/struct.html">Python 3.7 Doc 中对 struct 的介绍</a>。这里的含义即为 4 个 int 的二进制大小。</p>
+<pre><code>import struct
+
+self.img_offset = struct.calcsize('&gt;iiii')
+self.label_offset = struct.calcsize('&gt;ii')
+</code></pre>
+<p>然后以二进制读取数据集文件，并获取头部数据。这里 <code>'rb'</code> 指 read &amp; binary。</p>
+<pre><code>bin_data = open(img_path, 'rb').read()
+_, self.num_img, self.num_rows, self.num_cols = struct.unpack_from('&gt;iiii', bin_data, offset=0)
+</code></pre>
+<p>之后就可以开始读图片了。网上很多关于读取 IDX 文件的教程都是包含头部文件一口气读完并写入内存。这样很占用内存和低效。</p>
+<p>根据 PyTorch 的 Dataset 优化规则，我们最好把读文件这样较为消耗算力的操作放在 <code>__getitem__</code> 函数中，而不是在 <code>__init__</code> 函数里面一口气加载完。而且 IDX 二进制读取是调用底层的 C，读的速度非常的快。</p>
+<p>所以说初始化的时候只需要获得一些关键的数据保留在成员变量中即可，主要操作都放在 <code>__getitem__</code> 函数中。</p>
+<p>除了基本的头部数据之外，初始化还储存了几个数据，方便之后 get item 函数调用。这两个 csize 分别是图片和标签的二进制长度，之后读数就按照这个长度依次读就可以。</p>
+<pre><code>self.img_fmt = '&gt;' + str(num_rows * num_cols) + 'B'
+self.img_fmt_csize = struct.calcsize(self.img_fmt)
+
+self.label_fmt = '&gt;B'
+self.label_fmt_csize = struct.calcsize(self.label_fmt)
+</code></pre>
+<h3 id="get-item-函数">Get Item 函数</h3>
+<p>Offset 有了，每个数据的长度有了，那么读第几个数据只要算一算起始位置就可以。</p>
+<p><em>例子</em>：比如要读第 10 个数据，每个数据的二进制长度是 4，算上头部占了 16 个数，那么第 10 个数的位置开始于 16 + 9 * 4 = 52，即 0052 到 0056 这四个二进制数表示第 10 个数据。</p>
+<pre><code>img_data = open(self.img_path, 'rb').read()
+label_data = open(self.label_path, 'rb').read()
+
+# self.img_offset 指的是头文件长度
+img_offset = self.img_offset + self.img_fmt_csize * index
+label_offset = self.label_offset + self.label_fmt_csize * index
+
+img = np.array(struct.unpack_from(self.img_fmt, img_data, img_offset)).reshape((1, 	self.img_rows, self.img_cols))
+label = struct.unpack_from(self.label_fmt, label_data, label_offset)[0]
+</code></pre>
+<h3 id="整合">整合</h3>
+<p>把上面的整合起来，加上 input 和 output 就是一个效率不错的 Dataset 类了。</p>
+<pre><code>#!/usr/bin/env python3
+# -*- coding:utf-8 -*-
+# author: Chuanbo HUA
+# date: 2020-05-06
+# update: 2020-05-10
+'''
+Data Processing.
+Decode IDX files to dataset. 
+- IDX3: images.
+- IDX1: labels.
+'''
+
+import numpy as np
+import struct
+from torch.utils import data
+from torchvision import transforms
+
+
+class NetFlowTrain(data.Dataset):
+    '''
+    Dataset of train set.
+    The percentage of train set is 70%.
+    '''
+
+
+    def __init__(self, img_path, label_path):
+        '''
+        Args:
+            img_path: str=...
+            label_path: str=...
+        '''
+
+        self.img_path = img_path
+        self.label_path = label_path
+
+        self.img_offset = struct.calcsize('&gt;iiii')
+        self.label_offset = struct.calcsize('&gt;ii')
+
+        bin_data = open(img_path, 'rb').read()
+        _, self.len, self.img_rows, self.img_cols = \
+            struct.unpack_from('&gt;iiii', bin_data, 0)
+
+        self.img_fmt = '&gt;' + str(num_rows * num_cols) + 'B'
+        self.img_fmt_csize = struct.calcsize(self.img_fmt)
+
+        self.label_fmt = '&gt;B'
+        self.label_fmt_csize = struct.calcsize(self.label_fmt)
+
+        print(&quot;Create train dataset successfully. \n    -&gt; Number of image: %d \n    -&gt; Size of image: %d * %d\n&quot; % (self.len, num_cols, num_rows))
+
+
+    def __getitem__(self, index):
+        '''
+        Returns:
+            Turple: (image: array, label: int).
+        '''
+        
+        img_data = open(self.img_path, 'rb').read()
+        label_data = open(self.label_path, 'rb').read()
+
+        img_offset = self.img_offset + self.img_fmt_csize * index
+        label_offset = self.label_offset + self.label_fmt_csize * index
+
+        img = np.array(struct.unpack_from\
+            (self.img_fmt, img_data, img_offset)).\
+            reshape((1, self.img_rows, self.img_cols))
+        label = struct.unpack_from(self.label_fmt, label_data, label_offset)[0]
+
+        return img, label
+
+
+    def __len__(self):
+        '''
+        Return:
+            Int: the length of dataset.
+        '''
+
+        return self.len
+</code></pre>
+<p>其他的操作和普通数据集处理类似，如归一化等等。</p>
 
     </div>
     <div class="article-footer">
@@ -312,14 +502,9 @@
     <div class="bar-inner">
         <ul class="pager pull-left">
             <li class="prev">
-                <a href="https://chuanbohua.github.io/post/2019-06-02-%E4%BF%A1%E6%81%AF%E8%AE%BA%E7%AC%94%E8%AE%B0/" title="信息论笔记"><i
+                <a href="https://chuanbohua.github.io/post/2020-05-09-%E9%94%AE%E7%9B%98/" title="国内老土键盘 Niz plum"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
-            </li>
-            <li class="next">
-                <a href="https://chuanbohua.github.io/post/2019-08-20-%E5%AE%B5%E5%B1%B1%E4%B8%87%E8%8A%B1%E7%AD%92/"
-                    title="森见登美彦作品《宵山万花筒》"><span>Newer&nbsp;&nbsp;</span><i
-                        class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">

@@ -4,7 +4,56 @@
   
   <url>
     <loc>https://chuanbohua.github.io/categories/</loc>
-    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/tags/ml/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/post/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/tags/python/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/post/2020-05-11-dataset/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/tags/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/categories/tutorial/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -17,28 +66,7 @@
   </url>
   
   <url>
-    <loc>https://chuanbohua.github.io/post/</loc>
-    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://chuanbohua.github.io/categories/store/</loc>
-    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chuanbohua.github.io/tags/</loc>
-    <lastmod>2020-05-09T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chuanbohua.github.io/</loc>
     <lastmod>2020-05-09T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -89,13 +117,6 @@
   <url>
     <loc>https://chuanbohua.github.io/post/2020-04-28-linux-%E5%A4%87%E5%BF%98%E5%BD%95/</loc>
     <lastmod>2020-04-28T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chuanbohua.github.io/categories/tutorial/</loc>
-    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -263,13 +284,6 @@
   
   <url>
     <loc>https://chuanbohua.github.io/tags/matlab/</loc>
-    <lastmod>2019-05-03T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chuanbohua.github.io/tags/python/</loc>
     <lastmod>2019-05-03T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
