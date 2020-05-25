@@ -5,7 +5,7 @@
     <link>https://chuanbohua.github.io/tags/linux/</link>
     <description>Recent content in Linux on Timegg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 28 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://chuanbohua.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
@@ -53,15 +53,6 @@
       
       <guid>https://chuanbohua.github.io/post/2020-05-07-%E6%9C%9F%E5%BE%85/</guid>
       <description>在这个时代，希望是和钻石一样稀有的东西。 流浪地球中这么说。 虽然在现实生活中我们并没有面临那么严峻的未来，但是存有一些对未来的期待总是一件有价</description>
-    </item>
-    
-    <item>
-      <title>Linux 备忘录</title>
-      <link>https://chuanbohua.github.io/post/2020-04-28-linux-%E5%A4%87%E5%BF%98%E5%BD%95/</link>
-      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://chuanbohua.github.io/post/2020-04-28-linux-%E5%A4%87%E5%BF%98%E5%BD%95/</guid>
-      <description>我的手上现在有四台电脑： 主力日常 Lenovo idea pad 14&amp;rsquo;，平台为 Windows； 主力开发 Lenovo Thinkpad x260，平台为 Ubuntu 18.04 LTS； 一个配置不太高的台式</description>
     </item>
     
     <item>
@@ -188,6 +179,15 @@
       
       <guid>https://chuanbohua.github.io/post/2019-08-20-%E5%AE%B5%E5%B1%B1%E4%B8%87%E8%8A%B1%E7%AD%92/</guid>
       <description>《宵山万花镜》属于森见登美彦作品风格主分支中的一种，一种有些怪诞、略有恐怖元素但依然是充满趣味的故事。真的是森见的每一部作品都好像遵循“有趣</description>
+    </item>
+    
+    <item>
+      <title>拓扑学笔记</title>
+      <link>https://chuanbohua.github.io/post/2019-08-14-%E6%8B%93%E6%89%91%E5%AD%A6%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://chuanbohua.github.io/post/2019-08-14-%E6%8B%93%E6%89%91%E5%AD%A6%E7%AC%94%E8%AE%B0/</guid>
+      <description>Topology, I think it is the top course in the field of Algebra. “Top” not only means that it can be widely used in many aspects, including the finance, the computer network, etc but is really hard to learn and understand because it is too abstract. But it does not matter that topology is an interesting course. For example, topology space is always called “P</description>
     </item>
     
   </channel>

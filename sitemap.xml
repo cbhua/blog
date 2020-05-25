@@ -115,22 +115,8 @@
   </url>
   
   <url>
-    <loc>https://chuanbohua.github.io/categories/dairy/</loc>
-    <lastmod>2020-04-28T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://chuanbohua.github.io/tags/linux/</loc>
-    <lastmod>2020-04-28T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chuanbohua.github.io/post/2020-04-28-linux-%E5%A4%87%E5%BF%98%E5%BD%95/</loc>
-    <lastmod>2020-04-28T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -138,6 +124,13 @@
   <url>
     <loc>https://chuanbohua.github.io/post/2020-04-21-zerotier/</loc>
     <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/categories/dairy/</loc>
+    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -452,6 +445,11 @@
   
   <url>
     <loc>https://chuanbohua.github.io/about/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/friends/</loc>
     <priority>0</priority>
   </url>
   
