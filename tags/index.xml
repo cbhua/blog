@@ -5,10 +5,28 @@
     <link>https://chuanbohua.github.io/tags/</link>
     <description>Recent content in Tags on Timegg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://chuanbohua.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Never Ending the World 被下架了</title>
+      <link>https://chuanbohua.github.io/post/2020-05-25-end-of-the-world/</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://chuanbohua.github.io/post/2020-05-25-end-of-the-world/</guid>
+      <description>我喜欢的一个乐队：End of the World，他们的一首歌在网易云被删除了，不是因为没有版权整个乐队的歌曲下架，而是单单只有这一首歌被下架了。 我听</description>
+    </item>
+    
+    <item>
+      <title>在留学申请过程中学到的</title>
+      <link>https://chuanbohua.github.io/post/2020-05-16-%E7%95%99%E5%AD%A6/</link>
+      <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://chuanbohua.github.io/post/2020-05-16-%E7%95%99%E5%AD%A6/</guid>
+      <description>对大多数人来说，研究型留学申请是一个比较煎熬的过程，在这个过程中不仅每天要忙着整理各种学校的信息、修改自己的PS、SOP、推荐信、还要给各学</description>
+    </item>
     
     <item>
       <title>PyTorch 针对 IDX 类型数据文件创建 Dataset</title>
@@ -170,24 +188,6 @@
       
       <guid>https://chuanbohua.github.io/post/2019-08-20-%E5%AE%B5%E5%B1%B1%E4%B8%87%E8%8A%B1%E7%AD%92/</guid>
       <description>《宵山万花镜》属于森见登美彦作品风格主分支中的一种，一种有些怪诞、略有恐怖元素但依然是充满趣味的故事。真的是森见的每一部作品都好像遵循“有趣</description>
-    </item>
-    
-    <item>
-      <title>拓扑学笔记</title>
-      <link>https://chuanbohua.github.io/post/2019-08-14-%E6%8B%93%E6%89%91%E5%AD%A6%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://chuanbohua.github.io/post/2019-08-14-%E6%8B%93%E6%89%91%E5%AD%A6%E7%AC%94%E8%AE%B0/</guid>
-      <description>Topology, I think it is the top course in the field of Algebra. “Top” not only means that it can be widely used in many aspects, including the finance, the computer network, etc but is really hard to learn and understand because it is too abstract. But it does not matter that topology is an interesting course. For example, topology space is always called “P</description>
-    </item>
-    
-    <item>
-      <title>信息论笔记</title>
-      <link>https://chuanbohua.github.io/post/2019-06-02-%E4%BF%A1%E6%81%AF%E8%AE%BA%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Sun, 02 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://chuanbohua.github.io/post/2019-06-02-%E4%BF%A1%E6%81%AF%E8%AE%BA%E7%AC%94%E8%AE%B0/</guid>
-      <description>Information Theory is a basic course of information &amp;amp; computing science department I took before. Compared with some mathematics courses, it is a bit easier to a certain degree. But maybe the textbook we used was basic. Anyway, this course was interesting and seemly useful because we can combine these theories with our real life. This note is the note I took during the final exam period and it may</description>
     </item>
     
   </channel>

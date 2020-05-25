@@ -5,10 +5,28 @@
     <link>https://chuanbohua.github.io/tags/</link>
     <description>Recent content in Tags on Timegg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://chuanbohua.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>拓扑学笔记</title>
+      <link>https://chuanbohua.github.io/post/2019-08-14-%E6%8B%93%E6%89%91%E5%AD%A6%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://chuanbohua.github.io/post/2019-08-14-%E6%8B%93%E6%89%91%E5%AD%A6%E7%AC%94%E8%AE%B0/</guid>
+      <description>Topology, I think it is the top course in the field of Algebra. “Top” not only means that it can be widely used in many aspects, including the finance, the computer network, etc but is really hard to learn and understand because it is too abstract. But it does not matter that topology is an interesting course. For example, topology space is always called “P</description>
+    </item>
+    
+    <item>
+      <title>信息论笔记</title>
+      <link>https://chuanbohua.github.io/post/2019-06-02-%E4%BF%A1%E6%81%AF%E8%AE%BA%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Sun, 02 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://chuanbohua.github.io/post/2019-06-02-%E4%BF%A1%E6%81%AF%E8%AE%BA%E7%AC%94%E8%AE%B0/</guid>
+      <description>Information Theory is a basic course of information &amp;amp; computing science department I took before. Compared with some mathematics courses, it is a bit easier to a certain degree. But maybe the textbook we used was basic. Anyway, this course was interesting and seemly useful because we can combine these theories with our real life. This note is the note I took during the final exam period and it may</description>
+    </item>
     
     <item>
       <title>信息论实验</title>
@@ -129,19 +147,19 @@
     
     <item>
       <title>爬取 Vol.moe 的漫画资源</title>
-      <link>https://chuanbohua.github.io/post/2018-07-27-%E4%BD%BF%E7%94%A8-python-%E7%88%AC%E5%8F%96-vol.moe-%E6%BC%AB%E7%94%BB/</link>
+      <link>https://chuanbohua.github.io/post/2018-07-27-vol-moe/</link>
       <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://chuanbohua.github.io/post/2018-07-27-%E4%BD%BF%E7%94%A8-python-%E7%88%AC%E5%8F%96-vol.moe-%E6%BC%AB%E7%94%BB/</guid>
+      <guid>https://chuanbohua.github.io/post/2018-07-27-vol-moe/</guid>
       <description>2019.03 Update: Vol.moe 现已经提供批量下载功能。此文完结。 原文 这个工具实际上是一个非常简单的东西，但是由于网站确实很不错，所以写在这里作为一个推荐。 之前在寻找</description>
     </item>
     
     <item>
       <title>数据库系统概论复习笔记</title>
-      <link>https://chuanbohua.github.io/post/2018-07-13-%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</link>
+      <link>https://chuanbohua.github.io/post/2018-07-13-database/</link>
       <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://chuanbohua.github.io/post/2018-07-13-%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://chuanbohua.github.io/post/2018-07-13-database/</guid>
       <description>前言 这学期参选了数据库系统概论这门课程，虽然最后拿到了还行的成绩，但是因为复习仓促跳过了很多知识点。 由于 9 月要参加计算机四级(数据库)的考试</description>
     </item>
     
@@ -156,10 +174,10 @@
     
     <item>
       <title>关于 Photoshop 的学习</title>
-      <link>https://chuanbohua.github.io/post/2018-04-03-%E5%85%B3%E4%BA%8E-photoshop-%E7%9A%84%E5%AD%A6%E4%B9%A0/</link>
+      <link>https://chuanbohua.github.io/post/2018-04-03-photoshop/</link>
       <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://chuanbohua.github.io/post/2018-04-03-%E5%85%B3%E4%BA%8E-photoshop-%E7%9A%84%E5%AD%A6%E4%B9%A0/</guid>
+      <guid>https://chuanbohua.github.io/post/2018-04-03-photoshop/</guid>
       <description>我接触 Photoshop (PS) 大概已经一年了，在此期间断断续续地学了一些东西，也教了一些身边的朋友去使用 PS。为了方便别人和自己，之前写过一些教程，不过效果并不</description>
     </item>
     

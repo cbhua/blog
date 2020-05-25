@@ -42,7 +42,7 @@
 <meta itemprop="description" content="记录我使用 Ubuntu 和 CentOS 做过的一些内容和踩过的坑，以方便之后查阅。">
 <meta itemprop="datePublished" content="2020-04-28T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-04-28T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="733">
+<meta itemprop="wordCount" content="755">
 
 
 
@@ -173,11 +173,11 @@
     <div class="widget-body">
         <ul class="category-list">
             <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/dairy/" class="category-list-link">dairy</a><span class="category-list-count">7</span></li>
-            <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/essay/" class="category-list-link">essay</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/essay/" class="category-list-link">essay</a><span class="category-list-count">3</span></li>
             <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/lecture/" class="category-list-link">lecture</a><span class="category-list-count">13</span></li>
             <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/read/" class="category-list-link">read</a><span class="category-list-count">5</span></li>
             <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/store/" class="category-list-link">store</a><span class="category-list-count">1</span></li>
-            <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/tutorial/" class="category-list-link">tutorial</a><span class="category-list-count">8</span></li>
+            <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/tutorial/" class="category-list-link">tutorial</a><span class="category-list-count">9</span></li>
         </ul>
     </div>
 </div>
@@ -186,6 +186,26 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget-body">
         <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li class="recent-post-li">
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chuanbohua.github.io/post/2020-05-25-end-of-the-world/" class="title">Never Ending the World 被下架了</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-25 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-25</time>
+                    </p>
+                </div>
+            </li>
+            <li class="recent-post-li">
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chuanbohua.github.io/post/2020-05-16-%E7%95%99%E5%AD%A6/" class="title">在留学申请过程中学到的</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-21 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-21</time>
+                    </p>
+                </div>
+            </li>
             <li class="recent-post-li">
                 <div class="item-inner">
                     <p class="item-title">
@@ -213,26 +233,6 @@
                     </p>
                     <p class="item-date">
                         <time datetime="2020-05-07 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-07</time>
-                    </p>
-                </div>
-            </li>
-            <li class="recent-post-li">
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://chuanbohua.github.io/post/2020-04-28-linux-%E5%A4%87%E5%BF%98%E5%BD%95/" class="title">Linux 备忘录</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-04-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-28</time>
-                    </p>
-                </div>
-            </li>
-            <li class="recent-post-li">
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://chuanbohua.github.io/post/2020-04-21-zerotier/" class="title">ZeroTier 建立虚拟局域网</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-04-21 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-04-21</time>
                     </p>
                 </div>
             </li>
@@ -284,7 +284,7 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/post/2020-04-28-linux-%E5%A4%87%E5%BF%98%E5%BD%95/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 733words</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 755words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
       </div>
     </div>
@@ -330,6 +330,8 @@ sudo fc-cache -fv
 <p><strong>解释</strong>：<code>ls -l</code> 把所有文件和目录按行输出，<code>grep &quot;^-&quot;</code> 过滤出文件 <code>grep &quot;^d&quot;</code> 过滤出目录，<code>wc -l</code> 统计输出的行数，达到统计文件数量的目的。</p>
 <hr>
 <p>[working]</p>
+<p>Win 上虚拟机和 Windows Sandbox 有冲突，需要设置 Hypervision ：</p>
+<p>bcdedit /set hypervisorlaunchtype auto</p>
 
     </div>
     <div class="article-footer">
