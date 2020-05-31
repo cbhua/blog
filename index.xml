@@ -5,10 +5,19 @@
     <link>https://chuanbohua.github.io/</link>
     <description>Recent content on Timegg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 25 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://chuanbohua.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>《铁鼠之槛》的《十牛图》</title>
+      <link>https://chuanbohua.github.io/post/2020-05-28-mouse/</link>
+      <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://chuanbohua.github.io/post/2020-05-28-mouse/</guid>
+      <description>我坚定地崇尚科学，因此喜欢硬派的科幻小说。但是同时我喜欢妖怪文化，所以京极夏彦的书和森见的书我都比较喜欢。 我本来是冲着妖怪来读京极夏彦的书，</description>
+    </item>
     
     <item>
       <title>Never Ending the World 被下架了</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chuanbohua.github.io/post/2019-08-20-%E5%AE%B5%E5%B1%B1%E4%B8%87%E8%8A%B1%E7%AD%92/</guid>
       <description>《宵山万花镜》属于森见登美彦作品风格主分支中的一种，一种有些怪诞、略有恐怖元素但依然是充满趣味的故事。真的是森见的每一部作品都好像遵循“有趣</description>
-    </item>
-    
-    <item>
-      <title>拓扑学笔记</title>
-      <link>https://chuanbohua.github.io/post/2019-08-14-%E6%8B%93%E6%89%91%E5%AD%A6%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://chuanbohua.github.io/post/2019-08-14-%E6%8B%93%E6%89%91%E5%AD%A6%E7%AC%94%E8%AE%B0/</guid>
-      <description>Topology, I think it is the top course in the field of Algebra. “Top” not only means that it can be widely used in many aspects, including the finance, the computer network, etc but is really hard to learn and understand because it is too abstract. But it does not matter that topology is an interesting course. For example, topology space is always called “P</description>
     </item>
     
   </channel>
