@@ -5,10 +5,19 @@
     <link>https://chuanbohua.github.io/post/</link>
     <description>Recent content in Posts on Timegg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jun 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://chuanbohua.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>小程序《我今天是欧皇吗》</title>
+      <link>https://chuanbohua.github.io/post/2020-06-09-lucky/</link>
+      <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://chuanbohua.github.io/post/2020-06-09-lucky/</guid>
+      <description>这是 48h 从零开始的微信小程序挑战的结果。可以在 GitHub 上看到这个项目。 这个挑战开始得很曲折，是这样的：最近在家的空闲时间比较多，想着自己开发个游戏，</description>
+    </item>
     
     <item>
       <title>小学时候的桌游</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chuanbohua.github.io/post/2019-09-02-%E6%95%B0%E5%AD%A6%E7%89%A9%E7%90%86%E6%96%B9%E7%A8%8B%E7%AC%94%E8%AE%B0/</guid>
       <description>Equations of Mathematical Physics is another subject about using mathematical methods to solve or approach various functions include PDE or ODE, just like the Numerical Analysis. Actually, most of the methods in this subject are included in Numerical Analysis. But this subject focuses on the applications of these methods rather the theories. The textbook lists several examples in physics fields and tries to use these methods to deal with these</description>
-    </item>
-    
-    <item>
-      <title>森见登美彦作品《神圣懒汉的冒险》</title>
-      <link>https://chuanbohua.github.io/post/2019-08-25-%E7%A5%9E%E5%9C%A3%E6%87%92%E6%B1%89/</link>
-      <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://chuanbohua.github.io/post/2019-08-25-%E7%A5%9E%E5%9C%A3%E6%87%92%E6%B1%89/</guid>
-      <description>森见的《神圣懒汉的冒险》发布于 2013 年，是他作品中较晚的一部。有趣的是，在这一部作品中有非常多的曾经的作品的元素，或者称之为彩蛋在其中。森见也在</description>
     </item>
     
   </channel>

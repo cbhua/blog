@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        小程序《我今天是欧皇吗》 - Timegg
+      </title>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="48h 从零开始的微信小程序开发，目前小程序在审核中。" />
+  <meta name="generator" content="Hugo 0.69.0 with theme pure" />
+  <title>小程序《我今天是欧皇吗》 - Timegg</title>
+  
+  
+  <link rel="stylesheet" href="https://chuanbohua.github.io/css/style.min.5b4c067c98e322626060c3037927c72fec8325ef47442db2f15558981536a23e.css">
+  
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+  <meta property="og:title" content="小程序《我今天是欧皇吗》" />
+<meta property="og:description" content="48h 从零开始的微信小程序开发，目前小程序在审核中。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chuanbohua.github.io/post/2020-06-09-lucky/" />
+<meta property="article:published_time" content="2020-06-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-09T00:00:00+00:00" />
+<meta itemprop="name" content="小程序《我今天是欧皇吗》">
+<meta itemprop="description" content="48h 从零开始的微信小程序开发，目前小程序在审核中。">
+<meta itemprop="datePublished" content="2020-06-09T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-06-09T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1877">
+
+
+
+<meta itemprop="keywords" content="Javascript," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="小程序《我今天是欧皇吗》"/>
+<meta name="twitter:description" content="48h 从零开始的微信小程序开发，目前小程序在审核中。"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+
+  
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?329fd26ee41f86707c3f7e99ff3405c8";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</head>
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://timegg.top/" target="_blank">
+            <img class="img-circle img-rotate" src="https://chuanbohua.github.io/avatar.jpg" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Chuanbo HUA</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">HIT, KAIST</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Daejeon, South Korea</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/post/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-links">
+                <a href="/links/">
+                    <i class="icon icon-friendship"></i>
+                  <span class="menu-title">Links</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p><img id='board-img' src="https://chuanbohua.github.io/img/favicon.png"  alt="logo-timegg" /><br>Timegg has been renewed at 2020.04. Welcome!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> Categories</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/dairy/" class="category-list-link">dairy</a><span class="category-list-count">8</span></li>
+            <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/essay/" class="category-list-link">essay</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/lecture/" class="category-list-link">lecture</a><span class="category-list-count">13</span></li>
+            <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/read/" class="category-list-link">read</a><span class="category-list-count">6</span></li>
+            <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/store/" class="category-list-link">store</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://chuanbohua.github.io/categories/tutorial/" class="category-list-link">tutorial</a><span class="category-list-count">9</span></li>
+        </ul>
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li class="recent-post-li">
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chuanbohua.github.io/post/2020-06-09-lucky/" class="title">小程序《我今天是欧皇吗》</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-09 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-06-09</time>
+                    </p>
+                </div>
+            </li>
+            <li class="recent-post-li">
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chuanbohua.github.io/post/2020-06-01-childhood/" class="title">小学时候的桌游</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-06-01</time>
+                    </p>
+                </div>
+            </li>
+            <li class="recent-post-li">
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chuanbohua.github.io/post/2020-05-28-mouse/" class="title">《铁鼠之槛》的《十牛图》</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-31 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-31</time>
+                    </p>
+                </div>
+            </li>
+            <li class="recent-post-li">
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chuanbohua.github.io/post/2020-05-25-end-of-the-world/" class="title">Never Ending the World 被下架了</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-25 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-25</time>
+                    </p>
+                </div>
+            </li>
+            <li class="recent-post-li">
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://chuanbohua.github.io/post/2020-05-16-%E7%95%99%E5%AD%A6/" class="title">在留学申请过程中学到的</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-21 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-05-21</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/post/2020-06-09-lucky/"
+    >小程序《我今天是欧皇吗》</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://chuanbohua.github.io/post/2020-06-09-lucky/" class="article-date">
+  <time datetime="2020-06-09 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-06-09</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/dairy/"> Dairy </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/javascript/"> Javascript </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/post/2020-06-09-lucky/#comments"
+            class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 1877words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 4minutes </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <p>这是 48h 从零开始的微信小程序挑战的结果。可以在 <a href="https://github.com/chuanbohua/wxapp-am-i-lucky">GitHub</a> 上看到这个项目。</p>
+<p>这个挑战开始得很曲折，是这样的：最近在家的空闲时间比较多，想着自己开发个游戏，开个大坑，毕竟做游戏这个事情我从好久之前就在想了。选定了 Unity 框架之后发现 Premium 可以用 GitHub Education 认证，于是我就去找 GitHub，提交了学生证扫描件之后需要两三天才能出结果，在这两三天时间里不知道干什么，就搞个微信小程序吧。</p>
+<p>所以，我尝试在 GitHub Education 过审前把这个坑填上。</p>
+<p>说实话我个人很不喜欢微信，但是 Share 一个工具的几种途径：APP（Android 也不是不行，但是我没办法开发 iOS）、网页（我的 ECS 刚到期），而且反正是瞎做着玩，就试试微信小程序吧，毕竟最近这么火。</p>
+<p>稍微扫了一眼 Hello World 文档，就开始写程序了。实际上请不要这么做，踩坑多跟这个有关。</p>
+<p>微信小程序的框架很好懂，写起来和网页差不多：HTML + CSS + JS，只是多了一些额外的配置数据和微信自带函数的调用，搜一搜，看看文档都可以做到。</p>
+<p>《我是欧皇吗》这个小程序的功能很简单，就是计算抽卡游戏涉及的概率计算，这点在 GitHub README 上面有介绍，或者打开小程序自然就可以懂了，这里就不提了。</p>
+<p>因为功能很简单，所以 JS 写起来也非常简单，大概 10 分钟就可以解决的程度，其本质就一个包含组合的算式：
+$$
+C_{gacahTimes}^{winTimes} \times probability^{winTimes} \times (1-probability) ^ {gacahTimes - winTimes}
+$$
+即：
+$$
+\frac{gachaTimes!}{winTimes! \times (gachaTimes - winTimes)!} \times probability^{winTimes} \times (1-probability) ^ {gacahTimes - winTimes}
+$$
+其中 <code>gachaTimes</code> 即抽卡的次数，<code>winTimes</code> 即出货的次数，<code>probability</code> 即出货概率。</p>
+<p>单算概率多无聊，最近经常和同学打日麻，对各种役种的和率有了一些认识，正好去天凤上搜了搜有相关的和率统计，所以就把各种日麻和率写在对应概率范围内做参照，丰富一下内容。</p>
+<p>作为一个对日麻概率和对抽卡概率都有概念的人，不得不说一些对照结果还是挺出乎意料的，虽然知道抽卡全不中的概率不低，但是没想到高到和我和一次断幺九差不多，这也算达到了我增加这一部分的效果。</p>
+<p>核心写完了，剩下的就是补全其他的东西了，数据需要输入，于是最烦人的正则检查就有必要了。</p>
+<p>需要考虑的情况包括：填写的出货次数比抽卡次数还要多，填写的抽卡次数太高而超过了微信小程序的计算范围，导致 return 一个 <code>NaN</code>，或者是概率实在太低，微信小程序的最小浮点数是 <code>1e-10</code> 左右，比这个更小就变成了 0。这些情况都需要考虑对应的输出。</p>
+<p>不得不说刚开始写这个的时候完全没有考虑到鲁棒性检查这么复杂，所以导致后面改的时候已经乱成了一团，现在想来，如果在设计的时候考虑好过大、过小、错误输入的情况，直接划分四块条件渲染就可以了。</p>
+<p>但是当时确实没有想这么多，在一个渲染块里面各种混乱的 <code>if</code> 判断给我后来改代码带来了太多的麻烦。</p>
+<p>不管怎样，鲁棒性检查这部分弄完了，就该做页面间通讯部分了。因为结果输出在 <code>Result Page</code>，而输入数据在 <code>Cal Page</code>。但是在最开始的时候我因为没有仔细阅读文档，对微信小程序的 <code>onLoad</code> 和 <code>onShow</code> 等几个函数没有搞清楚触发时间，导致直传的数据一直得不到刷新。虽然问题很容易就解决了，但是因为没好好读文档浪费了不少时间。（毕竟这么基础的东西没有不读的道理）</p>
+<p>数据传完了，整个工具就可以用了，之后绝大部分时间是在设计 CSS。不得不说微信小程序的 CSS 设计很不方便，缺少了类似于 Chrome 中好用的 Inspector，这样在设置 margin, padding 或者 location 的时候都需要手动给每个块添加黑色边框，以方便定位。</p>
+<p>我平常用 CSS 很少，模块定位很不熟练，就将就着按照比例摆了摆，测试了几个主流的手机分辨率都没有乱版的情况就放那了，算是歪歪扭扭地把 CSS 拼好了。</p>
+<p>不过抛开定位的问题，我的按钮和艺术字的设计还是不错的。</p>
+<p>CSS 弄完，设计了一个 icon 就到了第二天晚上了。说实话，到现在为止我还没有读微信的小程序审核手册，甚至压根就没考虑过这个小程序会不会过审。于是随便写写简介，传了个头像就提交审核了，过两天看看结果怎么样。</p>
+<p>提交审核之后会想起这两天搞得东西，简直乱七八糟，总结起来就是有这几个问题：</p>
+<ul>
+<li>微信小程序的文档基础部分一定要通读，否则就像页面生命周期函数顺序搞不清楚耽误大量的时间，还要重构代码；一些基础的功能微信已经给出了实现方法，照抄就可以；</li>
+<li>小程序开发的问题搜索条目数不是很多，毕竟专门玩小程序的人也不是那么多，有很多问题还是要自己动手读文档去解决的；</li>
+<li>开发程序要遵循既有的开发流程规划，比如规划功能、分析需求、列举限制、框架设计，在此之后再动手去写，会高效很多，还能避免很多重构；</li>
+</ul>
+<p>不过不这么被坑一次我说不一定还不理解上面的内容，所以两天时间的代价试错几个经验还是很值的。完成了基本的入门，之后如果还想进一步做小程序就读读其他人的源码学习学习，慢慢来。</p>
+<p>……</p>
+<p>但是。</p>
+<p>我觉得我没有下次了。</p>
+<p>再见，小程序。</p>
+<p>反正源码已经丢在 GitHub 上了，开发讲究一个开心就行了。</p>
+<p>玩 Unity 去了。</p>
+
+    </div>
+    <div class="article-footer">
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://chuanbohua.github.io/post/2020-06-01-childhood/" title="小学时候的桌游"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="Catalogue" role="button">
+                    <span>[&nbsp;</span><span>Catalogue</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/chuanbohua" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://chuanbohua.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+    <li><a href="https://twitter.com/huachuanbo" target="_blank" title="twitter" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-twitter"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2017  -
+    2020 Timegg
+    
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://chuanbohua.github.io/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://chuanbohua.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            ROOT_URL: 'https:\/\/chuanbohua.github.io\/',
+            CONTENT_URL: 'https:\/\/chuanbohua.github.io\/\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://chuanbohua.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-164502321-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>
