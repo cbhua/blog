@@ -5,10 +5,19 @@
     <link>https://chuanbohua.github.io/tags/life/</link>
     <description>Recent content in Life on Timegg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://chuanbohua.github.io/tags/life/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>《美丽新世界》中的自由与幸福</title>
+      <link>https://chuanbohua.github.io/post/2020-06-19-brave-new-world/</link>
+      <pubDate>Thu, 18 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://chuanbohua.github.io/post/2020-06-19-brave-new-world/</guid>
+      <description>这里是重读《美丽新世界》之后的一些感想。上次读这本书的时候还是高中最喜欢科幻、最喜欢反乌托邦主题的时候。只不过当时理解能力有限，观点浅薄，只</description>
+    </item>
     
     <item>
       <title>小程序《我今天是欧皇吗》</title>
@@ -16,7 +25,7 @@
       <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://chuanbohua.github.io/post/2020-06-09-lucky/</guid>
-      <description>这是 48h 从零开始的微信小程序挑战的结果。可以在 GitHub 上看到这个项目。 这个挑战开始得很曲折，是这样的：最近在家的空闲时间比较多，想着自己开发个游戏，</description>
+      <description>Yeah，小程序居然过审了，你可以通过扫描下面的 QR Code 或者在微信搜索“我是欧皇吗”找到这个小程序。这是 48h 从零开始的微信小程序挑战的结果。可以在</description>
     </item>
     
     <item>
@@ -179,15 +188,6 @@
       
       <guid>https://chuanbohua.github.io/post/2019-09-07-%E5%AE%9E%E4%B9%A0/</guid>
       <description>前言 大学四年级在很多人口中是“收获的一年”：在大学的前三年中努力学习、科研、竞赛和经历各种各样的事情，然后在大学第四年的时候用自己的经历来换</description>
-    </item>
-    
-    <item>
-      <title>数学物理方程笔记</title>
-      <link>https://chuanbohua.github.io/post/2019-09-02-%E6%95%B0%E5%AD%A6%E7%89%A9%E7%90%86%E6%96%B9%E7%A8%8B%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://chuanbohua.github.io/post/2019-09-02-%E6%95%B0%E5%AD%A6%E7%89%A9%E7%90%86%E6%96%B9%E7%A8%8B%E7%AC%94%E8%AE%B0/</guid>
-      <description>Equations of Mathematical Physics is another subject about using mathematical methods to solve or approach various functions include PDE or ODE, just like the Numerical Analysis. Actually, most of the methods in this subject are included in Numerical Analysis. But this subject focuses on the applications of these methods rather the theories. The textbook lists several examples in physics fields and tries to use these methods to deal with these</description>
     </item>
     
   </channel>

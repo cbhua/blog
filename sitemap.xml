@@ -4,7 +4,49 @@
   
   <url>
     <loc>https://chuanbohua.github.io/categories/</loc>
-    <lastmod>2020-06-09T00:00:00+00:00</lastmod>
+    <lastmod>2020-06-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/tags/life/</loc>
+    <lastmod>2020-06-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/post/</loc>
+    <lastmod>2020-06-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/categories/read/</loc>
+    <lastmod>2020-06-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/tags/</loc>
+    <lastmod>2020-06-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/</loc>
+    <lastmod>2020-06-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/post/2020-06-19-brave-new-world/</loc>
+    <lastmod>2020-06-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -24,27 +66,6 @@
   </url>
   
   <url>
-    <loc>https://chuanbohua.github.io/post/</loc>
-    <lastmod>2020-06-09T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chuanbohua.github.io/tags/</loc>
-    <lastmod>2020-06-09T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chuanbohua.github.io/</loc>
-    <lastmod>2020-06-09T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://chuanbohua.github.io/post/2020-06-09-lucky/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -52,22 +73,8 @@
   </url>
   
   <url>
-    <loc>https://chuanbohua.github.io/tags/life/</loc>
-    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://chuanbohua.github.io/post/2020-06-01-childhood/</loc>
     <lastmod>2020-06-01T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chuanbohua.github.io/categories/read/</loc>
-    <lastmod>2020-05-31T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -479,6 +486,12 @@
   <url>
     <loc>https://chuanbohua.github.io/links/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/post/2020-06-18-game/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
