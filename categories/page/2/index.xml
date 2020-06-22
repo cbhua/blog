@@ -5,10 +5,19 @@
     <link>https://chuanbohua.github.io/categories/</link>
     <description>Recent content in Categories on Timegg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 18 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://chuanbohua.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>大学第四年的实习</title>
+      <link>https://chuanbohua.github.io/post/2019-09-07-%E5%AE%9E%E4%B9%A0/</link>
+      <pubDate>Sat, 07 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://chuanbohua.github.io/post/2019-09-07-%E5%AE%9E%E4%B9%A0/</guid>
+      <description>前言 大学四年级在很多人口中是“收获的一年”：在大学的前三年中努力学习、科研、竞赛和经历各种各样的事情，然后在大学第四年的时候用自己的经历来换</description>
+    </item>
     
     <item>
       <title>数学物理方程笔记</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chuanbohua.github.io/post/2018-07-27-vol-moe/</guid>
       <description>2019.03 Update: Vol.moe 现已经提供批量下载功能。此文完结。 原文 这个工具实际上是一个非常简单的东西，但是由于网站确实很不错，所以写在这里作为一个推荐。 之前在寻找</description>
-    </item>
-    
-    <item>
-      <title>数据库系统概论复习笔记</title>
-      <link>https://chuanbohua.github.io/post/2018-07-13-database/</link>
-      <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://chuanbohua.github.io/post/2018-07-13-database/</guid>
-      <description>前言 这学期参选了数据库系统概论这门课程，虽然最后拿到了还行的成绩，但是因为复习仓促跳过了很多知识点。 由于 9 月要参加计算机四级(数据库)的考试</description>
     </item>
     
   </channel>
