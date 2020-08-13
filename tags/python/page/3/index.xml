@@ -11,6 +11,24 @@
     
     
     <item>
+      <title>Matlab 实现解线性方程组的几类直接法</title>
+      <link>https://chuanbohua.github.io/post/2018-10-12-matlab-%E5%AE%9E%E7%8E%B0%E8%A7%A3%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E7%9A%84%E5%87%A0%E7%B1%BB%E7%9B%B4%E6%8E%A5%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Fri, 12 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://chuanbohua.github.io/post/2018-10-12-matlab-%E5%AE%9E%E7%8E%B0%E8%A7%A3%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E7%9A%84%E5%87%A0%E7%B1%BB%E7%9B%B4%E6%8E%A5%E6%96%B9%E6%B3%95/</guid>
+      <description>问题 求解线性方程组 $$ \left{ \begin{array}{c} a_{11}x_1+a_{12}x_2+&amp;hellip;+a_{1n}x_n=b_1 \ a_{21}x_1+a_{22}x_2+&amp;hellip;+a_{2n}x_n=b_2 \ &amp;hellip; \ a_{n1}x_1+a_{n2}x_2+&amp;hellip;+a_{nn}x_n=b_n \end{array} \right. $$ 其中方程组系数 $a_{ij}(i,j=1,2,3,&amp;hellip;,n)$ 与右端项 $b_i(i=1,2,3,&amp;hellip;,n)$ 均为实数，且 $b_1,b_2,&amp;hellip;,b_n$ 不全为零，上述方程组简记为 $$ Ax=b $$ 其中 $$ A=\begin{bmatrix} a_{11} &amp;amp; a_{12} &amp;amp; &amp;hellip; &amp;amp; a_{1n} \</description>
+    </item>
+    
+    <item>
+      <title>爬取 Vol.moe 的漫画资源</title>
+      <link>https://chuanbohua.github.io/post/2018-07-27-vol-moe/</link>
+      <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://chuanbohua.github.io/post/2018-07-27-vol-moe/</guid>
+      <description>2019.03 Update: Vol.moe 现已经提供批量下载功能。此文完结。 原文 这个工具实际上是一个非常简单的东西，但是由于网站确实很不错，所以写在这里作为一个推荐。 之前在寻找</description>
+    </item>
+    
+    <item>
       <title>数据库系统概论复习笔记</title>
       <link>https://chuanbohua.github.io/post/2018-07-13-database/</link>
       <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
