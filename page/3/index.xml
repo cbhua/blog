@@ -5,10 +5,19 @@
     <link>https://chuanbohua.github.io/</link>
     <description>Recent content on Timegg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 22 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://chuanbohua.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Matlab 实现几种常用插值法</title>
+      <link>https://chuanbohua.github.io/post/2018-11-02-matlab-%E5%AE%9E%E7%8E%B0%E6%8F%92%E5%80%BC%E6%B3%95%E4%B8%8E%E5%87%BD%E6%95%B0%E9%80%BC%E8%BF%91/</link>
+      <pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://chuanbohua.github.io/post/2018-11-02-matlab-%E5%AE%9E%E7%8E%B0%E6%8F%92%E5%80%BC%E6%B3%95%E4%B8%8E%E5%87%BD%E6%95%B0%E9%80%BC%E8%BF%91/</guid>
+      <description>插值法 在数值算例中有广泛的应用。 插值的作法，很直觀地來講，就是，(1) 先從表列值來獲得函數 f(x)，再 (2) 用函數 f(x) 求出我們所要的任何特定 x 之 f(x)</description>
+    </item>
     
     <item>
       <title>Matlab 实现解线性方程组的几类直接法</title>

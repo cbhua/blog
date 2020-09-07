@@ -5,10 +5,19 @@
     <link>https://chuanbohua.github.io/categories/dairy/</link>
     <description>Recent content in Dairy on Timegg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 09 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://chuanbohua.github.io/categories/dairy/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>森见登美彦作品《春宵苦短，少女前进吧》</title>
+      <link>https://chuanbohua.github.io/post/2019-10-10-%E6%98%A5%E5%AE%B5%E8%8B%A6%E7%9F%AD/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://chuanbohua.github.io/post/2019-10-10-%E6%98%A5%E5%AE%B5%E8%8B%A6%E7%9F%AD/</guid>
+      <description>森见登美彦是一个“不正经的天才”。 至今为止，我几乎通读了他的全部作品，沉迷于他所描绘的吸引人的奇幻京都：鲤鱼、宵山、天狗、狸猫、鸭川、电气白</description>
+    </item>
     
     <item>
       <title>数值分析笔记</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chuanbohua.github.io/post/2019-06-22-%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90%E7%AC%94%E8%AE%B0/</guid>
       <description>Functional Analysis Notes is somewhat similar to Topology. Actually, topology can be seen as the deeper researching about various space. Functional analysis mainly focuses on these types of space: Metric space, Banach space, and Hilbert space. The theories and methods are similar to ones in topology, so if you can master this course, you may perform excellently in topology. Similar to topology, here are two notes, and one focuses on</description>
-    </item>
-    
-    <item>
-      <title>Matlab 实现几种常用插值法</title>
-      <link>https://chuanbohua.github.io/post/2018-11-02-matlab-%E5%AE%9E%E7%8E%B0%E6%8F%92%E5%80%BC%E6%B3%95%E4%B8%8E%E5%87%BD%E6%95%B0%E9%80%BC%E8%BF%91/</link>
-      <pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://chuanbohua.github.io/post/2018-11-02-matlab-%E5%AE%9E%E7%8E%B0%E6%8F%92%E5%80%BC%E6%B3%95%E4%B8%8E%E5%87%BD%E6%95%B0%E9%80%BC%E8%BF%91/</guid>
-      <description>插值法 在数值算例中有广泛的应用。 插值的作法，很直觀地來講，就是，(1) 先從表列值來獲得函數 f(x)，再 (2) 用函數 f(x) 求出我們所要的任何特定 x 之 f(x)</description>
     </item>
     
   </channel>
