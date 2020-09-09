@@ -5,10 +5,19 @@
     <link>https://chuanbohua.github.io/post/</link>
     <description>Recent content in Posts on Timegg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 03 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://chuanbohua.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>森见登美彦作品《夜行》</title>
+      <link>https://chuanbohua.github.io/post/2020-09-08-night/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://chuanbohua.github.io/post/2020-09-08-night/</guid>
+      <description>这篇文章有个有趣的背景，它是一篇遗失的文章。 我最早在去年秋季写了它，上传到了旧 Timegg 上，随着网站服务器关闭，这篇文章没有来得及搬运和备份就遗失了</description>
+    </item>
     
     <item>
       <title>开学流水账</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chuanbohua.github.io/post/2020-02-15-minecraft-server/</guid>
       <description>作为一个独立游戏爱好者，自然在平时与朋友联机过很多种游戏。由于独立游戏普遍缺少良好的官方联机渠道或者联机解决方案，搭建自己的服务器成了必修课</description>
-    </item>
-    
-    <item>
-      <title>森见登美彦作品《四叠半神话大系》</title>
-      <link>https://chuanbohua.github.io/post/2019-11-28-%E5%9B%9B%E5%8F%A0%E5%8D%8A/</link>
-      <pubDate>Thu, 28 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://chuanbohua.github.io/post/2019-11-28-%E5%9B%9B%E5%8F%A0%E5%8D%8A/</guid>
-      <description>《四叠半神话大系》的主题与《春宵苦短，少女前进吧》接近，但是又非常不同。就表达形式上，两部作品都是基于“我”的大学生活，以大学校园为舞台；就</description>
     </item>
     
   </channel>

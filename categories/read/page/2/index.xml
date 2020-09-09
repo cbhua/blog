@@ -5,10 +5,19 @@
     <link>https://chuanbohua.github.io/categories/read/</link>
     <description>Recent content in Read on Timegg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 18 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://chuanbohua.github.io/categories/read/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>森见登美彦作品《四叠半神话大系》</title>
+      <link>https://chuanbohua.github.io/post/2019-11-28-%E5%9B%9B%E5%8F%A0%E5%8D%8A/</link>
+      <pubDate>Thu, 28 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://chuanbohua.github.io/post/2019-11-28-%E5%9B%9B%E5%8F%A0%E5%8D%8A/</guid>
+      <description>《四叠半神话大系》的主题与《春宵苦短，少女前进吧》接近，但是又非常不同。就表达形式上，两部作品都是基于“我”的大学生活，以大学校园为舞台；就</description>
+    </item>
     
     <item>
       <title>森见登美彦作品《春宵苦短，少女前进吧》</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chuanbohua.github.io/post/2019-07-19-%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%94%E8%AE%B0/</guid>
       <description>Probability Theory and Mathematical Statistics is an interesting subject, compared with other mathematics courses, it is not so tough. It is widely used in various aspects, include machine learning, information theory, financial mathematics, etc. I reference a sentence from Wiki to describe this subject: Probability theory is the branch of mathematics concerned with probability. Although there are several different probability interpretations, probability theory treats the concept in a rigorous mathematical</description>
-    </item>
-    
-    <item>
-      <title>泛函分析笔记</title>
-      <link>https://chuanbohua.github.io/post/2019-06-22-%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://chuanbohua.github.io/post/2019-06-22-%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90%E7%AC%94%E8%AE%B0/</guid>
-      <description>Functional Analysis Notes is somewhat similar to Topology. Actually, topology can be seen as the deeper researching about various space. Functional analysis mainly focuses on these types of space: Metric space, Banach space, and Hilbert space. The theories and methods are similar to ones in topology, so if you can master this course, you may perform excellently in topology. Similar to topology, here are two notes, and one focuses on</description>
     </item>
     
   </channel>
