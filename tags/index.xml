@@ -5,10 +5,19 @@
     <link>https://chuanbohua.github.io/tags/</link>
     <description>Recent content in Tags on Timegg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 08 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Sep 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://chuanbohua.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>一个关于逻辑的科幻脑洞</title>
+      <link>https://chuanbohua.github.io/post/2020-09-20-sciencefiction/</link>
+      <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://chuanbohua.github.io/post/2020-09-20-sciencefiction/</guid>
+      <description>科幻小说读得多了，就会见识到各种各样的脑洞，从最早的平行世界理论到《三体》中的宇宙维度论，这些较为“硬核”的脑洞直接在物理规律上进行了修改，</description>
+    </item>
     
     <item>
       <title>森见登美彦作品《夜行》</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chuanbohua.github.io/post/2020-03-10-kdd2019/</guid>
       <description>KDD 2019 有不少 RS 的文章是围绕 Ratings and Reviews Information 进行的，这两种内容慢慢加入 RS 的考虑当中，以获得更好的稳定性和动态性能。依然有少数的文章在讨论 RS 的鲁棒性。 更多</description>
-    </item>
-    
-    <item>
-      <title>在 Linux 平台创建 Minecraft Forge 服务器</title>
-      <link>https://chuanbohua.github.io/post/2020-02-15-minecraft-server/</link>
-      <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://chuanbohua.github.io/post/2020-02-15-minecraft-server/</guid>
-      <description>作为一个独立游戏爱好者，自然在平时与朋友联机过很多种游戏。由于独立游戏普遍缺少良好的官方联机渠道或者联机解决方案，搭建自己的服务器成了必修课</description>
     </item>
     
   </channel>
