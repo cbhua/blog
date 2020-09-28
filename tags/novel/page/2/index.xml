@@ -5,10 +5,19 @@
     <link>https://chuanbohua.github.io/tags/novel/</link>
     <description>Recent content in Novel on Timegg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 20 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://chuanbohua.github.io/tags/novel/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2019 KDD Recommendation System Review</title>
+      <link>https://chuanbohua.github.io/post/2020-03-10-kdd2019/</link>
+      <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://chuanbohua.github.io/post/2020-03-10-kdd2019/</guid>
+      <description>KDD 2019 有不少 RS 的文章是围绕 Ratings and Reviews Information 进行的，这两种内容慢慢加入 RS 的考虑当中，以获得更好的稳定性和动态性能。依然有少数的文章在讨论 RS 的鲁棒性。 更多</description>
+    </item>
     
     <item>
       <title>在 Linux 平台创建 Minecraft Forge 服务器</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chuanbohua.github.io/post/2019-01-29-2019-mcmicm-summary/</guid>
       <description>2019 MCM/ICM 于 2019.1.26 开始、2019.1.29结束，四天四夜的建模比赛给我和我的队友都留下了很多回忆。在此次建模竞赛之前，我参加过一次 MCM/ICM、一次</description>
-    </item>
-    
-    <item>
-      <title>2018 年我听的一些歌</title>
-      <link>https://chuanbohua.github.io/post/2019-01-25-2018-%E5%B9%B4%E6%88%91%E5%96%9C%E6%AC%A2%E7%9A%84%E6%AD%8C/</link>
-      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://chuanbohua.github.io/post/2019-01-25-2018-%E5%B9%B4%E6%88%91%E5%96%9C%E6%AC%A2%E7%9A%84%E6%AD%8C/</guid>
-      <description>2018 年就这样过去了，在这一年里，发生了很多的事情。有值得纪念的，有不愿回想的，有些在我十几年的成长中可以称为里程碑，剩下的很多是简单、重复又无</description>
     </item>
     
   </channel>

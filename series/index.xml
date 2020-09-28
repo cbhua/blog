@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>不重复造轮子：早学哲学</title>
+      <link>https://chuanbohua.github.io/post/2020-09-28-philosophy/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://chuanbohua.github.io/post/2020-09-28-philosophy/</guid>
+      <description>“不要重复造轮子”整句话在计算机领域很常用，强调如果有既成的工具了，就不要再去费心思自己重复写，有种站在巨人肩膀上的感觉。 把这句话用到这里的</description>
+    </item>
+    
+    <item>
       <title>一个关于逻辑的科幻脑洞</title>
       <link>https://chuanbohua.github.io/post/2020-09-20-sciencefiction/</link>
       <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
@@ -178,15 +187,6 @@
       
       <guid>https://chuanbohua.github.io/post/2020-04-03-%E4%BA%A4%E6%8D%A2/</guid>
       <description>前言 这是关于大学第四年三篇文章中的第二篇，主要记录我在 2019 年上半年申请交换生的过程。至于下半年我交换期间的生活，之后可能会另开一篇文章来专门写</description>
-    </item>
-    
-    <item>
-      <title>2019 KDD Recommendation System Review</title>
-      <link>https://chuanbohua.github.io/post/2020-03-10-kdd2019/</link>
-      <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://chuanbohua.github.io/post/2020-03-10-kdd2019/</guid>
-      <description>KDD 2019 有不少 RS 的文章是围绕 Ratings and Reviews Information 进行的，这两种内容慢慢加入 RS 的考虑当中，以获得更好的稳定性和动态性能。依然有少数的文章在讨论 RS 的鲁棒性。 更多</description>
     </item>
     
   </channel>
