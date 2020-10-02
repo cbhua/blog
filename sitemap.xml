@@ -4,7 +4,49 @@
   
   <url>
     <loc>https://chuanbohua.github.io/categories/</loc>
-    <lastmod>2020-09-28T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-02T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/categories/dairy/</loc>
+    <lastmod>2020-10-02T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/tags/life/</loc>
+    <lastmod>2020-10-02T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/post/</loc>
+    <lastmod>2020-10-02T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/tags/</loc>
+    <lastmod>2020-10-02T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/</loc>
+    <lastmod>2020-10-02T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuanbohua.github.io/post/2020-10-02-smell/</loc>
+    <lastmod>2020-10-02T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -18,27 +60,6 @@
   
   <url>
     <loc>https://chuanbohua.github.io/tags/novel/</loc>
-    <lastmod>2020-09-28T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chuanbohua.github.io/post/</loc>
-    <lastmod>2020-09-28T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chuanbohua.github.io/tags/</loc>
-    <lastmod>2020-09-28T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chuanbohua.github.io/</loc>
     <lastmod>2020-09-28T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -75,20 +96,6 @@
   <url>
     <loc>https://chuanbohua.github.io/post/2020-09-08-night/</loc>
     <lastmod>2020-09-08T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chuanbohua.github.io/categories/dairy/</loc>
-    <lastmod>2020-09-03T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chuanbohua.github.io/tags/life/</loc>
-    <lastmod>2020-09-03T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

@@ -5,10 +5,19 @@
     <link>https://chuanbohua.github.io/post/</link>
     <description>Recent content in Posts on Timegg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 28 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://chuanbohua.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2019 MCM/ICM 总结</title>
+      <link>https://chuanbohua.github.io/post/2019-01-29-2019-mcmicm-summary/</link>
+      <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://chuanbohua.github.io/post/2019-01-29-2019-mcmicm-summary/</guid>
+      <description>2019 MCM/ICM 于 2019.1.26 开始、2019.1.29结束，四天四夜的建模比赛给我和我的队友都留下了很多回忆。在此次建模竞赛之前，我参加过一次 MCM/ICM、一次</description>
+    </item>
     
     <item>
       <title>2018 年我听的一些歌</title>
@@ -99,8 +108,9 @@
       <guid>https://chuanbohua.github.io/about/</guid>
       <description>About  Experience does for the soul, education does for the mind.
  Hello, here is Chuanbo HUA.
-I am now an undergraduate student, majoring in Information &amp;amp; Computing Science (HIT) and Computer Science &amp;amp; Engineering (POSTECH). I am going to enroll in KAIST, majoring in Industry &amp;amp; System Engineering, focusing on Graphic Neural Network Optimization.
-I enjoy both mathematics and computer science and have worked in HIT Computer Network Technology Lab (supervised by Professor.</description>
+I am now a first-year master&amp;rsquo;s student in KAIST, majoring in Industry and System Engineering, interested in Graph Neural Network.
+I got my bachelor&amp;rsquo;s degree in Harbin Institute of Technology (HIT), majoring in Mathematics, and exchanged at Pohang Science and Technology University (POSTECH), majoring in Computer Science, working on Data Mining.
+I enjoy both mathematics and data science and have worked in HIT Computer Network Technology Lab and HUAWEI Nanjing Research Center (Algorithm Engineer Intern).</description>
     </item>
     
     <item>
@@ -117,7 +127,11 @@ I enjoy both mathematics and computer science and have worked in HIT Computer Ne
  Ramen&amp;rsquo;s Box
 本校 ACM 大佬，以 SSP Offer 供职于 Byte Dance。
  云游君的小站 - 希望能成为一个有趣的人。
-16 年运行至今，成熟且完善的个人网站，又深得二次元精髓。
+16 年运行至今，成熟且完善的个人网站，深得二次元精髓。
+ Lil&amp;rsquo;Log
+目前在 Open AI 的国人大牛，她写的很多关于 Reinforcement Learning 的文章非常有启发价值。
+ Zymreal
+同实验室的神仙师兄，Master 期间中了两篇 Deep Mind 顶会，抱大腿取经中。
  </description>
     </item>
     
