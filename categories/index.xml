@@ -5,10 +5,19 @@
     <link>https://chuanbohua.github.io/categories/</link>
     <description>Recent content in Categories on Timegg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 02 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://chuanbohua.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>套词中的核心问题</title>
+      <link>https://chuanbohua.github.io/post/2020-10-10-application/</link>
+      <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://chuanbohua.github.io/post/2020-10-10-application/</guid>
+      <description>2019 年秋季到冬季期间，我经历了长达 4 个月的申请套磁阶段，主要套磁目标是 Hong Kong 五校的教授和少量 Japan、 Singapore 的教授。 过程中的苦一言难尽，走了很多弯</description>
+    </item>
     
     <item>
       <title>气味便利店</title>
@@ -179,15 +188,6 @@
       
       <guid>https://chuanbohua.github.io/post/2020-04-15-%E6%9B%B4%E6%96%B0%E6%8A%A5%E5%91%8A/</guid>
       <description>这里是网站的更新报告。 2020/04/15 网站基于 Hugo 重建，托管于 Github。重建后网站结构如下： Home：主页，7篇为一组展示所有文章； Archives：按</description>
-    </item>
-    
-    <item>
-      <title>关于 Vlog 的反思</title>
-      <link>https://chuanbohua.github.io/post/2020-04-07-vlog/</link>
-      <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://chuanbohua.github.io/post/2020-04-07-vlog/</guid>
-      <description>去年春季拿到了交换生的 Offer，想到要在国外呆上半年的时间，应该会有不少出去旅游的机会，所以准备做一些 vlog。 做 vlog 的点子有很久了，早在 2016</description>
     </item>
     
   </channel>
