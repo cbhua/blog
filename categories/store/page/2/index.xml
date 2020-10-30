@@ -2,191 +2,191 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Store on Timegg</title>
-    <link>https://chuanbohua.github.io/categories/store/</link>
+    <link>https://cbhua.github.io/categories/store/</link>
     <description>Recent content in Store on Timegg</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 22 Jul 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://chuanbohua.github.io/categories/store/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://cbhua.github.io/categories/store/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>更新报告 Update Reports</title>
-      <link>https://chuanbohua.github.io/post/2020-04-15-%E6%9B%B4%E6%96%B0%E6%8A%A5%E5%91%8A/</link>
+      <link>https://cbhua.github.io/post/2020-04-15-%E6%9B%B4%E6%96%B0%E6%8A%A5%E5%91%8A/</link>
       <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://chuanbohua.github.io/post/2020-04-15-%E6%9B%B4%E6%96%B0%E6%8A%A5%E5%91%8A/</guid>
+      <guid>https://cbhua.github.io/post/2020-04-15-%E6%9B%B4%E6%96%B0%E6%8A%A5%E5%91%8A/</guid>
       <description>这里是网站的更新报告。 2020/04/15 网站基于 Hugo 重建，托管于 Github。重建后网站结构如下： Home：主页，7篇为一组展示所有文章； Archives：按</description>
     </item>
     
     <item>
       <title>关于 Vlog 的反思</title>
-      <link>https://chuanbohua.github.io/post/2020-04-07-vlog/</link>
+      <link>https://cbhua.github.io/post/2020-04-07-vlog/</link>
       <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://chuanbohua.github.io/post/2020-04-07-vlog/</guid>
+      <guid>https://cbhua.github.io/post/2020-04-07-vlog/</guid>
       <description>去年春季拿到了交换生的 Offer，想到要在国外呆上半年的时间，应该会有不少出去旅游的机会，所以准备做一些 vlog。 做 vlog 的点子有很久了，早在 2016</description>
     </item>
     
     <item>
       <title>大学第四年的交换</title>
-      <link>https://chuanbohua.github.io/post/2020-04-03-%E4%BA%A4%E6%8D%A2/</link>
+      <link>https://cbhua.github.io/post/2020-04-03-%E4%BA%A4%E6%8D%A2/</link>
       <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://chuanbohua.github.io/post/2020-04-03-%E4%BA%A4%E6%8D%A2/</guid>
+      <guid>https://cbhua.github.io/post/2020-04-03-%E4%BA%A4%E6%8D%A2/</guid>
       <description>前言 这是关于大学第四年三篇文章中的第二篇，主要记录我在 2019 年上半年申请交换生的过程。至于下半年我交换期间的生活，之后可能会另开一篇文章来专门写</description>
     </item>
     
     <item>
       <title>2019 KDD Recommendation System Review</title>
-      <link>https://chuanbohua.github.io/post/2020-03-10-kdd2019/</link>
+      <link>https://cbhua.github.io/post/2020-03-10-kdd2019/</link>
       <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://chuanbohua.github.io/post/2020-03-10-kdd2019/</guid>
+      <guid>https://cbhua.github.io/post/2020-03-10-kdd2019/</guid>
       <description>KDD 2019 有不少 RS 的文章是围绕 Ratings and Reviews Information 进行的，这两种内容慢慢加入 RS 的考虑当中，以获得更好的稳定性和动态性能。依然有少数的文章在讨论 RS 的鲁棒性。 更多</description>
     </item>
     
     <item>
       <title>在 Linux 平台创建 Minecraft Forge 服务器</title>
-      <link>https://chuanbohua.github.io/post/2020-02-15-minecraft-server/</link>
+      <link>https://cbhua.github.io/post/2020-02-15-minecraft-server/</link>
       <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://chuanbohua.github.io/post/2020-02-15-minecraft-server/</guid>
+      <guid>https://cbhua.github.io/post/2020-02-15-minecraft-server/</guid>
       <description>作为一个独立游戏爱好者，自然在平时与朋友联机过很多种游戏。由于独立游戏普遍缺少良好的官方联机渠道或者联机解决方案，搭建自己的服务器成了必修课</description>
     </item>
     
     <item>
       <title>森见登美彦作品《四叠半神话大系》</title>
-      <link>https://chuanbohua.github.io/post/2019-11-28-%E5%9B%9B%E5%8F%A0%E5%8D%8A/</link>
+      <link>https://cbhua.github.io/post/2019-11-28-%E5%9B%9B%E5%8F%A0%E5%8D%8A/</link>
       <pubDate>Thu, 28 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chuanbohua.github.io/post/2019-11-28-%E5%9B%9B%E5%8F%A0%E5%8D%8A/</guid>
+      <guid>https://cbhua.github.io/post/2019-11-28-%E5%9B%9B%E5%8F%A0%E5%8D%8A/</guid>
       <description>《四叠半神话大系》的主题与《春宵苦短，少女前进吧》接近，但是又非常不同。就表达形式上，两部作品都是基于“我”的大学生活，以大学校园为舞台；就</description>
     </item>
     
     <item>
       <title>森见登美彦作品《春宵苦短，少女前进吧》</title>
-      <link>https://chuanbohua.github.io/post/2019-10-10-%E6%98%A5%E5%AE%B5%E8%8B%A6%E7%9F%AD/</link>
+      <link>https://cbhua.github.io/post/2019-10-10-%E6%98%A5%E5%AE%B5%E8%8B%A6%E7%9F%AD/</link>
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chuanbohua.github.io/post/2019-10-10-%E6%98%A5%E5%AE%B5%E8%8B%A6%E7%9F%AD/</guid>
+      <guid>https://cbhua.github.io/post/2019-10-10-%E6%98%A5%E5%AE%B5%E8%8B%A6%E7%9F%AD/</guid>
       <description>森见登美彦是一个“不正经的天才”。 至今为止，我几乎通读了他的全部作品，沉迷于他所描绘的吸引人的奇幻京都：鲤鱼、宵山、天狗、狸猫、鸭川、电气白</description>
     </item>
     
     <item>
       <title>数值分析笔记</title>
-      <link>https://chuanbohua.github.io/post/2019-10-02-%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90%E7%AC%94%E8%AE%B0/</link>
+      <link>https://cbhua.github.io/post/2019-10-02-%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Wed, 02 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chuanbohua.github.io/post/2019-10-02-%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://cbhua.github.io/post/2019-10-02-%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90%E7%AC%94%E8%AE%B0/</guid>
       <description>Numerical Analysis, different from Data Analysis, is a subject of mathematics. The main purpose of this course is using numerical methods such as fitting methods, approaching methods and interpolation methods to approach the results of PDE, ODE, integrations, and solutions of linear equations. These methods are widely used in many aspects, include physics, computer science, biology technology, etc. As long as people need to solve these equations or calculate some</description>
     </item>
     
     <item>
       <title>偏微分方程数值解法笔记</title>
-      <link>https://chuanbohua.github.io/post/2019-09-15-%E5%81%8F%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%AC%94%E8%AE%B0/</link>
+      <link>https://cbhua.github.io/post/2019-09-15-%E5%81%8F%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Sun, 15 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chuanbohua.github.io/post/2019-09-15-%E5%81%8F%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://cbhua.github.io/post/2019-09-15-%E5%81%8F%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%AC%94%E8%AE%B0/</guid>
       <description>Actually, the course I took was Numerical solution of the partial differential equation, rather than Partial Differential Equations. It is quilt different between these two courses. Numerical solution of the partial differential equation is one of the core courses of department of mathematics. It is a really hard course because of the large amount of calculation and abstract methods which is not easy to understand. There are always lots of</description>
     </item>
     
     <item>
       <title>大学第四年的实习</title>
-      <link>https://chuanbohua.github.io/post/2019-09-07-%E5%AE%9E%E4%B9%A0/</link>
+      <link>https://cbhua.github.io/post/2019-09-07-%E5%AE%9E%E4%B9%A0/</link>
       <pubDate>Sat, 07 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chuanbohua.github.io/post/2019-09-07-%E5%AE%9E%E4%B9%A0/</guid>
+      <guid>https://cbhua.github.io/post/2019-09-07-%E5%AE%9E%E4%B9%A0/</guid>
       <description>前言 大学四年级在很多人口中是“收获的一年”：在大学的前三年中努力学习、科研、竞赛和经历各种各样的事情，然后在大学第四年的时候用自己的经历来换</description>
     </item>
     
     <item>
       <title>数学物理方程笔记</title>
-      <link>https://chuanbohua.github.io/post/2019-09-02-%E6%95%B0%E5%AD%A6%E7%89%A9%E7%90%86%E6%96%B9%E7%A8%8B%E7%AC%94%E8%AE%B0/</link>
+      <link>https://cbhua.github.io/post/2019-09-02-%E6%95%B0%E5%AD%A6%E7%89%A9%E7%90%86%E6%96%B9%E7%A8%8B%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chuanbohua.github.io/post/2019-09-02-%E6%95%B0%E5%AD%A6%E7%89%A9%E7%90%86%E6%96%B9%E7%A8%8B%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://cbhua.github.io/post/2019-09-02-%E6%95%B0%E5%AD%A6%E7%89%A9%E7%90%86%E6%96%B9%E7%A8%8B%E7%AC%94%E8%AE%B0/</guid>
       <description>Equations of Mathematical Physics is another subject about using mathematical methods to solve or approach various functions include PDE or ODE, just like the Numerical Analysis. Actually, most of the methods in this subject are included in Numerical Analysis. But this subject focuses on the applications of these methods rather the theories. The textbook lists several examples in physics fields and tries to use these methods to deal with these</description>
     </item>
     
     <item>
       <title>森见登美彦作品《神圣懒汉的冒险》</title>
-      <link>https://chuanbohua.github.io/post/2019-08-25-%E7%A5%9E%E5%9C%A3%E6%87%92%E6%B1%89/</link>
+      <link>https://cbhua.github.io/post/2019-08-25-%E7%A5%9E%E5%9C%A3%E6%87%92%E6%B1%89/</link>
       <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chuanbohua.github.io/post/2019-08-25-%E7%A5%9E%E5%9C%A3%E6%87%92%E6%B1%89/</guid>
+      <guid>https://cbhua.github.io/post/2019-08-25-%E7%A5%9E%E5%9C%A3%E6%87%92%E6%B1%89/</guid>
       <description>森见的《神圣懒汉的冒险》发布于 2013 年，是他作品中较晚的一部。有趣的是，在这一部作品中有非常多的曾经的作品的元素，或者称之为彩蛋在其中。森见也在</description>
     </item>
     
     <item>
       <title>森见登美彦作品《宵山万花筒》</title>
-      <link>https://chuanbohua.github.io/post/2019-08-20-%E5%AE%B5%E5%B1%B1%E4%B8%87%E8%8A%B1%E7%AD%92/</link>
+      <link>https://cbhua.github.io/post/2019-08-20-%E5%AE%B5%E5%B1%B1%E4%B8%87%E8%8A%B1%E7%AD%92/</link>
       <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chuanbohua.github.io/post/2019-08-20-%E5%AE%B5%E5%B1%B1%E4%B8%87%E8%8A%B1%E7%AD%92/</guid>
+      <guid>https://cbhua.github.io/post/2019-08-20-%E5%AE%B5%E5%B1%B1%E4%B8%87%E8%8A%B1%E7%AD%92/</guid>
       <description>《宵山万花镜》属于森见登美彦作品风格主分支中的一种，一种有些怪诞、略有恐怖元素但依然是充满趣味的故事。真的是森见的每一部作品都好像遵循“有趣</description>
     </item>
     
     <item>
       <title>拓扑学笔记</title>
-      <link>https://chuanbohua.github.io/post/2019-08-14-%E6%8B%93%E6%89%91%E5%AD%A6%E7%AC%94%E8%AE%B0/</link>
+      <link>https://cbhua.github.io/post/2019-08-14-%E6%8B%93%E6%89%91%E5%AD%A6%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chuanbohua.github.io/post/2019-08-14-%E6%8B%93%E6%89%91%E5%AD%A6%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://cbhua.github.io/post/2019-08-14-%E6%8B%93%E6%89%91%E5%AD%A6%E7%AC%94%E8%AE%B0/</guid>
       <description>Topology, I think it is the top course in the field of Algebra. “Top” not only means that it can be widely used in many aspects, including the finance, the computer network, etc but is really hard to learn and understand because it is too abstract. But it does not matter that topology is an interesting course. For example, topology space is always called “P</description>
     </item>
     
     <item>
       <title>信息论笔记</title>
-      <link>https://chuanbohua.github.io/post/2019-06-02-%E4%BF%A1%E6%81%AF%E8%AE%BA%E7%AC%94%E8%AE%B0/</link>
+      <link>https://cbhua.github.io/post/2019-06-02-%E4%BF%A1%E6%81%AF%E8%AE%BA%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Sun, 02 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chuanbohua.github.io/post/2019-06-02-%E4%BF%A1%E6%81%AF%E8%AE%BA%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://cbhua.github.io/post/2019-06-02-%E4%BF%A1%E6%81%AF%E8%AE%BA%E7%AC%94%E8%AE%B0/</guid>
       <description>Information Theory is a basic course of information &amp;amp; computing science department I took before. Compared with some mathematics courses, it is a bit easier to a certain degree. But maybe the textbook we used was basic. Anyway, this course was interesting and seemly useful because we can combine these theories with our real life. This note is the note I took during the final exam period and it may</description>
     </item>
     
     <item>
       <title>信息论实验</title>
-      <link>https://chuanbohua.github.io/post/2019-05-09-%E4%BF%A1%E6%81%AF%E8%AE%BA%E5%AE%9E%E9%AA%8C/</link>
+      <link>https://cbhua.github.io/post/2019-05-09-%E4%BF%A1%E6%81%AF%E8%AE%BA%E5%AE%9E%E9%AA%8C/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chuanbohua.github.io/post/2019-05-09-%E4%BF%A1%E6%81%AF%E8%AE%BA%E5%AE%9E%E9%AA%8C/</guid>
+      <guid>https://cbhua.github.io/post/2019-05-09-%E4%BF%A1%E6%81%AF%E8%AE%BA%E5%AE%9E%E9%AA%8C/</guid>
       <description>本学期专业课程中有信息论这一门课程，在此之前我学习神经网络的过程中了解了一些与信息论相关的内容，也很开心能开这门课。在这学期中有一些信息论的</description>
     </item>
     
     <item>
       <title>浅谈 Procreate</title>
-      <link>https://chuanbohua.github.io/post/2019-05-03-%E6%B5%85%E8%B0%88-procreate/</link>
+      <link>https://cbhua.github.io/post/2019-05-03-%E6%B5%85%E8%B0%88-procreate/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chuanbohua.github.io/post/2019-05-03-%E6%B5%85%E8%B0%88-procreate/</guid>
+      <guid>https://cbhua.github.io/post/2019-05-03-%E6%B5%85%E8%B0%88-procreate/</guid>
       <description>Procreate® is the most powerful and intuitive digital illustration app available for iPad. It&amp;rsquo;s packed with features artists love, and it&amp;rsquo;s an iPad exclusive. 在 iPad 上进行画画，被推荐最多的软件就是 Procreate。作为一个移动端的创</description>
     </item>
     
     <item>
       <title>在 Linux 平台创建 DST 多人服务器</title>
-      <link>https://chuanbohua.github.io/post/2019-04-15-centos-%E6%90%AD%E5%BB%BA%E9%A5%A5%E8%8D%92%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <link>https://cbhua.github.io/post/2019-04-15-centos-%E6%90%AD%E5%BB%BA%E9%A5%A5%E8%8D%92%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chuanbohua.github.io/post/2019-04-15-centos-%E6%90%AD%E5%BB%BA%E9%A5%A5%E8%8D%92%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <guid>https://cbhua.github.io/post/2019-04-15-centos-%E6%90%AD%E5%BB%BA%E9%A5%A5%E8%8D%92%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description>在此之前我在阿里云服务器上托管了我们的群机器人，这些天突然想到可以使用服务器剩余的算力进行开服，和小伙伴们一起玩一些游戏。 最先想到的就是《饥</description>
     </item>
     
     <item>
       <title>在 Linux 平台创建 Tencent QQ 机器人</title>
-      <link>https://chuanbohua.github.io/post/2019-03-16-tencent-robot/</link>
+      <link>https://cbhua.github.io/post/2019-03-16-tencent-robot/</link>
       <pubDate>Sat, 16 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chuanbohua.github.io/post/2019-03-16-tencent-robot/</guid>
+      <guid>https://cbhua.github.io/post/2019-03-16-tencent-robot/</guid>
       <description>由于学校的情况，我在日常生活中更多使用 Tencent QQ，也加入了很多的 QQ 群。有老师建立的学术交流群，也有一群相同爱好的人组成的兴趣群。 这些群之中有不少</description>
     </item>
     
     <item>
       <title>我所读过的一些刘慈欣的作品</title>
-      <link>https://chuanbohua.github.io/post/2019-02-11-%E6%88%91%E7%9A%84%E7%A7%91%E5%B9%BB%E6%97%85%E7%A8%8B/</link>
+      <link>https://cbhua.github.io/post/2019-02-11-%E6%88%91%E7%9A%84%E7%A7%91%E5%B9%BB%E6%97%85%E7%A8%8B/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chuanbohua.github.io/post/2019-02-11-%E6%88%91%E7%9A%84%E7%A7%91%E5%B9%BB%E6%97%85%E7%A8%8B/</guid>
+      <guid>https://cbhua.github.io/post/2019-02-11-%E6%88%91%E7%9A%84%E7%A7%91%E5%B9%BB%E6%97%85%E7%A8%8B/</guid>
       <description>前言 The vast ocean of stars can always carry our infinite imagination. 浩瀚的星空永远是我们无穷的想象力的归宿。 —— 刘慈欣，于克拉克想象力社会贡献奖颁奖仪式 正如 2006 年，刘慈欣作品《地球往事</description>
     </item>
     
