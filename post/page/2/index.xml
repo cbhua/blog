@@ -5,10 +5,28 @@
     <link>https://cbhua.github.io/post/</link>
     <description>Recent content in Posts on Timegg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 15 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://cbhua.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>生活需要一些期待</title>
+      <link>https://cbhua.github.io/post/2020-05-07-%E6%9C%9F%E5%BE%85/</link>
+      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cbhua.github.io/post/2020-05-07-%E6%9C%9F%E5%BE%85/</guid>
+      <description>在这个时代，希望是和钻石一样稀有的东西。 流浪地球中这么说。 虽然在现实生活中我们并没有面临那么严峻的未来，但是存有一些对未来的期待总是一件有价</description>
+    </item>
+    
+    <item>
+      <title>ZeroTier 建立虚拟局域网</title>
+      <link>https://cbhua.github.io/post/2020-04-21-zerotier/</link>
+      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cbhua.github.io/post/2020-04-21-zerotier/</guid>
+      <description>这是远程联机游戏的终极解决方案。 不得不说别人建立虚拟局域网都是为了远程办公或者是使用校网权限，而我天天搞各种计算机网络的东西都是为了和同学联</description>
+    </item>
     
     <item>
       <title>更新报告 Update Reports</title>
@@ -170,24 +188,6 @@
       
       <guid>https://cbhua.github.io/post/2019-04-15-centos-%E6%90%AD%E5%BB%BA%E9%A5%A5%E8%8D%92%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description>在此之前我在阿里云服务器上托管了我们的群机器人，这些天突然想到可以使用服务器剩余的算力进行开服，和小伙伴们一起玩一些游戏。 最先想到的就是《饥</description>
-    </item>
-    
-    <item>
-      <title>在 Linux 平台创建 Tencent QQ 机器人</title>
-      <link>https://cbhua.github.io/post/2019-03-16-tencent-robot/</link>
-      <pubDate>Sat, 16 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cbhua.github.io/post/2019-03-16-tencent-robot/</guid>
-      <description>由于学校的情况，我在日常生活中更多使用 Tencent QQ，也加入了很多的 QQ 群。有老师建立的学术交流群，也有一群相同爱好的人组成的兴趣群。 这些群之中有不少</description>
-    </item>
-    
-    <item>
-      <title>我所读过的一些刘慈欣的作品</title>
-      <link>https://cbhua.github.io/post/2019-02-11-%E6%88%91%E7%9A%84%E7%A7%91%E5%B9%BB%E6%97%85%E7%A8%8B/</link>
-      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cbhua.github.io/post/2019-02-11-%E6%88%91%E7%9A%84%E7%A7%91%E5%B9%BB%E6%97%85%E7%A8%8B/</guid>
-      <description>前言 The vast ocean of stars can always carry our infinite imagination. 浩瀚的星空永远是我们无穷的想象力的归宿。 —— 刘慈欣，于克拉克想象力社会贡献奖颁奖仪式 正如 2006 年，刘慈欣作品《地球往事</description>
     </item>
     
   </channel>

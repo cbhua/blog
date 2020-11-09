@@ -5,10 +5,28 @@
     <link>https://cbhua.github.io/tags/</link>
     <description>Recent content in Tags on Timegg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 15 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://cbhua.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>魔术小课堂：教你如何复制物品</title>
+      <link>https://cbhua.github.io/post/2020-11-07-magic/</link>
+      <pubDate>Sat, 07 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cbhua.github.io/post/2020-11-07-magic/</guid>
+      <description>Hi，欢迎来到魔术小课堂，这个课堂的目标是传授大家一些实用的简单魔术。既然这是你第一次来到我们的课堂，我来给你介绍一些基本的概念。 鉴于你将会</description>
+    </item>
+    
+    <item>
+      <title>找到真正想做的事情</title>
+      <link>https://cbhua.github.io/post/2020-10-27-what-real-to-do/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cbhua.github.io/post/2020-10-27-what-real-to-do/</guid>
+      <description>如果现在立即给你一天的假期，你会做什么？ 补觉、看剧、打游戏，或者旅游，都是度过这一天的方法。不过当你真正工作的时候，辛辛苦苦等到周末的时候，</description>
+    </item>
     
     <item>
       <title>用不可解释的方法去夸人</title>
@@ -170,24 +188,6 @@
       
       <guid>https://cbhua.github.io/post/2020-05-09-%E9%94%AE%E7%9B%98/</guid>
       <description>年轻人不要碰的东西系列：国外老土键盘、塑料玩具小人、暖儿罩子、大功率电暖风、截图神器、电疗入门教程……。 现在看来，上面的东西里面似乎只有大功</description>
-    </item>
-    
-    <item>
-      <title>生活需要一些期待</title>
-      <link>https://cbhua.github.io/post/2020-05-07-%E6%9C%9F%E5%BE%85/</link>
-      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://cbhua.github.io/post/2020-05-07-%E6%9C%9F%E5%BE%85/</guid>
-      <description>在这个时代，希望是和钻石一样稀有的东西。 流浪地球中这么说。 虽然在现实生活中我们并没有面临那么严峻的未来，但是存有一些对未来的期待总是一件有价</description>
-    </item>
-    
-    <item>
-      <title>ZeroTier 建立虚拟局域网</title>
-      <link>https://cbhua.github.io/post/2020-04-21-zerotier/</link>
-      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://cbhua.github.io/post/2020-04-21-zerotier/</guid>
-      <description>这是远程联机游戏的终极解决方案。 不得不说别人建立虚拟局域网都是为了远程办公或者是使用校网权限，而我天天搞各种计算机网络的东西都是为了和同学联</description>
     </item>
     
   </channel>

@@ -4,42 +4,63 @@
   
   <url>
     <loc>https://cbhua.github.io/categories/</loc>
-    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-07T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cbhua.github.io/categories/essay/</loc>
-    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+    <loc>https://cbhua.github.io/categories/lecture/</loc>
+    <lastmod>2020-11-07T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://cbhua.github.io/tags/life/</loc>
-    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-07T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://cbhua.github.io/post/</loc>
-    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-07T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://cbhua.github.io/tags/</loc>
-    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-07T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://cbhua.github.io/</loc>
-    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-07T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cbhua.github.io/post/2020-11-07-magic/</loc>
+    <lastmod>2020-11-07T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cbhua.github.io/categories/essay/</loc>
+    <lastmod>2020-10-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cbhua.github.io/post/2020-10-27-what-real-to-do/</loc>
+    <lastmod>2020-10-27T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -291,13 +312,6 @@
   
   <url>
     <loc>https://cbhua.github.io/post/2020-03-10-kdd2019/</loc>
-    <lastmod>2020-02-15T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cbhua.github.io/categories/lecture/</loc>
     <lastmod>2020-02-15T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
