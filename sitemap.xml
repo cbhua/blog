@@ -4,7 +4,49 @@
   
   <url>
     <loc>https://cbhua.github.io/categories/</loc>
-    <lastmod>2020-11-07T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-25T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cbhua.github.io/categories/essay/</loc>
+    <lastmod>2020-11-25T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cbhua.github.io/tags/life/</loc>
+    <lastmod>2020-11-25T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cbhua.github.io/post/</loc>
+    <lastmod>2020-11-25T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cbhua.github.io/tags/</loc>
+    <lastmod>2020-11-25T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cbhua.github.io/</loc>
+    <lastmod>2020-11-25T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cbhua.github.io/post/2020-11-25-communicate/</loc>
+    <lastmod>2020-11-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -17,43 +59,8 @@
   </url>
   
   <url>
-    <loc>https://cbhua.github.io/tags/life/</loc>
-    <lastmod>2020-11-07T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cbhua.github.io/post/</loc>
-    <lastmod>2020-11-07T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cbhua.github.io/tags/</loc>
-    <lastmod>2020-11-07T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cbhua.github.io/</loc>
-    <lastmod>2020-11-07T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://cbhua.github.io/post/2020-11-07-magic/</loc>
     <lastmod>2020-11-07T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cbhua.github.io/categories/essay/</loc>
-    <lastmod>2020-10-27T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

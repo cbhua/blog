@@ -5,10 +5,19 @@
     <link>https://cbhua.github.io/post/</link>
     <description>Recent content in Posts on Timegg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 07 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://cbhua.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>在 Linux 平台创建 DST 多人服务器</title>
+      <link>https://cbhua.github.io/post/2019-04-15-centos-%E6%90%AD%E5%BB%BA%E9%A5%A5%E8%8D%92%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cbhua.github.io/post/2019-04-15-centos-%E6%90%AD%E5%BB%BA%E9%A5%A5%E8%8D%92%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description>在此之前我在阿里云服务器上托管了我们的群机器人，这些天突然想到可以使用服务器剩余的算力进行开服，和小伙伴们一起玩一些游戏。 最先想到的就是《饥</description>
+    </item>
     
     <item>
       <title>在 Linux 平台创建 Tencent QQ 机器人</title>

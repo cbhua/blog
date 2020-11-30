@@ -5,10 +5,19 @@
     <link>https://cbhua.github.io/categories/</link>
     <description>Recent content in Categories on Timegg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 07 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://cbhua.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>我吐槽了你的吐槽：语言上一层</title>
+      <link>https://cbhua.github.io/post/2020-11-25-communicate/</link>
+      <pubDate>Wed, 25 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cbhua.github.io/post/2020-11-25-communicate/</guid>
+      <description>“哇哦，您真是太学习了，这个点还在实验室。” “不不不，像您这样的大佬早做完作业了，我不配早回去。” “不不不，您所有作业都写完了还在 Push 自己，什</description>
+    </item>
     
     <item>
       <title>魔术小课堂：教你如何复制物品</title>
@@ -179,15 +188,6 @@
       
       <guid>https://cbhua.github.io/post/2020-05-11-dataset/</guid>
       <description>众所周知的 MNIST 数据集的源文件就是以 IDX 数据形式存放的，其文件名为： train-images-idx3-ubyte train-labels-idx1-ubyte t10k-images-idx3-ubyte t10k-labels-idx1-ubyte MINST 数据集的官方网页有写明其 IDX3 文件和 IDX1 文件的具体内部结构。但是大家一般使</description>
-    </item>
-    
-    <item>
-      <title>国内老土键盘 Niz plum</title>
-      <link>https://cbhua.github.io/post/2020-05-09-%E9%94%AE%E7%9B%98/</link>
-      <pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://cbhua.github.io/post/2020-05-09-%E9%94%AE%E7%9B%98/</guid>
-      <description>年轻人不要碰的东西系列：国外老土键盘、塑料玩具小人、暖儿罩子、大功率电暖风、截图神器、电疗入门教程……。 现在看来，上面的东西里面似乎只有大功</description>
     </item>
     
   </channel>
