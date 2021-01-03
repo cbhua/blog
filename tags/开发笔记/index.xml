@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>开发笔记 on TIMEGG</title>
+    <link>http://localhost:1313/tags/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in 开发笔记 on TIMEGG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0900</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>网站的更新报告</title>
+      <link>http://localhost:1313/posts/20210101-update/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20210101-update/</guid>
+      <description>这里是网站的更新报告，TIMEGG 从 2017 年运行至今经历了多次更新，每次更新的内容将会记录在此。网站在几次大型更新中遗失了很多内容，这些旧网站存档将会在另一个 GitHub Repository 中展示。</description>
+    </item>
+    
+    <item>
+      <title>小程序开发笔记：我是欧皇吗</title>
+      <link>http://localhost:1313/posts/20200609-wechatapp/</link>
+      <pubDate>Tue, 09 Jun 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200609-wechatapp/</guid>
+      <description>因为疫情在家没有事情做，决定用四十八小时挑战制作一个微信小程序。这个小程序用于计算各种扭蛋游戏的结果概率，在平常玩各种手游中具有参考价值和使用价值。目前该小程序已登陆微信小程序商店，搜索“我今天是欧皇吗”即可找到。</description>
+    </item>
+    
+  </channel>
+</rss>

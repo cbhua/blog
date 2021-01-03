@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Chuanbo" />
+	
+	
+	
+	<title>Google 机器学习中文教程笔记 ｜ TIMEGG</title>
+	
+    
+    
+    <meta name="description" content="Google 做了一个关于机器学习的中文教程，感兴趣地去学了前几章，因为没有很好的代码基础，所以学起来有很多不太理解的地方。整体上教程作为入门会很方便，但是难度梯度对我来说还是太高。" />
+    
+
+    
+    
+    <meta name="keywords" content="Hugo, theme, zozo" />
+    
+
+	
+    
+    <link rel="shortcut icon" href="http://localhost:1313/images/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/zozo.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/highlight.css" />
+
+    
+    
+</head>
+
+<body>
+    <div class="main animate__animated animate__fadeInDown">
+        <div class="nav_container animated fadeInDown">
+    <div class="site_nav" id="site_nav">
+        <ul>
+            
+            <li>
+                <a href="/">主页</a>
+            </li>
+            
+            <li>
+                <a href="/posts/">归档</a>
+            </li>
+            
+            <li>
+                <a href="/tags/">标签</a>
+            </li>
+            
+            <li>
+                <a href="/links/">链接</a>
+            </li>
+            
+            <li>
+                <a href="/about/">关于</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="menu_icon">
+        <a id="menu_icon"><i class="ri-menu-line"></i></a>
+    </div>
+</div>
+        <div class="header animated fadeInDown">
+    <div class="site_title_container">
+        <div class="site_title">
+            <h1>
+                <a href="http://localhost:1313/">
+                    <span>TIMEGG</span>
+                </a>
+            </h1>
+        </div>
+        <div class="description">
+            <p class="sub_title">放进时光蛋里。</p>
+            <div class="my_socials">
+                
+                
+                <a href="https://github.com/cbhua" title="github" target="_blank"><i class="ri-github-fill"></i></a>
+                
+                
+                
+                <a href="%20" title="instagram" target="_blank"><i class="ri-instagram-fill"></i></a>
+                
+                
+                
+                <a href="https://twitter.com/huachuanbo" title="twitter" target="_blank"><i class="ri-twitter-fill"></i></a>
+                
+                
+                
+                <a href="https://weibo.com/u/6177306082" title="weibo" target="_blank"><i class="ri-weibo-fill"></i></a>
+                
+                
+                <a href="http://localhost:1313/index.xml" type="application/rss+xml" title="rss" target="_blank"><i
+                        class="ri-rss-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="content">
+            <div class="post_page">
+                <div class="post animate__animated animate__fadeInDown">
+                    <div class="post_title post_detail_title">
+                        <h2><a href='/posts/20180104-googleml/'>Google 机器学习中文教程笔记</a></h2>
+                        <span class="date">2018.01.04</span>
+                    </div>
+                    <div class="post_content markdown"><h1 id="前言">前言</h1>
+<blockquote>
+<p>    <strong>机器学习</strong>是<a href="https://zh.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD">人工智能</a>的一个分支。人工智能的研究历史有着一条从以“<a href="https://zh.wikipedia.org/wiki/%E6%8E%A8%E7%90%86">推理</a>”为重点，到以“<a href="https://zh.wikipedia.org/wiki/%E7%9F%A5%E8%AF%86">知识</a>”为重点，再到以“<a href="https://zh.wikipedia.org/wiki/%E5%AD%A6%E4%B9%A0">学习</a>”为重点的自然、清晰的脉络。显然，机器学习是实现人工智能的一个途径，即以机器学习为手段解决人工智能中的问题。机器学习在近30多年已发展为一门多领域<a href="https://zh.wikipedia.org/wiki/%E4%BA%A4%E5%8F%89%E5%AD%A6%E7%A7%91">交叉学科</a>，涉及<a href="https://zh.wikipedia.org/wiki/%E6%A6%82%E7%8E%87%E8%AE%BA">概率论</a>、<a href="https://zh.wikipedia.org/wiki/%E7%BB%9F%E8%AE%A1%E5%AD%A6">统计学</a>、<a href="https://zh.wikipedia.org/wiki/%E9%80%BC%E8%BF%91%E8%AE%BA">逼近论</a>、<a href="https://zh.wikipedia.org/w/index.php?title=%E5%87%B8%E5%88%86%E6%9E%90&amp;action=edit&amp;redlink=1">凸分析</a>、<a href="https://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E5%A4%8D%E6%9D%82%E6%80%A7%E7%90%86%E8%AE%BA">计算复杂性理论</a>等多门学科。机器学习理论主要是设计和分析一些让<a href="https://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA">计算机</a>可以自动“<a href="https://zh.wikipedia.org/wiki/%E5%AD%A6%E4%B9%A0">学习</a>”的<a href="https://zh.wikipedia.org/wiki/%E7%AE%97%E6%B3%95">算法</a>。机器学习算法是一类从<a href="https://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE">数据</a>中自动分析获得<a href="https://zh.wikipedia.org/wiki/%E8%A7%84%E5%BE%8B">规律</a>，并利用规律对未知数据进行预测的算法。因为学习算法中涉及了大量的统计学理论，机器学习与<a href="https://zh.wikipedia.org/wiki/%E6%8E%A8%E6%96%AD%E7%BB%9F%E8%AE%A1%E5%AD%A6">推断统计学</a>联系尤为密切，也被称为<strong>统计学习理论</strong>。算法设计方面，机器学习理论关注可以实现的，行之有效的学习算法。很多<a href="https://zh.wikipedia.org/wiki/%E6%8E%A8%E8%AE%BA">推论</a>问题属于<a href="https://zh.wikipedia.org/w/index.php?title=%E6%97%A0%E7%A8%8B%E5%BA%8F%E5%8F%AF%E5%BE%AA%E9%9A%BE%E5%BA%A6&amp;action=edit&amp;redlink=1">无程序可循难度</a>，所以部分的机器学习研究是开发容易处理的近似算法。</p>
+<p>    机器学习已广泛应用于<a href="https://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98">数据挖掘</a>、<a href="https://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89">计算机视觉</a>、<a href="https://zh.wikipedia.org/wiki/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86">自然语言处理</a>、<a href="https://zh.wikipedia.org/wiki/%E7%94%9F%E7%89%A9%E7%89%B9%E5%BE%81%E8%AF%86%E5%88%AB">生物特征识别</a>、<a href="https://zh.wikipedia.org/wiki/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E">搜索引擎</a>、<a href="https://zh.wikipedia.org/wiki/%E8%AF%8A%E6%96%AD">医学诊断</a>、检测<a href="https://zh.wikipedia.org/w/index.php?title=%E4%BF%A1%E7%94%A8%E5%8D%A1%E6%AC%BA%E8%AF%88&amp;action=edit&amp;redlink=1">信用卡欺诈</a>、<a href="https://zh.wikipedia.org/wiki/%E8%AD%89%E5%88%B8%E5%B8%82%E5%A0%B4">证券市场</a>分析、<a href="https://zh.wikipedia.org/wiki/DNA%E5%BA%8F%E5%88%97">DNA序列</a>测序、<a href="https://zh.wikipedia.org/wiki/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB">语音</a>和<a href="https://zh.wikipedia.org/wiki/%E6%89%8B%E5%86%99%E8%AF%86%E5%88%AB">手写</a>识别、<a href="https://zh.wikipedia.org/wiki/%E6%88%98%E7%95%A5%E6%B8%B8%E6%88%8F">战略游戏</a>和<a href="https://zh.wikipedia.org/wiki/%E6%9C%BA%E5%99%A8%E4%BA%BA">机器人</a>等领域。</p>
+<p>—— Wiki 机器学习</p>
+</blockquote>
+<h1 id="正文">正文</h1>
+<h3 id="pandas-简介">Pandas 简介</h3>
+<p>pandas 的两个结构：</p>
+<ul>
+<li>DataFrame：表格（关系）</li>
+<li>Series：列</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
+
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+
+<span class="o">//</span> <span class="err">创建</span> <span class="n">DataFrame</span>
+<span class="n">city_names</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s1">&#39;San Francisco&#39;</span><span class="p">,</span> <span class="s1">&#39;San Jose&#39;</span><span class="p">,</span> <span class="s1">&#39;Sacramento&#39;</span><span class="p">])</span>
+<span class="n">population</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="mi">852469</span><span class="p">,</span> <span class="mi">1015785</span><span class="p">,</span> <span class="mi">485199</span><span class="p">])</span>
+
+<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span> <span class="s1">&#39;City name&#39;</span><span class="p">:</span> <span class="n">city_names</span><span class="p">,</span> <span class="s1">&#39;Population&#39;</span><span class="p">:</span> <span class="n">population</span> <span class="p">})</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+
+<span class="o">//</span> <span class="err">访问数据</span>
+<span class="n">cities</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span> <span class="s1">&#39;City name&#39;</span><span class="p">:</span> <span class="n">city_names</span><span class="p">,</span> <span class="s1">&#39;Population&#39;</span><span class="p">:</span> <span class="n">population</span> <span class="p">})</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">cities</span><span class="p">[</span><span class="s1">&#39;City name&#39;</span><span class="p">]))</span>
+<span class="n">cities</span><span class="p">[</span><span class="s1">&#39;City name&#39;</span><span class="p">]</span>
+
+<span class="o">//</span> <span class="err">操作数据</span>
+<span class="n">population</span> <span class="o">/</span> <span class="mi">1000</span> <span class="o">//</span> <span class="n">Python</span> <span class="err">基本运算指令</span>
+</code></pre></div><h3 id="机器学习基础概念">机器学习基础概念</h3>
+<blockquote>
+<p>（监督式）机器学习定义：机器学习系统通过学习如何组合输入信息来对从未见过的数据做出有用的预测。</p>
+</blockquote>
+<p><strong>特征</strong>：用于描述数据的输入变量。ex: 用户态度</p>
+<p><strong>标签</strong>：我们所需要预测的真实事物。ex: 喜欢/不喜欢</p>
+<p><strong>样本</strong>：</p>
+<ul>
+<li>无标签样本：可用于<strong>推断</strong></li>
+<li>有标签样本：可用于<strong>训练</strong></li>
+</ul>
+<p><strong>模型</strong>：执行预测的工具</p>
+<ul>
+<li>回归模型：可预测连续值</li>
+<li>分类模型：可预测离散值</li>
+</ul>
+<h3 id="深入了解机器学习">深入了解机器学习</h3>
+<p><strong>线性回归</strong></p>
+<p>机器学习中的线性回归比较不同，其一般形式：</p>
+<p>$$y' = b + w_1 * x_1 + w_2 * x_2 + w_3 * x_3 + &hellip;$$</p>
+<p>其中 ：</p>
+<ul>
+<li>
+<p>$w_i$ 指的是特征 $i$ 的权重（表现在图像中是斜率）</p>
+</li>
+<li>
+<p>$x_i$ 指的是特征</p>
+</li>
+</ul>
+<p>最后得出的 $y'$ 是标签（输出值）</p>
+<p><strong>训练</strong></p>
+<p>训练指的是检查多个样本并尝试找出可最大限度减少损失的模型，该过程也叫做经验风险最小化</p>
+<p><strong>损失</strong></p>
+<p>均方误差（MSE）：</p>
+<p>$$MSE = \frac{1}{N} \sum_{(x,y)\in D} (y - prediction(x))^2$$</p>
+<p>是常用的机器学习损失函数。</p>
+<h3 id="降低损失的方法">降低损失的方法</h3>
+<p><strong>迭代方法</strong></p>
+<p>中止条件：总体损失不再变化或者变化极为缓慢，此时称该模型已收敛</p>
+<p><strong>梯度下降法</strong></p>
+<p>原理：运用迭代法寻找收敛函数时，损失与权重总会有且是唯一一个最低点</p>
+<p><img src="https://developers.google.com/machine-learning/crash-course/images/convex.svg?hl=zh-cn" alt="img"></p>
+<p>以初值为基础，反复寻找使得梯度下降的下一个点，以达到寻找收敛函数的目的。</p>
+<p>概念：学习速率：即寻找下一个点的步长的函数，设定恰当的学习速率，可以让机器学习更加的高效。而不恰当的学习速率会使得梯度下降法永远无法达到收敛函数。</p>
+<p><strong>随机梯度下降法</strong></p>
+<p>概念：批量：用于在单次迭代中计算梯度的样本总量。在样本量较大时单次迭代的计算量非常的大，所以随机选取一部分进行计算。我们分别称之为小批量与全批量。</p>
+<blockquote>
+<p>令人惊奇的是，小批量甚至只包含一个样本的随机梯度下降法的效率通常比全批量的效率要高，而且成本也低。</p>
+</blockquote>
+<h3 id="开始使用-tensorflow">开始使用 TensorFlow</h3>
+<p><img src="https://developers.google.com/machine-learning/crash-course/images/TFHierarchy.svg?hl=zh-cn" alt="img"></p>
+<p>越高级越抽象，所需代码量越少，易于使用，但是不直观；越基层的越直观，更加的灵活，但是使用起来会困难一些。</p>
+<p>在这篇教程中使用的是 tf.estimator API ，与 scikit-learn API 兼容，该 API 是 Python 开源的机器学习库。下述是一个使用线性回归的例子：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>
+
+<span class="c1"># Set up a linear classifier.</span>
+<span class="n">classifier</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">estimator</span><span class="o">.</span><span class="n">LinearClassifier</span><span class="p">()</span>
+
+<span class="c1"># Train the model on some example data.</span>
+<span class="n">classifier</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">input_fn</span><span class="o">=</span><span class="n">train_input_fn</span><span class="p">,</span> <span class="n">steps</span><span class="o">=</span><span class="mi">2000</span><span class="p">)</span>
+
+<span class="c1"># Use it to predict.</span>
+<span class="n">predictions</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">input_fn</span><span class="o">=</span><span class="n">predict_input_fn</span><span class="p">)</span>
+</code></pre></div><p>在我们加载完成数据之后一般都会进行随机化处理，确保不会出现病态排序结果（这种病态排序可能会损害随机梯度下降法的效果）</p>
+<p>构建模型的步骤：</p>
+<ol>
+<li>
+<p>配置特征及特征列：即从数据库提出我们需要用的特征那一列的标签，特征列指的是特征的数据类型</p>
+</li>
+<li>
+<p>定义目标：即从数据库提出我们想要预测的特征的标签</p>
+</li>
+<li>
+<p>配置回归模型：例如线性回归模型使用 Linear Regressor</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">my_optimizer</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">GradientDescentOptimizer</span><span class="p">(</span><span class="n">learning_rate</span><span class="o">=</span><span class="mf">0.0000001</span><span class="p">)</span>
+<span class="n">my_optimizer</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">estimator</span><span class="o">.</span><span class="n">clip_gradients_by_norm</span><span class="p">(</span><span class="n">my_optimizer</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">)</span>
+<span class="n">linear_regressor</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">estimator</span><span class="o">.</span><span class="n">LinearRegressor</span><span class="p">(</span>
+    <span class="n">feature_columns</span> <span class="o">=</span> <span class="n">feature_columns</span><span class="p">,</span>
+    <span class="n">optimizer</span> <span class="o">=</span> <span class="n">my_optimizer</span>
+<span class="p">)</span>
+</code></pre></div></li>
+<li>
+<p>定义输入函数：创建一个函数来处理数据（在每一次训练中）<em>这一部分目前不是很清楚，参考教程说法</em></p>
+</li>
+<li>
+<p>训练模型：使用上述配置的回归模型进行 train</p>
+</li>
+<li>
+<p>评估模型：基于一次的训练结果进行预测，计算模型计算结果与实际结果的拟合程度（常常通过 MSE 或者 RMSE）</p>
+<ul>
+<li>拟合不足：模型复杂程度不够，虽然大体上有相应的规律，但整体上偏差还是很大</li>
+<li>过拟合：模型的复杂程度高于模型所需要的复杂程度，虽然训练数据产生损失比较少，但预测新数据的时候依然很糟糕</li>
+</ul>
+<blockquote>
+<p>机器学习模型越简单，良好的实证结果就越有可能不仅仅基于样本的特性。</p>
+<p>—— 奥卡姆剃刀定律在机器学习方面的应用</p>
+</blockquote>
+</li>
+</ol>
+<p>常用参数：</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">steps</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="o">//</span> <span class="err">训练迭代总步数</span>
+<span class="n">batch_size</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="o">//</span> <span class="err">单步的样本数量（随机选择）</span>
+<span class="n">periods</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="o">//</span> <span class="err">方便变量的一种。控制报告的粒度</span>
+<span class="o">//</span> <span class="n">ex</span><span class="o">.</span> <span class="err">此时</span> <span class="n">periods</span> <span class="o">=</span> <span class="mi">1</span><span class="err">，</span><span class="n">steps</span> <span class="o">=</span> <span class="mi">10</span> <span class="err">那么每</span> <span class="mi">10</span> <span class="err">次输出一次损失值</span>
+</code></pre></div><p>成立：</p>
+<p>$$total\ number\ of\ trained\ examples = batch\ size \times steps$$</p>
+<p>$$number\ of\ training\ examples\ in\ each\ period = \frac{batch\ size \times steps}{periods}$$</p>
+<p><strong>合成特征</strong>：将多个特征处理成一个特征。ex. 地区人口量与地区面积合成为地区人口密度</p>
+<p><strong>离群值</strong>：顾名思义，在输入的数据中有少量的值与我们模型预测结果偏差较大（该偏差量由具体情况确定），这些数值被称为离群值，常常将其截取（移除）</p>
+<p><strong>泛化能力</strong>：是指机器学习算法对新鲜样本的适应能力，体现在</p>
+<ul>
+<li>模型的复杂程度</li>
+<li>模型在处理训练数据方面的表现</li>
+</ul>
+<p>在此基础上诞生了<strong>训练集</strong>与<strong>测试集</strong>的概念</p>
+<ul>
+<li><strong>训练集</strong> - 用于训练模型的子集</li>
+<li><strong>测试集</strong> - 用于测试训练后模型的子集</li>
+</ul>
+<p>训练集使用绝大部分的数据，但这样会产生一个问题，<em>多次重复执行测试集的指导会使我们不知不觉的拟合测试集特性</em>，从而产生过拟合的情况，所以在上述两个集合之外我们再加上</p>
+<ul>
+<li><strong>验证集</strong> - 用于评估训练集的效果，原测试集效果</li>
+</ul>
+<p><img src="https://developers.google.com/machine-learning/crash-course/images/WorkflowWithValidationSet.svg?hl=zh-cn" alt="img"></p>
+<p>特征工程：将原始数据映射为特征矢量，在此过程中涉及到<strong>词汇表</strong>与权重等问题</p>
+<ul>
+<li>
+<p>该向量的长度等于词汇表中的元素数。当只有一个值为 1 时，这种表示法称为<strong>独热编码</strong></p>
+</li>
+<li>
+<p>当有多个值为 1 时，这种表示法称为<strong>多热编码</strong></p>
+</li>
+</ul>
+<p>选取特征值一般有以下需求：</p>
+<ul>
+<li>避免很少使用的离散特征值：良好的特征值应该在数据集中出现大约 5 次以上，而不是唯一识别码</li>
+<li>最好有清晰明确含义：而不是唯一编号</li>
+<li>实际数据中不要掺和特殊值：个别时候数据集中使用 -1 来表示空值，这样会带来很多问题</li>
+<li>考虑上游不稳定性：良好的特征值可以选择城市名因为其不常发生变化，而不是城市编号这种可能在几年内变化的</li>
+</ul>
+<p>在此同时我们把偏差值过大的数据截去。</p>
+<p>对于不成线性关系的特征，我们常常使用分块的方式来代替使用浮点数（俗称<strong>分箱</strong>）。</p>
+<p><strong>特征组合</strong>：对于一些非线性问题，可以创建一个特征组合通过将两个及两个以上输入特征相乘来对特征空间中的非线性规律进行编码的合成特征（类似向量积）常常组合的对象就是独热矢量（详见上述描写）。这种情况类似上述过拟合的情况：组合过度。</p>
+<p><strong>正则化</strong>：在建立模型时以最小化损失与复杂度为目标，这种称为结构风险最小化：</p>
+<p>$$minimize(Loss(Data|Model) + complexity(Model))$$</p>
+<p>说明：左半部分为损失项，用于衡量模型与数据的拟合度；右半部分为<strong>正则化项</strong>，用于衡量模型的复杂度，常见方法有下述两种：</p>
+<ul>
+<li>将模型复杂度作为模型中所有特征的权重的函数</li>
+<li>将模型复杂度作为具有非零权重的特征总数的函数</li>
+</ul>
+<p>$L_2$ 正则化公式来量化就是如下效果;</p>
+<p>$$L_2\ regularization\ term = ||w||^2_2 = w^2_1+w^2_2+&hellip;+w^2_n$$</p>
+<h1 id="problems">Problems</h1>
+<p>不够循序渐进，进度节奏有一些问题，接触过机器学习的同学有不少部分的概念都可以扫一眼而过（ex. 训练集与测试集）。对概念的理解不是很清楚，我是学数学的，习惯了每个概念有非常概括性的定义，适合边 Google 概念边学习内容。</p>
+</div>
+                    <div class="post_footer">
+                        
+                        <div class="meta">
+                            <div class="info">
+                                <span class="field tags">
+                                    <i class="ri-stack-line"></i>
+                                    
+                                    <a href="http://localhost:1313/tags/%E6%95%99%E7%A8%8B%E6%96%87%E6%A1%A3/">教程文档</a>
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                
+<div class="doc_comments">
+    <div class="comments_block_title">发表评论</div>
+    <div id="vcomments"></div>
+</div>
+
+<link rel="stylesheet" href="http://localhost:1313/css/comments.css" />
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<script type="text/javascript">
+    new Valine({
+        el: '#vcomments',
+        appId: '12HKA37DAChBWQgBC7PA4eBw-gzGzoHsz',
+        appKey: 'UxknCfg5bWmkI2eGar5hDxWq',
+        placeholder: ' ',
+        visitor: 'true',
+    })
+</script>
+                
+            </div>
+        </div>
+    </div>
+    <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
+    <footer class="footer">
+    <div class="powered_by">
+        <a href="https://timegg.top">TIMEGG © 2017 - 2021,</a>
+        <a href="http://www.gohugo.io/">Powered by Hugo.</a>
+    </div>
+
+    <div class="footer_slogan">
+        <span>重拾写作的乐趣。</span>
+    </div>
+</footer>
+    <script src="http://localhost:1313/js/jquery-3.5.1.min.js"></script>
+<link href="http://localhost:1313/css/fancybox.min.css" rel="stylesheet">
+<script src="http://localhost:1313/js/fancybox.min.js"></script>
+<script src="http://localhost:1313/js/zozo.js"></script>
+
+
+<script type="text/javascript" async
+    src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+                processEscapes: true,
+                processEnvironments: true,
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                TeX: {
+                    equationNumbers: { autoNumber: "AMS" },
+                    extensions: ["AMSmath.js", "AMSsymbols.js"]
+                }
+            }
+        });
+
+        MathJax.Hub.Queue(function () {
+            
+            
+            
+            var all = MathJax.Hub.getAllJax(), i;
+            for (i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+<style>
+    code.has-jax {
+        font: inherit;
+        font-size: 100%;
+        background: inherit;
+        border: inherit;
+        color: #515151;
+    }
+</style>
+
+
+
+</body>
+
+</html>

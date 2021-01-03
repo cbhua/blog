@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Chuanbo" />
+	
+	
+	
+	<title>创建腾讯 QQ 机器人 ｜ TIMEGG</title>
+	
+    
+    
+    <meta name="description" content="在和好朋友的群里创建一个具有点歌、发图、统计、提供小游戏的机器人是一个非常有趣的事情，可以给群里带来很多欢乐。该方法目前已全面失效，腾讯已完全封禁该机器人。" />
+    
+
+    
+    
+    <meta name="keywords" content="Hugo, theme, zozo" />
+    
+
+	
+    
+    <link rel="shortcut icon" href="http://localhost:1313/images/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/zozo.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/highlight.css" />
+
+    
+    
+</head>
+
+<body>
+    <div class="main animate__animated animate__fadeInDown">
+        <div class="nav_container animated fadeInDown">
+    <div class="site_nav" id="site_nav">
+        <ul>
+            
+            <li>
+                <a href="/">主页</a>
+            </li>
+            
+            <li>
+                <a href="/posts/">归档</a>
+            </li>
+            
+            <li>
+                <a href="/tags/">标签</a>
+            </li>
+            
+            <li>
+                <a href="/links/">链接</a>
+            </li>
+            
+            <li>
+                <a href="/about/">关于</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="menu_icon">
+        <a id="menu_icon"><i class="ri-menu-line"></i></a>
+    </div>
+</div>
+        <div class="header animated fadeInDown">
+    <div class="site_title_container">
+        <div class="site_title">
+            <h1>
+                <a href="http://localhost:1313/">
+                    <span>TIMEGG</span>
+                </a>
+            </h1>
+        </div>
+        <div class="description">
+            <p class="sub_title">放进时光蛋里。</p>
+            <div class="my_socials">
+                
+                
+                <a href="https://github.com/cbhua" title="github" target="_blank"><i class="ri-github-fill"></i></a>
+                
+                
+                
+                <a href="%20" title="instagram" target="_blank"><i class="ri-instagram-fill"></i></a>
+                
+                
+                
+                <a href="https://twitter.com/huachuanbo" title="twitter" target="_blank"><i class="ri-twitter-fill"></i></a>
+                
+                
+                
+                <a href="https://weibo.com/u/6177306082" title="weibo" target="_blank"><i class="ri-weibo-fill"></i></a>
+                
+                
+                <a href="http://localhost:1313/index.xml" type="application/rss+xml" title="rss" target="_blank"><i
+                        class="ri-rss-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="content">
+            <div class="post_page">
+                <div class="post animate__animated animate__fadeInDown">
+                    <div class="post_title post_detail_title">
+                        <h2><a href='/posts/20190316-tencent/'>创建腾讯 QQ 机器人</a></h2>
+                        <span class="date">2019.03.16</span>
+                    </div>
+                    <div class="post_content markdown"><p>由于学校的情况，我在日常生活中更多使用 Tencent QQ，也加入了很多的 QQ 群。有老师建立的学术交流群，也有一群相同爱好的人组成的兴趣群。</p>
+<p>这些群之中有不少有群机器人，这些 QQ 机器人功能多种多样，有的可以帮助管理群，有的可以提供一些有趣的游戏或者抽卡模拟。这样的机器人可以非常好的活跃群气氛，提供一些游戏或者好玩的功能大家一起参与。</p>
+<p>被这些功能打动，并且想到可以把这个机器人放到和一些关系不错的同学创建的群中玩，于是就产生了拥有自己的 QQ 机器人的想法，并大概花了两天的时间去配置这样的机器人，并完成了这篇文章。</p>
+<p>在遇到各式各样的问题时，我们都会去搜索引擎寻找解决方案。对于遇到的问题，我们也经常碰到一些让人难以理解的回答，这些回答要么是过于简略，这样的解决方案多是由当事者事后回忆并撰写的，经常略过了不少关键细节，也有的答案本身就是错误的，这种多是回答者从其他地方参考过来，而并没有亲自去尝试带来的结果。</p>
+<p>这样的解决方案反而会给我们解决问题带来反作用。所以，在我撰写这篇教程时，尽可能的用到“提问的艺术”和“回答的艺术”，尽可能精确的去展示问题的解决方案，我也会将亲自完成这篇教程时遇到的问题记录下来，以备大家参考。</p>
+<h2 id="part-1-启用属于自己的-qq-机器人">Part 1. 启用属于自己的 QQ 机器人</h2>
+<p>在最初开始了解 QQ 机器人的时候，发现有很多种类的 QQ 机器人可供选用，编写语言、平台、功能也各不相同，有的是 Github 项目，有的则是商业网站提供的。</p>
+<p>但是之后我了解到一个事实，非常多的 QQ 机器人都是基于 <a href="https://zh.wikipedia.org/wiki/Smart_QQ">Smart QQ</a> 建立的，也就是不少人熟悉的 Web 版 QQ ，而 <strong>WebQQ 该功能已于2019年1月1日停止运营</strong>。所以此前很多的 QQ 机器人都无法使用了，在选择机器人平台的时候需要了解到位。</p>
+<p>Smart QQ 的停用对我编写 QQ 机器人带来了一些麻烦，本身 WebQQ 的消息传输可以直接转换为 HTML 代码过滤，来作为接收的信息。这项服务关闭之后就需要考虑其他的过滤信息的方法了。我没有这么多的耐心去自己写一个机器人，也算遵守“有轮子就不自己造”的态度，选择了既有的机器人服务进行使用。</p>
+<p>最后选用的是很广泛使用的 <a href="https://cqp.cc/">酷Q</a> 社区提供的 QQ 机器人，该社区提供 Air 版（Free）和 Pro 版（Charges）。差别在于 Air 版无法发语音与图片，仅能以文字或者 emoji 进行交互。</p>
+<p>酷Q 社区提供了比较丰富的 应用/App，都是由用户贡献。比较好的是该论坛下载是免费的（下载文件消耗 2CP，评论一次获得 2CP，等价于可以任意下载）。</p>
+<p>由于是稳定的 QQ 机器人社区，酷Q 的使用非常简单，自带有教程插件，运行之后会有细致的教程教你使用。但是，<strong>如果你使用的 QQ 号是新号，强烈建议不要启用该教程，有极高的概率被冻结账号</strong>。原因在于教程中该账号会高频率发送信息，新账号容易被判定为广告而被冻结。</p>
+<p>在论坛寻找下载并调试一些自己感兴趣的功能插件之后，我们就可以准备将机器人托管到云服务器上了。</p>
+<h2 id="part-2-启用云服务器">Part 2. 启用云服务器</h2>
+<p><strong>如果你已经有自己的云服务器并已经调试好，这一部分可以跳过。</strong></p>
+<hr>
+<p>准备工作：</p>
+<ul>
+<li>了解基础的 Linux 语句</li>
+</ul>
+<hr>
+<p><strong>部署服务器</strong></p>
+<p>服务器商家有很多种，可以按照自己的喜欢选择。这里我是用的是 <a href="https://www.aliyun.com/product/swas?spm=5176.8499797.selected.11.563d1a3f6CUrq1"><strong>阿里云轻量级应用服务器</strong></a>，学生云翼计划年费 ￥100 多一些。入门级的服务器托管酷Q也几乎不占用服务器的内存与 CPU，云服务器可以做很多其他事情的，比如托管自己的网站，做云计算等等（如果你的服务器是境外的，当然要用来搭梯子）。</p>
+<p>当然 ECS 也是可以的，不过云服务器比较的简单。当然如果愿意折腾和更自由一些，ECS 是很好的选择。</p>
+<p>操作系统可以自由选择，完成本教程都是大同小异，这里选用的是 CentOS。也便于未来其他方面的使用。</p>
+<p><strong>连接服务器</strong></p>
+<p>部署完初始化之后就可以用 SHH 连接了，方法可以参考 <a href="https://help.aliyun.com/document_detail/59083.html?spm=5176.10173289.107.1.2be62e77NNKrRh#windows">Putty 配置说明</a>。但是 SSH 连接工具还是 <a href="https://mobaxterm.mobatek.net/">MobaXTerm</a> 更好用一些。</p>
+<ul>
+<li>
+<p><strong>注意</strong>：阿里云有三种方式进行远程连接：1. 浏览器直接连接；2. 客户端密匙连接；3. 客户端账号密码连接；</p>
+<p>在生成密匙后再使用账号密码登陆时会出现 <code>Disconnected:No supported authentication methods available</code> 问题，解决方案参考 <a href="https://help.aliyun.com/knowledge_detail/41489.html">解决方案</a>。</p>
+</li>
+</ul>
+<h2 id="part-3-部署酷q至云服务器">Part 3. 部署酷Q至云服务器</h2>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">系统：CentOS 7.4
+
+SSH App：MobaXterm
+
+环境：Docker cotainer
+
+下述 Linux 操作：用户 - root；主机名 - CentOS；
+</code></pre></div><p><strong>Step 1. 配置 Docker</strong></p>
+<p>安装 Docker：</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">[root@CentOS ~]# sudo yum install docker
+</code></pre></div><p>安装完成之后启动 Docker：</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">[root@CentOS ~]# sudo systemctl start docker
+</code></pre></div><p>查看 Docker 运行情况：</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">[root@CentOS ~]# docker info
+</code></pre></div><hr>
+<p><strong>Step 2. 配置 CoolQ (酷Q) 镜像</strong></p>
+<p>下载 CoolQ 镜像（coolq.io）：</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">[root@CentOS ~]# sudo docker pull coolq/wine-coolq
+</code></pre></div><p>查看镜像情况：</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">[root@CentOS ~]# sudo docker images
+</code></pre></div><p>创建一个用以存放数据的 coolq-data 文件夹，创建的路径可以任意选择，这里为最顶层目录：</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">[root@CentOS ~]# sudo mkdir /coolq-data
+</code></pre></div><p>运行 CoolQ 容器，这是最关键的一步，请仔细按照下述参数说明进行操作：</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">[root@CentOS ~]# docker run --restart=always --name wine-coolq -d \
+-p 8080:9000 \
+-v /coolq-data:/home/user/coolq \
+-e VNC_PASSWD=12345678 \
+-e COOLQ_ACCOUNT=1000000000 \
+coolq/wine-coolq
+</code></pre></div><p>参数说明 (其余部分均不需要修改)：</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">8080 - 远程监听端口,此端口需要云服务器防火墙通过,请参考你选择的服务商提供的信息
+/coolq-data - 刚才创建的存放数据的文件夹路径
+12345678 - 过一会需要登陆一个东西,这里是你要设置的登陆密码(不超8位)
+1000000000 - 用以登陆酷Q的QQ号
+</code></pre></div><ul>
+<li><strong>注意</strong>：远程监听端口设置的合适与否关系着后面能否连接酷Q，请务必选择防火墙开放的端口。以阿里云为例，选择 <code>概览 -&gt; 服务器安全设置 -&gt; 防火墙</code> 其中 HTTP 这一行的端口范围就是服务器开放的端口，这样上述操作中就用 <code>-p 80:9000</code> 即可。</li>
+</ul>
+<p><strong>Step 3. 连接 CoolQ 并调整</strong></p>
+<p>使用浏览器打开 <code>http://0.0.0.0:8080</code> ，其中 0.0.0.0 是你主机的公网 IP，8080 是你刚才设置的端口。如果前面一切顺利，你会打开一个 noVNC 的界面。</p>
+<p>连接需要输入上述 <code>VNC_PASSWD</code> 设置的密码，之后酷Q就会自动启动，正常登陆之后就完成了酷Q的连接。</p>
+<ul>
+<li><strong>注意</strong>：在这里登陆酷Q需要QQ号已经开启设备锁，请用手机登陆一次QQ，在设置中将设备锁打开</li>
+</ul>
+<p>之后对酷Q的调整就与 Windows 上一样了，文件就在之前所创建的 <code>/coolq-data</code> 里面，将你所需要的插件上传上去之后就可以在 VNC 上面如 Windows 一般进行调整。</p>
+<p>新版本的 wine-coolq 容器自带重启功能：被关闭之后 10 秒之后自动重启，以支持长期后台运行。</p>
+<ul>
+<li><strong>注意</strong>：目前 VNC 存在比较严重的问题：中文输入乱码，目前没有找到比较成熟的解决方案，可以考虑在windows 本地将 <code>ini</code> 设置文件配置好，再上传上去。</li>
+</ul>
+<p>至此，酷Q配置完毕。</p>
+<h2 id="part-4-后续调整">Part 4. 后续调整</h2>
+<p>参考 <a href="https://legacy.gitbook.com/book/yeasy/docker_practice/details">Docker 从入门到实践</a> 控制容器运行与停止：</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">[root@CentOS ~]# docker start coolq
+[root@CentOS ~]# docker stop coolq
+</code></pre></div><p>当然，比较好的选择就是在酷Q中安装一个机器人控制插件，这样就可以比较方便的启用和关闭机器人，并且监控机器人状态。</p>
+<p>稳定性方面，依服务器的带宽而定，反应偶有延迟，其中的一些需要联网的功能偶尔会宕机，整体上影响不大。</p>
+<p><strong>2019.3.25 Update</strong> - 经过一段时间的测试，酷Q的回复延迟越来越长，最后稳定在 20s 左右，具体原因是系统问题、主机问题还是网络问题还在分析。另一个遇到的问题就是酷Q更新之后是需要重新登陆的，在远程的情况下需要定期连接，是比较麻烦的，而酷Q也不提供停止更新或者静默更新，目前还没有比较好的解决方法。</p>
+</div>
+                    <div class="post_footer">
+                        
+                        <div class="meta">
+                            <div class="info">
+                                <span class="field tags">
+                                    <i class="ri-stack-line"></i>
+                                    
+                                    <a href="http://localhost:1313/tags/%E6%95%99%E7%A8%8B%E6%96%87%E6%A1%A3/">教程文档</a>
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                
+<div class="doc_comments">
+    <div class="comments_block_title">发表评论</div>
+    <div id="vcomments"></div>
+</div>
+
+<link rel="stylesheet" href="http://localhost:1313/css/comments.css" />
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<script type="text/javascript">
+    new Valine({
+        el: '#vcomments',
+        appId: '12HKA37DAChBWQgBC7PA4eBw-gzGzoHsz',
+        appKey: 'UxknCfg5bWmkI2eGar5hDxWq',
+        placeholder: ' ',
+        visitor: 'true',
+    })
+</script>
+                
+            </div>
+        </div>
+    </div>
+    <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
+    <footer class="footer">
+    <div class="powered_by">
+        <a href="https://timegg.top">TIMEGG © 2017 - 2021,</a>
+        <a href="http://www.gohugo.io/">Powered by Hugo.</a>
+    </div>
+
+    <div class="footer_slogan">
+        <span>重拾写作的乐趣。</span>
+    </div>
+</footer>
+    <script src="http://localhost:1313/js/jquery-3.5.1.min.js"></script>
+<link href="http://localhost:1313/css/fancybox.min.css" rel="stylesheet">
+<script src="http://localhost:1313/js/fancybox.min.js"></script>
+<script src="http://localhost:1313/js/zozo.js"></script>
+
+
+<script type="text/javascript" async
+    src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+                processEscapes: true,
+                processEnvironments: true,
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                TeX: {
+                    equationNumbers: { autoNumber: "AMS" },
+                    extensions: ["AMSmath.js", "AMSsymbols.js"]
+                }
+            }
+        });
+
+        MathJax.Hub.Queue(function () {
+            
+            
+            
+            var all = MathJax.Hub.getAllJax(), i;
+            for (i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+<style>
+    code.has-jax {
+        font: inherit;
+        font-size: 100%;
+        background: inherit;
+        border: inherit;
+        color: #515151;
+    }
+</style>
+
+
+
+</body>
+
+</html>

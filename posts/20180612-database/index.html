@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Chuanbo" />
+	
+	
+	
+	<title>数据库系统概论笔记 ｜ TIMEGG</title>
+	
+    
+    
+    <meta name="description" content="数据库系统概论这门课是数学系与计算机系联动开放的课程，主要作用给数学系学生提供一些数据处理方面的工具。这门课程主要学习 SQL 的基本编程与使用，不涉及太多内嵌功能，属于很基础的开放课。" />
+    
+
+    
+    
+    <meta name="keywords" content="Hugo, theme, zozo" />
+    
+
+	
+    
+    <link rel="shortcut icon" href="http://localhost:1313/images/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/zozo.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/highlight.css" />
+
+    
+    
+</head>
+
+<body>
+    <div class="main animate__animated animate__fadeInDown">
+        <div class="nav_container animated fadeInDown">
+    <div class="site_nav" id="site_nav">
+        <ul>
+            
+            <li>
+                <a href="/">主页</a>
+            </li>
+            
+            <li>
+                <a href="/posts/">归档</a>
+            </li>
+            
+            <li>
+                <a href="/tags/">标签</a>
+            </li>
+            
+            <li>
+                <a href="/links/">链接</a>
+            </li>
+            
+            <li>
+                <a href="/about/">关于</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="menu_icon">
+        <a id="menu_icon"><i class="ri-menu-line"></i></a>
+    </div>
+</div>
+        <div class="header animated fadeInDown">
+    <div class="site_title_container">
+        <div class="site_title">
+            <h1>
+                <a href="http://localhost:1313/">
+                    <span>TIMEGG</span>
+                </a>
+            </h1>
+        </div>
+        <div class="description">
+            <p class="sub_title">放进时光蛋里。</p>
+            <div class="my_socials">
+                
+                
+                <a href="https://github.com/cbhua" title="github" target="_blank"><i class="ri-github-fill"></i></a>
+                
+                
+                
+                <a href="%20" title="instagram" target="_blank"><i class="ri-instagram-fill"></i></a>
+                
+                
+                
+                <a href="https://twitter.com/huachuanbo" title="twitter" target="_blank"><i class="ri-twitter-fill"></i></a>
+                
+                
+                
+                <a href="https://weibo.com/u/6177306082" title="weibo" target="_blank"><i class="ri-weibo-fill"></i></a>
+                
+                
+                <a href="http://localhost:1313/index.xml" type="application/rss+xml" title="rss" target="_blank"><i
+                        class="ri-rss-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="content">
+            <div class="post_page">
+                <div class="post animate__animated animate__fadeInDown">
+                    <div class="post_title post_detail_title">
+                        <h2><a href='/posts/20180612-database/'>数据库系统概论笔记</a></h2>
+                        <span class="date">2018.06.12</span>
+                    </div>
+                    <div class="post_content markdown"><h1 id="前言">前言</h1>
+<p>这学期参选了数据库系统概论这门课程，虽然最后拿到了还行的成绩，但是因为复习仓促跳过了很多知识点。</p>
+<p>由于 9 月要参加计算机四级(数据库)的考试，在这里整理一下复习时的笔记，准备一下计算机四级的考试。</p>
+<blockquote>
+<p>选用教材：《数据库系统概论（第五版）》高等教育出版社<br>ISBN：9787040406641</p>
+</blockquote>
+<p>作为课程，涉及到的数据库知识比较基础，这里做出概要、关键点笔记和一些理解。</p>
+<p><strong>2018.10.25 Update</strong> - 数据库四级翻车了。原因是把考纲中 <strong>数据库 + 操作系统原理</strong> 复习成了 <strong>数据库 + 软件工程</strong>，考试时候完全不知道是什么，凭着大一学的一点点操作系统知识……也没有糊过去。等明年 3 月份再参加吧。</p>
+<p><strong>2019.3.3 Update</strong> - 计算机四级，就和网上说的一样，非常的水。完全没有必要专门复习数据库，只需要背一背题库就可以通过，甚至在对数据库一知半解的情况下也都可以通过。毕竟计算机四级只有选择题，而且题库一般比较固定。</p>
+<p><strong>2019.08.23 Update</strong> - 计算机四级证书，事实证明，除了混一混学校的评奖加分，没有任何用处。所以我并不推荐专门准备这个，这些时间可以用来干更多有意义的事情。</p>
+<h2 id="绪论">绪论</h2>
+<h3 id="数据库系统概述">数据库系统概述</h3>
+<p>数据库的四个基本概念：</p>
+<ul>
+<li><strong>数据</strong>(data) - 描述事物的符号记录；</li>
+<li><strong>数据库</strong>(database, DB) - 长期储存、有组织、可共享的大量数据集合；具有 <em>较小冗余度、较高数据独立性、易扩展性、共享性</em> 的特点；</li>
+<li><strong>数据库管理系统</strong>(database management system, DBMS) - 计算机基础软件之一；提供 <em>数据定义语言(DDL)、数据操纵语言(DML)、数据控制语言(DCL)</em> ；</li>
+<li><strong>数据库系统</strong>(database system, DBS) - 储存、管理、处理、维护数据的系统；</li>
+</ul>
+<p>其中数据库系统包含以下部分：</p>
+<ul>
+<li>数据库(DB)</li>
+<li>数据库管理系统(DBMS)</li>
+<li>数据库应用程序(DBAP)</li>
+<li>数据库管理员(DBA)</li>
+</ul>
+<p>在不引发混淆的情况下我们称数据库系统为数据库。</p>
+<p>数据库发展阶段：人工管理阶段-&gt;文件系统阶段-&gt;数据库系统阶段。</p>
+<h3 id="数据模型">数据模型</h3>
+<p>数据抽象阶段：现实-&gt;概念模型-&gt;逻辑模型-&gt;物理模型。</p>
+<p>概念模型例：实体-联系模型（E-R模型）：</p>
+<ul>
+<li>实体属性：单值属性/多值属性，基属性/派生属性；</li>
+<li>联系类型：内部联系/相互联系，一元联系/二元联系/多元联系，普通联系/递归联系；</li>
+</ul>
+<p>实体相关的概念对比：</p>
+<ul>
+<li>实体：客观存在并可以相互区别的事物；</li>
+<li>实体属性：实体具有的某一特征；</li>
+<li>实体型：实体 + 属性；</li>
+<li>实体集：同一类型实体的集合；</li>
+</ul>
+<p>数据模型的构成：数据结构、数据操作、数据的完整性约束；</p>
+<p>常见的数据模型：</p>
+<ul>
+<li>层次模型 - ex. 树</li>
+<li>网状模型 - ex. 图</li>
+<li>关系模型 - ex. 表</li>
+</ul>
+<p>将概念应用于表中：</p>
+<ul>
+<li>
+<p>关系 - 一个表称作一个关系</p>
+</li>
+<li>
+<p>元组 - 行</p>
+</li>
+<li>
+<p>属性 - 列</p>
+</li>
+<li>
+<p>码 - <em>请看后详解</em></p>
+</li>
+<li>
+<p>域 - 属性选区的范围</p>
+</li>
+<li>
+<p>分量 - 元组中的一个</p>
+</li>
+</ul>
+<h3 id="数据库系统结构">数据库系统结构</h3>
+<p>数据库系统的三个模式：</p>
+<ul>
+<li>模式 - 逻辑模式</li>
+<li>外模式 - 子模式/用户模式</li>
+<li>内模式 - 存储模式</li>
+</ul>
+<p>数据库系统的三级模式构成两种映像：</p>
+<ul>
+<li>外模式/模式映像 - 逻辑独立性</li>
+<li>模式/内模式映像 - 物理独立性</li>
+</ul>
+<h2 id="关系数据库">关系数据库</h2>
+<p>关系的种类：</p>
+<ul>
+<li>基本关系：实际表</li>
+<li>查询关系：结果表</li>
+<li>视图关系：虚拟表</li>
+</ul>
+<p>关于码：</p>
+<ul>
+<li>候选码：可以唯一确定元组的一组属性就是<strong>一个</strong>候选码，<em>但其真子集无法唯一确定元组</em> ，候选码中不止一组属性</li>
+<li>主码：候选码中任意一组</li>
+<li>超码：可以唯一确定元组的一组属性就是一个超码，超码中不止一组属性</li>
+<li>外码：属性中引用的其他实体的主码</li>
+</ul>
+<blockquote>
+<p>候选码是最小超码，主码是候选码的其中一个</p>
+</blockquote>
+<p>关系模式 R(U, D, dom, F)：</p>
+<ul>
+<li>R：关系名</li>
+<li>U：属性名集合</li>
+<li>D：相应属性名集合的域</li>
+<li>dom：属性和域的映射</li>
+<li>F：属性间数据依赖集合</li>
+</ul>
+<p>关系的完整性：</p>
+<ul>
+<li>实体完整性：主码不能缺省或非法</li>
+<li>参照完整性：外码不能非法</li>
+<li>用户定义的完整性：用户定义的数据要求</li>
+</ul>
+<p>关系操作：</p>
+<ul>
+<li>集合运算符：交、并、补、差</li>
+<li>专门的关系运算符：选择、投影、连接、除</li>
+<li>算术比较符：大于、小于、等于、不等于 etc.</li>
+<li>逻辑运算符：与、或、非 etc.</li>
+</ul>
+<blockquote>
+<p>关系操作下有相应的 <em>关系代数</em> 和 <em>关系代数表达式</em> ，这部分不再写在这里了，不妨去看看书。</p>
+</blockquote>
+<h2 id="sql-关系数据库标准语言">SQL 关系数据库标准语言</h2>
+<p>SQL 三级结构模式：文件(内模式) -&gt; 表(模式) -&gt; 视图(外模式)。</p>
+<p>SQL 实现：数据定义，数据查询，数据更新，数据操作。</p>
+<p>SQL 结构框架：</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">instance // 实例
+{
+	database // 数据库
+	{
+		schema // 模式
+		{
+			table // 表
+			view // 视图
+			index // 索引
+		}
+	}
+}
+</code></pre></div><h3 id="sql-数据定义">SQL 数据定义</h3>
+<p><strong>创建模式与删除模式</strong></p>
+<p><code>create schema schema_name</code></p>
+<p><code>drop schema schema_name &lt;cascade / restricte&gt;</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
+create schema test_schame authorization auth_name;
+drop schema test_schame cascade;
+</code></pre></div><p>关于 cascade &amp; restricte :</p>
+<blockquote>
+<p>标注 cascade 是级联操作，其操作（例如drop）会对子目录下项目同等操作；</p>
+<p>标注 restricte 是限制操作，其操作（例如drop）当子目录下项目非空将报错；</p>
+</blockquote>
+<p><strong>创建表与删除表</strong></p>
+<p><code>create table table_name</code></p>
+<p><code>drop table teble_name &lt;cascade / restricte&gt;</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
+create table test_table
+(
+    sno char(10) unique, // 属性名 数据类型 完整性约束
+    sname char(10) not null,
+    stel char(10),
+    dno char(10),
+
+    primary key(sno), // 设置 sno 为主码
+    foreign key(dno)
+        references test_table2(sno), // 设置 dno 为外码，引用自 test_table2
+);
+
+drop table test_table cascade;
+</code></pre></div><p><strong>创建视图与删除视图</strong></p>
+<p><code>create view view_name</code></p>
+<p><code>drop view view_name &lt;cascade / restricte&gt;</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
+create view test_view as
+select column_name // 涉及到 select 一会再说
+from test_table
+where condition;
+
+drop view test_view;
+</code></pre></div><p><strong>创建索引与删除索引</strong></p>
+<p><code>create unique / cluster index index_name</code></p>
+<p><code>drop index index_name &lt;cascade / restricte&gt;</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
+create unique index test_index on
+test_table(sno, sname);
+
+drop index test_index;
+</code></pre></div><h3 id="sql-数据查询">SQL 数据查询</h3>
+<p>select 语法很多，具体内容介绍在众多教程网站上也有很多。这里的笔记就是针对比较常见的 student 表进行的各类操作实例，以此复习各类 select 语法。</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
+
+// 从 student 表中选取 sno 与 sname
+select sno, sname from student;
+
+// 从 student 表中选取所有
+select * from student;
+
+// 从 student 表中选取 sage 并减 2015；选取 sname 并小写，输出时重命名为 NAME
+select sage-2015, lower(sname) NAME from student;
+
+// 从 student 表中选取 sno 的和，并计 sname 数
+select sum(sno), count(sname) from student;
+
+// 从 student 表中选取 sno 并去除重复数据
+select distinct sno from student;
+
+// 从 student 表中选取 dno 为 cs 的 sname
+select sname from student where dno = &#39;cs&#39;;
+
+// 从 student 表中选取 dno 为 cs 或者 ms 的 sname
+select sname from studnet where dno in (&#39;cs&#39;,&#39;ms&#39;);
+
+// 从 student 表中选取 sname 倒数第二位为 l 的 sno
+select sno from student where sname like &#39;%l_&#39;;
+
+// 从 student 表中选取 sname 最后一位为 _ 的 sno
+select sno from student where
+	sname like &#39;%\_&#39; escape \;
+
+// 从 student 表中选取 sno = 6 的sname
+select sname from student where
+	(sno&gt;10 or sno&lt;5) and sno=6;
+
+// 从 student 表中选取 cno 为 3 的 sname 并按照 grade, sno 排序
+select sname from student where cno=&#39;3&#39;
+	order by grade desc/asc, sno desc/asc;
+
+// student 表中不同 sname 数
+select count(distinct sname) from studnet;
+
+// 从 student 表中选取 sno 与对应的平均成绩
+select sno, avg(grade) from student group by sno;
+
+// 从 student 表中选取挂两科以上的学生
+select sno from student where grade&lt;60
+	group by sno having count(*)&gt;2;
+	select student.*, sc.* from student, sc where
+	student.sno = sc.sno;
+
+// 同表连接
+select first.sno, second.con from
+	test first, test second where ~;
+
+// 异表 join
+select * from table1 left outer join table2 on...
+	/right outer join on... /full outer join on...
+
+// 从 student 表中选取大于平均成绩的 sno 与 cno
+select sno, cno from sc x where grade &gt;=
+	(select ave(grade) from sc y where x.sno=y.sno)
+
+// 从 student 表中选取 con 有 1 的 sname
+select sname from student where exists
+	(select * from sc where student.sno=sno and cno=&#39;1&#39;);
+
+// 两层 not exists
+select sname from student where not exists
+	(select * from course where not exists
+		(select * from sc where sno=student.sno
+			and cno=course.cno
+		) //course that student didnt choose
+	);
+
+// 两层 not exists
+select distict sno from sc x where not exists
+	(select * from sc y where sno=001 and not eixsts
+		(select * form sc z where z.sno=x.sno
+			and z.cno=y.cno
+		) //course that they all chosed
+	);
+
+// 不同 select 的结合
+select_1 union/union all select_2;
+select_1 intersect select_2;
+select_1 except select_2;
+
+// 临时表
+select sno, cno from sc,
+	(select sno, avg(grade) from sc group by sno)
+	as avg(avg_sno, avg_grade)
+	where sc.sno=avg.avg_sno
+	and sc.grade&gt;avg.avg_grade;
+</code></pre></div><h3 id="sql-数据更新">SQL 数据更新</h3>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
+
+// 插入数据
+insert into student(sno, sname) values(002, zerotwo);
+
+// 从另一个表选中数据插入
+insert into student(sno, sname) 
+    select sno, sname from other_tabel;
+
+// 更新数据
+update student set sage=22 where sno=002;
+
+// 选择性更新数据
+update sc set grade=100 where &#39;ma&#39;=
+	(select dno from student where student.sno=sc.sno);
+</code></pre></div><p>除此之外还有 delete 等各类操作，都是大同小异。</p>
+<h2 id="数据库编程">数据库编程</h2>
+<blockquote>
+<p>SQL 编程技术可以有效克服 SQL 语言实现复杂应用方面的不足，提高应用系统和数据库管理系统之间的互操作性。</p>
+</blockquote>
+<p>SQL 编程来访问和管理数据库中数据的方式主要有：</p>
+<ul>
+<li>嵌入式 SQL (ESQL)</li>
+<li>过程化 SQL (PL/SQL)</li>
+<li>存储过程和自定义函数</li>
+<li>开放数据库互联 (ODBC) etc.</li>
+</ul>
+<p><strong>嵌入式 SQL ：</strong></p>
+<p>实例：（更为完善的例子在书上 page.247）</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
+
+exec sql begin declare section; // 声明主变量
+char sno;
+char cno;
+char sname;
+exec sql end declare section;
+
+exec sql include sqlca; // sql通信区
+int main(){
+	...
+	exec sql connect to database_1; // 连接数据库
+	exec sql declare v cursor for // 声明游标v，指向select的表
+		select...
+	exec sql open v;
+	for(;;){
+		exec sql fetch v into :sno, :cno, :sname; // 推进游标
+		if(sqlca.sqlcode != 0) break;
+		... // 可以各种操作，也可以内嵌sql语句
+	}
+	exec sql close v; // 关闭游标
+	exec sql commit work; // 提交事务
+	exec sql disconnect database_1; // 关闭数据库连接
+	return 0;
+}
+</code></pre></div><p>由于学期课程中并没有涉及太多的数据库编程部分，这边就先空下来，后来有空了再补充。</p>
+<h2 id="数据库的完整性">数据库的完整性</h2>
+<p><strong>三种数据完整性：</strong></p>
+<p>实体完整性：(primary key)</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
+sno char(10) primary key; // 列级定义主码
+primary key(sno, cno); // 表级定义主码
+</code></pre></div><p>参照完整性：(foreign key)</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
+foreign key(sno) references student(sno)
+    on delete/update cascade;
+foreign key(cno) references studnet(cno)
+    on delete no action;
+</code></pre></div><p>用户定义完整性：</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
+sno char(10) not null; // 设置 sno 非空
+cno char(10) nuique; // 设置 cno 非重复
+
+check(sex in(&#39;mail&#39;, &#39;famail&#39;)); // 设置 sex ‘选项’
+check(sex=&#39;famail&#39; or sname not like&#39;ms.%&#39;);
+</code></pre></div><p><strong>对数据库完整性的操作：</strong></p>
+<p>完整性约束</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
+sno char(3) constrant c1 &lt;...&gt;; // 命名约束，把设置给 sno 的完整性约束命名为 c1
+alter table student
+    add constraint c1 &lt;...&gt;; // 修改约束
+</code></pre></div><p>断言</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
+create assertion [assertion_name] &lt;sql...&gt;;
+</code></pre></div><p>触发器</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
+create trigger [trigger_name] &lt;sql...&gt;;
+</code></pre></div><p>关于检查约束、断言与触发器的区别：</p>
+<ul>
+<li>
+<p>检查约束：检查是一个SQL，它确保在记录上执行操作之前满足条件；</p>
+</li>
+<li>
+<p>断言：断言是一条SQL，它确保条件满足或停止对数据库对象执行的操作；</p>
+</li>
+<li>
+<p>触发器：触发器是在数据库中更新，插入或删除之前或之后执行的一段SQL；</p>
+</li>
+</ul>
+<h2 id="数据库安全性">数据库安全性</h2>
+<p><strong>常通过下面几种方式控制数据库安全性：</strong></p>
+<p>用户识别：即最常见的‘登陆’控制。</p>
+<p>存取控制：自主存取控制(DAC)、强制存取控制(MAC)。</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g. DAC
+
+grant select on table table_1 to user_1; // 授予权限
+grant all priviliges on table student, course
+    to user_2, user_3; // 授予全部权限
+grant select on table table_1 to public; // 授予角色权限
+grant update(sno) on table table_1 to user_1;
+    with grant option; // 授予可再授权权限
+
+revoke select on table table_1 from user_1
+    cascade/restrict; // 收回可再授权权限需要cascade
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g. MAC
+// 包含 主体：许可证级别；客体：密级，并满足：
+* 仅当主体的许可证级别大于或等于客体的密级时，该主体才能读相应的客体；
+* 仅当主体的许可证级别小于或等于客体的密级时，该主体才能写相应的客体；
+</code></pre></div><p>视图：前面已大致介绍；</p>
+<p>审计：用户级审计 &amp; 系统级审计；</p>
+<p>加密：常见；</p>
+<h2 id="关系数据理论">关系数据理论</h2>
+<blockquote>
+<p>关系数据理论涉及了不少逻辑相关，学习的时候觉得很奇妙，尤其是其中的公理系统和以之推出来的最小依赖集求法；我的笔记中只记下了便于复习的提纲，所以较细致的部分还需要参考书上内容。</p>
+</blockquote>
+<p><strong>关系模式</strong> R(U, D, DOM, F)</p>
+<ul>
+<li>R：关系名</li>
+<li>U：组成该关系的属性名集合</li>
+<li>D：属性组U中属性所来自的域</li>
+<li>DOM：属性向域的映象集合</li>
+<li>F：属性间数据的依赖关系集合</li>
+</ul>
+<p><strong>依赖关系</strong> （重要）</p>
+<ul>
+<li>函数依赖（FD）：
+关系 x, y; 若 x1 != x2 能推出 y1 != y2，则称 y 函数依赖于 x。
+<ul>
+<li>平凡依赖 / 非平凡依赖；</li>
+<li>完全函数依赖（F）/ 部分函数依赖（P）；</li>
+<li>传递函数依赖 / 直接依赖；</li>
+</ul>
+</li>
+<li>多值依赖（MVD）：
+R(U)上关系r，给定的一对（x，z）值，有一组Y的值，这组值仅仅决定于x值而与z值无关，记x-&gt;-&gt;y;
+<ul>
+<li>平凡依赖 / 非平凡依赖；</li>
+</ul>
+</li>
+</ul>
+<p><strong>码</strong>（复习）</p>
+<ul>
+<li>候选码：可以唯一确定元组的一组属性就是<strong>一个</strong>候选码，<em>但其真子集无法唯一确定元组</em> ，候选码中不止一组属性</li>
+<li>主码：候选码中任意一组</li>
+<li>超码：可以唯一确定元组的一组属性就是一个超码，超码中不止一组属性</li>
+<li>外码：属性中引用的其他实体的主码</li>
+</ul>
+<blockquote>
+<p>候选码是最小超码，主码是候选码的其中一个</p>
+</blockquote>
+<p><strong>范式</strong>（重要）</p>
+<ul>
+<li>1NF：所有属性不可分解；</li>
+<li>2NF：非主属性完全函数依赖于主码</li>
+<li>3NF：非主属性既不部分依赖于码也不传递依赖于码（仅要求最外层是非主属性）；</li>
+<li>BCNF：每一个决定属性因素都包含码：
+<ul>
+<li>所有非主属性对每一个码都是完全函数依赖；</li>
+<li>所有的主属性对每一个不包含它的码，也是完全函数依赖；</li>
+<li>没有任何属性完全函数依赖于非码的任何一组属性；</li>
+</ul>
+</li>
+<li>4NF：每个非平凡多值依赖 X→→Y（Y不属于X），X都含有码：
+<ul>
+<li>不允许有非平凡且非函数依赖的多值依赖</li>
+<li>允许的非平凡多值依赖是函数依赖</li>
+</ul>
+</li>
+</ul>
+<p>范式推导：</p>
+<ul>
+<li>1NF -&gt; 2NF：消除非主属性对码的部分函数依赖</li>
+<li>2NF -&gt; 3NF：消除非主属性对码的传递函数依赖</li>
+<li>3NF -&gt; BCNf：消除主属性对码的部分和传递函数依赖，此时已经实现了函数依赖范围内的彻底分解</li>
+<li>BCDF -&gt; 4NF：消除非平凡且非函数依赖的多值依赖</li>
+</ul>
+<p><strong>数据依赖的公理系统</strong></p>
+<ul>
+<li>逻辑蕴含：对于满足一组函数依赖 F 的关系模式 R&lt;U,F&gt;，其任何一个关系 r 若函数依赖 X→Y 都成立,（即 r 中任意两元组 t, s,若 t<input checked="" disabled="" type="checkbox"> =s<input checked="" disabled="" type="checkbox"> ,则 t[Y]=s[Y]）,则称 F 逻辑蕴含 X→Y;</li>
+<li>Armstrong公理系统：
+<ul>
+<li>自反律： y in x in u =&gt; x-&gt;y in F</li>
+<li>增广律： x-&gt;y z in u =&gt; xz-&gt;yz</li>
+<li>传递律： x-&gt;y y-&gt;z =&gt; x-&gt;z</li>
+</ul>
+</li>
+<li>推理规则
+<ul>
+<li>合并规则： x-&gt;y x-&gt;z =&gt; x-&gt;yz</li>
+<li>伪传递规则： x-&gt;y wy-&gt;z =&gt; xw-&gt;z</li>
+<li>分解规则： x-&gt;y z in y =&gt; x-&gt;z</li>
+</ul>
+</li>
+<li>函数的最小依赖集：
+<ul>
+<li>F 中任一函数依赖的右部仅含有一个属性</li>
+<li>F 中不存在这样的函数依赖 X→A，使得 F 与 F-{X→A} 相等（即 F 中函数依赖不能由其中的其他函数依赖导出）</li>
+<li>F 中不存在这样的函数依赖 X→A，X 中存在真子集 Z 使得 F-{X→A}∪{Z→A} 与 F 等价（即 F 中各函数左侧都是最小属性集中的）</li>
+</ul>
+</li>
+<li>求候选码准则：
+<ul>
+<li>准则1：如果属性 A 只在 F 中各个函数依赖的左端出现，则 A 必是码中的属性</li>
+<li>准则2：如果属性 A 只在 F 中各个函数依赖的右端出现，则 A 必不是码中的属性</li>
+<li>准则3：如果 A 不在F的各个函数依赖中出现，则 A 必不是码中的属性</li>
+</ul>
+</li>
+<li>求候选码方法：
+<ul>
+<li>根据准则3：把不在 F 中出现的各个函数依赖中出现的属性去掉，因为这些属性一般对模型没什么意义</li>
+<li>根据准则1：确定码中必须有的属性集（设为 M ）</li>
+<li>根据准则2：去掉码中肯定没有的属性</li>
+<li>确定余下的属性集（设为 W ）</li>
+<li>从属性 M 开始，令 K=M，如果 KF +=U，K 就是候选码。否则从W选择属性加入到 K 中，直到 KF +=U，K 就是候选码（注意可能有多个候选码）</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="o">//</span> <span class="n">e</span><span class="p">.</span><span class="k">g</span><span class="p">.</span> <span class="err">求函数最小依赖集实例</span>
+<span class="n">F</span> <span class="o">=</span> <span class="err">{</span> <span class="n">A</span> <span class="err">→</span> <span class="n">BC</span> <span class="err">，</span> <span class="n">B</span> <span class="err">→</span> <span class="n">AC</span> <span class="err">，</span> <span class="k">C</span> <span class="err">→</span> <span class="n">A</span> <span class="err">}，求</span> <span class="n">Fmin</span>
+
+<span class="err">{</span>
+	<span class="p">[</span><span class="n">step</span><span class="p">.</span><span class="mi">1</span><span class="p">]</span>
+	<span class="n">F</span><span class="o">=</span> <span class="err">{</span> <span class="n">A</span> <span class="err">→</span> <span class="n">B</span> <span class="err">，</span> <span class="n">A</span> <span class="err">→</span> <span class="k">C</span> <span class="err">，</span> <span class="n">B</span> <span class="err">→</span> <span class="n">A</span><span class="err">，</span><span class="n">B</span>  <span class="err">→</span> <span class="k">C</span><span class="err">，</span><span class="k">C</span> <span class="err">→</span> <span class="n">A</span> <span class="err">}</span>
+
+	<span class="p">[</span><span class="n">step</span><span class="p">.</span><span class="mi">2</span><span class="p">]</span>
+	<span class="k">G</span><span class="o">=</span><span class="n">F</span><span class="o">-</span><span class="err">{</span> <span class="n">A</span> <span class="err">→</span> <span class="n">B</span> <span class="err">}</span>
+		<span class="n">AG</span> <span class="o">+=</span> <span class="n">AC</span><span class="err">，不包含</span> <span class="n">B</span><span class="err">，所以</span> <span class="n">A</span> <span class="err">→</span> <span class="n">B</span> <span class="err">保留</span>
+	<span class="k">G</span><span class="o">=</span><span class="n">F</span><span class="o">-</span><span class="err">{</span> <span class="n">A</span> <span class="err">→</span> <span class="k">C</span> <span class="err">}</span>
+		<span class="n">AG</span> <span class="o">+=</span> <span class="n">ABC</span><span class="err">，包含</span> <span class="k">C</span><span class="err">，所以</span> <span class="n">A</span> <span class="err">→</span> <span class="k">C</span> <span class="err">删除，令</span> <span class="n">F</span><span class="o">=</span><span class="k">G</span> <span class="err">，</span>
+		<span class="n">F</span><span class="o">=</span><span class="err">{</span><span class="n">A</span> <span class="err">→</span> <span class="n">B</span> <span class="err">，</span> <span class="n">B</span> <span class="err">→</span> <span class="n">A</span><span class="err">，</span><span class="n">B</span>  <span class="err">→</span> <span class="k">C</span><span class="err">，</span> <span class="k">C</span> <span class="err">→</span> <span class="n">A</span><span class="err">}</span>
+	<span class="k">G</span><span class="o">=</span><span class="n">F</span><span class="o">-</span><span class="err">{</span> <span class="n">B</span> <span class="err">→</span> <span class="n">A</span> <span class="err">}，</span>
+		<span class="n">BG</span> <span class="o">+=</span> <span class="n">BAC</span><span class="err">，包含</span><span class="n">A</span><span class="err">，所以</span> <span class="n">B</span> <span class="err">→</span> <span class="n">A</span> <span class="err">删除，令</span><span class="n">F</span><span class="o">=</span><span class="k">G</span><span class="err">，</span><span class="n">F</span><span class="o">=</span><span class="err">{</span><span class="n">A</span> <span class="err">→</span> <span class="n">B</span><span class="err">，</span><span class="n">BC</span><span class="err">，</span> <span class="k">C</span> <span class="err">→</span> <span class="n">A</span><span class="err">}</span>
+	<span class="k">G</span><span class="o">=</span><span class="n">F</span><span class="o">-</span><span class="err">{</span> <span class="n">B</span> <span class="err">→</span> <span class="k">C</span> <span class="err">}，</span>
+		<span class="n">BG</span> <span class="o">+=</span><span class="n">B</span><span class="err">，不包含</span> <span class="k">C</span><span class="err">，所以</span> <span class="n">B</span> <span class="err">→</span> <span class="k">C</span> <span class="err">保留</span>
+	<span class="k">G</span><span class="o">=</span><span class="n">F</span><span class="o">-</span><span class="err">{</span> <span class="k">C</span> <span class="err">→</span> <span class="n">A</span> <span class="err">}，</span>
+		<span class="n">CG</span> <span class="o">+=</span> <span class="k">C</span><span class="err">，不包含</span> <span class="n">A</span><span class="err">，所以</span> <span class="k">C</span> <span class="err">→</span> <span class="n">A</span> <span class="err">保留</span>
+
+	<span class="p">[</span><span class="n">step</span><span class="p">.</span><span class="mi">3</span><span class="p">]</span>
+	<span class="n">F</span><span class="o">=</span><span class="err">{</span> <span class="n">A</span> <span class="err">→</span> <span class="n">B</span> <span class="err">，</span><span class="n">B</span> <span class="err">→</span> <span class="k">C</span> <span class="err">，</span><span class="k">C</span> <span class="err">→</span> <span class="n">A</span> <span class="err">}</span>
+<span class="err">}</span>
+</code></pre></div><h2 id="数据库设计">数据库设计</h2>
+<ol>
+<li>需求分析阶段：了解分析用户需求 (数据 and 处理)；</li>
+<li>概念结构设计：综合归纳用户需求形成概念模型，形成概念模式 (E-R)；</li>
+<li>逻辑结构设计：概念模型转化为数据模型并优化，形成逻辑模式，进一步优化为外模式；</li>
+<li>物理结构设计：选定储存结构和存取方法，形成内模式；</li>
+<li>数据库实施：建立数据库、编制程序、数据入库、调试运行；</li>
+<li>数据库运行与维护：及时评价、调整、修改；</li>
+</ol>
+<h2 id="数据库恢复">数据库恢复</h2>
+<p>事务：是用户定义的一个 <em>数据库操作序列</em> ，这些操作要么都做，要么都不做，是一个不可分割的工作单位，恢复和并发控制的基本单位；</p>
+<p>事务的性质：</p>
+<ul>
+<li>原子性：要么全做要么不做；</li>
+<li>一致性：要么写入正确的结果，要么不写入；</li>
+<li>隔离性：详看并发控制（关于交叉进行）；</li>
+<li>持续性：commit之后修改是持久的；</li>
+</ul>
+<p>故障：</p>
+<ul>
+<li>事务故障：逻辑故障、完整性约束下的中止事务；</li>
+<li>系统故障：停电、死机；</li>
+<li>介质故障：储存盘损坏；</li>
+<li>病毒：病毒攻击；</li>
+</ul>
+<p>备份：</p>
+<ul>
+<li>动态备份 / 静态备份；</li>
+<li>海量备份 / 增量备份；</li>
+</ul>
+<p>恢复策略：</p>
+<ul>
+<li>事务故障：反向扫描log，按步骤恢复至故障事务开始的标记；</li>
+<li>系统故障：
+<ul>
+<li>log中有记录 commit：redo，正向扫描；</li>
+<li>log中无记录 commit：undo，操作同事务故障；</li>
+</ul>
+</li>
+<li>介质故障：恢复数据库并常规使用 log 恢复；</li>
+</ul>
+<p>检查点技术：checkpoints文件记录当时所有事务清单和最近的log的地址，redo文件记录检查点位置，可以提高故障恢复效率；</p>
+<ul>
+<li>记录：日志写入-&gt;检查点写入-&gt;数据写入-&gt;重新开始文件写入；</li>
+<li>恢复：重新开始文件找到最后检查点-&gt;事务清单上的事务进行审计-&gt;正向扫描log，无 commit：undo，有 commit：redo；</li>
+</ul>
+<h2 id="并发控制">并发控制</h2>
+<p>面对的三种问题：丢失修改、不可重复读、读取脏数据；</p>
+<p>事务执行：事务串行执行、交叉并发执行(单机)、同时并发执行(多机)；</p>
+<p>技术：排他锁(X) read &amp; write &amp; 共享锁(S) read only；</p>
+<p>封锁协议：</p>
+<ul>
+<li>一级封锁协议：修改前加上X锁，可以防止丢失修改，不能保证可重复读和脏数据；</li>
+<li>二级封锁协议：一级封锁基础上，读取前加上S锁（到读取结束），可以防止丢失修改和脏数据，不能保证可重复读；</li>
+<li>三级封锁协议：一级封锁基础上，读取前加上S锁（直到事务结束），可以防止三种问题；</li>
+</ul>
+<p>活锁 &amp; 死锁：</p>
+<ul>
+<li>活锁：一个事务持续等待，没有逻辑上锁死；</li>
+<li>死锁：逻辑上锁死；预防或诊断解除（超时法、事务等待图法）；</li>
+</ul>
+<p>可串行化调度：多个事务的并发执行是正确的，当且仅当其结果与按某一次序串行地执行这些事务时的结果相同。可串行化调度当然也保持数据库的一致状态；</p>
+<p>可串行性：是并发事务正确调度的准则。在RDBMS中，作为并发控制的正确性准则。一个给定的并发调度，当且仅当它是可串行化的，才认为是正确调度；</p>
+<p>两段锁协议（可串行化的充分条件，但并不保证避免死锁）：</p>
+<ul>
+<li>第一阶段：获得封锁（扩展阶段）；</li>
+<li>第二阶段：释放封锁（收缩阶段）；</li>
+</ul>
+<p>粒度：封锁对象的大小，区别为逻辑单元和物理单元；</p>
+<p>多粒度封锁：同时支持多种封锁粒度；</p>
+<p>多粒度封锁协议：</p>
+<ul>
+<li>允许对多粒度树中的每个节点独立加锁；</li>
+<li>节点加锁意味着所有后裔加锁；</li>
+<li>显示封锁 / 隐式封锁（因上一条引起）；</li>
+</ul>
+<blockquote>
+<p>多粒度封锁效率低，因为它需要检查上下所有节点的加锁情况</p>
+</blockquote>
+<p>意向锁（如果对一个结点加意向锁，则说明该结点的下层结点正在被加锁，对任一结点加基本锁，必须先对它的上层结点加意向锁）：</p>
+<ul>
+<li>意向共享锁（IS）：后裔拟加S锁；</li>
+<li>意向排他锁（IX）：后裔拟加X锁；</li>
+<li>共享意向排他锁（SIX）：S+IX的效果（意思是要读整个表并且可能更新一些数据）；</li>
+</ul>
+<blockquote>
+<p>申请封锁自上而下，释放封锁自下而上。</p>
+</blockquote>
+<h2 id="关系查询处理和查询优化">关系查询处理和查询优化</h2>
+<p>查询分析：查询语句的语义分析；</p>
+<p>查询检查：安全性检查 &amp; 完整性检查；</p>
+<p>查询优化：</p>
+<ul>
+<li>代数优化：关系代数表达式的优化；<em>此处内容较多，详看书本 page.281</em></li>
+<li>物理优化：
+<ul>
+<li>基于规则的启发式优化
+<ul>
+<li>选择操作
+<ol>
+<li>小关系：全表扫描</li>
+<li>主码相关：主码索引</li>
+<li>非主属性：比例较小索引，较大全表</li>
+<li>非等值或者范围：同上</li>
+<li>OR：一般全表</li>
+</ol>
+</li>
+<li>连接操作
+<ol>
+<li>已按照连接属性排序：排序-合并方法</li>
+<li>连接属性上有索引：索引连接法</li>
+<li>其中一个表比较小：HASH join方法</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>基于代价估算的优化
+<ul>
+<li>代价估计：
+<ol>
+<li>全表B块，全表扫描cost=B</li>
+<li>全表B块，选择条件码值对应，平均搜索cost=B/2</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>基于代价估计的优化</li>
+</ul>
+<h1 id="结尾">结尾</h1>
+<p>对照书上看了一看，发现学的是真的粗糙，像数据库编程、数据库安全都很粗略地看了过去，学习过程中也没有实际做出什么东西来，这份笔记涉及的部分也差了很多，只是为了通过期末考试。</p>
+<p>因为学期的课程讲到关系查询就结束了，所以之后的内容如管理系统、大数据部分，在课程和复习中只大致浏览过。</p>
+</div>
+                    <div class="post_footer">
+                        
+                        <div class="meta">
+                            <div class="info">
+                                <span class="field tags">
+                                    <i class="ri-stack-line"></i>
+                                    
+                                    <a href="http://localhost:1313/tags/%E6%95%99%E7%A8%8B%E6%96%87%E6%A1%A3/">教程文档</a>
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                
+<div class="doc_comments">
+    <div class="comments_block_title">发表评论</div>
+    <div id="vcomments"></div>
+</div>
+
+<link rel="stylesheet" href="http://localhost:1313/css/comments.css" />
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<script type="text/javascript">
+    new Valine({
+        el: '#vcomments',
+        appId: '12HKA37DAChBWQgBC7PA4eBw-gzGzoHsz',
+        appKey: 'UxknCfg5bWmkI2eGar5hDxWq',
+        placeholder: ' ',
+        visitor: 'true',
+    })
+</script>
+                
+            </div>
+        </div>
+    </div>
+    <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
+    <footer class="footer">
+    <div class="powered_by">
+        <a href="https://timegg.top">TIMEGG © 2017 - 2021,</a>
+        <a href="http://www.gohugo.io/">Powered by Hugo.</a>
+    </div>
+
+    <div class="footer_slogan">
+        <span>重拾写作的乐趣。</span>
+    </div>
+</footer>
+    <script src="http://localhost:1313/js/jquery-3.5.1.min.js"></script>
+<link href="http://localhost:1313/css/fancybox.min.css" rel="stylesheet">
+<script src="http://localhost:1313/js/fancybox.min.js"></script>
+<script src="http://localhost:1313/js/zozo.js"></script>
+
+
+<script type="text/javascript" async
+    src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+                processEscapes: true,
+                processEnvironments: true,
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                TeX: {
+                    equationNumbers: { autoNumber: "AMS" },
+                    extensions: ["AMSmath.js", "AMSsymbols.js"]
+                }
+            }
+        });
+
+        MathJax.Hub.Queue(function () {
+            
+            
+            
+            var all = MathJax.Hub.getAllJax(), i;
+            for (i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+<style>
+    code.has-jax {
+        font: inherit;
+        font-size: 100%;
+        background: inherit;
+        border: inherit;
+        color: #515151;
+    }
+</style>
+
+
+
+</body>
+
+</html>

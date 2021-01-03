@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Chuanbo" />
+	
+	
+	
+	<title>几种常用的插值法的实现 ｜ TIMEGG</title>
+	
+    
+    
+    <meta name="description" content="插值法在数值分析中很常用，用于各种函数分析的拟合和逼近，以及关于最佳一致逼近和最佳平方逼近的证明。在这篇文章中记录了使用 Matlab 实现的 Lagrange 插值法、Newton 插值法、Hermit 插值法和三次样条插值法。。" />
+    
+
+    
+    
+    <meta name="keywords" content="Hugo, theme, zozo" />
+    
+
+	
+    
+    <link rel="shortcut icon" href="http://localhost:1313/images/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/zozo.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/highlight.css" />
+
+    
+    
+</head>
+
+<body>
+    <div class="main animate__animated animate__fadeInDown">
+        <div class="nav_container animated fadeInDown">
+    <div class="site_nav" id="site_nav">
+        <ul>
+            
+            <li>
+                <a href="/">主页</a>
+            </li>
+            
+            <li>
+                <a href="/posts/">归档</a>
+            </li>
+            
+            <li>
+                <a href="/tags/">标签</a>
+            </li>
+            
+            <li>
+                <a href="/links/">链接</a>
+            </li>
+            
+            <li>
+                <a href="/about/">关于</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="menu_icon">
+        <a id="menu_icon"><i class="ri-menu-line"></i></a>
+    </div>
+</div>
+        <div class="header animated fadeInDown">
+    <div class="site_title_container">
+        <div class="site_title">
+            <h1>
+                <a href="http://localhost:1313/">
+                    <span>TIMEGG</span>
+                </a>
+            </h1>
+        </div>
+        <div class="description">
+            <p class="sub_title">放进时光蛋里。</p>
+            <div class="my_socials">
+                
+                
+                <a href="https://github.com/cbhua" title="github" target="_blank"><i class="ri-github-fill"></i></a>
+                
+                
+                
+                <a href="%20" title="instagram" target="_blank"><i class="ri-instagram-fill"></i></a>
+                
+                
+                
+                <a href="https://twitter.com/huachuanbo" title="twitter" target="_blank"><i class="ri-twitter-fill"></i></a>
+                
+                
+                
+                <a href="https://weibo.com/u/6177306082" title="weibo" target="_blank"><i class="ri-weibo-fill"></i></a>
+                
+                
+                <a href="http://localhost:1313/index.xml" type="application/rss+xml" title="rss" target="_blank"><i
+                        class="ri-rss-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="content">
+            <div class="post_page">
+                <div class="post animate__animated animate__fadeInDown">
+                    <div class="post_title post_detail_title">
+                        <h2><a href='/posts/20181102-polynomial/'>几种常用的插值法的实现</a></h2>
+                        <span class="date">2018.11.02</span>
+                    </div>
+                    <div class="post_content markdown"><p><a href="https://baike.baidu.com/item/%E6%8F%92%E5%80%BC%E6%B3%95">插值法</a> 在数值算例中有广泛的应用。</p>
+<blockquote>
+<p>插值的作法，很直觀地來講，就是，(1) 先從表列值來獲得函數 f(x)，再 (2) 用函數 f(x) 求出我們所要的任何特定 x 之 f(x) 函數值。然而，比較精密且系統化的數值方法卻不是用這兩個步驟來進行插值，原因是前述兩階段方法對於插值的精密度並沒有控制，效率較差，也比較會有進位誤差。一般在做插值法，是從欲插值點 x 附近的幾個表列點 xi 開始，建立插值函數 f(x)，並且也試著網羅更多表列點來插值，看隨著項數變多誤差會不會變小，如此找出最適合的函數 f(x)。</p>
+</blockquote>
+<p>Reference from <a href="http://boson4.phys.tku.edu.tw/numerical_methods/nm_units/interpolation_n_extrapolation_intro_n_polynomial.htm">Interpolation and Extrapolation</a>，这是一个对插值法探讨的比较好的网站，也提供了相对的程式供使用，非常推荐参考。</p>
+<p><a href="https://zh.wikipedia.org/zh-hant/%E9%80%BC%E8%BF%91%E7%90%86%E8%AE%BA">函数逼近</a> 在很多方面与插值法比较类似，也具有非常广泛的用处，尤其在近些年的前沿问题深度学习中有着重要的作用：<a href="http://staff.ustc.edu.cn/~lgliu/Resources/DL/What_is_DeepLearning.html">什么是深度学习？（从函数逼近论的角度来理解） - 中国科学技术大学</a>。函数逼近我也会在深度学习中进行更多的讨论。</p>
+<p><strong>本文结构</strong>：</p>
+<ul>
+<li>插值法
+<ul>
+<li>Lagrange 插值法</li>
+<li>Newton 插值法</li>
+<li>Hermite 插值法</li>
+<li>三次样条插值</li>
+</ul>
+</li>
+</ul>
+<p>在这篇 post 中，将不会对各种插值法的原理进行太多的讨论，只是将相关资料与 Matlab Code 附于此处，供读者参考。能力有限，可能会有一些错误在里面，希望可以通过留言告知，也请多多理解。</p>
+<p>若公式无法正常加载，请刷新重试。</p>
+<h1 id="正文">正文</h1>
+<h2 id="lagrange-插值法">Lagrange 插值法</h2>
+<p><a href="https://zh.wikipedia.org/zh-hant/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E6%8F%92%E5%80%BC%E6%B3%95">Lagrange 插值法 - Wiki</a></p>
+<p>Lagrange 插值多项式（n = 2 时）：
+$$
+p_2(x)=y_0 \times \frac{(x-x_1) \times (x - x_2)}{(x_0 - x_1) \times (x_0-x_2)}+y_1 \times \frac{(x-x_0) \times (x - x_2)}{(x_0 - x_0) \times (x_0-x_2)}+y_2 \times \frac{(x-x_0) \times (x - x_1)}{(x_0 - x_0) \times (x_0-x_1)}
+$$
+余项（次数为 n 时）：</p>
+<p>$$
+f(x)=p_n(x)+\frac{f^{(n+1)}(\xi)}{(n+1)!}\times w_{n+1}(x), a&lt;\xi &lt;b.
+$$
+其中：</p>
+<p>$$
+w_{n+1}(x)=(x-x_0)(x-x_1)\cdots (x-x_n)
+$$
+Matlab 实现：</p>
+<div class="highlight"><pre class="chroma"><code class="language-matlab" data-lang="matlab"><span class="k">function</span><span class="w"> </span>[y] <span class="p">=</span><span class="w"> </span><span class="nf">Lagrange </span><span class="p">(</span>x0, y0<span class="p">)</span><span class="w">
+</span><span class="w"></span><span class="c">% Lagrange 插值法</span>
+<span class="c">% input: (x0, y0): 插值点</span>
+<span class="c">% output: y: Lagrange 插值函数</span>
+<span class="n">n</span> <span class="p">=</span> <span class="nb">length</span> <span class="p">(</span><span class="n">x0</span><span class="p">);</span>
+<span class="n">syms</span> <span class="n">x</span><span class="p">;</span>
+<span class="n">s</span> <span class="p">=</span> <span class="mf">0.0</span><span class="p">;</span>
+<span class="k">for</span> <span class="n">k</span> <span class="p">=</span> <span class="mi">1</span><span class="p">:</span><span class="n">n</span>
+    <span class="n">p</span> <span class="p">=</span> <span class="mf">1.0</span><span class="p">;</span>
+    <span class="k">for</span> <span class="nb">j</span> <span class="p">=</span> <span class="mi">1</span><span class="p">:</span><span class="n">n</span>
+        <span class="k">if</span> <span class="nb">j</span> <span class="o">~=</span> <span class="n">k</span>
+            <span class="n">p</span> <span class="p">=</span> <span class="n">p</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">x0</span><span class="p">(</span><span class="nb">j</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="n">x0</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">-</span> <span class="n">x0</span><span class="p">(</span><span class="nb">j</span><span class="p">));</span>
+        <span class="k">end</span> <span class="c">% if</span>
+    <span class="k">end</span> <span class="c">% for</span>
+    <span class="n">s</span> <span class="p">=</span> <span class="n">p</span> <span class="o">*</span> <span class="n">y0</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="n">s</span><span class="p">;</span>
+<span class="k">end</span> <span class="c">% for</span>
+<span class="n">y</span> <span class="p">=</span> <span class="n">s</span><span class="p">;</span>
+<span class="k">end</span> <span class="c">% function</span>
+</code></pre></div><p>本函数直接返回 Lagrange 插值多项式，亦有其他输出方法，也可将误差考虑在内，参考 <a href="https://blog.csdn.net/seamanj/article/details/36407923">拉格朗日(lagrange)插值及其MATLAB程序</a>。</p>
+<h2 id="newton-插值法">Newton 插值法</h2>
+<p><a href="https://zh.wikipedia.org/wiki/%E7%89%9B%E9%A1%BF%E5%A4%9A%E9%A1%B9%E5%BC%8F">牛顿多项式 - Wiki</a></p>
+<p>均差：</p>
+<ul>
+<li>一阶均差：$f[x_i,x_j]=\frac{f(x_j)-f(x_i)}{x_j-x_i}$</li>
+<li>二阶均差：$f[x_i,x_j,x_k]=\frac{f[x_j,x_k]-f[x_i,x_j]}{x_k-x_i}$</li>
+<li>n 阶均差：$f[x_0,x_1,&hellip;,x_n]=\frac{f[x_1,x_2,&hellip;,x_n]-f[x_0,x_1,&hellip;,x_{n-1}]}{x_n-x_0}$</li>
+</ul>
+<p>Newton 插值多项式：</p>
+<p>$$
+f(x)=N_n(x)+f[x,x_0,x_1,&hellip;,x_n]w_{n+1}(x)
+$$
+其中：</p>
+<p>$$
+N_n(x)=f(x_0)+f[x_0,x_1]w_1(x)+\dots+f[x_0,x_1,&hellip;,x_n]w_n(x)
+$$</p>
+<ul>
+<li>
+<p><strong>输入</strong>：数 $x_0,x_1,&hellip;,x_n,x$；函数值 $f(x_0),f(x_1),&hellip;,f(x_n)$ 作为 Q 的第一列元素 $Q_{0,0},Q_{1,0},&hellip;,Q_{n,0}$</p>
+</li>
+<li>
+<p><strong>输出</strong>：$f(x)$ 的近似值 $b_0$</p>
+</li>
+</ul>
+<p>Matlab 实现：</p>
+<div class="highlight"><pre class="chroma"><code class="language-matlab" data-lang="matlab"><span class="k">function</span><span class="w"> </span>[ y ] <span class="p">=</span><span class="w"> </span><span class="nf">Newton_Insert</span><span class="p">(</span> x0, y0 <span class="p">)</span><span class="w">
+</span><span class="w"></span><span class="c">% Newton 均差插值法</span>
+<span class="c">% input: (x0, y0): 插值点</span>
+<span class="c">% output: y: f(x) 近似值</span>
+<span class="n">n</span> <span class="p">=</span> <span class="nb">length</span><span class="p">(</span><span class="n">x0</span><span class="p">);</span>
+<span class="k">for</span> <span class="nb">i</span> <span class="p">=</span> <span class="mi">0</span> <span class="p">:</span> <span class="n">n</span>
+    <span class="n">Q</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="p">=</span> <span class="n">y0</span><span class="p">(</span><span class="nb">i</span><span class="p">);</span>
+<span class="k">end</span> <span class="c">% for</span>
+<span class="k">for</span> <span class="nb">i</span> <span class="p">=</span> <span class="mi">1</span> <span class="p">:</span> <span class="n">n</span>
+    <span class="k">for</span> <span class="nb">j</span> <span class="p">=</span> <span class="mi">1</span> <span class="p">:</span> <span class="nb">i</span>
+        <span class="n">Q</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="nb">j</span><span class="p">)</span> <span class="p">=</span> <span class="p">(</span><span class="n">Q</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="nb">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">Q</span><span class="p">(</span><span class="nb">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="n">x</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span> <span class="o">-</span> <span class="n">x</span><span class="p">(</span><span class="nb">i</span> <span class="o">-</span> <span class="nb">j</span><span class="p">));</span>
+    <span class="k">end</span> <span class="c">% for</span>
+<span class="k">end</span> <span class="c">% for</span>
+<span class="n">b</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="p">=</span> <span class="n">Q</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>
+<span class="k">for</span> <span class="n">k</span> <span class="p">=</span> <span class="n">n</span> <span class="p">:</span> <span class="o">-</span><span class="mi">1</span> <span class="p">:</span> <span class="mi">1</span>
+    <span class="n">b</span><span class="p">(</span><span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="p">=</span> <span class="n">Q</span><span class="p">(</span><span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">b</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">x</span><span class="p">(</span><span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">));</span>
+<span class="k">end</span> <span class="c">% for</span>
+<span class="n">y</span> <span class="p">=</span> <span class="n">b</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="k">end</span> <span class="c">% function</span>
+</code></pre></div><h2 id="hermit-插值法">Hermit 插值法</h2>
+<p><a href="https://zh.wikipedia.org/wiki/%E5%9F%83%E5%B0%94%E7%B1%B3%E7%89%B9%E6%8F%92%E5%80%BC">Hermit 插值法 - Wiki</a></p>
+<p>前面介绍的插值公式，都只要求插值多项式在插值基点处取给定的函数值，在许多实际问题中，不仅要求插值多项式与函数在各插值基点值相等，还需要在相应插值基点处有若干阶导数相等，这类问题称为 Hermite 插值问题。</p>
+<p>在这里只考虑在各基点均有一阶导数的 Hermite 插值问题。</p>
+<div class="highlight"><pre class="chroma"><code class="language-matlab" data-lang="matlab"><span class="k">function</span><span class="w"> </span>H <span class="p">=</span><span class="w"> </span><span class="nf">Hermite</span><span class="p">(</span> x0, y0, z0 <span class="p">)</span><span class="w">
+</span><span class="w"></span><span class="c">% Hermit 插值法</span>
+<span class="c">% input: (x0, y0): 插值点; (x0, z0): 对应点一阶导</span>
+<span class="c">% output: H: f(x) 近似值</span>
+<span class="n">n</span><span class="p">=</span><span class="nb">length</span><span class="p">(</span><span class="n">x0</span><span class="p">);</span>
+<span class="n">syms</span> <span class="n">x</span><span class="p">;</span>
+<span class="n">s</span><span class="p">=</span><span class="mf">0.0</span><span class="p">;</span>
+    <span class="k">for</span> <span class="n">k</span><span class="p">=</span><span class="mi">1</span><span class="p">:</span><span class="n">n</span>
+        <span class="n">p</span><span class="p">=</span><span class="mi">1</span><span class="p">;</span>
+        <span class="k">for</span> <span class="nb">j</span><span class="p">=</span><span class="mi">1</span><span class="p">:</span><span class="n">n</span>
+            <span class="k">if</span> <span class="nb">j</span><span class="o">~=</span><span class="n">k</span>
+                <span class="n">p</span><span class="p">=(</span><span class="n">p</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">x0</span><span class="p">(</span><span class="nb">j</span><span class="p">)))</span><span class="o">/</span><span class="p">(</span><span class="n">x0</span><span class="p">(</span><span class="n">k</span><span class="p">)</span><span class="o">-</span><span class="n">x0</span><span class="p">(</span><span class="nb">j</span><span class="p">));</span>
+            <span class="k">end</span> <span class="c">% if</span>
+        <span class="k">end</span> <span class="c">% for</span>
+        <span class="n">b</span><span class="p">(</span><span class="n">k</span><span class="p">)=</span><span class="n">p</span><span class="o">*</span><span class="n">p</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">x0</span><span class="p">(</span><span class="n">k</span><span class="p">));</span>
+        <span class="n">q</span><span class="p">=</span><span class="mi">0</span><span class="p">;</span>
+        <span class="k">for</span> <span class="nb">j</span><span class="p">=</span><span class="mi">1</span><span class="p">:</span><span class="n">n</span>
+            <span class="k">if</span> <span class="nb">j</span><span class="o">~=</span><span class="n">k</span>
+                <span class="n">q</span><span class="p">=</span><span class="n">q</span><span class="o">+</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">x0</span><span class="p">(</span><span class="n">k</span><span class="p">)</span><span class="o">-</span><span class="n">x0</span><span class="p">(</span><span class="nb">j</span><span class="p">));</span>
+            <span class="k">end</span> <span class="c">%if</span>
+        <span class="k">end</span> <span class="c">% for</span>
+        <span class="n">a</span><span class="p">(</span><span class="n">k</span><span class="p">)=</span><span class="n">p</span><span class="o">*</span><span class="n">p</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">x0</span><span class="p">(</span><span class="n">k</span><span class="p">))</span><span class="o">*</span><span class="n">q</span><span class="p">));</span>
+        <span class="n">s</span><span class="p">=</span><span class="n">a</span><span class="p">(</span><span class="n">k</span><span class="p">)</span><span class="o">*</span><span class="n">y0</span><span class="p">(</span><span class="n">k</span><span class="p">)</span><span class="o">+</span><span class="n">b</span><span class="p">(</span><span class="n">k</span><span class="p">)</span><span class="o">*</span><span class="n">z0</span><span class="p">(</span><span class="n">k</span><span class="p">)</span><span class="o">+</span><span class="n">s</span><span class="p">;</span>
+    <span class="k">end</span> <span class="c">% for</span>
+    <span class="n">H</span><span class="p">=</span><span class="n">s</span><span class="p">;</span>
+<span class="k">end</span> <span class="c">% function</span>
+</code></pre></div><h2 id="三次样条插值法">三次样条插值法</h2>
+<p><a href="https://zh.wikipedia.org/wiki/%E6%A0%B7%E6%9D%A1%E6%8F%92%E5%80%BC">样条插值 - Wiki</a></p>
+<p>样条插值是分段多项式插值的优化，其中有分段线性插值、分段抛物线插值等多种插值方式。为使分段插值函数在插值区间的子区间的端点连续而使用条样插值的方法。</p>
+<p>函数：</p>
+<p><strong>MathJax BUG</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">&gt; \begin{equation} 
+&gt; S(x)=
+&gt; \left\{
+&gt; \begin{array}{lr}
+&gt; S_1(x), x\in [x_1,x_2],&amp;  \\
+&gt; ... &amp; \\
+&gt; S_i(x), x\in [x_i,x_{i+1}],&amp;  \\
+&gt; ... &amp; \\
+&gt; S_n(x), x\in [x_n,x_{n+1}]&amp; \\
+&gt; \end{array}
+&gt; \right. 
+&gt; \end{equation}
+</code></pre></div><p>$$
+a=x_1&lt;x_2&lt;&hellip;&lt;x_{n+1}=b
+$$</p>
+<p>是二次连续可微的，右方函数都是不高于三次的多项式或者零多项式，且满足条件：</p>
+<p>$$
+S(x_j)=f(x_j),j=1,&hellip;,n+1.
+$$
+则称 S(x) 为函数 f(x) 的<strong>三次条样插值函数</strong>。</p>
+<ul>
+<li><strong>输入</strong>：$x_1,&hellip;,x_{n+1};f_1=f(x_1),&hellip;,f_{n+1}(x_{n+1});f_{p_1}=f'(x_1),f_{p_2}=f'(x_{n+1}).$</li>
+<li><strong>输出</strong>：$S_i(x)=\sum\nolimits_{i=1}^{4} A_{k,i}(x-x_i)^{k-1} = 0$ 的系数 $A_{1,i},A_{2,i},A_{3,i},A_{4,i},i=1,&hellip;,n$</li>
+</ul>
+<p>Matlab 实现：</p>
+<div class="highlight"><pre class="chroma"><code class="language-matlab" data-lang="matlab"><span class="k">function</span><span class="w"> </span>[ A ] <span class="p">=</span><span class="w"> </span><span class="nf">Cubic_Spline_Interpolation</span><span class="p">(</span> x0, y0, fp1, fp2 <span class="p">)</span><span class="w">
+</span><span class="w"></span><span class="c">% 完备的三次条样插值法</span>
+<span class="c">% input: (x0, y0): 插值点; fp1 = f&#39;(x1); fp2 = f&#39;(x_n+1);</span>
+<span class="c">% output: 详见上述描述</span>
+<span class="n">n</span> <span class="p">=</span> <span class="nb">length</span><span class="p">(</span><span class="n">x0</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+<span class="k">for</span> <span class="nb">i</span> <span class="p">=</span> <span class="mi">1</span> <span class="p">:</span> <span class="n">n</span>
+    <span class="n">h</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span> <span class="p">=</span> <span class="n">x0</span><span class="p">(</span><span class="nb">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">x</span><span class="p">(</span><span class="nb">i</span><span class="p">);</span>
+    <span class="n">b</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span> <span class="p">=</span> <span class="p">(</span><span class="n">y0</span><span class="p">(</span><span class="nb">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">y0</span><span class="p">(</span><span class="nb">i</span><span class="p">))</span> <span class="o">/</span> <span class="n">h</span><span class="p">(</span><span class="nb">i</span><span class="p">);</span>
+<span class="k">end</span> <span class="c">% for</span>
+<span class="n">d</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">=</span> <span class="n">b</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">fp1</span><span class="p">;</span>
+<span class="n">d</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="p">=</span> <span class="n">fp2</span> <span class="o">-</span> <span class="n">b</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>
+<span class="k">for</span> <span class="nb">i</span> <span class="p">=</span> <span class="mi">2</span> <span class="p">:</span> <span class="n">n</span>
+    <span class="n">d</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span> <span class="p">=</span> <span class="n">b</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span> <span class="o">-</span> <span class="n">b</span><span class="p">(</span><span class="nb">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+<span class="k">end</span> <span class="c">% for</span>
+
+<span class="c">% ————————————————————</span>
+<span class="c">%用三对角算法求上述方程组的解</span>
+<span class="c">% ————————————————————</span>
+
+<span class="k">for</span> <span class="nb">i</span> <span class="p">=</span> <span class="mi">1</span> <span class="p">:</span> <span class="n">n</span>
+    <span class="n">A</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">i</span><span class="p">)</span> <span class="p">=</span> <span class="n">y0</span><span class="p">(</span><span class="nb">i</span><span class="p">);</span>
+    <span class="n">A</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="nb">i</span><span class="p">)</span> <span class="p">=</span> <span class="n">b</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">h</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span> <span class="o">/</span> <span class="mi">6</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">m</span><span class="p">(</span><span class="nb">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">m</span><span class="p">(</span><span class="nb">i</span><span class="p">));</span>
+    <span class="n">A</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="nb">i</span><span class="p">)</span> <span class="p">=</span> <span class="n">m</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="n">A</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="nb">i</span><span class="p">)</span> <span class="p">=</span> <span class="p">(</span><span class="n">m</span><span class="p">(</span><span class="nb">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">m</span><span class="p">(</span><span class="nb">i</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">6</span> <span class="o">*</span> <span class="n">h</span><span class="p">(</span><span class="nb">i</span><span class="p">));</span>
+<span class="k">end</span> <span class="c">% for</span>
+<span class="k">end</span> <span class="c">% function</span>
+</code></pre></div><h1 id="结尾">结尾</h1>
+<p>插值法是函数逼近问题的一种解决方案，函数逼近更多的在于理论方面的说明，如最佳一致逼近、最佳平方逼近等等，这里我也没有尝试写一些比较通用的算法与 Code 供使用（Matlab 工具包中提供了非常多的函数逼近工具可供使用）。在后面了解深度学习的过程中，函数逼近问题肯定是无法被避免的。</p>
+</div>
+                    <div class="post_footer">
+                        
+                        <div class="meta">
+                            <div class="info">
+                                <span class="field tags">
+                                    <i class="ri-stack-line"></i>
+                                    
+                                    <a href="http://localhost:1313/tags/%E6%95%99%E7%A8%8B%E6%96%87%E6%A1%A3/">教程文档</a>
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                
+<div class="doc_comments">
+    <div class="comments_block_title">发表评论</div>
+    <div id="vcomments"></div>
+</div>
+
+<link rel="stylesheet" href="http://localhost:1313/css/comments.css" />
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<script type="text/javascript">
+    new Valine({
+        el: '#vcomments',
+        appId: '12HKA37DAChBWQgBC7PA4eBw-gzGzoHsz',
+        appKey: 'UxknCfg5bWmkI2eGar5hDxWq',
+        placeholder: ' ',
+        visitor: 'true',
+    })
+</script>
+                
+            </div>
+        </div>
+    </div>
+    <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
+    <footer class="footer">
+    <div class="powered_by">
+        <a href="https://timegg.top">TIMEGG © 2017 - 2021,</a>
+        <a href="http://www.gohugo.io/">Powered by Hugo.</a>
+    </div>
+
+    <div class="footer_slogan">
+        <span>重拾写作的乐趣。</span>
+    </div>
+</footer>
+    <script src="http://localhost:1313/js/jquery-3.5.1.min.js"></script>
+<link href="http://localhost:1313/css/fancybox.min.css" rel="stylesheet">
+<script src="http://localhost:1313/js/fancybox.min.js"></script>
+<script src="http://localhost:1313/js/zozo.js"></script>
+
+
+<script type="text/javascript" async
+    src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+                processEscapes: true,
+                processEnvironments: true,
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                TeX: {
+                    equationNumbers: { autoNumber: "AMS" },
+                    extensions: ["AMSmath.js", "AMSsymbols.js"]
+                }
+            }
+        });
+
+        MathJax.Hub.Queue(function () {
+            
+            
+            
+            var all = MathJax.Hub.getAllJax(), i;
+            for (i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+<style>
+    code.has-jax {
+        font: inherit;
+        font-size: 100%;
+        background: inherit;
+        border: inherit;
+        color: #515151;
+    }
+</style>
+
+
+
+</body>
+
+</html>

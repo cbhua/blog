@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Chuanbo" />
+	
+	
+	
+	<title>哈恩巴拿赫定理证明 ｜ TIMEGG</title>
+	
+    
+    
+    <meta name="description" content="Hahn-Banach Theorem 哈恩巴拿赫定理被称为泛函分析三大定理之一，是泛函分析中极其重要的一个工具。在经济学领域，该定理与市场经济的福利经济学第二定理有密切的关系。关于这个定理证明的资料在网上可以搜索到的不多，大多为应用，因此在这里展示对该定理的证明。" />
+    
+
+    
+    
+    <meta name="keywords" content="Hugo, theme, zozo" />
+    
+
+	
+    
+    <link rel="shortcut icon" href="http://localhost:1313/images/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/zozo.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/highlight.css" />
+
+    
+    
+</head>
+
+<body>
+    <div class="main animate__animated animate__fadeInDown">
+        <div class="nav_container animated fadeInDown">
+    <div class="site_nav" id="site_nav">
+        <ul>
+            
+            <li>
+                <a href="/">主页</a>
+            </li>
+            
+            <li>
+                <a href="/posts/">归档</a>
+            </li>
+            
+            <li>
+                <a href="/tags/">标签</a>
+            </li>
+            
+            <li>
+                <a href="/links/">链接</a>
+            </li>
+            
+            <li>
+                <a href="/about/">关于</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="menu_icon">
+        <a id="menu_icon"><i class="ri-menu-line"></i></a>
+    </div>
+</div>
+        <div class="header animated fadeInDown">
+    <div class="site_title_container">
+        <div class="site_title">
+            <h1>
+                <a href="http://localhost:1313/">
+                    <span>TIMEGG</span>
+                </a>
+            </h1>
+        </div>
+        <div class="description">
+            <p class="sub_title">放进时光蛋里。</p>
+            <div class="my_socials">
+                
+                
+                <a href="https://github.com/cbhua" title="github" target="_blank"><i class="ri-github-fill"></i></a>
+                
+                
+                
+                <a href="%20" title="instagram" target="_blank"><i class="ri-instagram-fill"></i></a>
+                
+                
+                
+                <a href="https://twitter.com/huachuanbo" title="twitter" target="_blank"><i class="ri-twitter-fill"></i></a>
+                
+                
+                
+                <a href="https://weibo.com/u/6177306082" title="weibo" target="_blank"><i class="ri-weibo-fill"></i></a>
+                
+                
+                <a href="http://localhost:1313/index.xml" type="application/rss+xml" title="rss" target="_blank"><i
+                        class="ri-rss-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="content">
+            <div class="post_page">
+                <div class="post animate__animated animate__fadeInDown">
+                    <div class="post_title post_detail_title">
+                        <h2><a href='/posts/20190210-hahnbanach/'>哈恩巴拿赫定理证明</a></h2>
+                        <span class="date">2019.02.10</span>
+                    </div>
+                    <div class="post_content markdown"><p>过年在家出于兴趣阅读了一些金融相关的书籍，其中提到了很多数学原理，作为一个数学系的学生，我觉得非常的有趣，感受到了数学在真实生活中的应用。</p>
+<p>在这些内容中，有一部分涉及到了我在上一个学期在泛函分析中的一个定理：<a href="https://en.wikipedia.org/wiki/Hahn%E2%80%93Banach_theorem">Hahn-Banach Theorem(English)</a> 即 <a href="https://zh.wikipedia.org/wiki/%E5%93%88%E6%81%A9%EF%BC%8D%E5%B7%B4%E6%8B%BF%E8%B5%AB%E5%AE%9A%E7%90%86">哈恩-巴拿赫定理(中文)</a> 。这个定理被称为泛函分析三大定理之一，是泛函分析中极为重要的一个工具。在经济学中 Hahn-Banach Theorem 与市场经济的福利经济学第二定理有着密切的关系。</p>
+<p>在假期中想到这个定理，但是记不得定理的证明了，在 Google 上搜索了许多，但是关于这个定理的中文资料很少，而且大部分都是定理的应用。于是回到学校之后参考老师的讲义，将这个定理的证明记录下来。并不是说我自己对掌握这个定理的证明有多大的执念，只是想留下这一篇 Post 来提示自己好好学习数学，诸多学科都会要求一定的数学功底。</p>
+<h1 id="正文">正文</h1>
+<p><em>引理</em>  设 $f$ 是赋范空间 $X$ 上的有界泛函，令 $\varphi (x)=Ref(x)$ ，则 $\varphi (x)$ 是 $X$ 上的有界线性泛函且</p>
+<p>$$f(x)=\varphi (x)-i\varphi (ix), || \varphi ||\le ||f||.$$</p>
+<p><strong>证明</strong>  设 $f(x)=\varphi (x)-i\psi (ix)$ ，这里 $\varphi (x), \psi (x)$ 分别是 $f(x)$ 的实部与虚部。显然 $\varphi , \psi$  是实线性泛函。</p>
+<p>$$\varphi (ix)+i\psi (ix)=f(ix)=if(x)=i\varphi (x)-\psi (x).$$</p>
+<p>故</p>
+<p>$$\varphi (ix)=-\psi (x)$$</p>
+<p>因此</p>
+<p>$$f(x)=\varphi (x)-i\varphi (ix).$$</p>
+<p>$$|\varphi (x)|=|Ref(x)|\le |f(x)|\le ||f||||x||$. 故 $||\varphi||\le ||f||.$$</p>
+<p><em>定理</em>  设 $M$ 是线性空间 $X$ 的子空间，$f$ 是 $M$ 上的线性泛函，$p$ 是 $X$ 上的半范数，对 $x\in M$，有 $|f(x)|\le p(x)$，则 $f$ 可以延拓为 $X$ 上的线性泛函 $F$ 且对任意 $x\in X$，有 $|F(x)|\le p(x)$.</p>
+<p><strong>证明</strong>  若标量域 $\mathbb{K}=\mathbb{R}$ ，由于 $p$ 是次可加正齐次泛函，故存在 $F$ 是 $X$ 上的线性泛函，是 $f$ 的延拓.</p>
+<p>则</p>
+<p>$$-p(x)=-p(-x)\le -F(-x)=F(x)\le p(x)$. 故 $|F(x)|\le p(x).$$</p>
+<p>若标量域 $\mathbb{K}=\mathbb{C}$ ，令 ${\varphi}_0=Ref$ 是 $M$ 上的实线性泛函且 $||{\varphi}_0||\le |f(x)|\le p(x)$. 故存在 ${\varphi _0} $在 $X$ 上的延拓 $\varphi$ ，使得 $\varphi (x)\le p(x)$.</p>
+<p>作 $F(x)=\varphi (x)-i\varphi (ix)$ ，则 $F$ 是 $f$ 在 $X$ 上的延拓且复线性泛函：</p>
+<p>$$F(ix)=\varphi (ix)-i\varphi (-x)=iF(x).$$</p>
+<p>由于存在单位复数 $\beta$ ，使得 $|F(x)|=\beta F(x)$. 故</p>
+<p>$$|F(x)|=\beta F(x)=F(\beta x)=\varphi (\beta x)\le p(\beta x)=|\beta|p(x)=p(x).$$</p>
+<p><em>定理</em>  设 $G$ 是赋范空间 $X$ 的线性子空间，$f$ 是 $G$ 上的有界线性泛函，则存在 $X$ 上的线性泛函 $F$ 是 $f$ 的延拓且 $||F||=||f||$.</p>
+<p><strong>证明</strong>  记 $p(x)=||f||·||x||$ 是 $X$ 上的半范数且 $|f(x)|\le p(x)$. 故存在 $X$ 上的线性泛函 $F$ 是 $f$ 的延拓，使得 $|F(x)|\le p(x)=||f||·||x||$. 故 $||F||\le ||f||$.</p>
+<p>显然</p>
+<p>$$||F||=sup_{x\ne 0}\frac{|F(x)|}{||x||}\ge sup_{G\ni x\ne0}\frac{|f(x)|}{||x||}=||f||.$$</p>
+<p>故 $||F||=||f||$.</p>
+<p><em>定理</em>  设 $G$ 是赋范空间 $X$ 的线性子空间，$x_0 \in X$，$d\triangleq inf_{f\in G}||x_0-y||&gt;0$，则存在 $f\in X^*$，使得对 $x\in G$，有 $f(x)=0; f(x_0)=d; ||f||=1$.</p>
+<p><strong>证明</strong>  显然 $x_0\notin G$. 记 $G_1={\alpha x_0 + x\ |\ x\in G, \alpha \in \mathbb{K}}$ 是线性子空间。</p>
+<p>作 $g:G_1\ni \alpha x_0 + x\mapsto \alpha d\in \mathbb{K}$ 是线性泛函。</p>
+<p>对 $x\in G$，有 $g(x)=0; g(x_0)=d$;</p>
+<p>$$|g(\alpha x_0+x)|=|\alpha|d\le |\alpha|·||x_0-(-x)/\alpha||=||\alpha x_0+x||$$</p>
+<p>故</p>
+<p>$$||g||\le 1$$</p>
+<p>$$d=g(x_0)=g(x_0-x)\le ||g||||x_0-x||$$</p>
+<p>故</p>
+<p>$$d\le ||g||inf_{x\in G}||x_0-x||=||g||d$. 故 $1\le ||g||$$</p>
+<p>因此 $||g||=1$.</p>
+<p>存在 $g$ 的延拓 $f\in X^*$，使得 $||f||=||g||=1$.</p>
+<p><strong>推论</strong>  设 $X$ 是赋范线性空间，$x_0\in X, x_0 \ne 0$，则存在 $f\in X^*$，使得 $f(x_0)=||x_0||$ 且 $||f||=1$.</p>
+<p><strong>推论</strong>  设 $X$ 是赋范线性空间，$x\in X$，则 $||x||=sup_{f\in X^*}\frac{|f(x)|}{||f||}$.</p>
+<h1 id="其他">其他</h1>
+<p>泛函分析在经济学中的应用很广泛，更多内容可以参考知乎的问题 <a href="https://www.zhihu.com/question/31913447/answer/53821730">https://www.zhihu.com/question/31913447/answer/53821730</a>。</p>
+</div>
+                    <div class="post_footer">
+                        
+                        <div class="meta">
+                            <div class="info">
+                                <span class="field tags">
+                                    <i class="ri-stack-line"></i>
+                                    
+                                    <a href="http://localhost:1313/tags/%E6%95%99%E7%A8%8B%E6%96%87%E6%A1%A3/">教程文档</a>
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                
+<div class="doc_comments">
+    <div class="comments_block_title">发表评论</div>
+    <div id="vcomments"></div>
+</div>
+
+<link rel="stylesheet" href="http://localhost:1313/css/comments.css" />
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<script type="text/javascript">
+    new Valine({
+        el: '#vcomments',
+        appId: '12HKA37DAChBWQgBC7PA4eBw-gzGzoHsz',
+        appKey: 'UxknCfg5bWmkI2eGar5hDxWq',
+        placeholder: ' ',
+        visitor: 'true',
+    })
+</script>
+                
+            </div>
+        </div>
+    </div>
+    <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
+    <footer class="footer">
+    <div class="powered_by">
+        <a href="https://timegg.top">TIMEGG © 2017 - 2021,</a>
+        <a href="http://www.gohugo.io/">Powered by Hugo.</a>
+    </div>
+
+    <div class="footer_slogan">
+        <span>重拾写作的乐趣。</span>
+    </div>
+</footer>
+    <script src="http://localhost:1313/js/jquery-3.5.1.min.js"></script>
+<link href="http://localhost:1313/css/fancybox.min.css" rel="stylesheet">
+<script src="http://localhost:1313/js/fancybox.min.js"></script>
+<script src="http://localhost:1313/js/zozo.js"></script>
+
+
+<script type="text/javascript" async
+    src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+                processEscapes: true,
+                processEnvironments: true,
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                TeX: {
+                    equationNumbers: { autoNumber: "AMS" },
+                    extensions: ["AMSmath.js", "AMSsymbols.js"]
+                }
+            }
+        });
+
+        MathJax.Hub.Queue(function () {
+            
+            
+            
+            var all = MathJax.Hub.getAllJax(), i;
+            for (i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+<style>
+    code.has-jax {
+        font: inherit;
+        font-size: 100%;
+        background: inherit;
+        border: inherit;
+        color: #515151;
+    }
+</style>
+
+
+
+</body>
+
+</html>

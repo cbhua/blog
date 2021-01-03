@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TIMEGG</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on TIMEGG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0900</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Fri, 01 Jan 2021 20:24:28 +0800</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      <description>你好，这里是 Chuanbo. TIMEGG 创建于 2017 年秋，和大多数个人网站创建的契机一样，当时的我受到其他个人网站的启发，就做了自己的网站。 三年间，TIMEGG 的发展走向不同于我的预料，它并没有成为一个技术博客。是因为后来的我觉</description>
+    </item>
+    
+    <item>
+      <title>关于我</title>
+      <link>http://localhost:1313/aboutme/</link>
+      <pubDate>Fri, 01 Jan 2021 20:24:28 +0800</pubDate>
+      
+      <guid>http://localhost:1313/aboutme/</guid>
+      <description>Education does for the mind, experience does for the soul. 2016.09 - 2020.06 哈尔滨工业大学，数学系，本科生 2018.07 - 2018.09 中国华融资产管理有限公司，数据库工程师，实习生 2019.07 - 2019.09 华为技术有限公司，算法工程师，实习生 2019.09 - 2020.01 POSTECH，计算机工程，交换生 2020.09 - 至今 K</description>
+    </item>
+    
+    <item>
+      <title>链接</title>
+      <link>http://localhost:1313/links/</link>
+      <pubDate>Fri, 01 Jan 2021 20:24:28 +0800</pubDate>
+      
+      <guid>http://localhost:1313/links/</guid>
+      <description>这里是我喜欢的个人网站。 Aengus | Blog - Stay Hungry, Stay Foolish. 一位优秀的学弟的网站，目前已入职 Byte Dance，未来可期。 idealclover - 是翠翠的个人网站！ 南京大学与我同级的本科生的网站，有着丰富的技术上与生活上内容，并可以很好的平衡它们</description>
+    </item>
+    
+    <item>
+      <title>网站的更新报告</title>
+      <link>http://localhost:1313/posts/20210101-update/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20210101-update/</guid>
+      <description>这里是网站的更新报告，TIMEGG 从 2017 年运行至今经历了多次更新，每次更新的内容将会记录在此。网站在几次大型更新中遗失了很多内容，这些旧网站存档将会在另一个 GitHub Repository 中展示。</description>
+    </item>
+    
+    <item>
+      <title>这一年的总结</title>
+      <link>http://localhost:1313/posts/20201231-yearlysummary/</link>
+      <pubDate>Thu, 31 Dec 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20201231-yearlysummary/</guid>
+      <description>2020 年过完了，写网站的大家都喜欢在自己网站上写一个年度总结，来记录一下自己在这一年中经历的不论有趣或难过的事情。往年的我都没有这么做，但是今年突然有了兴致，想要写点东西。所以在跨年前夕，各种跨年晚会的背景音下，我写下了这篇关于这一年的总结。</description>
+    </item>
+    
+    <item>
+      <title>人间观察日记</title>
+      <link>http://localhost:1313/posts/20201207-myself/</link>
+      <pubDate>Mon, 07 Dec 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20201207-myself/</guid>
+      <description>人间观察日记将会是一系列文章，主要强调对我自己本身对不同事物不同反应的观察，从而更深层次的了解自己。了解将是一个长久的课题，在这个过程中发现自己的问题并进行改正，或者发现有趣的地方加以发展。期待系列文章与你们相见。</description>
+    </item>
+    
+    <item>
+      <title>我吐槽了你的吐槽：语言上一层</title>
+      <link>http://localhost:1313/posts/20201125-communicate/</link>
+      <pubDate>Wed, 25 Nov 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20201125-communicate/</guid>
+      <description>当你吐槽别人的时候，别人也会吐槽你的吐槽，别人的别人也会吐槽吐槽你的吐槽。想要在吐槽的语言沟通中占据上一层，就需要有独特的技巧，寻找终极的语言表达。屠龙勇士终成龙。</description>
+    </item>
+    
+    <item>
+      <title>魔术小课堂：教你如何复制物品</title>
+      <link>http://localhost:1313/posts/20201107-magic/</link>
+      <pubDate>Sat, 07 Nov 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20201107-magic/</guid>
+      <description>欢迎来到魔术小课堂，该课堂的目的是教大家使用一些简单实用的魔术，这些魔术可以在一定程度上提升你的生活质量。该课堂是系列课程，我们今天来开第一课，教你如何复制身边的物品。拿好笔记本认真听，我们现在开始。</description>
+    </item>
+    
+    <item>
+      <title>找到真正想做的事情</title>
+      <link>http://localhost:1313/posts/20201027-hobbit/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20201027-hobbit/</guid>
+      <description>上一个周末和大学的好朋友们聊了聊天，已经工作的朋友似乎有着生活方面精力管理上的问题。反思自己的状态，似乎也需要进行一定的调整，尝试找到自己真正想做的事情，给予生活驱动力。</description>
+    </item>
+    
+    <item>
+      <title>用不可解释的方法去夸别人</title>
+      <link>http://localhost:1313/posts/20201015-boast/</link>
+      <pubDate>Thu, 15 Oct 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20201015-boast/</guid>
+      <description>我们经常去夸别人，以表达自己的态度。有的时候我们会因为夸奖程度过重而陷入震惊的状态，表现为无法用语言去描述自己的感受。也就是说，真正登峰造极的夸奖应该是无言的、不可解释的。所以当我们想要夸别人的时候，应该用无法解释的方式去做。</description>
+    </item>
+    
+    <item>
+      <title>套辞中的核心问题之一</title>
+      <link>http://localhost:1313/posts/20201010-application/</link>
+      <pubDate>Sat, 10 Oct 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20201010-application/</guid>
+      <description>套辞是研究型留学申请的重要步骤。相较于邮件撰写、论文阅读、面试准备、文书修改等有章可循的环节，寻找自己想做的的方向是一个很模糊的问题，也是很多申请经验贴中不重点提及的问题。</description>
+    </item>
+    
+    <item>
+      <title>气味便利店</title>
+      <link>http://localhost:1313/posts/20201002-smell/</link>
+      <pubDate>Fri, 02 Oct 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20201002-smell/</guid>
+      <description>气味便利店顾名思义就是出售各种气味的商店，当客人来到我们店时，我们都会客制化地为每位客人调制他们专属的气味，这些气味可以帮助他们精准地回忆起曾经的经历。</description>
+    </item>
+    
+    <item>
+      <title>不要重复造轮子：早点学哲学</title>
+      <link>http://localhost:1313/posts/20200928-philosophy/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200928-philosophy/</guid>
+      <description>不要重复造轮子是计算机领域非常常用的一句话，强调既然有现成的东西可以用，就不要自己从零再造。用在哲学方面也没有问题，与其独自纠结思考，不如直接参考其他哲学家的思想成果，化为己用。</description>
+    </item>
+    
+    <item>
+      <title>一个关于逻辑的科幻脑洞</title>
+      <link>http://localhost:1313/posts/20200920-logic/</link>
+      <pubDate>Sun, 20 Sep 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200920-logic/</guid>
+      <description>逻辑，其最根本的元素是“是”和“不是”，基于这两个基本元素我们推广出复杂的逻辑讨论。但是如果宇宙中的逻辑不止二元呢？思考这个时候世界会变成什么样子。</description>
+    </item>
+    
+    <item>
+      <title>森见登美彦作品：夜行</title>
+      <link>http://localhost:1313/posts/20200908-night/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200908-night/</guid>
+      <description>《夜行》是日本小说作家森见登美彦创作的小说作品，讲述了学生时代结为好友的六人结伴旅行讲述怪谈的故事，表达友情、感情和失去，是森见妖怪系小说的最新作。</description>
+    </item>
+    
+    <item>
+      <title>秋季开学流水账</title>
+      <link>http://localhost:1313/posts/20200903-gotokaist/</link>
+      <pubDate>Thu, 03 Sep 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200903-gotokaist/</guid>
+      <description>终于顺利抵达 KAIST 了，准备开始我的 Master 生活。整个开学准备过程前前后后持续了一个多月的时间，包括开学资料准备、签证准备和生活准备，总体上是一次印象深刻的开学。</description>
+    </item>
+    
+    <item>
+      <title>桌游的可重复性思考</title>
+      <link>http://localhost:1313/posts/20200722-broadgame/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200722-broadgame/</guid>
+      <description>游戏有很多种性质，可重复性是其中的一种，强调重复进行游戏的体验，这点与游戏的生命周期息息相关。最近斥巨资买了一套全球惊悚，在和朋友游玩的过程中思考到了这么一个问题。</description>
+    </item>
+    
+    <item>
+      <title>智云云台 M2 测评与对比</title>
+      <link>http://localhost:1313/posts/20200623-zhiyun/</link>
+      <pubDate>Tue, 23 Jun 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200623-zhiyun/</guid>
+      <description>买了一个新云台智云 M2，相较于之前用的智云 Smooth 4 有了较大的升级迭代，因此来对比一下专业云台和入门手机云台在功能和使用上的差异。</description>
+    </item>
+    
+    <item>
+      <title>Steam 手柄简易测评</title>
+      <link>http://localhost:1313/posts/20200622-controller/</link>
+      <pubDate>Mon, 22 Jun 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200622-controller/</guid>
+      <description>在去年黑五用 5 刀买到的原价 45 刀的 Steam 手柄。非常异型的手柄设计给我带来了很不一样的使用体验，用了半年时间来讲一讲它的一些特点。</description>
+    </item>
+    
+    <item>
+      <title>美丽新世界中的自由与幸福</title>
+      <link>http://localhost:1313/posts/20200618-newworld/</link>
+      <pubDate>Thu, 18 Jun 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200618-newworld/</guid>
+      <description>在读完反乌托邦名作之一《美丽新世界》之后，我想到了一个不错的对于幸福的定义，可以用来串联整个新世界的设定，并且解释人们的思想和状态，从而概括地解释书中的大部分设定。</description>
+    </item>
+    
+    <item>
+      <title>小程序开发笔记：我是欧皇吗</title>
+      <link>http://localhost:1313/posts/20200609-wechatapp/</link>
+      <pubDate>Tue, 09 Jun 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200609-wechatapp/</guid>
+      <description>因为疫情在家没有事情做，决定用四十八小时挑战制作一个微信小程序。这个小程序用于计算各种扭蛋游戏的结果概率，在平常玩各种手游中具有参考价值和使用价值。目前该小程序已登陆微信小程序商店，搜索“我今天是欧皇吗”即可找到。</description>
+    </item>
+    
+    <item>
+      <title>小时候玩过的桌游</title>
+      <link>http://localhost:1313/posts/20200601-broadgame/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200601-broadgame/</guid>
+      <description>我在小学的时候接触到了游戏王卡牌游戏系列，在几年间我和我的朋友们基于游戏王卡牌创造出了类跑团的游戏模式，这样一个童年壮举给我留下了深刻的印象，也给我之后玩更多种类的桌游带来了启发。</description>
+    </item>
+    
+    <item>
+      <title>铁鼠之槛中的十牛图</title>
+      <link>http://localhost:1313/posts/20200531-tesoori/</link>
+      <pubDate>Sun, 31 May 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200531-tesoori/</guid>
+      <description>铁鼠之槛是日本作家京极夏彦的长篇妖怪推理小说，百鬼夜行系列的一部作品。在读完这本书之后对其中的关于佛教禅宗修行的一系列画作《十牛图》产生了兴趣，结合书中的描述写下了自己的理解。</description>
+    </item>
+    
+    <item>
+      <title>我喜欢的一首歌被下架了</title>
+      <link>http://localhost:1313/posts/20200525-endingworld/</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200525-endingworld/</guid>
+      <description>End of the World 是我很喜欢的一个日本乐队，其歌曲多为末世风格，反战、歌颂人性、揭露丑恶。但是今天发现他们歌曲中我最喜欢的一首歌 Never Ending the World 被下架了，非常的不解。</description>
+    </item>
+    
+    <item>
+      <title>在留学申请的过程中学到的</title>
+      <link>http://localhost:1313/posts/20200521-application/</link>
+      <pubDate>Thu, 21 May 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200521-application/</guid>
+      <description>留学申请是个很好的学习过程，在此期间可以发现自己的很多问题。反思去年半年的申请过程，我总结出了当时所遇到的几个问题，这些问题都或多或少给当时的我带来了一些消极的影响，复盘这些问题必要且有用。</description>
+    </item>
+    
+    <item>
+      <title>基于 IDX 数据文件创建 Dataset</title>
+      <link>http://localhost:1313/posts/20200511-idx/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200511-idx/</guid>
+      <description>不少数据集的存储文件类型是 IDX，如 MNIST 数据集的官方存储格式。如何从 IDX 文件创建 Dataset 是 ML 模型中重要一步。这里是一个从 IDX 数据集创建 Dataset 类的模版。</description>
+    </item>
+    
+    <item>
+      <title>国内老土键盘开箱测评</title>
+      <link>http://localhost:1313/posts/20200509-keyboard/</link>
+      <pubDate>Sat, 09 May 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200509-keyboard/</guid>
+      <description>年轻人不要碰的东西里面有一个是国外老土键盘，但是这次不是，变成了国内老土键盘。入手了国产静电容键盘品牌宁芝的一块 86 键 35g 键盘，使用一周之后说说这块静电容键盘的使用体验，同时对比一下我之前使用过的红轴机械键盘。</description>
+    </item>
+    
+    <item>
+      <title>生活需要一些期待</title>
+      <link>http://localhost:1313/posts/20200507-hope/</link>
+      <pubDate>Thu, 07 May 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200507-hope/</guid>
+      <description>生活的推进需要一些驱动力，否则容易陷入失去目标的迷茫，感觉生活失去了意义。期待就是一种极好的生活驱动力，它可以让我们暂时忽略生活中的寂寞和无聊，把自己的心情寄托于未来，从而减轻现在生活的辛苦，保持一种少年感。</description>
+    </item>
+    
+    <item>
+      <title>虚拟局域网的终极解决方案</title>
+      <link>http://localhost:1313/posts/20200421-zerotier/</link>
+      <pubDate>Tue, 21 Apr 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200421-zerotier/</guid>
+      <description>联机游戏最大的问题之一是网络连接，糟糕的网络连接会极大影响大家的游戏体验，甚至使游戏无法进行下去。我们有多种方法来解决这个问题：租用第三方服务器运行游戏、网络连接加速器等等。虚拟局域网是一种无视游戏种类的终极解决方案，如果完美搭建则可以成为联机游戏的终极解决方案</description>
+    </item>
+    
+    <item>
+      <title>关于游记视频的反思</title>
+      <link>http://localhost:1313/posts/20200407-vlog/</link>
+      <pubDate>Tue, 07 Apr 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200407-vlog/</guid>
+      <description>去年秋季到现在为止旅游了几个城市，拍了好多视频，也做成了几个游记剪辑作品，但是整体上并没有达到我想要的效果，或者说还有很大 提升空间。在准备新一年的拍摄前，分别从前后期总结一下这些视频中出现的问题。</description>
+    </item>
+    
+    <item>
+      <title>哈工大对外交换生的申请</title>
+      <link>http://localhost:1313/posts/20200403-exchange/</link>
+      <pubDate>Fri, 03 Apr 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200403-exchange/</guid>
+      <description>这里提供了哈工大对外申请交换生的信息，包括交换前的准备、交换时选校、申请材料准备、和简单的交换生活介绍等，希望可以给工大的其他同学提供交换生申请的参考。</description>
+    </item>
+    
+    <item>
+      <title>2019 KDD 推荐系统方向论文总结</title>
+      <link>http://localhost:1313/posts/20200215-kdd/</link>
+      <pubDate>Sat, 15 Feb 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200215-kdd/</guid>
+      <description>KDD 全称 Special Interest Group on Knowledge Discovery and Data Mining。由于最近对推荐系统方向比较感兴趣，所以搜索了其中的一些文章来读，写了一份 PPT 和文档作为总结，可以作为笔记存留，也可以为有需要的同学提供帮助。</description>
+    </item>
+    
+    <item>
+      <title>搭建 Minecraft Froge 服务器</title>
+      <link>http://localhost:1313/posts/20200215-minecraft/</link>
+      <pubDate>Sat, 15 Feb 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200215-minecraft/</guid>
+      <description>最近找不到好玩的联机游戏了？不如来玩 Minecraft 吧。这篇文章包含如何搭建一个 Minecraft Forge 服务器并添加 Mod 和服务器管理系统，同时针对许多常见问题提供解决方案。</description>
+    </item>
+    
+    <item>
+      <title>森见登美彦作品：四叠半神话大系</title>
+      <link>http://localhost:1313/posts/20191128-tatami/</link>
+      <pubDate>Thu, 28 Nov 2019 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20191128-tatami/</guid>
+      <description>《四叠半神话大系》是森见登美彦的小说作品，由四篇短篇所构成。主角是京都大学三年级男学生，随着一年级社团选择不同，而经历了不同的大学生活。该作品也被改编为同名动漫作品，是我最喜欢的动漫之一。这篇文章是对原作的摘录与思考</description>
+    </item>
+    
+    <item>
+      <title>森见登美彦作品：春宵苦短</title>
+      <link>http://localhost:1313/posts/20191010-otome/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20191010-otome/</guid>
+      <description>《春宵苦短，少女前进吧！》是森见登美彦撰写的小说，故事描述“学长”迷恋的“黑发少女”，每天为了吸引她的目光而费尽心思，在他们的周遭，还有着各式各样风格奇特的角色们，围绕在主角、少女、以及荒诞角色间的故事就此展开。该作亦被改编为动漫作品，是我最喜欢的动漫之一。</description>
+    </item>
+    
+    <item>
+      <title>数值分析笔记</title>
+      <link>http://localhost:1313/posts/20191002-numerical/</link>
+      <pubDate>Wed, 02 Oct 2019 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20191002-numerical/</guid>
+      <description>数值分析这门课程是我在本科三年级学的一门专业核心课程，难度很高但是在各种领域都有着广泛的使用。这些笔记是在期末考试复习期间完成的，强调内容精简易于记忆和脉络熟路，可以方便在考试之前回忆课程学习结构，从而在遇到问题时可以快速分析出要使用的解法。</description>
+    </item>
+    
+    <item>
+      <title>大学第四年的实习</title>
+      <link>http://localhost:1313/posts/20190917-huawei/</link>
+      <pubDate>Tue, 17 Sep 2019 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20190917-huawei/</guid>
+      <description>我在大学第四年申请了多家互联网公司的实习，最后选择了去华为进行为期三个月的实习。在这个实习的申请过程中学到了很多的东西，也总结一些经验，希望这些经验可以给同校后辈们提供一些帮助。</description>
+    </item>
+    
+    <item>
+      <title>偏微分方程数值解法笔记</title>
+      <link>http://localhost:1313/posts/20190915-pde/</link>
+      <pubDate>Sun, 15 Sep 2019 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20190915-pde/</guid>
+      <description>偏微分方程在机器学习领域有着广泛的用途，很多优化问题都是偏微分方程，同时很多物理方面的数值模拟问题最后都会化为解决偏微分方程和常微分方程的问题，这门课是数学系本科三年级的核心课程之一。</description>
+    </item>
+    
+    <item>
+      <title>数学物理方程笔记</title>
+      <link>http://localhost:1313/posts/20190902-mathphysics/</link>
+      <pubDate>Mon, 02 Sep 2019 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20190902-mathphysics/</guid>
+      <description>数学物理方程不是数学系的核心课程之一，一般作为选修课供工科方向发展的学生学习。其本质内容和偏微分方程数值解法接近，都是使用不同的数值模拟和逼近方法获取常微分方程或者偏微分方程的解，以用于实际的工程问题当中。。</description>
+    </item>
+    
+    <item>
+      <title>森见登美彦作品：神圣懒汉的冒险</title>
+      <link>http://localhost:1313/posts/20190825-lazyman/</link>
+      <pubDate>Sun, 25 Aug 2019 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20190825-lazyman/</guid>
+      <description>本书是借助日本的传统节日祗园展开的幻想故事。一位普通科长, 为了实现助人为乐的理想扮作了戴着狸猫面具的怪人嘭嘭假面, 但由于精力有限, 他一直想找到继任者。于是认准了生活闲适的同事小和田君, 但小和田却不愿接受此重任。最终嘭嘭假面的身份被赋予了每一个普通人。本作也是森见无厘头作品中有趣的一部。</description>
+    </item>
+    
+    <item>
+      <title>森见登美彦作品：宵山万华筒</title>
+      <link>http://localhost:1313/posts/20190820-gionmatsuri/</link>
+      <pubDate>Tue, 20 Aug 2019 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20190820-gionmatsuri/</guid>
+      <description>《宵山万华镜》是最具森见登美彦特色的短篇小说集。共收录六篇小说，这些小说相互呼应、人物彼此穿插，共同构造出一个灵异神秘的京都祇园祭。这是森见妖怪系小说中的一部，也是我最喜欢的一部。</description>
+    </item>
+    
+    <item>
+      <title>拓扑学笔记</title>
+      <link>http://localhost:1313/posts/20190814-topology/</link>
+      <pubDate>Wed, 14 Aug 2019 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20190814-topology/</guid>
+      <description>拓扑学是我作为数学系本科生本科期间最后一门核心课程，其内容事实上是颠覆性的，拓扑空间被大家亲切地叫做橡皮泥空间，很多特性在此空间都发生了根本上的改变。总之这是一门又难但是又非常独特的学科，作为一个开头。</description>
+    </item>
+    
+    <item>
+      <title>信息论笔记</title>
+      <link>http://localhost:1313/posts/20190602-information/</link>
+      <pubDate>Sun, 02 Jun 2019 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20190602-information/</guid>
+      <description>信息论更加偏向于工科，计算机方向一些。这门课程中的很多内容非常有意思，可以脱离这门科目去思考，其思想在很多地方都在使用，可以说是现代信息社会的基石科目之一。</description>
+    </item>
+    
+    <item>
+      <title>Procreate 使用体验</title>
+      <link>http://localhost:1313/posts/20190503-procreate/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20190503-procreate/</guid>
+      <description>Procreate 是 iPad 上最有名的绘画 APP 之一，也是我在几个 APP 中最终挑选的。在画了几幅画之后来谈一谈这个 APP 的使用体验。</description>
+    </item>
+    
+    <item>
+      <title>信息论实验</title>
+      <link>http://localhost:1313/posts/20190503-information/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20190503-information/</guid>
+      <description>这是信息论这门课程学期中我们所做的几个实验，主要基于 Python，集中于几种信息编码和信道编码方式的实现，同时包含一些常用工具的实现，如信息熵的计算、信道容量的计算等等。</description>
+    </item>
+    
+    <item>
+      <title>创建饥荒联机版多人服务器</title>
+      <link>http://localhost:1313/posts/20190415-dst/</link>
+      <pubDate>Mon, 15 Apr 2019 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20190415-dst/</guid>
+      <description>饥荒联机版是我们很喜欢的一个联机游戏，但是官方服务器的联机质量实在不能保证，而且本地联机网络要求和配置要求都比较高。因此创建一个多人联机的服务器就很有必要了，这篇文章记录了如何在 Ubuntu 平台创建饥荒联机版的服务器。</description>
+    </item>
+    
+    <item>
+      <title>创建腾讯 QQ 机器人</title>
+      <link>http://localhost:1313/posts/20190316-tencent/</link>
+      <pubDate>Sat, 16 Mar 2019 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20190316-tencent/</guid>
+      <description>在和好朋友的群里创建一个具有点歌、发图、统计、提供小游戏的机器人是一个非常有趣的事情，可以给群里带来很多欢乐。该方法目前已全面失效，腾讯已完全封禁该机器人。</description>
+    </item>
+    
+    <item>
+      <title>我读过的一些刘慈欣科幻作品</title>
+      <link>http://localhost:1313/posts/20190211-liucixin/</link>
+      <pubDate>Mon, 11 Feb 2019 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20190211-liucixin/</guid>
+      <description>刘慈欣在 2018 年获得了克拉克想象力社会贡献奖，他在颁奖典礼上发言 “The vast ocean of stars can always carry our infinite imagination. 浩瀚的星空永远是我们无穷的想象力的归宿。”，我在高中时期从三体开始，读过不少他的作品。</description>
+    </item>
+    
+    <item>
+      <title>哈恩巴拿赫定理证明</title>
+      <link>http://localhost:1313/posts/20190210-hahnbanach/</link>
+      <pubDate>Sun, 10 Feb 2019 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20190210-hahnbanach/</guid>
+      <description>Hahn-Banach Theorem 哈恩巴拿赫定理被称为泛函分析三大定理之一，是泛函分析中极其重要的一个工具。在经济学领域，该定理与市场经济的福利经济学第二定理有密切的关系。关于这个定理证明的资料在网上可以搜索到的不多，大多为应用，因此在这里展示对该定理的证明。</description>
+    </item>
+    
+    <item>
+      <title>2019 MCM/ICM 参赛总结</title>
+      <link>http://localhost:1313/posts/20190129-mcm/</link>
+      <pubDate>Tue, 29 Jan 2019 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20190129-mcm/</guid>
+      <description>2019 年美国大学生建模竞赛举办于 2019.1.26，为期四天四夜。我和我的两位好朋友组成队伍一同参加了这场竞赛，在这期间发生了很多有趣的事情。虽然这不是我们第一次参加建模比赛了，但这是我第一次尝试记录下来我们参赛的过程。</description>
+    </item>
+    
+    <item>
+      <title>2018 年我听的一些歌</title>
+      <link>http://localhost:1313/posts/20190125-songs/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20190125-songs/</guid>
+      <description>2018 年也是沉迷听歌的一年，这一年听的歌多集中于 Niconico 唱见的歌曲，原曲也是 V 家知名的作品。虽然会出现一首曲目反复出现在歌曲列表中，但是不同唱见的演绎使得这些歌曲的听感差异丰富，这就是翻唱的魅力吧。</description>
+    </item>
+    
+    <item>
+      <title>概率论与数理统计笔记</title>
+      <link>http://localhost:1313/posts/20181219-probability/</link>
+      <pubDate>Wed, 19 Dec 2018 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20181219-probability/</guid>
+      <description>概率论与数理统计是数学系核心课程之一，其实是分开的两部分。我们在这个学期所学的概率论和数理统计主要集中于定理证明和结论推导，与工科不同数学系少强调应用。这些笔记可以帮助我更好的理解一些概率论定理运行的原理。</description>
+    </item>
+    
+    <item>
+      <title>泛函分析笔记</title>
+      <link>http://localhost:1313/posts/20181213-functional/</link>
+      <pubDate>Thu, 13 Dec 2018 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20181213-functional/</guid>
+      <description>泛函分析和实变函数论都是数学系最核心的课程之一，同时也是之后要学到的拓扑学的基础。这些笔记可以帮助我快速复习回忆课程内容以及定理方程的使用，以针对考试。想要进一步的理解需要阅读原教案，内容量相对较多。</description>
+    </item>
+    
+    <item>
+      <title>几种常用的插值法的实现</title>
+      <link>http://localhost:1313/posts/20181102-polynomial/</link>
+      <pubDate>Fri, 02 Nov 2018 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20181102-polynomial/</guid>
+      <description>插值法在数值分析中很常用，用于各种函数分析的拟合和逼近，以及关于最佳一致逼近和最佳平方逼近的证明。在这篇文章中记录了使用 Matlab 实现的 Lagrange 插值法、Newton 插值法、Hermit 插值法和三次样条插值法。。</description>
+    </item>
+    
+    <item>
+      <title>解线性方程组的几类直接方法</title>
+      <link>http://localhost:1313/posts/20181012-linear/</link>
+      <pubDate>Fri, 12 Oct 2018 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20181012-linear/</guid>
+      <description>对于实线性方程组，通过恰当的变换，都可以得到任意精确度的数值解或者直接获得解析解，在数值处理上属于最简单的一个类型。在数值分析中，这些过程需要交给计算机计算，所以就需要着重考虑其中会由计算机计算产生的误差。因此诞生出了诸多的方法并不断优化，避免了 7种情况 带来的计算误差，使得数据处理更加精确可信。</description>
+    </item>
+    
+    <item>
+      <title>爬取 Vol.moe 的漫画资源</title>
+      <link>http://localhost:1313/posts/20180727-volmoe/</link>
+      <pubDate>Fri, 27 Jul 2018 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20180727-volmoe/</guid>
+      <description>Vol.moe 是我最喜欢的漫画资源下载网站，虽然收费，但是使用体验很好。网站有一个缺陷即无法批量下载，所以尝试用 Python 写一个脚本帮助我批量下载漫画。该方法已失效，目前网站已开放批量下载功能。</description>
+    </item>
+    
+    <item>
+      <title>数据库系统概论笔记</title>
+      <link>http://localhost:1313/posts/20180612-database/</link>
+      <pubDate>Tue, 12 Jun 2018 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20180612-database/</guid>
+      <description>数据库系统概论这门课是数学系与计算机系联动开放的课程，主要作用给数学系学生提供一些数据处理方面的工具。这门课程主要学习 SQL 的基本编程与使用，不涉及太多内嵌功能，属于很基础的开放课。</description>
+    </item>
+    
+    <item>
+      <title>Windows 常用软件记录</title>
+      <link>http://localhost:1313/posts/20180505-windows/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20180505-windows/</guid>
+      <description>对 Linux 的喜欢日益增加，或许过一阵子会转战 Linux，在此之前我先把自己 Win 平台上常用的软件列出来，以作备份，也供未来参考。</description>
+    </item>
+    
+    <item>
+      <title>关于 PhotoShop 的学习</title>
+      <link>http://localhost:1313/posts/20180403-photoshop/</link>
+      <pubDate>Tue, 03 Apr 2018 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20180403-photoshop/</guid>
+      <description>我接触 Photoshop 大概已经一年了，在此期间断断续续地学了一些东西，也教了一些身边的朋友去使用 PS。为了方便别人和自己，之前写过一些教程，不过效果并不是很好，因为 PS 使用中的知识大量且琐碎，很难在短时间都掌握下来。所以与其细致的手把手交别人怎么用某一个工具，不如记录一些我在使用 PS 中的一些理解。</description>
+    </item>
+    
+    <item>
+      <title>Windows 美化计划</title>
+      <link>http://localhost:1313/posts/20180202-beautify/</link>
+      <pubDate>Fri, 02 Feb 2018 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20180202-beautify/</guid>
+      <description>因为自己做过平面设计，所以对于自己使用的电脑也有着一定的美学要求。Windows 作为主力操作系统，有很多地方都不尽如人意。所以出于对美学的追求，我与 Windows 打起了长久的美化攻坚战，这就是 Windows 美化计划。</description>
+    </item>
+    
+    <item>
+      <title>Google 机器学习中文教程笔记</title>
+      <link>http://localhost:1313/posts/20180104-googleml/</link>
+      <pubDate>Thu, 04 Jan 2018 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20180104-googleml/</guid>
+      <description>Google 做了一个关于机器学习的中文教程，感兴趣地去学了前几章，因为没有很好的代码基础，所以学起来有很多不太理解的地方。整体上教程作为入门会很方便，但是难度梯度对我来说还是太高。</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>http://localhost:1313/posts/20170713-helloworld/</link>
+      <pubDate>Thu, 13 Jul 2017 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20170713-helloworld/</guid>
+      <description>你好，欢迎来到我的网站。这是网站的第一篇文章，来日方长，请坚持更新。</description>
+    </item>
+    
+  </channel>
+</rss>

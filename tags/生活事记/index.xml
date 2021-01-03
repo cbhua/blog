@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>生活事记 on TIMEGG</title>
+    <link>http://localhost:1313/tags/%E7%94%9F%E6%B4%BB%E4%BA%8B%E8%AE%B0/</link>
+    <description>Recent content in 生活事记 on TIMEGG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 31 Dec 2020 00:00:00 +0900</lastBuildDate><atom:link href="http://localhost:1313/tags/%E7%94%9F%E6%B4%BB%E4%BA%8B%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>这一年的总结</title>
+      <link>http://localhost:1313/posts/20201231-yearlysummary/</link>
+      <pubDate>Thu, 31 Dec 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20201231-yearlysummary/</guid>
+      <description>2020 年过完了，写网站的大家都喜欢在自己网站上写一个年度总结，来记录一下自己在这一年中经历的不论有趣或难过的事情。往年的我都没有这么做，但是今年突然有了兴致，想要写点东西。所以在跨年前夕，各种跨年晚会的背景音下，我写下了这篇关于这一年的总结。</description>
+    </item>
+    
+    <item>
+      <title>秋季开学流水账</title>
+      <link>http://localhost:1313/posts/20200903-gotokaist/</link>
+      <pubDate>Thu, 03 Sep 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200903-gotokaist/</guid>
+      <description>终于顺利抵达 KAIST 了，准备开始我的 Master 生活。整个开学准备过程前前后后持续了一个多月的时间，包括开学资料准备、签证准备和生活准备，总体上是一次印象深刻的开学。</description>
+    </item>
+    
+    <item>
+      <title>我喜欢的一首歌被下架了</title>
+      <link>http://localhost:1313/posts/20200525-endingworld/</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200525-endingworld/</guid>
+      <description>End of the World 是我很喜欢的一个日本乐队，其歌曲多为末世风格，反战、歌颂人性、揭露丑恶。但是今天发现他们歌曲中我最喜欢的一首歌 Never Ending the World 被下架了，非常的不解。</description>
+    </item>
+    
+    <item>
+      <title>2019 MCM/ICM 参赛总结</title>
+      <link>http://localhost:1313/posts/20190129-mcm/</link>
+      <pubDate>Tue, 29 Jan 2019 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20190129-mcm/</guid>
+      <description>2019 年美国大学生建模竞赛举办于 2019.1.26，为期四天四夜。我和我的两位好朋友组成队伍一同参加了这场竞赛，在这期间发生了很多有趣的事情。虽然这不是我们第一次参加建模比赛了，但这是我第一次尝试记录下来我们参赛的过程。</description>
+    </item>
+    
+    <item>
+      <title>2018 年我听的一些歌</title>
+      <link>http://localhost:1313/posts/20190125-songs/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20190125-songs/</guid>
+      <description>2018 年也是沉迷听歌的一年，这一年听的歌多集中于 Niconico 唱见的歌曲，原曲也是 V 家知名的作品。虽然会出现一首曲目反复出现在歌曲列表中，但是不同唱见的演绎使得这些歌曲的听感差异丰富，这就是翻唱的魅力吧。</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>http://localhost:1313/posts/20170713-helloworld/</link>
+      <pubDate>Thu, 13 Jul 2017 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20170713-helloworld/</guid>
+      <description>你好，欢迎来到我的网站。这是网站的第一篇文章，来日方长，请坚持更新。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>开箱测评 on TIMEGG</title>
+    <link>http://localhost:1313/tags/%E5%BC%80%E7%AE%B1%E6%B5%8B%E8%AF%84/</link>
+    <description>Recent content in 开箱测评 on TIMEGG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 23 Jun 2020 00:00:00 +0900</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%BC%80%E7%AE%B1%E6%B5%8B%E8%AF%84/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>智云云台 M2 测评与对比</title>
+      <link>http://localhost:1313/posts/20200623-zhiyun/</link>
+      <pubDate>Tue, 23 Jun 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200623-zhiyun/</guid>
+      <description>买了一个新云台智云 M2，相较于之前用的智云 Smooth 4 有了较大的升级迭代，因此来对比一下专业云台和入门手机云台在功能和使用上的差异。</description>
+    </item>
+    
+    <item>
+      <title>Steam 手柄简易测评</title>
+      <link>http://localhost:1313/posts/20200622-controller/</link>
+      <pubDate>Mon, 22 Jun 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200622-controller/</guid>
+      <description>在去年黑五用 5 刀买到的原价 45 刀的 Steam 手柄。非常异型的手柄设计给我带来了很不一样的使用体验，用了半年时间来讲一讲它的一些特点。</description>
+    </item>
+    
+    <item>
+      <title>国内老土键盘开箱测评</title>
+      <link>http://localhost:1313/posts/20200509-keyboard/</link>
+      <pubDate>Sat, 09 May 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200509-keyboard/</guid>
+      <description>年轻人不要碰的东西里面有一个是国外老土键盘，但是这次不是，变成了国内老土键盘。入手了国产静电容键盘品牌宁芝的一块 86 键 35g 键盘，使用一周之后说说这块静电容键盘的使用体验，同时对比一下我之前使用过的红轴机械键盘。</description>
+    </item>
+    
+    <item>
+      <title>Windows 常用软件记录</title>
+      <link>http://localhost:1313/posts/20180505-windows/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20180505-windows/</guid>
+      <description>对 Linux 的喜欢日益增加，或许过一阵子会转战 Linux，在此之前我先把自己 Win 平台上常用的软件列出来，以作备份，也供未来参考。</description>
+    </item>
+    
+  </channel>
+</rss>

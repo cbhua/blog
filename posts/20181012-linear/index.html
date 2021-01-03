@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Chuanbo" />
+	
+	
+	
+	<title>解线性方程组的几类直接方法 ｜ TIMEGG</title>
+	
+    
+    
+    <meta name="description" content="对于实线性方程组，通过恰当的变换，都可以得到任意精确度的数值解或者直接获得解析解，在数值处理上属于最简单的一个类型。在数值分析中，这些过程需要交给计算机计算，所以就需要着重考虑其中会由计算机计算产生的误差。因此诞生出了诸多的方法并不断优化，避免了 7种情况 带来的计算误差，使得数据处理更加精确可信。" />
+    
+
+    
+    
+    <meta name="keywords" content="Hugo, theme, zozo" />
+    
+
+	
+    
+    <link rel="shortcut icon" href="http://localhost:1313/images/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/zozo.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/highlight.css" />
+
+    
+    
+</head>
+
+<body>
+    <div class="main animate__animated animate__fadeInDown">
+        <div class="nav_container animated fadeInDown">
+    <div class="site_nav" id="site_nav">
+        <ul>
+            
+            <li>
+                <a href="/">主页</a>
+            </li>
+            
+            <li>
+                <a href="/posts/">归档</a>
+            </li>
+            
+            <li>
+                <a href="/tags/">标签</a>
+            </li>
+            
+            <li>
+                <a href="/links/">链接</a>
+            </li>
+            
+            <li>
+                <a href="/about/">关于</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="menu_icon">
+        <a id="menu_icon"><i class="ri-menu-line"></i></a>
+    </div>
+</div>
+        <div class="header animated fadeInDown">
+    <div class="site_title_container">
+        <div class="site_title">
+            <h1>
+                <a href="http://localhost:1313/">
+                    <span>TIMEGG</span>
+                </a>
+            </h1>
+        </div>
+        <div class="description">
+            <p class="sub_title">放进时光蛋里。</p>
+            <div class="my_socials">
+                
+                
+                <a href="https://github.com/cbhua" title="github" target="_blank"><i class="ri-github-fill"></i></a>
+                
+                
+                
+                <a href="%20" title="instagram" target="_blank"><i class="ri-instagram-fill"></i></a>
+                
+                
+                
+                <a href="https://twitter.com/huachuanbo" title="twitter" target="_blank"><i class="ri-twitter-fill"></i></a>
+                
+                
+                
+                <a href="https://weibo.com/u/6177306082" title="weibo" target="_blank"><i class="ri-weibo-fill"></i></a>
+                
+                
+                <a href="http://localhost:1313/index.xml" type="application/rss+xml" title="rss" target="_blank"><i
+                        class="ri-rss-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="content">
+            <div class="post_page">
+                <div class="post animate__animated animate__fadeInDown">
+                    <div class="post_title post_detail_title">
+                        <h2><a href='/posts/20181012-linear/'>解线性方程组的几类直接方法</a></h2>
+                        <span class="date">2018.10.12</span>
+                    </div>
+                    <div class="post_content markdown"><h1 id="问题">问题</h1>
+<p>求解线性方程组</p>
+<p>$$
+\left{
+\begin{array}{c}
+a_{11}x_1+a_{12}x_2+&hellip;+a_{1n}x_n=b_1 \
+a_{21}x_1+a_{22}x_2+&hellip;+a_{2n}x_n=b_2 \<br>
+&hellip; \
+a_{n1}x_1+a_{n2}x_2+&hellip;+a_{nn}x_n=b_n
+\end{array}
+\right.
+$$</p>
+<p>其中方程组系数 $a_{ij}(i,j=1,2,3,&hellip;,n)$ 与右端项 $b_i(i=1,2,3,&hellip;,n)$ 均为实数，且 $b_1,b_2,&hellip;,b_n$ 不全为零，上述方程组简记为
+$$
+Ax=b
+$$
+其中
+$$
+A=\begin{bmatrix} a_{11} &amp; a_{12} &amp; &hellip; &amp; a_{1n} \ a_{21} &amp; a_{22} &amp; &hellip; &amp; a_{2n} \ &hellip;&amp;&hellip;&amp;&hellip;&amp;&hellip; \ a_{n1} &amp; a_{n2} &amp; &hellip; &amp; a_{nn} \ \end{bmatrix},
+x=\begin{bmatrix} x_{1}\ x_{2}\ &hellip; \ x_{n}\ \end{bmatrix},
+b=\begin{bmatrix} b_{1}\ b_{2}\ &hellip; \ b_{n}\ \end{bmatrix}.
+$$
+解线性方程组直接法（也称精确解法）的定义为：</p>
+<blockquote>
+<p>若计算过程中没有舍入误差，则经过有限次的算术运算可以求得方程组的准确解的方法。</p>
+</blockquote>
+<p>其主要有两类方法：</p>
+<ul>
+<li>Gauss 消去法
+<ul>
+<li>Gauss 消去法</li>
+<li>Gauss 列主元消去法</li>
+<li>Gauss 按比例列主元消去法</li>
+<li>Gauss-Jordan 消去法</li>
+</ul>
+</li>
+<li>直接三角分解法
+<ul>
+<li>Corut 方法</li>
+<li>$L^TDL$ 分解</li>
+<li>追赶法</li>
+</ul>
+</li>
+</ul>
+<p>本篇只用 Matlab <strong>实现</strong>上述算法，<strong>不涉及算法的介绍与证明</strong>，如果对证明与原理比较感兴趣，详情参考：</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Gaussian_elimination">Wiki - Gaussian elimination</a></li>
+<li><a href="https://en.wikipedia.org/wiki/LU_decomposition">Wiki - LU decomposition</a></li>
+</ul>
+<p>并且事实上这些算法在 Matlab 中都有既成的函数或者工具包，虽然 CS 里面有一句话：“如果有现成的轮子那么绝对不自己造。”很有道理，但是对于算法的理解还是需要亲自尝试，这样才能比较好的理解。</p>
+<p>在最初编写这些算法时，我的 Matlab 代码风格还没有确定，以至相比于后续算法的源码，这些源码会显得比较的不规范，我会进行一部分的修正，但是毕竟时间比较久，修正程度可能比较有限，如果有一些问题，欢迎联系。</p>
+<h1 id="正文">正文</h1>
+<h2 id="gauss-消去法">Gauss 消去法</h2>
+<h3 id="gauss-消去法-1">Gauss 消去法</h3>
+<div class="highlight"><pre class="chroma"><code class="language-matlab" data-lang="matlab"><span class="k">function</span><span class="w"> </span>x <span class="p">=</span><span class="w"> </span><span class="nf">Gaussian_elimination</span><span class="p">(</span> A, b <span class="p">)</span><span class="w">
+</span><span class="w"></span><span class="c">% 高斯消去法解线性方程组</span>
+<span class="c">% Input: A: 系数矩阵; b: 方程组右端项;</span>
+<span class="c">% Output: x: 线性方程组解;</span>
+
+<span class="n">n</span> <span class="p">=</span> <span class="nb">size</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span> <span class="c">% 矩阵 A 阶数</span>
+
+<span class="k">if</span> <span class="nb">size</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">~=</span><span class="nb">size</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="o">||</span> <span class="nb">size</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">~=</span><span class="n">n</span>
+    <span class="n">error</span><span class="p">(</span><span class="s">&#39;Matrix does not match&#39;</span><span class="p">)</span> 
+<span class="k">end</span>
+
+<span class="k">for</span> <span class="n">k</span> <span class="p">=</span> <span class="mi">1</span> <span class="p">:</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">A</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="c">% 检测 A 是否为正定矩阵</span>
+        <span class="k">for</span> <span class="nb">i</span> <span class="p">=</span> <span class="n">k</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">:</span> <span class="n">n</span>
+            <span class="k">if</span> <span class="n">A</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span> <span class="o">~=</span> <span class="mi">0</span>
+                <span class="k">for</span> <span class="nb">j</span> <span class="p">=</span> <span class="n">k</span> <span class="p">:</span> <span class="n">n</span>
+                    <span class="n">t</span> <span class="p">=</span> <span class="n">A</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="nb">j</span><span class="p">);</span> <span class="n">A</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="nb">j</span><span class="p">)</span> <span class="p">=</span> <span class="n">A</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="nb">j</span><span class="p">);</span> <span class="n">A</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="nb">j</span><span class="p">)</span> <span class="p">=</span> <span class="n">t</span><span class="p">;</span>
+                <span class="k">end</span> <span class="c">% for</span>
+            <span class="k">else</span>
+                <span class="n">error</span><span class="p">(</span><span class="s">&#39;A is singular.&#39;</span><span class="p">);</span>
+            <span class="k">end</span> <span class="c">% if</span>
+        <span class="k">end</span> <span class="c">% for</span>
+    <span class="k">end</span> <span class="c">% if</span>
+    <span class="k">for</span> <span class="nb">i</span> <span class="p">=</span> <span class="n">k</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">:</span> <span class="n">n</span>
+        <span class="n">l</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span> <span class="p">=</span> <span class="n">A</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span> <span class="o">/</span> <span class="n">A</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">k</span><span class="p">);</span>
+        <span class="k">for</span> <span class="nb">j</span> <span class="p">=</span> <span class="n">k</span> <span class="p">:</span> <span class="n">n</span>
+            <span class="n">A</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="nb">j</span><span class="p">)</span> <span class="p">=</span> <span class="n">A</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="nb">j</span><span class="p">)</span> <span class="o">-</span> <span class="n">l</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span> <span class="o">*</span> <span class="n">A</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="nb">j</span><span class="p">);</span>
+        <span class="k">end</span> <span class="c">% for</span>
+        <span class="n">b</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span> <span class="p">=</span> <span class="n">b</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span> <span class="o">-</span> <span class="n">A</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span> <span class="o">*</span> <span class="n">b</span><span class="p">(</span><span class="n">k</span><span class="p">);</span>
+    <span class="k">end</span> <span class="c">% for</span>
+<span class="k">end</span> <span class="c">% for</span>
+
+<span class="n">x</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="p">=</span> <span class="n">b</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">/</span> <span class="n">A</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>
+<span class="k">for</span> <span class="n">k</span> <span class="p">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">:</span> <span class="o">-</span><span class="mi">1</span> <span class="p">:</span> <span class="mi">1</span>
+    <span class="n">sum</span> <span class="p">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">for</span> <span class="nb">i</span> <span class="p">=</span> <span class="n">k</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">:</span> <span class="n">n</span>
+        <span class="n">sum</span> <span class="p">=</span> <span class="n">sum</span> <span class="o">+</span> <span class="n">A</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="nb">j</span><span class="p">)</span> <span class="o">*</span> <span class="n">x</span><span class="p">(</span><span class="nb">j</span><span class="p">);</span>
+    <span class="k">end</span> <span class="c">% for</span>
+    <span class="n">x</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="p">=</span> <span class="p">(</span><span class="n">b</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">-</span> <span class="n">sum</span><span class="p">)</span> <span class="o">/</span> <span class="n">A</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">k</span><span class="p">);</span>
+<span class="k">end</span> <span class="c">% for</span>
+
+<span class="k">end</span> <span class="c">% function</span>
+</code></pre></div><p>Gauss 消去法就非常的基础了，不过是平时我们解方程的固有过程，用来练习一下 Matlab 基本语言的使用。</p>
+<p>当初在做这些课题的时候对代码的健壮性考虑的较少，主要是来理解算法的。如果有相应的需求，需要进一步的修改。</p>
+<h3 id="gauss-列主元消去法">Gauss 列主元消去法</h3>
+<div class="highlight"><pre class="chroma"><code class="language-matlab" data-lang="matlab"><span class="k">function</span><span class="w"> </span>x <span class="p">=</span><span class="w"> </span><span class="nf">Gaussian_principal_element_elimination</span><span class="p">(</span> A, b <span class="p">)</span><span class="w">
+</span><span class="w"></span><span class="c">% 高斯列主元消去法解线性方程组</span>
+<span class="c">% Input: A: 系数矩阵; b: 方程组右端项;</span>
+<span class="c">% Output: x: 线性方程组解;</span>
+
+<span class="n">n</span> <span class="p">=</span> <span class="nb">size</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span> <span class="c">% 矩阵 A 阶数</span>
+
+<span class="k">if</span> <span class="nb">size</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">~=</span> <span class="nb">size</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">||</span> <span class="nb">size</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">~=</span> <span class="n">n</span>
+    <span class="n">error</span><span class="p">(</span><span class="s">&#39;Matrix does not match&#39;</span><span class="p">)</span> 
+<span class="k">end</span> <span class="c">% if</span>
+
+<span class="k">for</span> <span class="nb">i</span> <span class="p">=</span> <span class="mi">1</span> <span class="p">:</span> <span class="n">n</span>
+    <span class="p">[</span><span class="n">ap</span><span class="p">,</span> <span class="n">p</span><span class="p">]</span> <span class="p">=</span> <span class="n">max</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">A</span><span class="p">(</span><span class="nb">i</span> <span class="p">:</span> <span class="n">n</span><span class="p">,</span> <span class="nb">i</span><span class="p">)));</span>
+    <span class="n">p</span> <span class="p">=</span> <span class="n">p</span> <span class="o">+</span> <span class="nb">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+    
+    <span class="k">if</span> <span class="n">ap</span> <span class="o">==</span> <span class="mi">0</span> 
+        <span class="n">error</span><span class="p">(</span><span class="s">&#39;divide by zero!&#39;</span><span class="p">)</span>
+    <span class="k">end</span> <span class="c">% if</span>
+    <span class="k">if</span> <span class="n">p</span> <span class="o">&gt;</span> <span class="nb">i</span>
+        <span class="n">t</span> <span class="p">=</span> <span class="n">A</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="p">:);</span>
+        <span class="n">A</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="p">:)</span> <span class="p">=</span> <span class="n">A</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="p">:);</span>
+        <span class="n">A</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="p">:)</span> <span class="p">=</span> <span class="n">t</span><span class="p">;</span>
+        
+        <span class="n">t</span> <span class="p">=</span> <span class="n">b</span><span class="p">(</span><span class="nb">i</span><span class="p">);</span>
+        <span class="n">b</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span> <span class="p">=</span> <span class="n">b</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
+        <span class="n">b</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="p">=</span> <span class="n">t</span><span class="p">;</span> 
+    <span class="k">end</span> <span class="c">% if</span>
+    <span class="c">%消元计算</span>
+    <span class="n">m</span> <span class="p">=</span> <span class="n">A</span><span class="p">(</span><span class="nb">i</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">n</span><span class="p">,</span> <span class="nb">i</span><span class="p">)</span> <span class="o">./</span> <span class="n">A</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="nb">i</span><span class="p">);</span>
+    <span class="n">A</span><span class="p">(</span><span class="nb">i</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">n</span><span class="p">,</span> <span class="nb">i</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">n</span><span class="p">)</span> <span class="p">=</span> <span class="n">A</span><span class="p">(</span><span class="nb">i</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">n</span><span class="p">,</span> <span class="nb">i</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">n</span><span class="p">)</span> <span class="o">-</span> <span class="n">m</span> <span class="o">*</span> <span class="n">A</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="nb">i</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">n</span><span class="p">);</span>
+    <span class="n">b</span><span class="p">(</span><span class="nb">i</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">n</span><span class="p">)</span> <span class="p">=</span> <span class="n">b</span><span class="p">(</span><span class="nb">i</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">n</span><span class="p">)</span> <span class="o">-</span> <span class="n">m</span> <span class="o">*</span> <span class="n">b</span><span class="p">(</span><span class="nb">i</span><span class="p">);</span>
+    <span class="n">A</span><span class="p">(</span><span class="nb">i</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">n</span><span class="p">,</span> <span class="nb">i</span><span class="p">)</span> <span class="p">=</span> <span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="nb">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+<span class="k">end</span> <span class="c">% for</span>
+
+<span class="n">x</span> <span class="p">=</span> <span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+<span class="n">x</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="p">=</span> <span class="n">b</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">/</span> <span class="n">A</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>
+<span class="k">for</span> <span class="nb">i</span> <span class="p">=</span> <span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="p">:</span> <span class="o">-</span><span class="mi">1</span> <span class="p">:</span> <span class="mi">1</span>
+    <span class="n">x</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span> <span class="p">=</span> <span class="p">(</span><span class="n">b</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span> <span class="o">-</span> <span class="n">A</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="nb">i</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">n</span><span class="p">)</span> <span class="o">*</span> <span class="n">x</span><span class="p">(</span><span class="nb">i</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">n</span><span class="p">))</span> <span class="o">/</span> <span class="n">A</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="nb">i</span><span class="p">);</span> 
+<span class="k">end</span> <span class="c">% for</span>
+<span class="k">end</span> <span class="c">% function</span>
+</code></pre></div><h3 id="gauss-按比例列主元消去法">Gauss 按比例列主元消去法</h3>
+<div class="highlight"><pre class="chroma"><code class="language-matlab" data-lang="matlab"><span class="k">function</span><span class="w"> </span>x <span class="p">=</span><span class="w"> </span><span class="nf">Gauss_proportional_column_principal_elimination</span><span class="p">(</span> A, b <span class="p">)</span><span class="w">
+</span><span class="w"></span><span class="c">% 高斯消去法解线性方程组</span>
+<span class="c">% Input: A: 系数矩阵; b: 方程组右端项;</span>
+<span class="c">% Output: x: 线性方程组解;</span>
+
+<span class="n">n</span> <span class="p">=</span> <span class="nb">size</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span> <span class="c">% 矩阵 A 阶数</span>
+
+<span class="k">if</span> <span class="nb">size</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">~=</span> <span class="nb">size</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">||</span> <span class="nb">size</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">~=</span> <span class="n">n</span>
+    <span class="n">error</span><span class="p">(</span><span class="s">&#39;Matrix does not match&#39;</span><span class="p">)</span> 
+<span class="k">end</span>
+
+<span class="n">A_max</span> <span class="p">=</span> <span class="n">max</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="p">[],</span> <span class="mi">2</span><span class="p">);</span> <span class="c">% A 行最大值</span>
+<span class="k">for</span> <span class="nb">i</span> <span class="p">=</span> <span class="mi">1</span> <span class="p">:</span> <span class="n">n</span>
+    <span class="n">s</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span> <span class="p">=</span> <span class="n">A_max</span><span class="p">(</span><span class="nb">i</span><span class="p">);</span>
+    <span class="k">if</span> <span class="n">s</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+        <span class="n">error</span><span class="p">(</span><span class="s">&#39;A is singular.&#39;</span><span class="p">)</span>
+    <span class="k">end</span> <span class="c">% if</span>
+    <span class="n">p</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span> <span class="p">=</span> <span class="nb">i</span><span class="p">;</span>
+<span class="k">end</span> <span class="c">% for</span>
+
+<span class="k">for</span> <span class="n">k</span> <span class="p">=</span> <span class="mi">1</span> <span class="p">:</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="c">%%%%%%%%%% 待完成</span>
+    <span class="n">r</span> <span class="p">=</span> <span class="mi">1</span><span class="p">;</span> <span class="c">% 解 abs(a(p(r), k)) / s(p(r)) = max_k&lt;=1&lt;=n (abs(a(p(i), k)) / s(p(i));</span>
+    <span class="c">%%%%%%%%%%</span>
+    <span class="k">if</span> <span class="n">A</span><span class="p">(</span><span class="n">p</span><span class="p">(</span><span class="n">r</span><span class="p">),</span> <span class="n">k</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+        <span class="n">error</span><span class="p">(</span><span class="s">&#39;A is singular.&#39;</span><span class="p">)</span>
+    <span class="k">end</span> <span class="c">% if</span>
+    <span class="k">if</span> <span class="n">k</span> <span class="o">~=</span> <span class="n">r</span>
+        <span class="n">temp</span> <span class="p">=</span> <span class="n">p</span><span class="p">(</span><span class="n">r</span><span class="p">);</span>
+        <span class="n">p</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="p">=</span> <span class="n">p</span><span class="p">(</span><span class="n">r</span><span class="p">);</span>
+        <span class="n">p</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="p">=</span> <span class="n">temp</span><span class="p">;</span>
+    <span class="k">end</span> <span class="c">% if</span>
+    <span class="k">for</span> <span class="nb">i</span> <span class="p">=</span> <span class="n">k</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">:</span> <span class="n">n</span>
+        <span class="n">A</span><span class="p">(</span><span class="n">p</span><span class="p">(</span><span class="nb">i</span><span class="p">),</span> <span class="n">k</span><span class="p">)</span> <span class="p">=</span> <span class="n">A</span><span class="p">(</span><span class="n">p</span><span class="p">(</span><span class="nb">i</span><span class="p">),</span> <span class="n">k</span><span class="p">)</span> <span class="o">/</span> <span class="n">A</span><span class="p">(</span><span class="n">p</span><span class="p">(</span><span class="n">k</span><span class="p">),</span> <span class="n">k</span><span class="p">);</span>
+        <span class="k">for</span> <span class="nb">j</span> <span class="p">=</span> <span class="n">k</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">:</span> <span class="n">n</span>
+            <span class="n">A</span><span class="p">(</span><span class="n">p</span><span class="p">(</span><span class="nb">i</span><span class="p">),</span> <span class="nb">j</span><span class="p">)</span> <span class="p">=</span> <span class="n">A</span><span class="p">(</span><span class="n">p</span><span class="p">(</span><span class="nb">i</span><span class="p">),</span> <span class="nb">j</span><span class="p">)</span> <span class="o">-</span> <span class="n">A</span><span class="p">(</span><span class="n">p</span><span class="p">(</span><span class="nb">i</span><span class="p">),</span> <span class="n">k</span><span class="p">)</span> <span class="o">*</span> <span class="n">A</span><span class="p">(</span><span class="n">p</span><span class="p">(</span><span class="nb">i</span><span class="p">),</span> <span class="nb">j</span><span class="p">);</span>
+        <span class="k">end</span> <span class="c">% for</span>
+    <span class="k">end</span> <span class="c">% for</span>
+<span class="k">end</span> <span class="c">% for</span>
+
+<span class="n">b2</span><span class="p">(</span><span class="n">p</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span> <span class="p">=</span> <span class="n">b</span><span class="p">(</span><span class="n">P</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span>
+<span class="k">for</span> <span class="nb">i</span> <span class="p">=</span> <span class="mi">2</span> <span class="p">:</span> <span class="n">n</span>
+    <span class="n">sum</span> <span class="p">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">for</span> <span class="nb">j</span> <span class="p">=</span> <span class="mi">1</span> <span class="p">:</span> <span class="nb">i</span> <span class="o">-</span> <span class="mi">1</span>
+        <span class="n">sum</span> <span class="p">=</span> <span class="n">sum</span> <span class="o">+</span> <span class="n">A</span><span class="p">(</span><span class="n">p</span><span class="p">(</span><span class="nb">i</span><span class="p">),</span> <span class="nb">j</span><span class="p">)</span> <span class="o">*</span> <span class="n">b2</span><span class="p">(</span><span class="n">p</span><span class="p">(</span><span class="nb">j</span><span class="p">));</span>
+    <span class="k">end</span> <span class="c">% for</span>
+    <span class="n">b2</span><span class="p">(</span><span class="n">p</span><span class="p">(</span><span class="nb">i</span><span class="p">))</span> <span class="p">=</span> <span class="n">b</span><span class="p">(</span><span class="n">p</span><span class="p">(</span><span class="nb">i</span><span class="p">))</span> <span class="o">-</span> <span class="n">sum</span><span class="p">;</span>
+<span class="k">end</span> <span class="c">% for</span>
+
+<span class="k">if</span> <span class="n">A</span><span class="p">(</span><span class="n">p</span><span class="p">(</span><span class="n">n</span><span class="p">),</span> <span class="n">n</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+    <span class="n">error</span><span class="p">(</span><span class="s">&#39;A is singular.&#39;</span><span class="p">)</span>
+<span class="k">end</span> <span class="c">% if</span>
+
+<span class="n">x</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="p">=</span> <span class="n">b2</span><span class="p">(</span><span class="n">p</span><span class="p">(</span><span class="n">n</span><span class="p">))</span> <span class="o">/</span> <span class="n">A</span><span class="p">(</span><span class="n">p</span><span class="p">(</span><span class="n">n</span><span class="p">),</span> <span class="n">n</span><span class="p">);</span>
+<span class="k">for</span> <span class="nb">i</span> <span class="p">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">:</span> <span class="o">-</span><span class="mi">1</span> <span class="p">:</span> <span class="mi">1</span>
+    <span class="n">sum</span> <span class="p">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">for</span> <span class="nb">j</span> <span class="p">=</span> <span class="nb">i</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">:</span> <span class="n">n</span>
+        <span class="n">sum</span> <span class="p">=</span> <span class="n">sum</span> <span class="o">+</span> <span class="n">a</span><span class="p">(</span><span class="n">p</span><span class="p">(</span><span class="nb">i</span><span class="p">),</span> <span class="nb">j</span><span class="p">)</span> <span class="o">*</span> <span class="n">x</span><span class="p">(</span><span class="nb">j</span><span class="p">);</span>
+    <span class="k">end</span> <span class="c">% for </span>
+    <span class="n">x</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span> <span class="p">=</span> <span class="p">(</span><span class="n">b2</span><span class="p">(</span><span class="n">p</span><span class="p">(</span><span class="nb">i</span><span class="p">))</span> <span class="o">-</span> <span class="n">sum</span><span class="p">)</span> <span class="o">/</span> <span class="n">a</span><span class="p">(</span><span class="n">p</span><span class="p">(</span><span class="nb">i</span><span class="p">),</span> <span class="nb">i</span><span class="p">);</span>
+<span class="k">end</span> <span class="c">% for </span>
+
+<span class="k">end</span> <span class="c">% function</span>
+</code></pre></div><h3 id="gauss-jordan-消去法">Gauss-Jordan 消去法</h3>
+<p>Gauss-Jordan 消去法就是在上述任一方法之中，消去步骤中对主元行外的所有行进行操作，其他没有任何变化，代码依方法选择而变，在此不进一步考虑。</p>
+<h2 id="直接三角形分解法">直接三角形分解法</h2>
+<h3 id="crout-方法">Crout 方法：</h3>
+<div class="highlight"><pre class="chroma"><code class="language-matlab" data-lang="matlab"><span class="k">function</span><span class="w"> </span>x <span class="p">=</span><span class="w"> </span><span class="nf">Court</span><span class="p">(</span> A, b <span class="p">)</span><span class="w">
+</span><span class="w"></span><span class="c">% Court  方法解线性方程组</span>
+<span class="c">% Input: A: 系数矩阵; b: 方程组右端项;</span>
+<span class="c">% Output: x: 线性方程组解;</span>
+
+<span class="n">n</span> <span class="p">=</span> <span class="nb">size</span><span class="p">(</span><span class="n">A</span><span class="p">);</span>
+<span class="n">L</span> <span class="p">=</span> <span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>
+<span class="n">U</span> <span class="p">=</span> <span class="nb">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>
+<span class="k">for</span> <span class="nb">i</span> <span class="p">=</span> <span class="mi">1</span> <span class="p">:</span> <span class="n">n</span>
+    <span class="n">L</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="nb">i</span><span class="p">)</span> <span class="p">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="k">end</span> <span class="c">% for</span>
+<span class="k">for</span> <span class="n">k</span> <span class="p">=</span> <span class="mi">1</span> <span class="p">:</span> <span class="n">n</span>
+    <span class="k">for</span> <span class="nb">j</span> <span class="p">=</span> <span class="n">k</span> <span class="p">:</span> <span class="n">n</span>
+        <span class="n">U</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="nb">j</span><span class="p">)</span> <span class="p">=</span> <span class="n">A</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="nb">j</span><span class="p">)</span> <span class="o">-</span> <span class="n">sum</span><span class="p">(</span><span class="n">L</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="mi">1</span> <span class="p">:</span> <span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">.*</span> <span class="n">U</span><span class="p">(</span><span class="mi">1</span> <span class="p">:</span> <span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">j</span><span class="p">)</span><span class="o">&#39;</span><span class="p">);</span>
+    <span class="k">end</span> <span class="c">% for</span>
+    <span class="k">for</span> <span class="nb">i</span> <span class="p">=</span> <span class="n">k</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">:</span> <span class="n">n</span>
+        <span class="n">L</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span> <span class="p">=</span> <span class="p">(</span><span class="n">A</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span> <span class="o">-</span> <span class="n">sum</span><span class="p">(</span><span class="n">L</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="mi">1</span> <span class="p">:</span> <span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">.*</span> <span class="n">U</span><span class="p">(</span><span class="mi">1</span> <span class="p">:</span> <span class="n">k</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">,</span> <span class="n">k</span><span class="p">)</span><span class="o">&#39;</span><span class="p">))</span> <span class="o">/</span> <span class="n">U</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">k</span><span class="p">);</span>
+    <span class="k">end</span> <span class="c">% for</span>
+<span class="k">end</span> <span class="c">% for</span>
+
+<span class="p">[</span><span class="n">L</span><span class="p">,</span><span class="n">U</span><span class="p">]</span> <span class="p">=</span> <span class="n">myLU</span><span class="p">(</span><span class="n">A</span><span class="p">);</span>
+<span class="p">[</span><span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">]</span> <span class="p">=</span> <span class="nb">size</span><span class="p">(</span><span class="n">A</span><span class="p">);</span>
+<span class="n">y</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">=</span> <span class="n">b</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="k">for</span> <span class="nb">i</span> <span class="p">=</span> <span class="mi">2</span> <span class="p">:</span> <span class="n">n</span>    
+    <span class="k">for</span> <span class="nb">j</span> <span class="p">=</span> <span class="mi">1</span> <span class="p">:</span> <span class="nb">i</span> <span class="o">-</span> <span class="mi">1</span>
+        <span class="n">b</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span> <span class="p">=</span> <span class="n">b</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span> <span class="o">-</span> <span class="n">L</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="nb">j</span><span class="p">)</span> <span class="o">*</span> <span class="n">y</span><span class="p">(</span><span class="nb">j</span><span class="p">);</span>
+    <span class="k">end</span>
+    <span class="n">y</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span> <span class="p">=</span> <span class="n">b</span><span class="p">(</span><span class="nb">i</span><span class="p">);</span>
+<span class="k">end</span> <span class="c">% for</span>
+ 
+<span class="n">x</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="p">=</span> <span class="n">y</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">/</span> <span class="n">U</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>
+<span class="k">for</span> <span class="nb">i</span> <span class="p">=</span> <span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="p">:</span> <span class="o">-</span><span class="mi">1</span> <span class="p">:</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="nb">j</span> <span class="p">=</span> <span class="n">n</span> <span class="p">:</span> <span class="o">-</span><span class="mi">1</span> <span class="p">:</span> <span class="nb">i</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="n">y</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span> <span class="p">=</span> <span class="n">y</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span> <span class="o">-</span> <span class="n">U</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="nb">j</span><span class="p">)</span> <span class="o">*</span> <span class="n">x</span><span class="p">(</span><span class="nb">j</span><span class="p">);</span>
+    <span class="k">end</span>
+    <span class="n">x</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span> <span class="p">=</span> <span class="n">y</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span> <span class="o">/</span> <span class="n">U</span><span class="p">(</span><span class="nb">i</span><span class="p">,</span> <span class="nb">i</span><span class="p">);</span>
+<span class="k">end</span> <span class="c">% for</span>
+
+<span class="k">end</span> <span class="c">% function</span>
+</code></pre></div><p>Court 方法是三角分解法中最简单的一种，计算量会大一些，但该方法适用于任意情况的方程组。</p>
+<h3 id="ltdl-分解法">$L^TDL$ 分解法</h3>
+<p>$L^TDL$ 分解法适用面比较窄：必须是实对称矩阵。此时使用这种方法可以比较好的减少计算量，增加计算速度，但实际原理与 LU 分解法类似。</p>
+<p>若是追求比较通用的方法，LDU 分解法是 LU 分解法的优化，但整体上大同小异，在此不占用篇幅专门书写它们的算法了。</p>
+<h3 id="追赶法">追赶法</h3>
+<p>追赶法的适用范围也相当的窄：三对角实线性方程组。其本质就是 $LU$ 分解法在这里的运用，解这样的方程非常的迅速，需求的计算量也非常的小。</p>
+<p>对于追赶法有一篇比较好的文章可以参考：Thomas, L.H., <em>Elliptic Problems in Linear Differential Equations over a Network</em>. Watson Science Computer Laboratory Report, 1949.</p>
+<p>其中追赶法在国外常称为“Thomas 方法”，在热传导方程等物理方面有着非常广泛的用处。</p>
+<h1 id="结尾">结尾</h1>
+<p>对于实线性方程组，通过恰当的变换，都可以得到任意精确度的数值解或者直接获得解析解，在数值处理上属于最简单的一个类型。</p>
+<p>在数值分析中，这些过程需要交给计算机计算，所以就需要着重考虑其中会由计算机计算产生的误差。因此诞生出了诸多的方法并不断优化，避免了 7种情况 带来的计算误差，使得数据处理更加精确可信。</p>
+<p>数值分析也研究了常微分方程组、函数逼近、超越方程寻根等问题。在这些问题的算法中更加体现出了数值分析的精妙逻辑与魅力，我们使用精妙的方法通过计算机去一步步逼近真实结果，以此用于实际问题中的复杂方程求解。</p>
+<p>这是非常有现实价值与研究价值的，之后我也会分别总结这些方面涉及到的一些算法，本次的线性方程组就是一个简单的入门。</p>
+</div>
+                    <div class="post_footer">
+                        
+                        <div class="meta">
+                            <div class="info">
+                                <span class="field tags">
+                                    <i class="ri-stack-line"></i>
+                                    
+                                    <a href="http://localhost:1313/tags/%E6%95%99%E7%A8%8B%E6%96%87%E6%A1%A3/">教程文档</a>
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                
+<div class="doc_comments">
+    <div class="comments_block_title">发表评论</div>
+    <div id="vcomments"></div>
+</div>
+
+<link rel="stylesheet" href="http://localhost:1313/css/comments.css" />
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<script type="text/javascript">
+    new Valine({
+        el: '#vcomments',
+        appId: '12HKA37DAChBWQgBC7PA4eBw-gzGzoHsz',
+        appKey: 'UxknCfg5bWmkI2eGar5hDxWq',
+        placeholder: ' ',
+        visitor: 'true',
+    })
+</script>
+                
+            </div>
+        </div>
+    </div>
+    <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
+    <footer class="footer">
+    <div class="powered_by">
+        <a href="https://timegg.top">TIMEGG © 2017 - 2021,</a>
+        <a href="http://www.gohugo.io/">Powered by Hugo.</a>
+    </div>
+
+    <div class="footer_slogan">
+        <span>重拾写作的乐趣。</span>
+    </div>
+</footer>
+    <script src="http://localhost:1313/js/jquery-3.5.1.min.js"></script>
+<link href="http://localhost:1313/css/fancybox.min.css" rel="stylesheet">
+<script src="http://localhost:1313/js/fancybox.min.js"></script>
+<script src="http://localhost:1313/js/zozo.js"></script>
+
+
+<script type="text/javascript" async
+    src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+                processEscapes: true,
+                processEnvironments: true,
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                TeX: {
+                    equationNumbers: { autoNumber: "AMS" },
+                    extensions: ["AMSmath.js", "AMSsymbols.js"]
+                }
+            }
+        });
+
+        MathJax.Hub.Queue(function () {
+            
+            
+            
+            var all = MathJax.Hub.getAllJax(), i;
+            for (i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+<style>
+    code.has-jax {
+        font: inherit;
+        font-size: 100%;
+        background: inherit;
+        border: inherit;
+        color: #515151;
+    }
+</style>
+
+
+
+</body>
+
+</html>

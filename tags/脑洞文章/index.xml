@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>脑洞文章 on TIMEGG</title>
+    <link>http://localhost:1313/tags/%E8%84%91%E6%B4%9E%E6%96%87%E7%AB%A0/</link>
+    <description>Recent content in 脑洞文章 on TIMEGG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 07 Nov 2020 00:00:00 +0900</lastBuildDate><atom:link href="http://localhost:1313/tags/%E8%84%91%E6%B4%9E%E6%96%87%E7%AB%A0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>魔术小课堂：教你如何复制物品</title>
+      <link>http://localhost:1313/posts/20201107-magic/</link>
+      <pubDate>Sat, 07 Nov 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20201107-magic/</guid>
+      <description>欢迎来到魔术小课堂，该课堂的目的是教大家使用一些简单实用的魔术，这些魔术可以在一定程度上提升你的生活质量。该课堂是系列课程，我们今天来开第一课，教你如何复制身边的物品。拿好笔记本认真听，我们现在开始。</description>
+    </item>
+    
+    <item>
+      <title>用不可解释的方法去夸别人</title>
+      <link>http://localhost:1313/posts/20201015-boast/</link>
+      <pubDate>Thu, 15 Oct 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20201015-boast/</guid>
+      <description>我们经常去夸别人，以表达自己的态度。有的时候我们会因为夸奖程度过重而陷入震惊的状态，表现为无法用语言去描述自己的感受。也就是说，真正登峰造极的夸奖应该是无言的、不可解释的。所以当我们想要夸别人的时候，应该用无法解释的方式去做。</description>
+    </item>
+    
+    <item>
+      <title>气味便利店</title>
+      <link>http://localhost:1313/posts/20201002-smell/</link>
+      <pubDate>Fri, 02 Oct 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20201002-smell/</guid>
+      <description>气味便利店顾名思义就是出售各种气味的商店，当客人来到我们店时，我们都会客制化地为每位客人调制他们专属的气味，这些气味可以帮助他们精准地回忆起曾经的经历。</description>
+    </item>
+    
+    <item>
+      <title>一个关于逻辑的科幻脑洞</title>
+      <link>http://localhost:1313/posts/20200920-logic/</link>
+      <pubDate>Sun, 20 Sep 2020 00:00:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/20200920-logic/</guid>
+      <description>逻辑，其最根本的元素是“是”和“不是”，基于这两个基本元素我们推广出复杂的逻辑讨论。但是如果宇宙中的逻辑不止二元呢？思考这个时候世界会变成什么样子。</description>
+    </item>
+    
+  </channel>
+</rss>

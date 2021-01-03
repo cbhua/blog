@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Chuanbo" />
+	
+	
+	
+	<title>爬取 Vol.moe 的漫画资源 ｜ TIMEGG</title>
+	
+    
+    
+    <meta name="description" content="Vol.moe 是我最喜欢的漫画资源下载网站，虽然收费，但是使用体验很好。网站有一个缺陷即无法批量下载，所以尝试用 Python 写一个脚本帮助我批量下载漫画。该方法已失效，目前网站已开放批量下载功能。" />
+    
+
+    
+    
+    <meta name="keywords" content="Hugo, theme, zozo" />
+    
+
+	
+    
+    <link rel="shortcut icon" href="http://localhost:1313/images/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/zozo.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/highlight.css" />
+
+    
+    
+</head>
+
+<body>
+    <div class="main animate__animated animate__fadeInDown">
+        <div class="nav_container animated fadeInDown">
+    <div class="site_nav" id="site_nav">
+        <ul>
+            
+            <li>
+                <a href="/">主页</a>
+            </li>
+            
+            <li>
+                <a href="/posts/">归档</a>
+            </li>
+            
+            <li>
+                <a href="/tags/">标签</a>
+            </li>
+            
+            <li>
+                <a href="/links/">链接</a>
+            </li>
+            
+            <li>
+                <a href="/about/">关于</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="menu_icon">
+        <a id="menu_icon"><i class="ri-menu-line"></i></a>
+    </div>
+</div>
+        <div class="header animated fadeInDown">
+    <div class="site_title_container">
+        <div class="site_title">
+            <h1>
+                <a href="http://localhost:1313/">
+                    <span>TIMEGG</span>
+                </a>
+            </h1>
+        </div>
+        <div class="description">
+            <p class="sub_title">放进时光蛋里。</p>
+            <div class="my_socials">
+                
+                
+                <a href="https://github.com/cbhua" title="github" target="_blank"><i class="ri-github-fill"></i></a>
+                
+                
+                
+                <a href="%20" title="instagram" target="_blank"><i class="ri-instagram-fill"></i></a>
+                
+                
+                
+                <a href="https://twitter.com/huachuanbo" title="twitter" target="_blank"><i class="ri-twitter-fill"></i></a>
+                
+                
+                
+                <a href="https://weibo.com/u/6177306082" title="weibo" target="_blank"><i class="ri-weibo-fill"></i></a>
+                
+                
+                <a href="http://localhost:1313/index.xml" type="application/rss+xml" title="rss" target="_blank"><i
+                        class="ri-rss-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="content">
+            <div class="post_page">
+                <div class="post animate__animated animate__fadeInDown">
+                    <div class="post_title post_detail_title">
+                        <h2><a href='/posts/20180727-volmoe/'>爬取 Vol.moe 的漫画资源</a></h2>
+                        <span class="date">2018.07.27</span>
+                    </div>
+                    <div class="post_content markdown"><p><strong>2019.03 Update: Vol.moe 现已经提供批量下载功能。此文完结。</strong></p>
+<h1 id="原文">原文</h1>
+<p>这个工具实际上是一个非常简单的东西，但是由于网站确实很不错，所以写在这里作为一个推荐。</p>
+<p>之前在寻找一些漫画资源的时候，偶然遇到了这个漫画网站：<a href="https://vol.moe/">Vol.moe</a></p>
+<p>网站上有很全的漫画资源并提供下载下载，其漫画质量普遍不错。在网上漫画资源比较零碎的环境下非常方便。</p>
+<p>Vol.moe 提供普通用户限量限速下载。初期我对漫画需求量比较大，准备一次性大量下载回头慢慢看，于是捐助成为了会员，开始一本一本漫画的下载。</p>
+<p>令人可惜的是网站明确指出：</p>
+<blockquote>
+<p>Q4: 為什麼沒有批量下載與全選推送？ A4: 本站帶寬有限，所以不鼓勵批量下載和全選推送，希望大家準備看的書才下載。如果確實需要批量，請尋找支持批量下載的下載軟體吧。</p>
+</blockquote>
+<p>所以面对 <em>One Piece</em> 、<em>火影忍者</em> 、<em>银魂</em> 等等动辄八、九十卷的下载链接，实在是没有耐心一个一个点下去，所以用 Python 写一个工具自动下载。</p>
+<p><strong>Step 1. 引入 Pack 、填写用户变量</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">urllib</span> <span class="kn">import</span> <span class="n">parse</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span> <span class="nn">urllib.request</span>
+<span class="kn">import</span> <span class="nn">urllib.error</span>
+<span class="kn">import</span> <span class="nn">chardet</span>
+<span class="kn">import</span> <span class="nn">http.cookiejar</span>
+
+<span class="n">login_url</span> <span class="o">=</span> <span class="s1">&#39;https://vol.moe/login_do.php&#39;</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&#34;https://vol.moe/comic/*****.htm&#34;</span> <span class="o">//</span> <span class="err">爬取相应网页的链接</span>
+
+<span class="n">values</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&#34;email&#34;</span><span class="p">:</span> <span class="s2">&#34;**********@gmail.com&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;passwd&#34;</span><span class="p">:</span> <span class="s2">&#34;********&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;keepalive&#34;</span><span class="p">:</span> <span class="s2">&#34;on&#34;</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div><p><strong>Step 2. 用户身份登陆，获取 Cookies</strong></p>
+<p><strong>2018.02.10 Update</strong> - Chrome 上有很好用的 Cookies 插件，支持直接从浏览器导出 Cookies 文件。如果觉得这部分比较繁琐，可以手工登陆之后 Download 自己的 Cookies，从而省下这一步。</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">data</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">parse</span><span class="o">.</span><span class="n">urlencode</span><span class="p">(</span><span class="n">values</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span>
+<span class="n">user_agent</span> <span class="o">=</span> <span class="s1">&#39;*********&#39;</span> <span class="o">//</span> <span class="err">浏览器记录信息</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;User-Agent&#39;</span><span class="p">:</span> <span class="n">user_agent</span><span class="p">,</span> <span class="s1">&#39;Connection&#39;</span><span class="p">:</span> <span class="s1">&#39;keep-alive&#39;</span><span class="p">}</span>
+
+<span class="n">cookie_filename</span> <span class="o">=</span> <span class="s1">&#39;vol_cookie.txt&#39;</span> <span class="o">//</span> <span class="n">Cookies</span> <span class="err">保存文件名</span>
+<span class="n">cookie_aff</span> <span class="o">=</span> <span class="n">http</span><span class="o">.</span><span class="n">cookiejar</span><span class="o">.</span><span class="n">MozillaCookieJar</span><span class="p">(</span><span class="n">cookie_filename</span><span class="p">)</span>
+
+
+<span class="n">handler</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">HTTPCookieProcessor</span><span class="p">(</span><span class="n">cookie_aff</span><span class="p">)</span>
+<span class="n">opener</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">build_opener</span><span class="p">(</span><span class="n">handler</span><span class="p">)</span>
+
+<span class="n">request</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">login_url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">opener</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+<span class="k">except</span> <span class="n">urllib</span><span class="o">.</span><span class="n">error</span><span class="o">.</span><span class="n">URLError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">reason</span><span class="p">)</span>
+
+<span class="n">cookie_aff</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">ignore_discard</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">ignore_expires</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">cookie_aff</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Name =&#39;</span><span class="o">+</span> <span class="n">item</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Value =&#39;</span><span class="o">+</span> <span class="n">item</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+</code></pre></div><p><strong>Step 3. 抓取用户登陆网页</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">urllib.request</span><span class="o">,</span> <span class="nn">urllib.parse</span>
+<span class="kn">import</span> <span class="nn">http.cookiejar</span>
+
+<span class="n">get_url</span> <span class="o">=</span> <span class="s1">&#39;https://vol.moe/comic/10243.htm&#39;</span>
+<span class="n">cookie_filename</span> <span class="o">=</span> <span class="s1">&#39;vol_cookie.txt&#39;</span>
+<span class="n">cookie_aff</span> <span class="o">=</span> <span class="n">http</span><span class="o">.</span><span class="n">cookiejar</span><span class="o">.</span><span class="n">MozillaCookieJar</span><span class="p">(</span><span class="n">cookie_filename</span><span class="p">)</span>
+<span class="n">cookie_aff</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">cookie_filename</span><span class="p">,</span> <span class="n">ignore_discard</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">ignore_expires</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+<span class="n">handler</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">HTTPCookieProcessor</span><span class="p">(</span><span class="n">cookie_aff</span><span class="p">)</span>
+<span class="n">opener</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">build_opener</span><span class="p">(</span><span class="n">handler</span><span class="p">)</span>
+
+<span class="c1"># 使用cookie登陆get_url</span>
+<span class="n">get_request</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">get_url</span><span class="p">)</span>
+<span class="n">get_response</span> <span class="o">=</span> <span class="n">opener</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">get_request</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">get_response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
+</code></pre></div><p>其实在网页登陆后，打开相应漫画下载页面 F12 拿到的就是包含所有下载链接的 html ，这个网站的链接不是 PHP 单独对话，直接筛选就很方便。</p>
+<p>上面抓取 html 之后筛选，search “下载 epub” 所有的 <a> 自带链接，抓出来之后就能批量下载了。</p>
+<p>不过很值得注意的是，Vol.moe 有如下说明：</p>
+<blockquote>
+<p>Q5: 下載線路速度限製及IP限製的問題。 A5: 本站帶寬有限，為防止無序無限製的下載，故已經對下載進行了速度限製、IP校驗與限製 同一IP同時下載線程不能超過3個，部分瀏覽器/工具在線程被限製後整個下載任務會失敗，遇此情況請修改設置，或使用Chrome瀏覽器。 部分瀏覽器或下載工具會使用多線程下載，將會被視為多文件同時下載，達到限製後會需要等待較長時間才會解除限製。</p>
+</blockquote>
+<p>使用下载工具下载还是要控制一下线程，防止被屏蔽。Vol.moe 服务器位于北美，网站注册于 TW ，下载速度在大陆感觉还是很不稳定，不清楚跟网站审查下行流量有关系没有。</p>
+</div>
+                    <div class="post_footer">
+                        
+                        <div class="meta">
+                            <div class="info">
+                                <span class="field tags">
+                                    <i class="ri-stack-line"></i>
+                                    
+                                    <a href="http://localhost:1313/tags/%E6%95%99%E7%A8%8B%E6%96%87%E6%A1%A3/">教程文档</a>
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                
+<div class="doc_comments">
+    <div class="comments_block_title">发表评论</div>
+    <div id="vcomments"></div>
+</div>
+
+<link rel="stylesheet" href="http://localhost:1313/css/comments.css" />
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<script type="text/javascript">
+    new Valine({
+        el: '#vcomments',
+        appId: '12HKA37DAChBWQgBC7PA4eBw-gzGzoHsz',
+        appKey: 'UxknCfg5bWmkI2eGar5hDxWq',
+        placeholder: ' ',
+        visitor: 'true',
+    })
+</script>
+                
+            </div>
+        </div>
+    </div>
+    <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
+    <footer class="footer">
+    <div class="powered_by">
+        <a href="https://timegg.top">TIMEGG © 2017 - 2021,</a>
+        <a href="http://www.gohugo.io/">Powered by Hugo.</a>
+    </div>
+
+    <div class="footer_slogan">
+        <span>重拾写作的乐趣。</span>
+    </div>
+</footer>
+    <script src="http://localhost:1313/js/jquery-3.5.1.min.js"></script>
+<link href="http://localhost:1313/css/fancybox.min.css" rel="stylesheet">
+<script src="http://localhost:1313/js/fancybox.min.js"></script>
+<script src="http://localhost:1313/js/zozo.js"></script>
+
+
+<script type="text/javascript" async
+    src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+                processEscapes: true,
+                processEnvironments: true,
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                TeX: {
+                    equationNumbers: { autoNumber: "AMS" },
+                    extensions: ["AMSmath.js", "AMSsymbols.js"]
+                }
+            }
+        });
+
+        MathJax.Hub.Queue(function () {
+            
+            
+            
+            var all = MathJax.Hub.getAllJax(), i;
+            for (i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+<style>
+    code.has-jax {
+        font: inherit;
+        font-size: 100%;
+        background: inherit;
+        border: inherit;
+        color: #515151;
+    }
+</style>
+
+
+
+</body>
+
+</html>
