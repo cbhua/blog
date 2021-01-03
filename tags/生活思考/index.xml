@@ -2,89 +2,89 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>生活思考 on TIMEGG</title>
-    <link>http://localhost:1313/tags/%E7%94%9F%E6%B4%BB%E6%80%9D%E8%80%83/</link>
+    <link>https://timegg.top/tags/%E7%94%9F%E6%B4%BB%E6%80%9D%E8%80%83/</link>
     <description>Recent content in 生活思考 on TIMEGG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 07 Dec 2020 00:00:00 +0900</lastBuildDate><atom:link href="http://localhost:1313/tags/%E7%94%9F%E6%B4%BB%E6%80%9D%E8%80%83/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Dec 2020 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/tags/%E7%94%9F%E6%B4%BB%E6%80%9D%E8%80%83/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>人间观察日记</title>
-      <link>http://localhost:1313/posts/20201207-myself/</link>
+      <link>https://timegg.top/posts/20201207-myself/</link>
       <pubDate>Mon, 07 Dec 2020 00:00:00 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/20201207-myself/</guid>
+      <guid>https://timegg.top/posts/20201207-myself/</guid>
       <description>人间观察日记将会是一系列文章，主要强调对我自己本身对不同事物不同反应的观察，从而更深层次的了解自己。了解将是一个长久的课题，在这个过程中发现自己的问题并进行改正，或者发现有趣的地方加以发展。期待系列文章与你们相见。</description>
     </item>
     
     <item>
       <title>我吐槽了你的吐槽：语言上一层</title>
-      <link>http://localhost:1313/posts/20201125-communicate/</link>
+      <link>https://timegg.top/posts/20201125-communicate/</link>
       <pubDate>Wed, 25 Nov 2020 00:00:00 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/20201125-communicate/</guid>
+      <guid>https://timegg.top/posts/20201125-communicate/</guid>
       <description>当你吐槽别人的时候，别人也会吐槽你的吐槽，别人的别人也会吐槽吐槽你的吐槽。想要在吐槽的语言沟通中占据上一层，就需要有独特的技巧，寻找终极的语言表达。屠龙勇士终成龙。</description>
     </item>
     
     <item>
       <title>找到真正想做的事情</title>
-      <link>http://localhost:1313/posts/20201027-hobbit/</link>
+      <link>https://timegg.top/posts/20201027-hobbit/</link>
       <pubDate>Tue, 27 Oct 2020 00:00:00 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/20201027-hobbit/</guid>
+      <guid>https://timegg.top/posts/20201027-hobbit/</guid>
       <description>上一个周末和大学的好朋友们聊了聊天，已经工作的朋友似乎有着生活方面精力管理上的问题。反思自己的状态，似乎也需要进行一定的调整，尝试找到自己真正想做的事情，给予生活驱动力。</description>
     </item>
     
     <item>
       <title>用不可解释的方法去夸别人</title>
-      <link>http://localhost:1313/posts/20201015-boast/</link>
+      <link>https://timegg.top/posts/20201015-boast/</link>
       <pubDate>Thu, 15 Oct 2020 00:00:00 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/20201015-boast/</guid>
+      <guid>https://timegg.top/posts/20201015-boast/</guid>
       <description>我们经常去夸别人，以表达自己的态度。有的时候我们会因为夸奖程度过重而陷入震惊的状态，表现为无法用语言去描述自己的感受。也就是说，真正登峰造极的夸奖应该是无言的、不可解释的。所以当我们想要夸别人的时候，应该用无法解释的方式去做。</description>
     </item>
     
     <item>
       <title>桌游的可重复性思考</title>
-      <link>http://localhost:1313/posts/20200722-broadgame/</link>
+      <link>https://timegg.top/posts/20200722-broadgame/</link>
       <pubDate>Wed, 22 Jul 2020 00:00:00 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/20200722-broadgame/</guid>
+      <guid>https://timegg.top/posts/20200722-broadgame/</guid>
       <description>游戏有很多种性质，可重复性是其中的一种，强调重复进行游戏的体验，这点与游戏的生命周期息息相关。最近斥巨资买了一套全球惊悚，在和朋友游玩的过程中思考到了这么一个问题。</description>
     </item>
     
     <item>
       <title>小时候玩过的桌游</title>
-      <link>http://localhost:1313/posts/20200601-broadgame/</link>
+      <link>https://timegg.top/posts/20200601-broadgame/</link>
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/20200601-broadgame/</guid>
+      <guid>https://timegg.top/posts/20200601-broadgame/</guid>
       <description>我在小学的时候接触到了游戏王卡牌游戏系列，在几年间我和我的朋友们基于游戏王卡牌创造出了类跑团的游戏模式，这样一个童年壮举给我留下了深刻的印象，也给我之后玩更多种类的桌游带来了启发。</description>
     </item>
     
     <item>
       <title>在留学申请的过程中学到的</title>
-      <link>http://localhost:1313/posts/20200521-application/</link>
+      <link>https://timegg.top/posts/20200521-application/</link>
       <pubDate>Thu, 21 May 2020 00:00:00 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/20200521-application/</guid>
+      <guid>https://timegg.top/posts/20200521-application/</guid>
       <description>留学申请是个很好的学习过程，在此期间可以发现自己的很多问题。反思去年半年的申请过程，我总结出了当时所遇到的几个问题，这些问题都或多或少给当时的我带来了一些消极的影响，复盘这些问题必要且有用。</description>
     </item>
     
     <item>
       <title>生活需要一些期待</title>
-      <link>http://localhost:1313/posts/20200507-hope/</link>
+      <link>https://timegg.top/posts/20200507-hope/</link>
       <pubDate>Thu, 07 May 2020 00:00:00 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/20200507-hope/</guid>
+      <guid>https://timegg.top/posts/20200507-hope/</guid>
       <description>生活的推进需要一些驱动力，否则容易陷入失去目标的迷茫，感觉生活失去了意义。期待就是一种极好的生活驱动力，它可以让我们暂时忽略生活中的寂寞和无聊，把自己的心情寄托于未来，从而减轻现在生活的辛苦，保持一种少年感。</description>
     </item>
     
     <item>
       <title>关于游记视频的反思</title>
-      <link>http://localhost:1313/posts/20200407-vlog/</link>
+      <link>https://timegg.top/posts/20200407-vlog/</link>
       <pubDate>Tue, 07 Apr 2020 00:00:00 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/20200407-vlog/</guid>
+      <guid>https://timegg.top/posts/20200407-vlog/</guid>
       <description>去年秋季到现在为止旅游了几个城市，拍了好多视频，也做成了几个游记剪辑作品，但是整体上并没有达到我想要的效果，或者说还有很大 提升空间。在准备新一年的拍摄前，分别从前后期总结一下这些视频中出现的问题。</description>
     </item>
     
