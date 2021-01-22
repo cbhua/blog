@@ -6,7 +6,25 @@
     <description>Recent content in Posts on TIMEGG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 08 Jan 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Jan 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的行文进步了吗</title>
+      <link>https://timegg.top/posts/2021-01-21-article/</link>
+      <pubDate>Thu, 21 Jan 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/2021-01-21-article/</guid>
+      <description>自我开始写文章到现在已经三年了，粗略估计在这期间我写下了十五万字或者更多的原创文字。这么久时间之后，我的行文水平是否有进步，我又应该从哪些方面提升我的行文水平。</description>
+    </item>
+    
+    <item>
+      <title>技能树升级史</title>
+      <link>https://timegg.top/posts/20210114-skilltree/</link>
+      <pubDate>Thu, 14 Jan 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20210114-skilltree/</guid>
+      <description>想当一个全栈游戏开发者要考虑的东西很多，需要自己实现编程、美术、音乐、设计等等，混合了多方面的技能。所以在这个项目开始的时候，来捋一下自己的技能树，看看自己能做哪些部分，哪些部分还需要努力。</description>
+    </item>
+    
     <item>
       <title>鸽子理论</title>
       <link>https://timegg.top/posts/20210108-pigeon/</link>
