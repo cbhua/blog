@@ -6,7 +6,16 @@
     <description>Recent content on TIMEGG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 16 Feb 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Feb 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>正态模拟人生</title>
+      <link>https://timegg.top/posts/20210224-life/</link>
+      <pubDate>Wed, 24 Feb 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20210224-life/</guid>
+      <description>如果我们所经历的每件事情都可以用一个标准去衡量其好坏程度，比如让我们开心的事情，也就是好事，我们给予这件事情正值；让我们难过的事情我们给予其负值。那么将我们所经历的所有事情对应的值加起来，这个值应该遵循中心极限定理：大家的值服从正态分布，绝大部分人的值差异不大，分布在正态分布的中间部分。</description>
+    </item>
+    
     <item>
       <title>Minecraft 联机服务器终极教程</title>
       <link>https://timegg.top/posts/20210216-minecraft/</link>
