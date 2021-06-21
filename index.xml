@@ -6,7 +6,16 @@
     <description>Recent content on TIMEGG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 07 May 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Jun 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的近况</title>
+      <link>https://timegg.top/posts/20210620-update/</link>
+      <pubDate>Sun, 20 Jun 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20210620-update/</guid>
+      <description>关于最近好久网站为什么没有更新，还有最近我在做什么。同时总结一下上半年的成果，还有下半年的思考和安排。2021 已经过去一半了，看看自己做得怎么样了。</description>
+    </item>
+    
     <item>
       <title>拉普拉斯兽的逃逸</title>
       <link>https://timegg.top/posts/20210408-laplace/</link>
