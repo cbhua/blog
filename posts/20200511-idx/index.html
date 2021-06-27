@@ -233,7 +233,7 @@ xxxx     unsigned byte   ??               pixel
 </span><span class="s1">- IDX1: labels.
 </span><span class="s1">&#39;&#39;&#39;</span>
 
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">struct</span>
 <span class="kn">from</span> <span class="nn">torch.utils</span> <span class="kn">import</span> <span class="n">data</span>
 <span class="kn">from</span> <span class="nn">torchvision</span> <span class="kn">import</span> <span class="n">transforms</span>
@@ -269,7 +269,7 @@ xxxx     unsigned byte   ??               pixel
         <span class="bp">self</span><span class="o">.</span><span class="n">label_fmt</span> <span class="o">=</span> <span class="s1">&#39;&gt;B&#39;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">label_fmt_csize</span> <span class="o">=</span> <span class="n">struct</span><span class="o">.</span><span class="n">calcsize</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">label_fmt</span><span class="p">)</span>
 
-        <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Create train dataset successfully. </span><span class="se">\n</span><span class="s2">    -&gt; Number of image: </span><span class="si">%d</span><span class="s2"> </span><span class="se">\n</span><span class="s2">    -&gt; Size of image: </span><span class="si">%d</span><span class="s2"> * </span><span class="si">%d</span><span class="se">\n</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">len</span><span class="p">,</span> <span class="n">num_cols</span><span class="p">,</span> <span class="n">num_rows</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Create train dataset successfully. </span><span class="se">\n</span><span class="s2">    -&gt; Number of image: </span><span class="si">%d</span><span class="s2"> </span><span class="se">\n</span><span class="s2">    -&gt; Size of image: </span><span class="si">%d</span><span class="s2"> * </span><span class="si">%d</span><span class="se">\n</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">len</span><span class="p">,</span> <span class="n">num_cols</span><span class="p">,</span> <span class="n">num_rows</span><span class="p">))</span>
 
 
     <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
