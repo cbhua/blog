@@ -6,7 +6,16 @@
     <description>Recent content in 教程文档 on TIMEGG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 25 Mar 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/tags/%E6%95%99%E7%A8%8B%E6%96%87%E6%A1%A3/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Jun 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/tags/%E6%95%99%E7%A8%8B%E6%96%87%E6%A1%A3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>砥石与刚刃</title>
+      <link>https://timegg.top/posts/20210627-vim/</link>
+      <pubDate>Sun, 27 Jun 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20210627-vim/</guid>
+      <description>“磨刀不误砍柴功”，“工欲善其事，必先利其器”等等。这样的俗语强调我们在做事情的时候应该寻找到一个适合的工具，来帮助我们高效地完成任务。最近集中学习了 Vim 的使用，有种相见恨晚的感觉，我认为每个追求极致效率的人都应该尝试一下 Vim.</description>
+    </item>
+    
     <item>
       <title>标点符号使用论</title>
       <link>https://timegg.top/posts/20210325-sign/</link>

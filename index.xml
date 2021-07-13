@@ -6,7 +6,34 @@
     <description>Recent content on TIMEGG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 20 Jun 2021 20:24:28 +0800</lastBuildDate><atom:link href="https://timegg.top/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Jul 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自下而上</title>
+      <link>https://timegg.top/posts/20210710-evolution/</link>
+      <pubDate>Sat, 10 Jul 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20210710-evolution/</guid>
+      <description>这是关于 Matt Ridle 的作品《自下而上》的读书笔记。这本书尝试使用自下向上这样的过程来描述社会中的各个方面：它是渐进式的演变，既不是痉挛式的跳跃，也不是散漫的停滞。它是一个“永久的进行过程——转瞬即逝、动态、混乱、富有成效、可望而不可即、自下而上。”</description>
+    </item>
+    
+    <item>
+      <title>一是无限产品发布会</title>
+      <link>https://timegg.top/posts/20210701-oneisfinite/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20210701-oneisfinite/</guid>
+      <description>这是一篇和科学完全不挂钩的脑洞文章。欢迎来到一是无限产品发布会的现场，我们将要在今天的发布会上发布一款基于量子纠缠的无限复制产品，它可以实现只用一个轴体就可以使用整块键盘、只用一个晶体管就可以运行整个 CPU，机不可失，为什么不来试试。</description>
+    </item>
+    
+    <item>
+      <title>砥石与刚刃</title>
+      <link>https://timegg.top/posts/20210627-vim/</link>
+      <pubDate>Sun, 27 Jun 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20210627-vim/</guid>
+      <description>“磨刀不误砍柴功”，“工欲善其事，必先利其器”等等。这样的俗语强调我们在做事情的时候应该寻找到一个适合的工具，来帮助我们高效地完成任务。最近集中学习了 Vim 的使用，有种相见恨晚的感觉，我认为每个追求极致效率的人都应该尝试一下 Vim.</description>
+    </item>
+    
     <item>
       <title>2009 年 7 月，长垣，暑假。</title>
       <link>https://timegg.top/album/200907_chuangyuan/</link>
