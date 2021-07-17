@@ -6,7 +6,16 @@
     <description>Recent content in Posts on TIMEGG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 10 Jul 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Jul 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>当个云玩家</title>
+      <link>https://timegg.top/posts/20210717-game/</link>
+      <pubDate>Sat, 17 Jul 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20210717-game/</guid>
+      <description>谁不想随时随地打开任何一个设备就可以畅玩 3A 大作呢，云游戏这个理念给大家带来了无限的可能。这里是一篇比较独特的云游戏平台搭建经验分享，在这篇教程里面我们选择全部通过远程连接的方式，在 Linux 平台上搭建云游戏平台。”</description>
+    </item>
+    
     <item>
       <title>自下而上</title>
       <link>https://timegg.top/posts/20210710-evolution/</link>

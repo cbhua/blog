@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Chuanbo" />
+	
+	
+	
+	<title>当个云玩家 ｜ TIMEGG</title>
+	
+    
+    
+    <meta name="description" content="谁不想随时随地打开任何一个设备就可以畅玩 3A 大作呢，云游戏这个理念给大家带来了无限的可能。这里是一篇比较独特的云游戏平台搭建经验分享，在这篇教程里面我们选择全部通过远程连接的方式，在 Linux 平台上搭建云游戏平台。”" />
+    
+
+    
+    
+    <meta name="keywords" content="Hugo, theme, zozo" />
+    
+
+	
+    
+    <link rel="shortcut icon" href="https://timegg.top/images/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://timegg.top/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://timegg.top/css/zozo.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://timegg.top/css/highlight.css" />
+
+    
+    
+</head>
+
+<body>
+    <div class="main animate__animated animate__fadeInDown">
+        <div class="nav_container animated fadeInDown">
+    <div class="site_nav" id="site_nav">
+        <ul>
+            
+            <li>
+                <a href="/">主页</a>
+            </li>
+            
+            <li>
+                <a href="/posts/">归档</a>
+            </li>
+            
+            <li>
+                <a href="/tags/">标签</a>
+            </li>
+            
+            <li>
+                <a href="/links/">链接</a>
+            </li>
+            
+            <li>
+                <a href="/about/">关于</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="menu_icon">
+        <a id="menu_icon"><i class="ri-menu-line"></i></a>
+    </div>
+</div>
+        <div class="header animated fadeInDown">
+    <div class="site_title_container">
+        <div class="site_title">
+            <h1>
+                <a href="https://timegg.top/">
+                    <span>TIMEGG</span>
+                </a>
+            </h1>
+        </div>
+        <div class="description">
+            <p class="sub_title">放进时光蛋里。</p>
+            <div class="my_socials">
+                
+                
+                <a href="https://github.com/cbhua" title="github" target="_blank"><i class="ri-github-fill"></i></a>
+                
+                
+                
+                <a href="%20" title="instagram" target="_blank"><i class="ri-instagram-fill"></i></a>
+                
+                
+                
+                <a href="https://twitter.com/huachuanbo" title="twitter" target="_blank"><i class="ri-twitter-fill"></i></a>
+                
+                
+                
+                <a href="https://weibo.com/u/6177306082" title="weibo" target="_blank"><i class="ri-weibo-fill"></i></a>
+                
+                
+                <a href="https://timegg.top/index.xml" type="application/rss+xml" title="rss" target="_blank"><i
+                        class="ri-rss-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="content">
+            <div class="post_page">
+                <div class="post animate__animated animate__fadeInDown">
+                    <div class="post_title post_detail_title">
+                        <h2><a href='/posts/20210717-game/'>当个云玩家</a></h2>
+                        <span class="date">2021.07.17</span>
+                    </div>
+                    <div class="post_content markdown"><p>自从最早 2009 Onlive 公司提出云游戏的概念之后，已经十几年过去了，直到前两年，包括 Google 在内的各种互联网公司开始了云游戏的部署。</p>
+<p>我之前对云游戏了解不多，直到前一阵子搜索了一下突然发现原来云游戏的市场已经不小了，不过再仔细看一看，发现这些平台的游戏生态还很欠缺，大部分平台提供的游戏都还停留在网游的层面，真正可以畅玩 3A 的还是少数。毕竟游戏版权摆在那里。</p>
+<p>最近平常用来玩游戏的笔记本内存出了点故障，导致日常 Windows 蓝屏，而且这个笔记本的内存还是板载的，也没办法自己修，所以只能找其他的解决方法了。想到实验室我的服务器上面有一张 3090 的显卡，于是就考虑能不能把实验室的服务器配置成一个云游戏主机，然后之后就可以用串流玩游戏了。</p>
+<p>如果只是普通地配置云游戏服务器就很简单了，选择 Windows 平台，下载 Moonlight 或者 Steam Link 工具直接运行就可以了，傻瓜式配置。但是我的情况就比较特殊，一是我的服务器用的是 Pop OS，Ubuntu 的分支，这个是做 Research 要用的，再怎么说我也不至于为了玩游戏把系统给重装了，所以操作系统就只能是基于 Linux 的了；二是我的服务器没有配置 GUI，所有东西必须通过 Terminal 来搞定，这个之后给我带来了不小的麻烦。</p>
+<p>基于这个情况我思考了几种解决方案，一种是在 Pop OS 上安装 Windows 虚拟机，然后把 GPU 穿透给虚拟机用，在 Windows 上配置串流 ；另一种是尝试寻找 Linux 上面的原生解决方案。</p>
+<p>这两种方法我都试了试，因为和我同样情况的人很少，所以资料搜索起来很麻烦，中间遇到很多问题还都要自己找解决方案，辛苦折腾过来之后决定久违地发个简明的过程，如果极少数小伙伴和我有同样的情况就可以参考一下，顺利升级为云玩家。因为我自己也没找到很优雅的方式来解决这个问题，所以就不写成教程的形式了。</p>
+<p>寻找解决方案就要从简单的开始，所以我们从寻找 Linux 原生解决方案开始介绍。</p>
+<h2 id="原生解决方案">原生解决方案</h2>
+<p>说实话我想要用实验室主机主要也就是为了用这个显卡，所以其实一个简单粗暴的方法就是远程显卡计算，不过这个方法也简单粗暴地被否决了，其实稍微思考一下就知道远程传输速度根本不足以满足游戏的 GPU 运算，只能说停留在美好的幻想上面，游戏运行还是要和 GPU 运算放在一起的。</p>
+<p>现在主流的游戏串流解决方案有两个，Moonlight 和 Steam Link。Moonlight 支持各平台的客户端，但是只提供 Windows 平台的服务端，Steam Link 也是类似的情况。想想也非常有道理，毕竟绝大部分游戏确实只能在 Windows 平台运行。</p>
+<p>那 Linux 上就没有解决方法了吗？在搜索 Moonlight Linux Host 的过程中我发现了一个工具叫 Sunshine，标明它是 Gamestream host for Moonlight，应该是 Moonlight 的分支版本。这个工具提供 Linux 平台的 Host 配置，似乎可以作为一个解决方案。</p>
+<blockquote>
+<p><a href="https://github.com/loki-47-6F-64/sunshine">Sunshine - A gamestream host for Moonlight</a></p>
+</blockquote>
+<p>先提前打好预防针，这个方法在我这里走到最后一步所有都完成了但是走不通了，其实当时随便想一想就能意识到一个问题：如果只是简单的安装一个串流工具，那么游戏运行在哪里呢？最后还是需要 Windows…… 这个部分我还需要额外去了解，但是既然顺利走到最后一步了，万一之后可行了就很有价值。</p>
+<p><strong>安装</strong></p>
+<p>那就开始施工，首先是工具的安装，因为还是测试版本，中间问题不少。他们文档教程上面是手动编译安装的，<code>clone</code> 他们的仓库之后再 <code>cmake</code> 编译。但是他们在 Release 里面也有提供已经编译好的 <code>deb</code> 包。</p>
+<p>这个时候就有两个选择了，这个 Sunshine 只有一套 Tutorial，是针对手动编译配置的，如果我们直接使用了他们编译好的 <code>deb</code> 包，很多配置需要我们自己去找路径去修改，但是同时手动编译过程中可能会遇到问题，这个问题也不太好解决。我的推荐是先尽可能手动编译着来，如果编译过程中出现了问题无法解决，之后再考虑用他们提供的 <code>deb</code> 包。</p>
+<p><strong>配置</strong></p>
+<p>说来惭愧，我是直接用他们的 <code>deb</code> 包的，编译过程中出了一点问题所以放弃了。对于配置部分如果是手动编译的那么文件路径就比较清楚了，都在 Clone 的包里面，按照文档上面的修改就可以了。如果是安装的 <code>deb</code>，那么这几个配置文件需要用 <code>whereis</code> 去定位，参数配置一般在 <code>/etc/sunshine</code> 这个位置下的 <code>sunshine.conf</code>，然后 <code>sunshine.service</code> 一般在 <code>/usr/lib/systemd/user/</code> 这个位置下。</p>
+<p>另外需要提的是在设置用户组的时候，文档中给出的名字是 <code>85-sunshine-input.rules</code>，如果是 <code>deb</code> 安装的 sunshine 那么这个文件名字似乎会不一样，在同路径下会出现两个，总之保持两个文件内容一样就可以了。</p>
+<p>还有，在运行之前记着先提前创建好连接的账户，通过 <code>sunshine —creds new_username new_userpasswd</code>，这个在文档中没有提。其他的按照文档配置就没问题了。</p>
+<p><strong>运行</strong></p>
+<p>运行阶段问题就很多了，如果是 <code>deb</code> 安装的就可以直接运行 sunshine，如果你和我一样都是没有在服务器安装 GUI 的，那么这一步肯定会遇到一个问题叫 <code>Could not open x11 display for keyboard</code> ，这个问题顾名思义就是 Sunshine 它一定要有 Display 输出才能运行，其实我没搞懂他们这么设计的原因是什么，但是这里只能顺着它来。</p>
+<p>想一想我也不能为了解决这么个小问题又给我服务器装个 GUI 吧，所以就决定用 X11 Forward 来解决这个问题，流程还比较简单，在服务器上面装一下 X11 Forward，如果是比较新版的系统应该会自带，然后在本地电脑上运行 <code>ssh</code> 连接的时候加一个 <code>-X</code> 就会启动 X11 Forward 了。通过 X11 Forward 连接之后再次运行 <code>sunshine</code> 就没有上面这个错误了。</p>
+<p>但是没想到吧，这时候大概率还有另外一个错误 <code>Could not create Sunshine Mouse: Permission denied</code>，幸好这个问题在 Issues 里面有人提到，可以参考<a href="https://github.com/loki-47-6F-64/sunshine/issues/52">这个</a>去解决。</p>
+<p><strong>连接</strong></p>
+<p>如果前面所有问题解决地一切顺利的话，那么 Sunshine 也终于在服务器上开始运行了，下面就是拿另一台设备用 Moonlight 连接了。如果你是通过 <code>deb</code> 安装的，那么这个过程中可能会遇到一个很棘手的问题，在客户端尝试连接服务器的时候需要在服务器上输入 PIN 码，但是这个 PIN 码输入的网页会因为权限不足而无法打开，这个问题在 GitHub Issues 上面的解决方案是不正确的，不要参考<a href="https://github.com/loki-47-6F-64/sunshine/issues/107">这个</a>。</p>
+<p>正确的解决方案是修改 <code>sunshine.conf</code> 文件，里面有两个参数 <code>origin_pin_allowed</code> 和 <code>origin_web_ui_allowed</code>，把这两个权限给改成 <code>lan</code> 或者 <code>wan</code>。我翻了翻他们的 Repo 中的 Config 文件发现也是没有修改的，估计这个问题只在第三方连接的时候可能会遇到。文档中并没有提到这个问题。</p>
+<p>解决到这个地步总算是可以正常连接了，但是连接之后如何运行游戏我目前还没有思路，估计要找人问一问，文档内容太少了已经不足以参考。所以这个 Sunshine 的解决方案到这里就先搁置了，如果之后可以找到合理运行游戏的方法，那么这个原生解决方案就可以说得上是最优雅的解决方案了。</p>
+<h2 id="虚拟机解决方案">虚拟机解决方案</h2>
+<p>原生解决方案目前没有结果的话就只能曲线救国了，在 Linux 上安装 Windows 虚拟机然后显卡隧穿去运行游戏。这里的虚拟机安装我选了 KVM。</p>
+<p>使用 KVM 安装 Windoors 虚拟机的教程很多，这里只提一下如果远程服务器没有 GUI 的情况。因为 Windows 的安装必须有 GUI 界面，否则无法继续，所以可以用 VNC 方法来远程窗口继续，在用 <code>virt-install</code> 安装的时候添加一行参数 <code>—graphics vnc,password=new_passward,port=5910</code>。</p>
+<p>除此之外有一个非常重要的问题需要注意，关于硬盘驱动的版本问题，也就是 <code>virtio</code> 的版本，这个需要和 Windows 的版本匹配，并且这里一定要使用 <code>amd64</code> 的 <code>vfd</code> 文件，即使你的 CPU 是 Intel 的。你可以在<a href="https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/">这里</a>找到所有版本的列表，如果安装最新的 Windows 10 就要找最新的匹配的版本。</p>
+<p>另一个问题是关于服务器端到了需要 GUI 的时候中断，我们在本地通过 VNC 连接接力安装的问题。我们需要在本地运行端口映射，因为 <code>virt-install</code> 创建的 VNC 窗口绑定在 <code>127.0.0.1</code> 上，所以我们在本地的 Terminal 上运行 <code>ssh -L 5910:127.0.0.1:5910 &lt;user_name&gt;@&lt;server ip&gt;</code>，运行之后这个 Terminal 就连接到了远程服务器，注意这个 Terminal 在 VNC 使用期间<strong>不能断开连接</strong>。</p>
+<p>之后的内容就是顺着安装 Windows 了，如果前面 virtio 驱动版本选择没问题的话，在磁盘分配的时候就可以从 A 盘读取可用的驱动然后继续安装了，如果版本不对这里就搜索不到可用的驱动，需要把本次安装停掉然后重新选择正确的 virtio 再来。这个过程也会涉及一些重复启动的问题，可以参考<a href="https://askubuntu.com/questions/160152/virt-install-says-name-is-in-use-but-virsh-list-all-is-empty-where-is-virt-i">这篇文章</a>来解决。</p>
+<p>如果上面问题解决地一切顺利那么 Windows 虚拟机应该就安装完成了，但是虚拟机无法调用宿机的显卡，我们需要做显卡隧穿，把显卡给虚拟机用。这个过程也有很多教程了，而且都是无 GUI 处理的，所以我们也可以远程来做这个。</p>
+<p>这个解决方法最大的问题是麻烦，我们需要让 GPU 在虚拟机和宿机之间反复切换，而且这个过程可能会有这样那样的问题，总感觉并不是一个很好的解决方案。另一个问题是如果准备通过这种方式来搞，那么得保证宿机上面有两个以上的显卡（核显也可以），因为显卡给虚拟机用了，宿机就没有显卡可以用了。</p>
+<p>总之既然到这一步了也没有回头的路了，既然 Windows 都已经弄好了，那么剩下的就可以开始傻瓜式配置了，也没什么好说的了。</p>
+<h2 id="结论和测试">结论和测试</h2>
+<p>因为我的服务器其实就在学校，我住在学校边上，所以网络质量还挺不错，通过 Moonlight 连接的话延迟可以到 20ms～30ms 之间，因为我也不玩 FPS，所以这个延迟还是可以接受，画质的话因为我的屏幕才 1080p，所以就保持在 1080，然后帧数的就 60fps，说实话是很浪费 3090 的算力，但是外设跟不上也没办法，毕竟本身这个显卡也不是让我来玩游戏的（）。</p>
+<p>关于云游戏服务器的搭建我还需要继续探索探索，目前还是不够优雅的解决方案。如果之后可以找到更好的解决方案的话会再更新一下本篇文章。希望大家都能找到最好的游戏解决方案，喜欢的话也来做个云玩家。</p>
+</div>
+                    <div class="post_footer">
+                        
+                        <div class="meta">
+                            <div class="info">
+                                <span class="field tags">
+                                    <i class="ri-stack-line"></i>
+                                    
+                                    <a href="https://timegg.top/tags/%E6%95%99%E7%A8%8B%E6%96%87%E6%A1%A3/">教程文档</a>
+                                    
+                                    <a href="https://timegg.top/tags/%E5%BC%80%E7%AE%B1%E6%B5%8B%E8%AF%84/">开箱测评</a>
+                                    
+                                    <a href="https://timegg.top/tags/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/">开发笔记</a>
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                
+<div class="doc_comments">
+    <div class="comments_block_title">发表评论</div>
+    <div id="vcomments"></div>
+</div>
+
+<link rel="stylesheet" href="https://timegg.top/css/comments.css" />
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<script type="text/javascript">
+    new Valine({
+        el: '#vcomments',
+        appId: '12HKA37DAChBWQgBC7PA4eBw-gzGzoHsz',
+        appKey: 'UxknCfg5bWmkI2eGar5hDxWq',
+        placeholder: ' ',
+        visitor: 'true',
+    })
+</script>
+                
+            </div>
+        </div>
+    </div>
+    <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
+    <footer class="footer">
+    <div class="powered_by">
+        <a href="https://timegg.top">TIMEGG © 2017 - 2021,</a>
+        <a href="http://www.gohugo.io/">Powered by Hugo.</a>
+    </div>
+
+    <div class="footer_slogan">
+        <span>重拾写作的乐趣。</span>
+    </div>
+</footer>
+    <script src="https://timegg.top/js/jquery-3.5.1.min.js"></script>
+<link href="https://timegg.top/css/fancybox.min.css" rel="stylesheet">
+<script src="https://timegg.top/js/fancybox.min.js"></script>
+<script src="https://timegg.top/js/zozo.js"></script>
+
+
+<script type="text/javascript" async
+    src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+                processEscapes: true,
+                processEnvironments: true,
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                TeX: {
+                    equationNumbers: { autoNumber: "AMS" },
+                    extensions: ["AMSmath.js", "AMSsymbols.js"]
+                }
+            }
+        });
+
+        MathJax.Hub.Queue(function () {
+            
+            
+            
+            var all = MathJax.Hub.getAllJax(), i;
+            for (i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+<style>
+    code.has-jax {
+        font: inherit;
+        font-size: 100%;
+        background: inherit;
+        border: inherit;
+        color: #515151;
+    }
+</style>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-164502321-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>
