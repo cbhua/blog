@@ -117,7 +117,7 @@
 <li><strong>Input</strong>: 路径：各字母出现频率（含 Space），保存于 CSV 文件中</li>
 <li><strong>Output</strong>: 字母的信息熵</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">文件目录</span><span class="p">:</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="err">文件目录</span><span class="p">:</span>
 <span class="n">information_theory_experiment_test1</span>
  <span class="o">|---</span> <span class="n">entropy_cal</span><span class="o">.</span><span class="n">py</span>
  <span class="o">|---</span> <span class="n">letter_frequence</span><span class="o">.</span><span class="n">csv</span>
@@ -126,7 +126,7 @@
 
 <span class="s2">&#34;&#34;&#34;Test 1&#34;&#34;&#34;</span>
 
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">math</span>
 
 <span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -157,7 +157,7 @@
 <li><strong>Input</strong>: 路径：各字母出现频率（含 Space），信道矩阵，分别保存于 CSV 文件中</li>
 <li><strong>Output</strong>: 字母的噪音熵和互信息</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">文件目录</span><span class="p">:</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="err">文件目录</span><span class="p">:</span>
 <span class="n">information_theory_experiment_test2</span>
  <span class="o">|---</span> <span class="n">entropy_cal</span><span class="o">.</span><span class="n">py</span>
  <span class="o">|---</span> <span class="n">letter_frequence</span><span class="o">.</span><span class="n">csv</span>
@@ -167,8 +167,8 @@
 
 <span class="s2">&#34;&#34;&#34;Test 2&#34;&#34;&#34;</span>
 
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">math</span>
 
 <span class="n">conditional_entropy</span> <span class="o">=</span> <span class="mi">0</span>
@@ -201,8 +201,8 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="k">continue</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The conditional entropy is: &#39;</span><span class="p">,</span> <span class="n">conditional_entropy</span><span class="p">,</span> <span class="s1">&#39; bit&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The mutual information is: &#39;</span><span class="p">,</span> <span class="n">mutual_information</span><span class="p">,</span> <span class="s1">&#39;bit&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;The conditional entropy is: &#39;</span><span class="p">,</span> <span class="n">conditional_entropy</span><span class="p">,</span> <span class="s1">&#39; bit&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;The mutual information is: &#39;</span><span class="p">,</span> <span class="n">mutual_information</span><span class="p">,</span> <span class="s1">&#39;bit&#39;</span><span class="p">)</span>
 </code></pre></div><p>在实现方面和 Test 1 没有什么太大的差距，主要在于信息论的算法上面。</p>
 <h2 id="test-3">Test 3</h2>
 <p><strong>实验内容</strong>：给出各英文字母的出现概率，构造 0, 1, 2 Huffman 编码，并将下述一句话进行 Huffman 编码</p>
@@ -213,7 +213,7 @@
 <li><strong>Input</strong>: 各字母出现频率（含 Space），欲 Huffman 编码的句子</li>
 <li><strong>Output</strong>: Huffman 编码结果（<strong>使用结果编码句子在这里暂时省略</strong>，Test 5 会提到）</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">文件目录</span><span class="p">:</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="err">文件目录</span><span class="p">:</span>
 <span class="n">information_theory_experiment_test3</span>
  <span class="o">|---</span> <span class="n">huffman_coding</span><span class="o">.</span><span class="n">py</span>
  <span class="o">|---</span> <span class="n">letter_frequence</span><span class="o">.</span><span class="n">csv</span>
@@ -224,10 +224,10 @@
 <span class="s2">&#34;&#34;&#34;Test 3&#34;&#34;&#34;</span>
 
 <span class="kn">import</span> <span class="nn">queue</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
 
 <span class="k">class</span> <span class="nc">HuffmanNode</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">root</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">root</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="n">left</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">right</span> <span class="o">=</span> <span class="n">right</span>
     <span class="k">def</span> <span class="nf">children</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -266,11 +266,11 @@
 
 <span class="n">code</span> <span class="o">=</span> <span class="n">walk_tree</span><span class="p">(</span><span class="n">node</span><span class="p">)</span> 
 
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
     <span class="k">try</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;</span><span class="si">{:6.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">code</span><span class="p">[</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">]])</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;{:6.2f}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">code</span><span class="p">[</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">]])</span>
     <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
         <span class="k">continue</span>
 </code></pre></div><h2 id="test-4">Test 4</h2>
 <p><strong>实验内容</strong>：对给出的信道转移矩阵 Q=(q(y|x))，应用迭代法计算信道容量 C</p>
@@ -280,7 +280,7 @@
 <li><strong>Input</strong>: 各字母出现频率（含 Space），信道转移矩阵</li>
 <li><strong>Output</strong>: 信道容量</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">文件目录</span><span class="p">:</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="err">文件目录</span><span class="p">:</span>
 <span class="n">information_theory_experiment_test4</span>
  <span class="o">|---</span> <span class="n">channel_capacity_cal</span><span class="o">.</span><span class="n">py</span>
  <span class="o">|---</span> <span class="n">letter_frequence</span><span class="o">.</span><span class="n">csv</span>
@@ -291,8 +291,8 @@
 
 <span class="s2">&#34;&#34;&#34;Test 4 - Error Example&#34;&#34;&#34;</span>
 
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">math</span>
 
 
@@ -329,17 +329,17 @@
             <span class="n">tem_precision_y</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">/=</span> <span class="nb">sum</span>
         <span class="n">channel_cap2</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
 
-        <span class="nb">print</span><span class="p">(</span><span class="n">channel_cap2</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">channel_cap2</span><span class="p">)</span>
         <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">channel_cap1</span> <span class="o">-</span> <span class="n">channel_cap2</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">f</span><span class="p">:</span>
             <span class="n">channel_cap1</span> <span class="o">=</span> <span class="n">channel_cap2</span>
             <span class="n">tem_precision_x</span> <span class="o">=</span> <span class="n">tem_precision_y</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;the iterations times is: &#34;</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span>
+            <span class="k">print</span><span class="p">(</span><span class="s2">&#34;the iterations times is: &#34;</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span>
             <span class="k">break</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">channel_cap1</span> <span class="o">=</span> <span class="n">channel_cap2</span>
             <span class="n">tem_precision_x</span> <span class="o">=</span> <span class="n">tem_precision_y</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="n">tem_precision_x</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">tem_precision_x</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">channel_cap1</span>
 
 
@@ -350,7 +350,7 @@
 <span class="n">precision</span> <span class="o">=</span> <span class="mf">0.001</span>
 <span class="n">channel_capacity_cal</span><span class="p">(</span><span class="n">letter_fre</span><span class="p">,</span> <span class="n">channel_transition_probability</span><span class="p">,</span> <span class="n">precision</span><span class="p">,</span> <span class="n">max_iterations</span><span class="p">)</span>
 </code></pre></div><p>在参考了 BUPT Zhengyuan Zhu 的处理方法之后进行了改进，但是这里存在的比较大的问题是多次迭代的转移矩阵需要手动计算，可以在此方法之前再添加 math 的方法以实现转移矩阵的计算。</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 
 <span class="n">letter_fre</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;letter_frequency.csv&#39;</span><span class="p">)</span>
 <span class="n">channel_transition_probability</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;channel_transition_probability.csv&#39;</span><span class="p">)</span>
@@ -358,7 +358,7 @@
 
 <span class="k">def</span> <span class="nf">initiate_prob_distrib</span><span class="p">(</span><span class="n">p</span><span class="p">):</span>
     <span class="n">p_x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="n">p</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span> <span class="o">/</span> <span class="n">p</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;初始化概率分布为:</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">p_x</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;初始化概率分布为:</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">p_x</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">p_x</span>
 
@@ -366,35 +366,35 @@
 
 <span class="k">def</span> <span class="nf">iteration</span><span class="p">(</span><span class="n">p_i</span><span class="p">,</span> <span class="n">p_ij</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
     <span class="n">q_j</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">p_i</span> <span class="o">*</span> <span class="n">p_ij</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;NO. &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34; iteration: q_j:</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">q_j</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;NO. &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34; iteration: q_j:</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">q_j</span><span class="p">)</span>
 
     <span class="n">alpha_i</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">p_ij</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">p_ij</span> <span class="o">/</span> <span class="n">q_j</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
     <span class="n">alpha_i</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">alpha_i</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;NO. &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34; iteration: alpha_i:</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">alpha_i</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;NO. &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34; iteration: alpha_i:</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">alpha_i</span><span class="p">)</span>
 
     <span class="n">u</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">alpha_i</span><span class="p">,</span> <span class="n">p_i</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;NO. &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34; iteration: u:</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">u</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;NO. &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34; iteration: u:</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">u</span><span class="p">)</span>
 
     <span class="n">I_L</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span><span class="n">u</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;NO. &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34; iteration: I_L:</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">I_L</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;NO. &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34; iteration: I_L:</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">I_L</span><span class="p">)</span>
 
     <span class="n">I_U</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">amax</span><span class="p">(</span><span class="n">alpha_i</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;NO. &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34; iteration: I_U:</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">I_U</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;NO. &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34; iteration: I_U:</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">I_U</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">I_U</span> <span class="o">-</span> <span class="n">I_L</span> <span class="o">&lt;</span> <span class="n">precision</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;capacity:</span><span class="se">\n</span><span class="s2"> &#34;</span><span class="p">,</span> <span class="n">I_L</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;input letter frequency:</span><span class="se">\n</span><span class="s2"> &#34;</span><span class="p">,</span> <span class="n">p_i</span><span class="p">)</span>
-        <span class="k">return</span> <span class="kc">True</span><span class="p">,</span> <span class="n">I_L</span><span class="p">,</span> <span class="n">p_i</span>
+        <span class="k">print</span><span class="p">(</span><span class="s2">&#34;capacity:</span><span class="se">\n</span><span class="s2"> &#34;</span><span class="p">,</span> <span class="n">I_L</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s2">&#34;input letter frequency:</span><span class="se">\n</span><span class="s2"> &#34;</span><span class="p">,</span> <span class="n">p_i</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">True</span><span class="p">,</span> <span class="n">I_L</span><span class="p">,</span> <span class="n">p_i</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">p_i</span> <span class="o">=</span> <span class="n">p_i</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">alpha_i</span><span class="p">)</span> <span class="o">/</span> <span class="n">u</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;No.&#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;Update Probability distributions:</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">p_i</span><span class="p">)</span>
-        <span class="k">return</span> <span class="kc">False</span><span class="p">,</span> <span class="n">p_i</span>
+        <span class="k">print</span><span class="p">(</span><span class="s2">&#34;No.&#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;Update Probability distributions:</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">p_i</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">False</span><span class="p">,</span> <span class="n">p_i</span>
 
 <span class="n">flag</span><span class="p">,</span> <span class="n">I_L</span><span class="p">,</span> <span class="n">p_i</span> <span class="o">=</span> <span class="n">iteration</span><span class="p">(</span><span class="n">p_x</span><span class="p">,</span> <span class="n">channel_transition_probability</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 
 <span class="n">ans_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="p">(</span><span class="n">channel_transition_probability1</span><span class="p">,</span> <span class="n">channel_transition_probability2</span><span class="p">,</span> <span class="n">channel_transition_probability3</span><span class="p">,</span> <span class="n">channel_transition_probability4</span><span class="p">):</span>
-    <span class="n">flag</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">flag</span> <span class="o">=</span> <span class="bp">False</span>
     <span class="n">p_x</span> <span class="o">=</span> <span class="n">initiate_prob_distrib</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
     <span class="n">k</span> <span class="o">=</span> <span class="mi">1</span>
     <span class="k">while</span> <span class="ow">not</span> <span class="n">flag</span><span class="p">:</span>
@@ -406,8 +406,8 @@
             <span class="n">ans_dict</span><span class="p">[</span><span class="n">ans</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp_p</span>
 
 <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">ans_dict</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;capacity：&#34;</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;input letter frequency：</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">v</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;capacity：&#34;</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;input letter frequency：</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">v</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
 </code></pre></div><h2 id="test-5">Test 5</h2>
 <p><strong>实验内容</strong>：</p>
 <ol>
@@ -428,16 +428,16 @@
 </li>
 </ol>
 <p>Test 5 在整合前面的实验之后加入信道编码部分。</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">文件目录</span><span class="p">:</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="err">文件目录</span><span class="p">:</span>
 <span class="n">information_theory_experiment_test5</span>
- <span class="o">|---</span> <span class="n">run</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span> <span class="n">主程序</span>
- <span class="o">|---</span> <span class="n">huffman_coding</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span> <span class="n">实现</span> <span class="n">Huffman</span> <span class="n">编码</span>
- <span class="o">|---</span> <span class="n">hamming_coding</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span> <span class="n">实现</span> <span class="n">Hamming</span> <span class="n">编码</span>
- <span class="o">|---</span> <span class="n">hamming_decoding</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span> <span class="n">实现</span> <span class="n">Hamming</span> <span class="n">译码</span>
- <span class="o">|---</span> <span class="n">article</span><span class="o">.</span><span class="n">docx</span> <span class="o">-</span> <span class="n">编码文字文档</span>
- <span class="o">|---</span> <span class="n">hamming_coding</span><span class="o">.</span><span class="n">csv</span> <span class="o">-</span> <span class="n">生成矩阵</span>
- <span class="o">|---</span> <span class="n">hamming_decoding</span><span class="o">.</span><span class="n">csv</span> <span class="o">-</span> <span class="n">校验矩阵</span>
- <span class="o">|---</span> <span class="n">letter_frequecny</span><span class="o">.</span><span class="n">csv</span> <span class="o">-</span> <span class="n">字母频率</span>
+ <span class="o">|---</span> <span class="n">run</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span> <span class="err">主程序</span>
+ <span class="o">|---</span> <span class="n">huffman_coding</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span> <span class="err">实现</span> <span class="n">Huffman</span> <span class="err">编码</span>
+ <span class="o">|---</span> <span class="n">hamming_coding</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span> <span class="err">实现</span> <span class="n">Hamming</span> <span class="err">编码</span>
+ <span class="o">|---</span> <span class="n">hamming_decoding</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span> <span class="err">实现</span> <span class="n">Hamming</span> <span class="err">译码</span>
+ <span class="o">|---</span> <span class="n">article</span><span class="o">.</span><span class="n">docx</span> <span class="o">-</span> <span class="err">编码文字文档</span>
+ <span class="o">|---</span> <span class="n">hamming_coding</span><span class="o">.</span><span class="n">csv</span> <span class="o">-</span> <span class="err">生成矩阵</span>
+ <span class="o">|---</span> <span class="n">hamming_decoding</span><span class="o">.</span><span class="n">csv</span> <span class="o">-</span> <span class="err">校验矩阵</span>
+ <span class="o">|---</span> <span class="n">letter_frequecny</span><span class="o">.</span><span class="n">csv</span> <span class="o">-</span> <span class="err">字母频率</span>
 <span class="c1">#!/usr/bin/env python3</span>
 <span class="c1"># -*- coding: utf-8 -*-</span>
 
@@ -456,14 +456,14 @@
 
 <span class="s2">&#34;&#34;&#34;Test_5/huffman_coding.py&#34;&#34;&#34;</span>
 
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">docx</span>
 
 
 <span class="k">def</span> <span class="nf">huffman_coding</span><span class="p">(</span><span class="n">letter_fre</span><span class="p">):</span>
     <span class="n">letter_fre</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;letter_frequency.csv&#39;</span><span class="p">)</span>
-    <span class="n">file</span> <span class="o">=</span> <span class="n">docx</span><span class="o">.</span><span class="n">opendocx</span><span class="p">(</span><span class="s2">&#34;article.docx&#34;</span><span class="p">)</span>
-    <span class="n">doc</span> <span class="o">=</span> <span class="n">docx</span><span class="o">.</span><span class="n">getdocumenttext</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+    <span class="nb">file</span> <span class="o">=</span> <span class="n">docx</span><span class="o">.</span><span class="n">opendocx</span><span class="p">(</span><span class="s2">&#34;article.docx&#34;</span><span class="p">)</span>
+    <span class="n">doc</span> <span class="o">=</span> <span class="n">docx</span><span class="o">.</span><span class="n">getdocumenttext</span><span class="p">(</span><span class="nb">file</span><span class="p">)</span>
     <span class="n">huffman_coding_result</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
     <span class="n">length</span> <span class="o">=</span> <span class="mi">0</span>
 
@@ -494,22 +494,22 @@
             <span class="n">letter_fre</span><span class="o">.</span><span class="n">iat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
         <span class="n">letter_fre</span><span class="o">.</span><span class="n">iat</span><span class="p">[</span><span class="n">flag</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">sum_tem</span><span class="p">)</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The huffman code of such letters are as follow: &#39;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;The huffman code of such letters are as follow: &#39;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">26</span><span class="p">):</span>
         <span class="n">length</span> <span class="o">+=</span> <span class="n">huffman</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">length</span><span class="p">()</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">huffman</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The average length of huffman code is: &#39;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">length</span> <span class="o">/</span> <span class="mi">27</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">huffman</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;The average length of huffman code is: &#39;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">length</span> <span class="o">/</span> <span class="mi">27</span><span class="p">)</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The sentence was translated to huffman code as follow: &#39;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;The sentence was translated to huffman code as follow: &#39;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">doc</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
         <span class="n">flag</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">97</span><span class="p">,</span> <span class="mi">122</span><span class="p">):</span>
             <span class="k">if</span> <span class="n">doc</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="nb">chr</span><span class="p">(</span><span class="n">j</span><span class="p">):</span>
-                <span class="nb">print</span><span class="p">(</span><span class="n">huffman</span><span class="p">[</span><span class="n">j</span> <span class="o">-</span> <span class="mi">96</span><span class="p">])</span>
+                <span class="k">print</span><span class="p">(</span><span class="n">huffman</span><span class="p">[</span><span class="n">j</span> <span class="o">-</span> <span class="mi">96</span><span class="p">])</span>
                 <span class="n">flag</span> <span class="o">=</span> <span class="mi">1</span>
         <span class="k">if</span> <span class="n">flag</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="n">huffman</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+            <span class="k">print</span><span class="p">(</span><span class="n">huffman</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">doc</span><span class="p">)):</span>
         <span class="n">tem</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">doc</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
@@ -520,7 +520,7 @@
         <span class="k">elif</span> <span class="n">tem</span> <span class="o">&gt;=</span> <span class="mi">97</span> <span class="o">&amp;</span> <span class="n">tem</span> <span class="o">&lt;=</span> <span class="mi">122</span><span class="p">:</span>
             <span class="n">huffman_coding_result</span> <span class="o">+=</span> <span class="n">huffman</span><span class="p">[</span><span class="n">tem</span> <span class="o">-</span> <span class="mi">96</span><span class="p">]</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;The result of huffman coding: &#34;</span> <span class="o">+</span> <span class="n">huffman_coding_result</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;The result of huffman coding: &#34;</span> <span class="o">+</span> <span class="n">huffman_coding_result</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">huffman_coding_result</span>
 <span class="c1">#!/usr/bin/env python3</span>
 <span class="c1"># -*- coding: utf-8 -*-</span>
@@ -528,8 +528,8 @@
 
 <span class="s2">&#34;&#34;&#34;Test_5/hamming_coding.py&#34;&#34;&#34;</span>
 
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">docx</span>
 
 
@@ -564,7 +564,7 @@
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">remainder</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
         <span class="n">hamming_coding_result</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="nb">int</span><span class="p">((</span><span class="n">code_length</span> <span class="o">-</span> <span class="n">remainder</span><span class="p">)</span> <span class="o">/</span> <span class="mi">4</span><span class="p">),</span> <span class="n">i</span><span class="p">])</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="n">hamming_coding_result</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">hamming_coding_result</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">s</span>
 <span class="c1">#!/usr/bin/env python3</span>
 <span class="c1"># -*- coding: utf-8 -*-</span>
@@ -572,8 +572,8 @@
 
 <span class="s2">&#34;&#34;&#34;Test_5/hamming_decoding.py&#34;&#34;&#34;</span>
 
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">docx</span>
 
 
@@ -620,7 +620,7 @@
             <span class="k">if</span> <span class="n">break_while</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
                 <span class="k">break</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="n">hamming_decoding_result</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">hamming_decoding_result</span><span class="p">)</span>
 </code></pre></div><p>经过测试之后发现经过校验矩阵之后，传输信息错误率在 0.01 之下，根据传输量趋于 0，即是信道编码的意义。</p>
 <h1 id="最后">最后</h1>
 <p>实验拿了满分，快乐。</p>

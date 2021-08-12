@@ -123,22 +123,22 @@
 </ul>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
 
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
 
-<span class="o">//</span> <span class="n">创建</span> <span class="n">DataFrame</span>
+<span class="o">//</span> <span class="err">创建</span> <span class="n">DataFrame</span>
 <span class="n">city_names</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s1">&#39;San Francisco&#39;</span><span class="p">,</span> <span class="s1">&#39;San Jose&#39;</span><span class="p">,</span> <span class="s1">&#39;Sacramento&#39;</span><span class="p">])</span>
 <span class="n">population</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="mi">852469</span><span class="p">,</span> <span class="mi">1015785</span><span class="p">,</span> <span class="mi">485199</span><span class="p">])</span>
 
 <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span> <span class="s1">&#39;City name&#39;</span><span class="p">:</span> <span class="n">city_names</span><span class="p">,</span> <span class="s1">&#39;Population&#39;</span><span class="p">:</span> <span class="n">population</span> <span class="p">})</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 
-<span class="o">//</span> <span class="n">访问数据</span>
+<span class="o">//</span> <span class="err">访问数据</span>
 <span class="n">cities</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span> <span class="s1">&#39;City name&#39;</span><span class="p">:</span> <span class="n">city_names</span><span class="p">,</span> <span class="s1">&#39;Population&#39;</span><span class="p">:</span> <span class="n">population</span> <span class="p">})</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">cities</span><span class="p">[</span><span class="s1">&#39;City name&#39;</span><span class="p">]))</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">cities</span><span class="p">[</span><span class="s1">&#39;City name&#39;</span><span class="p">]))</span>
 <span class="n">cities</span><span class="p">[</span><span class="s1">&#39;City name&#39;</span><span class="p">]</span>
 
-<span class="o">//</span> <span class="n">操作数据</span>
-<span class="n">population</span> <span class="o">/</span> <span class="mi">1000</span> <span class="o">//</span> <span class="n">Python</span> <span class="n">基本运算指令</span>
+<span class="o">//</span> <span class="err">操作数据</span>
+<span class="n">population</span> <span class="o">/</span> <span class="mi">1000</span> <span class="o">//</span> <span class="n">Python</span> <span class="err">基本运算指令</span>
 </code></pre></div><h3 id="机器学习基础概念">机器学习基础概念</h3>
 <blockquote>
 <p>（监督式）机器学习定义：机器学习系统通过学习如何组合输入信息来对从未见过的数据做出有用的预测。</p>
@@ -192,7 +192,7 @@
 <p><img src="https://developers.google.com/machine-learning/crash-course/images/TFHierarchy.svg?hl=zh-cn" alt="img"></p>
 <p>越高级越抽象，所需代码量越少，易于使用，但是不直观；越基层的越直观，更加的灵活，但是使用起来会困难一些。</p>
 <p>在这篇教程中使用的是 tf.estimator API ，与 scikit-learn API 兼容，该 API 是 Python 开源的机器学习库。下述是一个使用线性回归的例子：</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>
 
 <span class="c1"># Set up a linear classifier.</span>
 <span class="n">classifier</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">estimator</span><span class="o">.</span><span class="n">LinearClassifier</span><span class="p">()</span>
@@ -239,10 +239,10 @@
 </li>
 </ol>
 <p>常用参数：</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">steps</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="o">//</span> <span class="n">训练迭代总步数</span>
-<span class="n">batch_size</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="o">//</span> <span class="n">单步的样本数量</span><span class="err">（</span><span class="n">随机选择</span><span class="err">）</span>
-<span class="n">periods</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="o">//</span> <span class="n">方便变量的一种</span><span class="err">。</span><span class="n">控制报告的粒度</span>
-<span class="o">//</span> <span class="n">ex</span><span class="o">.</span> <span class="n">此时</span> <span class="n">periods</span> <span class="o">=</span> <span class="mi">1</span><span class="err">，</span><span class="n">steps</span> <span class="o">=</span> <span class="mi">10</span> <span class="n">那么每</span> <span class="mi">10</span> <span class="n">次输出一次损失值</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">steps</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="o">//</span> <span class="err">训练迭代总步数</span>
+<span class="n">batch_size</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="o">//</span> <span class="err">单步的样本数量（随机选择）</span>
+<span class="n">periods</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="o">//</span> <span class="err">方便变量的一种。控制报告的粒度</span>
+<span class="o">//</span> <span class="n">ex</span><span class="o">.</span> <span class="err">此时</span> <span class="n">periods</span> <span class="o">=</span> <span class="mi">1</span><span class="err">，</span><span class="n">steps</span> <span class="o">=</span> <span class="mi">10</span> <span class="err">那么每</span> <span class="mi">10</span> <span class="err">次输出一次损失值</span>
 </code></pre></div><p>成立：</p>
 <p>$$total\ number\ of\ trained\ examples = batch\ size \times steps$$</p>
 <p>$$number\ of\ training\ examples\ in\ each\ period = \frac{batch\ size \times steps}{periods}$$</p>
