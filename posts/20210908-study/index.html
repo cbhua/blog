@@ -127,12 +127,10 @@
 <p>现在我们尝试为玩获得的快乐加入边际递减函数，并且为学习获得的快乐加入边际递增函数。这两个函数与每个人的性格息息相关，其实是大家所谓的耐性，耐性很足的人，学习的边际递增函数会比较平缓，而耐性很差的人就会比较陡峭。我们用 $f_1(\cdot)$ 和 $f_2(\cdot)$ 来分别表示玩的边际递减函数和学习的边际递增函数。那么快乐函数就应该被调整为</p>
 <p>$$\mathbb{H} = \sum_{i=1}^{N}h_i^1f(h_i^1)x + \sum_{i=1}^{M}h_i^2f(h_i^2)y$$</p>
 <p>现在回归我们的目标，我们希望每天在保证学习时间的同时可以尽可能获得更多的快乐，那么这就变成了一个优化问题：</p>
-<p>$$
-\mathbf{\mathrm{max}}\ &amp;\mathbb{H} = \sum_{i=1}^{N}h_i^1f_1(h_i^1)x + \sum_{i=1}^{M}h_i^2f_2(h_i^2)y\</p>
-<p>\mathbf{\mathrm{s.t.}}\ &amp;H = \sum_{i=1}^{N}h_i^1 + \sum_{i=1}^{M}h_i^2\</p>
-<p>&amp; h_i^1 &gt; 0, i = 1, 2, \cdots, N\</p>
-<p>&amp; h_i^2 &gt; 0, i = 1, 2, \cdots, M\<br>
-$$</p>
+<p>$$\mathbf{\mathrm{max}}\ \mathbb{H} = \sum_{i=1}^{N}h_i^1f_1(h_i^1)x + \sum_{i=1}^{M}h_i^2f_2(h_i^2)y$$</p>
+<p>$$\mathbf{\mathrm{s.t.}}\ H = \sum_{i=1}^{N}h_i^1 + \sum_{i=1}^{M}h_i^2$$</p>
+<p>$$h_i^1 &gt; 0, i = 1, 2, \cdots, N$$</p>
+<p>$$h_i^2 &gt; 0, i = 1, 2, \cdots, M$$</p>
 <p>为了求解这个问题，我们先获得它的 Lagrange Dual Problem……</p>
 <p><img src="https://timegg-1306358676.cos.ap-beijing.myqcloud.com/memes/stop.jpeg" width = "200" alt="1" align=center /></p>
 <p>停一下停一下，我们不是来解数学题的，在离谱的边缘大鹏展翅。哦……哦，让我们回归方法的讨论……</p>
