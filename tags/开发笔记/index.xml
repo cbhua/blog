@@ -6,7 +6,16 @@
     <description>Recent content in 开发笔记 on TIMEGG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 17 Jul 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/tags/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Oct 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/tags/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>解读一维 OSC 方法</title>
+      <link>https://timegg.top/posts/20211004-osc/</link>
+      <pubDate>Mon, 04 Oct 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20211004-osc/</guid>
+      <description>前一阵子看了看自己的文章归档，发现我已经半年没有写过技术文章了，为了表示这个博主不是个只会写水文章的大水怪，我决定来写一篇硬核的技术文章，接招吧小伙子们。既然要写，就要写点其他人没写过的，什么东西写得人少呢，那当然是数学。虽然是数学，我会尽可能用口语化的方法来讲述核心的部分，让大家能够感觉到数学的魅力（确信）。耐心看完，你一定会有所收获。</description>
+    </item>
+    
     <item>
       <title>当个云玩家</title>
       <link>https://timegg.top/posts/20210717-game/</link>
