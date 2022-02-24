@@ -24,7 +24,7 @@ html::-webkit-scrollbar-thumb {
 body {
   color: #333333;
   font-family: "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 16px;
+  font-size: 17px;
   width: 100%;
   background-color: #f7f7f7;
   margin: 0;
@@ -103,6 +103,8 @@ hr {
 }
 
 .nav_container .site_nav {
+  font-family: "Noto Serif SC";
+  font-weight: bold;
   float: right;
 }
 
@@ -113,7 +115,7 @@ hr {
   float: right;
 }
 
-.nav_container .site_nav li,
+.nav_container .normalsite_nav li,
 .nav_container .site_nav a {
   position: relative;
 }
@@ -126,7 +128,7 @@ hr {
   display: block;
   white-space: nowrap;
   padding: 10px;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .header {
@@ -152,6 +154,7 @@ hr {
 }
 
 .header .site_title_container .site_title a {
+  font-family: "Helvetica Neue", "Noto Serif SC";
   font-size: 28px;
   width: 65px;
   letter-spacing: 2px;
@@ -167,6 +170,11 @@ hr {
   color: #666666;
 }
 
+.header .site_title_container .site_title a img {
+  width: 130%;
+  height: auto;
+}
+
 .header .site_title_container .description {
   font-size: 0.9rem;
   color: #565654;
@@ -174,7 +182,8 @@ hr {
 }
 
 .header .site_title_container .description .sub_title {
-  font-weight: normal !important;
+  font-family: "Noto Serif SC";
+  font-weight: bold !important;
   float: none !important;
   text-align: right;
 }
@@ -220,6 +229,8 @@ hr {
   letter-spacing: 1px;
   color: #1f1f1f;
   font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Noto Serif SC";
   line-height: 28px;
 }
 
@@ -242,6 +253,8 @@ hr {
 }
 
 .post .post_content {
+  font-family: "Times New Roman", "Noto Serif SC";
+  font-size: 17px;
   word-break: normal;
   margin-top: 20px;
 }
@@ -305,6 +318,8 @@ hr {
   margin: 10px 15px;
   display: inline-block;
   font-size: 1em;
+  font-family: "Noto Serif SC";
+  font-weight: bold;
 }
 
 .page_tags .terms_count {
@@ -368,7 +383,9 @@ hr {
   padding-top: 25px;
   padding-bottom: 10px;
   color: #000000;
-  font-size: 16px;
+  font-family: "Noto Serif SC";
+  font-weight: bold;
+  font-size: 18px;
   letter-spacing: 1px;
 }
 
@@ -385,7 +402,8 @@ hr {
 }
 
 .list_with_title .listing_title {
-  font-size: 1.4rem;
+  font-family: "Noto Serif SC";
+  font-size: 1.6rem;
   color: #1f1f1f;
   font-weight: bold;
   padding-top: 10px;
@@ -403,6 +421,9 @@ hr {
 }
 
 .list_with_title .listing .listing_post a {
+  font-family: "Noto Serif SC";
+  font-weight: normal;
+  font-size: 15px;
   display: inline-block;
   width: 85%;
 }
