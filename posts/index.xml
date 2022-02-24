@@ -6,7 +6,61 @@
     <description>Recent content in Posts on TIMEGG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 31 Dec 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Feb 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>知与不可知的矛盾</title>
+      <link>https://timegg.top/posts/20220225-know/</link>
+      <pubDate>Fri, 25 Feb 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220225-know/</guid>
+      <description>最近我在设计一个桌游，在游戏的设计过程中，我遇到了一个关于玩家进行操作和隐藏自己身份之间的矛盾。这个问题看似很简单，但是确实让我思考了好久，所以我姑且把问题描述在这里，并且附上自己的思考，想要听听大家的想法。</description>
+    </item>
+    
+    <item>
+      <title>消失的一月份</title>
+      <link>https://timegg.top/posts/20220224-jan/</link>
+      <pubDate>Thu, 24 Feb 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220224-jan/</guid>
+      <description>这个网站的站长一月份失踪啦，让我们看看他会编怎么样的理由来糊弄过去。所以这篇文章的作用就是尝试让一月份鸽掉四篇文章合理化、合法化，并且证明自己写了文章但是并没有完全写的事实。</description>
+    </item>
+    
+    <item>
+      <title>网站的更新报告</title>
+      <link>https://timegg.top/posts/20220222-update/</link>
+      <pubDate>Tue, 22 Feb 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220222-update/</guid>
+      <description>这里是网站的更新报告，TIMEGG 从 2017 年运行至今经历了多次更新，每次更新的内容将会记录在此。网站在几次大型更新中遗失了很多内容，这些旧网站存档将会在另一个 GitHub Repository 中展示。</description>
+    </item>
+    
+    <item>
+      <title>人类文明倒计时</title>
+      <link>https://timegg.top/posts/20220217-human/</link>
+      <pubDate>Thu, 17 Feb 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220217-human/</guid>
+      <description>前一阵子在玩《守墓人》的时候突然有了一个想法：在比较大的尺度上，并没有什么东西来给人类设定 Deadline，即使以太阳寿命为限度的话，人类还有 50 亿年的时间，参考目前人类的发展速度，这些时间几乎可以理解为无限。那么既然人类有着近乎无限的时间，那么我们为什么要事事都着急呢？</description>
+    </item>
+    
+    <item>
+      <title>贪小便宜钓鱼模拟器</title>
+      <link>https://timegg.top/posts/20220214-fish/</link>
+      <pubDate>Mon, 14 Feb 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220214-fish/</guid>
+      <description>这是一篇脑洞文章。欢迎大家来到旧日科技有限公司的新春发布会，首先在这里恭祝大家新年快乐。大家在新年的拜年中自然要接触到很多的人，在这个过程中难免会见到各种各样的人，与和自己性格不符的人社交总是令人讨厌，从而降低自己的幸福感，这样下去无助于社会整体幸福感的提升，我们今天的产品就是为了解决其中的一种问题：贪小便宜。</description>
+    </item>
+    
+    <item>
+      <title>混乱即快速</title>
+      <link>https://timegg.top/posts/20220207-mass/</link>
+      <pubDate>Mon, 07 Feb 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220207-mass/</guid>
+      <description>在读到一篇描述相对混乱的笔记管理和灵感之间的关系的文章的时候，我想到了在我之前的论文写作过程中将混乱即快速应用在写代码和做实验方面的收获。这是我在论文准备过程中学到的很重要的道理之一，因此我就打算就此写下这篇文章，专门讲讲这个收获。</description>
+    </item>
+    
     <item>
       <title>这一年的总结</title>
       <link>https://timegg.top/posts/20211231-summary/</link>
@@ -347,15 +401,6 @@
       
       <guid>https://timegg.top/posts/20210107-risk/</guid>
       <description>每个人都很难保证自己的社交不会出现问题，最常见的社交问题即与他人闹矛盾，从而关系淡化甚至绝交，也有很多其他的情况使得我们必须与他人分开。这种事情往往是痛苦的，如何应对这样的社交风险是我们生活管理中的一个重要课题。</description>
-    </item>
-    
-    <item>
-      <title>网站的更新报告</title>
-      <link>https://timegg.top/posts/20210101-update/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0900</pubDate>
-      
-      <guid>https://timegg.top/posts/20210101-update/</guid>
-      <description>这里是网站的更新报告，TIMEGG 从 2017 年运行至今经历了多次更新，每次更新的内容将会记录在此。网站在几次大型更新中遗失了很多内容，这些旧网站存档将会在另一个 GitHub Repository 中展示。</description>
     </item>
     
     <item>

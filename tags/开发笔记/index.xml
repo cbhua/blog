@@ -6,7 +6,25 @@
     <description>Recent content in 开发笔记 on TIMEGG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 04 Oct 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/tags/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Feb 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/tags/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>知与不可知的矛盾</title>
+      <link>https://timegg.top/posts/20220225-know/</link>
+      <pubDate>Fri, 25 Feb 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220225-know/</guid>
+      <description>最近我在设计一个桌游，在游戏的设计过程中，我遇到了一个关于玩家进行操作和隐藏自己身份之间的矛盾。这个问题看似很简单，但是确实让我思考了好久，所以我姑且把问题描述在这里，并且附上自己的思考，想要听听大家的想法。</description>
+    </item>
+    
+    <item>
+      <title>网站的更新报告</title>
+      <link>https://timegg.top/posts/20220222-update/</link>
+      <pubDate>Tue, 22 Feb 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220222-update/</guid>
+      <description>这里是网站的更新报告，TIMEGG 从 2017 年运行至今经历了多次更新，每次更新的内容将会记录在此。网站在几次大型更新中遗失了很多内容，这些旧网站存档将会在另一个 GitHub Repository 中展示。</description>
+    </item>
+    
     <item>
       <title>解读一维 OSC 方法</title>
       <link>https://timegg.top/posts/20211004-osc/</link>
@@ -41,15 +59,6 @@
       
       <guid>https://timegg.top/posts/20210416-workbyhome/</guid>
       <description>留学期间，因为反反复复的疫情我需要经常在远程工作与实验室工作之间反复交换。为了自己的研究方便于是搭建了自己的一套远程工作流，记录下这远程工作流的同时，我也希望可以通过这种方式记录下疫情下留学的工作和生活状态。</description>
-    </item>
-    
-    <item>
-      <title>网站的更新报告</title>
-      <link>https://timegg.top/posts/20210101-update/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0900</pubDate>
-      
-      <guid>https://timegg.top/posts/20210101-update/</guid>
-      <description>这里是网站的更新报告，TIMEGG 从 2017 年运行至今经历了多次更新，每次更新的内容将会记录在此。网站在几次大型更新中遗失了很多内容，这些旧网站存档将会在另一个 GitHub Repository 中展示。</description>
     </item>
     
     <item>

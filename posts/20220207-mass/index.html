@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Chuanbo" />
+	
+	
+	
+	<title>混乱即快速 ｜ TIMEGG</title>
+	
+    
+    
+    <meta name="description" content="在读到一篇描述相对混乱的笔记管理和灵感之间的关系的文章的时候，我想到了在我之前的论文写作过程中将混乱即快速应用在写代码和做实验方面的收获。这是我在论文准备过程中学到的很重要的道理之一，因此我就打算就此写下这篇文章，专门讲讲这个收获。" />
+    
+
+    
+    
+    <meta name="keywords" content="Hugo, theme, zozo" />
+    
+
+	
+    
+    <link rel="shortcut icon" href="https://timegg.top/images/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://timegg.top/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://timegg.top/css/zozo.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://timegg.top/css/highlight.css" />
+
+    
+    
+</head>
+
+<body>
+    <div class="main animate__animated animate__fadeInDown">
+        <div class="nav_container animated fadeInDown">
+    <div class="site_nav" id="site_nav">
+        <ul>
+            
+            <li>
+                <a href="/">主页</a>
+            </li>
+            
+            <li>
+                <a href="/posts/">归档</a>
+            </li>
+            
+            <li>
+                <a href="/tags/">标签</a>
+            </li>
+            
+            <li>
+                <a href="/links/">链接</a>
+            </li>
+            
+            <li>
+                <a href="/about/">关于</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="menu_icon">
+        <a id="menu_icon"><i class="ri-menu-line"></i></a>
+    </div>
+</div>
+        <div class="header animated fadeInDown">
+    <div class="site_title_container">
+        <div class="site_title">
+            <a href="https://timegg.top/">
+                <img src="https://timegg.top/images/favicon.ico" alt="TIMEGG">
+                
+            </a>
+            
+        </div>
+        <div class="description">
+            <p class="sub_title">放进时光蛋里。</p>
+            <div class="my_socials">
+                
+                
+                <a href="https://github.com/cbhua" title="github" target="_blank"><i class="ri-github-fill"></i></a>
+                
+                
+                
+                <a href="%20" title="instagram" target="_blank"><i class="ri-instagram-fill"></i></a>
+                
+                
+                
+                <a href="https://twitter.com/huachuanbo" title="twitter" target="_blank"><i class="ri-twitter-fill"></i></a>
+                
+                
+                
+                <a href="https://weibo.com/u/6177306082" title="weibo" target="_blank"><i class="ri-weibo-fill"></i></a>
+                
+                
+                <a href="https://timegg.top/index.xml" type="application/rss+xml" title="rss" target="_blank"><i
+                        class="ri-rss-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="content">
+            <div class="post_page">
+                <div class="post animate__animated animate__fadeInDown">
+                    <div class="post_title post_detail_title">
+                        <h2><a href='/posts/20220207-mass/'>混乱即快速</a></h2>
+                        <span class="date">2022.02.07</span>
+                    </div>
+                    <div class="post_content markdown"><p>这篇文章本来在一月份就开始构思了，在写论文的一两个月里面，我遇到了大量的问题，很多问题出现在自己的工作流里面，在论文提交之后我就想好好写一篇文章来总结一下我在准备论文的过程中所总结和收获的。</p>
+<p>但是这篇文章构思了好久，因为经验的总结实在是太碎了，而且很多问题一般不会复现，只存在于当时的情况下，所以这篇文章写来写去最后还是搁置了。直到最近我读了一篇文章，其中提到了一个概念：“<strong>混乱即快速</strong>”。作者在原文章中是这么说的：</p>
+<blockquote>
+<p>我现在只能想到用手写去对抗对工具的过度依赖。我仍然会用纸和笔这种最传统的方式来记录我最私密的想法、最有趣的经历，它们在一个线性的排列中，和随意摘录的一段话，或者一本书的读书笔记一起，与现在市面上的笔记的复杂功能不同，它简单又混乱，但是却特别容易激发我的灵感，让我感到意想不到的连接感。这个在任何的笔记软件中我都没有这种感觉。也许有时候，整齐才是慢，而混乱才更快。</p>
+</blockquote>
+<p>这段描述讲的是相对混乱的笔记管理和灵感之间的关系，不过我联想到的有点不一样，我想到的是将混乱即快速应用在写代码和做实验方面。这是我在论文准备过程中学到的很重要的道理之一，因此我就打算就此写下这篇文章，专门讲讲这个收获。</p>
+<p>大家在写代码的时候肯定会遇到这种情况，在项目初期的时候我们尽我们理解安排了我们的项目文件树，但是随着时间推进，实验越来越复杂，文件、代码、输出越来越多，导致我们的文件树越来越复杂、越来越混乱，有些情况超出了我们最初创建项目时考虑的情况，因此我们需要不断地在项目中添加各种东西，最后的结果就是项目越来越混乱，很多时候会影响我们的效率，因为我们需要经常去确认路径、寻找文件、设计新的文件命名。</p>
+<p>这个时候我们的解决方案一般是把代码进行一次重构，重新分析现在的实验情况来安排文件树和文件命名，重构之后我们的项目会重归清晰干净，效率也会重归开始的状态。不过在这个过程中我们往往会忘记或者说是轻视一个部分：<strong>重构的成本</strong>。</p>
+<p>重构这件事听起来轻松，我们只需要改改文件树，重命名一些文件，也不用新写代码，也不用改 Bug. 但是有经验的大家肯定也知道，重构往往会花费比我们想象中多很多的时间，而且其实更重要的是，项目还是会继续不断进行的，在未来的项目推进中，很大可能这个项目还是会越来越乱，如果想要持续保证项目的清晰逻辑，我们可能还会再需要重构，下次重构又是时间和精力的消耗。</p>
+<p>那么我们反过来看，如果我们不重构，我们的项目也不是进行不下去，混乱归混乱，但是只要我们的思路是清晰的、有逻辑的，那么我们倒是可以保证乱中有序，该做什么还知道怎么安排。所以这种时候我们其实只要在混乱中继续进行就可以，混乱即快速。</p>
+<p>当然这也不是说我们不要重构，当项目真的乱到是在没办法处理的时候还是该重构重构，只不过绝大部分情况下我们并不会出现这种情况，重构的很多原因都是自己太“电子洁癖”，受不了项目太混乱。</p>
+<p>对这个有这么强烈的共鸣是因为我在准备论文的过程中曾经花了好多时间来整理我的代码，尝试让我的代码有逻辑、漂亮清晰，但是辛辛苦苦花了一两天时间、很多精力来做这些，我的进度并没有太多的推进，随后的实验太多又把文件给弄乱了，之后就干脆“摆烂”，文件我也不整了，知道哪个地方放什么东西这个最基本的要求就行，然后我就发现，虽然整理上文件树乱成一团，文件命名的方法也是乱七八糟，但是用起来还是挺顺手的，该做什么做什么都不耽误，后来我就逐渐摒弃了自己频繁重构的想法，效率为先。</p>
+<p>在这个过程中我们可以逐渐掌握在混乱中让工作有序的核心技能，也就是虽然表面混乱，但是我们背地里面的努力让项目不会真正变成非常混乱的样子，这样的效率一定非常令人满意。</p>
+<p>我的这点收获就非常的实用主义，既然能用我们就不要去动它了，我们的目标就一个，顺利完成实验。我觉得这个也能用在很多其他方面，分清事情的轻重缓急，瞄准目标。</p>
+<p>在准备论文的过程中我还有一些其他的收获，这些收获就等我在后续的工作中遇到合适的例子来解释的时候再来写吧，而且其中有一些是比较实验性的想法，不一定具有普适性，等我找好合适的总结时机，就再写下来。</p>
+</div>
+                    <div class="post_footer">
+                        
+                        <div class="meta">
+                            <div class="info">
+                                <span class="field tags">
+                                    <i class="ri-stack-line"></i>
+                                    
+                                    <a href="https://timegg.top/tags/%E7%94%9F%E6%B4%BB%E6%80%9D%E8%80%83/">生活思考</a>
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                
+<div class="doc_comments">
+    <div class="comments_block_title">发表评论</div>
+    <div id="vcomments"></div>
+</div>
+
+<link rel="stylesheet" href="https://timegg.top/css/comments.css" />
+
+<script src="//code.bdstatic.com/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<script type="text/javascript">
+    new Valine({
+        el: '#vcomments',
+        appId: '12HKA37DAChBWQgBC7PA4eBw-gzGzoHsz',
+        appKey: 'UxknCfg5bWmkI2eGar5hDxWq',
+        placeholder: ' ',
+        visitor: 'true',
+        serverURLs: '<%= Site.Params.valine.serverURLs>',
+    })
+</script>
+
+
+
+                
+            </div>
+        </div>
+    </div>
+    <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
+    <footer class="footer">
+    <div class="powered_by">
+        <a href="https://timegg.top">TIMEGG © 2017 - 2022,</a>
+        <a href="http://www.gohugo.io/">Powered by Hugo.</a>
+    </div>
+
+    <div class="footer_slogan">
+        <span>重拾写作的乐趣。</span>
+    </div>
+</footer>
+
+<script>
+	(function () {
+		const customFont = document.createElement('link');
+		customFont.href = "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&display=swap";
+		customFont.type = "text/css";
+		customFont.rel = "stylesheet";
+		document.head.appendChild(customFont);
+	}());
+	
+	
+	
+	
+	
+	
+	
+</script>
+    <script src="https://timegg.top/js/jquery-3.5.1.min.js"></script>
+<link href="https://timegg.top/css/fancybox.min.css" rel="stylesheet">
+<script src="https://timegg.top/js/fancybox.min.js"></script>
+<script src="https://timegg.top/js/zozo.js"></script>
+
+
+<script type="text/javascript" async
+    src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+                processEscapes: true,
+                processEnvironments: true,
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                TeX: {
+                    equationNumbers: { autoNumber: "AMS" },
+                    extensions: ["AMSmath.js", "AMSsymbols.js"]
+                }
+            }
+        });
+
+        MathJax.Hub.Queue(function () {
+            
+            
+            
+            var all = MathJax.Hub.getAllJax(), i;
+            for (i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+<style>
+    code.has-jax {
+        font: inherit;
+        font-size: 100%;
+        background: inherit;
+        border: inherit;
+        color: #515151;
+    }
+</style>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-164502321-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>

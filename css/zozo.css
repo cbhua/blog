@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /*basic styles starts*/
+@font-face {
+  font-family: 'Noto Serif SC ZH';
+  src: url('https://timegg-1306358676.cos.ap-beijing.myqcloud.com/font/SourceHanSerifCN-Regular.otf');
+}
 html {
   background-color: #f7f7f7;
   -webkit-font-smoothing: antialiased;
@@ -103,7 +107,7 @@ hr {
 }
 
 .nav_container .site_nav {
-  font-family: "Noto Serif SC";
+  font-family: "Noto Serif SC", "Noto Serif SC ZH";
   font-weight: bold;
   float: right;
 }
@@ -154,7 +158,7 @@ hr {
 }
 
 .header .site_title_container .site_title a {
-  font-family: "Helvetica Neue", "Noto Serif SC";
+  font-family: "Helvetica Neue", "Noto Serif SC", "Noto Serif SC ZH";
   font-size: 28px;
   width: 65px;
   letter-spacing: 2px;
@@ -182,7 +186,7 @@ hr {
 }
 
 .header .site_title_container .description .sub_title {
-  font-family: "Noto Serif SC";
+  font-family: "Noto Serif SC", "Noto Serif SC ZH";
   font-weight: bold !important;
   float: none !important;
   text-align: right;
@@ -230,7 +234,7 @@ hr {
   color: #1f1f1f;
   font-size: 1.5rem;
   font-weight: bold;
-  font-family: "Noto Serif SC";
+  font-family: "Noto Serif SC", "Noto Serif SC ZH";
   line-height: 28px;
 }
 
@@ -253,7 +257,7 @@ hr {
 }
 
 .post .post_content {
-  font-family: "Times New Roman", "Noto Serif SC";
+  font-family: "Times New Roman", "Noto Serif SC", "Noto Serif SC ZH";
   font-size: 17px;
   word-break: normal;
   margin-top: 20px;
@@ -318,7 +322,7 @@ hr {
   margin: 10px 15px;
   display: inline-block;
   font-size: 1em;
-  font-family: "Noto Serif SC";
+  font-family: "Noto Serif SC", "Noto Serif SC ZH";
   font-weight: bold;
 }
 
@@ -383,7 +387,7 @@ hr {
   padding-top: 25px;
   padding-bottom: 10px;
   color: #000000;
-  font-family: "Noto Serif SC";
+  font-family: "Noto Serif SC", "Noto Serif SC ZH";
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 1px;
@@ -402,7 +406,7 @@ hr {
 }
 
 .list_with_title .listing_title {
-  font-family: "Noto Serif SC";
+  font-family: "Noto Serif SC", "Noto Serif SC ZH";
   font-size: 1.6rem;
   color: #1f1f1f;
   font-weight: bold;
@@ -421,7 +425,7 @@ hr {
 }
 
 .list_with_title .listing .listing_post a {
-  font-family: "Noto Serif SC";
+  font-family: "Noto Serif SC", "Noto Serif SC ZH";
   font-weight: normal;
   font-size: 15px;
   display: inline-block;

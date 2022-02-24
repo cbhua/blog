@@ -105,10 +105,18 @@
             <div class="post_page">
                 <div class="post animate__animated animate__fadeInDown">
                     <div class="post_title post_detail_title">
-                        <h2><a href='/posts/20210101-update/'>网站的更新报告</a></h2>
-                        <span class="date">2021.01.01</span>
+                        <h2><a href='/posts/20220222-update/'>网站的更新报告</a></h2>
+                        <span class="date">2022.02.22</span>
                     </div>
-                    <div class="post_content markdown"><h2 id="20210101">2021/01/01</h2>
+                    <div class="post_content markdown"><h2 id="20220202">2022/02/02</h2>
+<p>TIMEGG 进行新年更新，更新内容如下：</p>
+<ul>
+<li>调整页面头部 “TIMEGG” 文字为网站 Logo；</li>
+<li>调整网站主要字体为思源宋体与方正金陵字体，英文字体为 Times New Roman. 其中思源宋体源有 Google 源（主要）和 Tencent COS（备用）；</li>
+<li>调整链接页面，设置主页面和自页面，精简信息，利于排版；</li>
+<li>修复评论系统的问题。</li>
+</ul>
+<h2 id="20210101">2021/01/01</h2>
 <p>TIMEGG 进行新年更新，基于 Hugo Zozo Theme 重建，托管于 GitHub。本次更新定位：</p>
 <ul>
 <li>强调纯文本阅读体验；</li>
@@ -313,6 +321,7 @@
         appKey: 'UxknCfg5bWmkI2eGar5hDxWq',
         placeholder: ' ',
         visitor: 'true',
+        serverURLs: '<%= Site.Params.valine.serverURLs>',
     })
 </script>
 
@@ -342,6 +351,13 @@
 		customFont.rel = "stylesheet";
 		document.head.appendChild(customFont);
 	}());
+	
+	
+	
+	
+	
+	
+	
 </script>
     <script src="https://timegg.top/js/jquery-3.5.1.min.js"></script>
 <link href="https://timegg.top/css/fancybox.min.css" rel="stylesheet">
