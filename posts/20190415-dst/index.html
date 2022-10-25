@@ -120,26 +120,26 @@
 <p><a href="https://sumygg.com/2016/01/24/install-and-configure-dont-starve-together-server-on-centos/">CentOS下安装和配置饥荒联机版服务器 - SumyGG</a> ：我最初参考的教程，一直到服务器配置部分都可以很好的参考，服务器部分根据具体情况需要具体分析。</p>
 <p><a href="https://sqh.me/tech/build-dont-starve-together-server-on-centos/">Centos7.2下建立饥荒服务器 - qhsong</a> ：靠脚本一键式配置，中间遇到问题可能不是很好解决，适度参考。获取服务器许可的方法已过时。</p>
 <p>其他的很多教程都是大同小异，有上面几个参考，加上 Google 就可以解决几乎所有问题。下面部分是我在参考上面教程过程中遇到的问题与解决方案。</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">操作系统：CentOS 7
-
-用户：magic_kurakun （非 root）
-</code></pre></div><h2 id="yum-安装出现-error-multilib-version-problems-found">yum 安装出现 Error: Multilib version problems found</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">操作系统：CentOS 7
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">用户：magic_kurakun （非 root）
+</span></span></code></pre></div><h2 id="yum-安装出现-error-multilib-version-problems-found">yum 安装出现 Error: Multilib version problems found</h2>
 <p>顾名思义，就是多版本冲突，Linux 默认保持单版本在你的主机上：64位或者32位。而 AliCloud 默认配置的 CentOS 中都是64位，<strong>饥荒服务器中需要32位的动态链接库</strong>。所以在上述教程中出现这种情况，需要手动设置允许多种版本共存：</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">yum install --setopt=protected_multilib=false libgcc (缺少的库)
-</code></pre></div><p>关掉多重保护之后重新安装即可。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">yum install --setopt=protected_multilib=false libgcc (缺少的库)
+</span></span></code></pre></div><p>关掉多重保护之后重新安装即可。</p>
 <h2 id="steam-cmd-登陆问题">Steam CMD 登陆问题</h2>
 <p>现在版本的 Steam CMD 需要打开时先进行登陆，否则无法获取相关游戏信息。</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// 未登录时请求 App 信息会 Error
-Steam&gt;app_update 343050 validate
-ERROR! Failed to request AppInfo update, not online or not logged in to Steam.
-
-// Login Steam CMD
-Steam&gt;login **********
-passwd:**********
-Logging in user &#39;**********&#39; to Steam Public...
-password: Logged in OK
-Waiting for user info...OK
-</code></pre></div><h2 id="路径打开问题">路径打开问题</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// 未登录时请求 App 信息会 Error
+</span></span><span class="line"><span class="cl">Steam&gt;app_update 343050 validate
+</span></span><span class="line"><span class="cl">ERROR! Failed to request AppInfo update, not online or not logged in to Steam.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// Login Steam CMD
+</span></span><span class="line"><span class="cl">Steam&gt;login **********
+</span></span><span class="line"><span class="cl">passwd:**********
+</span></span><span class="line"><span class="cl">Logging in user &#39;**********&#39; to Steam Public...
+</span></span><span class="line"><span class="cl">password: Logged in OK
+</span></span><span class="line"><span class="cl">Waiting for user info...OK
+</span></span></code></pre></div><h2 id="路径打开问题">路径打开问题</h2>
 <p>通过 Steam CMD 安装的饥荒服务端的路径中，游戏名文件夹是以空格分隔单词的，在 Linux 中很少这么用，这时候运行脚本、cd 文件夹、scp 文件等等操作在书写路径时别忘把整个路径用引号括起来。</p>
 <p><del>我遇到这个问题就真的是自己菜了</del></p>
 <h2 id="缺少动态链接库问题">缺少动态链接库问题</h2>

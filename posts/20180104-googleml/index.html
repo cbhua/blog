@@ -121,25 +121,25 @@
 <li>DataFrame：表格（关系）</li>
 <li>Series：列</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
-
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
-
-<span class="o">//</span> <span class="err">创建</span> <span class="n">DataFrame</span>
-<span class="n">city_names</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s1">&#39;San Francisco&#39;</span><span class="p">,</span> <span class="s1">&#39;San Jose&#39;</span><span class="p">,</span> <span class="s1">&#39;Sacramento&#39;</span><span class="p">])</span>
-<span class="n">population</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="mi">852469</span><span class="p">,</span> <span class="mi">1015785</span><span class="p">,</span> <span class="mi">485199</span><span class="p">])</span>
-
-<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span> <span class="s1">&#39;City name&#39;</span><span class="p">:</span> <span class="n">city_names</span><span class="p">,</span> <span class="s1">&#39;Population&#39;</span><span class="p">:</span> <span class="n">population</span> <span class="p">})</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
-
-<span class="o">//</span> <span class="err">访问数据</span>
-<span class="n">cities</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span> <span class="s1">&#39;City name&#39;</span><span class="p">:</span> <span class="n">city_names</span><span class="p">,</span> <span class="s1">&#39;Population&#39;</span><span class="p">:</span> <span class="n">population</span> <span class="p">})</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">cities</span><span class="p">[</span><span class="s1">&#39;City name&#39;</span><span class="p">]))</span>
-<span class="n">cities</span><span class="p">[</span><span class="s1">&#39;City name&#39;</span><span class="p">]</span>
-
-<span class="o">//</span> <span class="err">操作数据</span>
-<span class="n">population</span> <span class="o">/</span> <span class="mi">1000</span> <span class="o">//</span> <span class="n">Python</span> <span class="err">基本运算指令</span>
-</code></pre></div><h3 id="机器学习基础概念">机器学习基础概念</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="n">创建</span> <span class="n">DataFrame</span>
+</span></span><span class="line"><span class="cl"><span class="n">city_names</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s1">&#39;San Francisco&#39;</span><span class="p">,</span> <span class="s1">&#39;San Jose&#39;</span><span class="p">,</span> <span class="s1">&#39;Sacramento&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">population</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="mi">852469</span><span class="p">,</span> <span class="mi">1015785</span><span class="p">,</span> <span class="mi">485199</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span> <span class="s1">&#39;City name&#39;</span><span class="p">:</span> <span class="n">city_names</span><span class="p">,</span> <span class="s1">&#39;Population&#39;</span><span class="p">:</span> <span class="n">population</span> <span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="n">pd</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="n">访问数据</span>
+</span></span><span class="line"><span class="cl"><span class="n">cities</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span> <span class="s1">&#39;City name&#39;</span><span class="p">:</span> <span class="n">city_names</span><span class="p">,</span> <span class="s1">&#39;Population&#39;</span><span class="p">:</span> <span class="n">population</span> <span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">cities</span><span class="p">[</span><span class="s1">&#39;City name&#39;</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl"><span class="n">cities</span><span class="p">[</span><span class="s1">&#39;City name&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="n">操作数据</span>
+</span></span><span class="line"><span class="cl"><span class="n">population</span> <span class="o">/</span> <span class="mi">1000</span> <span class="o">//</span> <span class="n">Python</span> <span class="n">基本运算指令</span>
+</span></span></code></pre></div><h3 id="机器学习基础概念">机器学习基础概念</h3>
 <blockquote>
 <p>（监督式）机器学习定义：机器学习系统通过学习如何组合输入信息来对从未见过的数据做出有用的预测。</p>
 </blockquote>
@@ -158,7 +158,7 @@
 <h3 id="深入了解机器学习">深入了解机器学习</h3>
 <p><strong>线性回归</strong></p>
 <p>机器学习中的线性回归比较不同，其一般形式：</p>
-<p>$$y' = b + w_1 * x_1 + w_2 * x_2 + w_3 * x_3 + &hellip;$$</p>
+<p>$$y&rsquo; = b + w_1 * x_1 + w_2 * x_2 + w_3 * x_3 + &hellip;$$</p>
 <p>其中 ：</p>
 <ul>
 <li>
@@ -168,7 +168,7 @@
 <p>$x_i$ 指的是特征</p>
 </li>
 </ul>
-<p>最后得出的 $y'$ 是标签（输出值）</p>
+<p>最后得出的 $y&rsquo;$ 是标签（输出值）</p>
 <p><strong>训练</strong></p>
 <p>训练指的是检查多个样本并尝试找出可最大限度减少损失的模型，该过程也叫做经验风险最小化</p>
 <p><strong>损失</strong></p>
@@ -192,17 +192,17 @@
 <p><img src="https://developers.google.com/machine-learning/crash-course/images/TFHierarchy.svg?hl=zh-cn" alt="img"></p>
 <p>越高级越抽象，所需代码量越少，易于使用，但是不直观；越基层的越直观，更加的灵活，但是使用起来会困难一些。</p>
 <p>在这篇教程中使用的是 tf.estimator API ，与 scikit-learn API 兼容，该 API 是 Python 开源的机器学习库。下述是一个使用线性回归的例子：</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>
-
-<span class="c1"># Set up a linear classifier.</span>
-<span class="n">classifier</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">estimator</span><span class="o">.</span><span class="n">LinearClassifier</span><span class="p">()</span>
-
-<span class="c1"># Train the model on some example data.</span>
-<span class="n">classifier</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">input_fn</span><span class="o">=</span><span class="n">train_input_fn</span><span class="p">,</span> <span class="n">steps</span><span class="o">=</span><span class="mi">2000</span><span class="p">)</span>
-
-<span class="c1"># Use it to predict.</span>
-<span class="n">predictions</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">input_fn</span><span class="o">=</span><span class="n">predict_input_fn</span><span class="p">)</span>
-</code></pre></div><p>在我们加载完成数据之后一般都会进行随机化处理，确保不会出现病态排序结果（这种病态排序可能会损害随机梯度下降法的效果）</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Set up a linear classifier.</span>
+</span></span><span class="line"><span class="cl"><span class="n">classifier</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">estimator</span><span class="o">.</span><span class="n">LinearClassifier</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Train the model on some example data.</span>
+</span></span><span class="line"><span class="cl"><span class="n">classifier</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">input_fn</span><span class="o">=</span><span class="n">train_input_fn</span><span class="p">,</span> <span class="n">steps</span><span class="o">=</span><span class="mi">2000</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Use it to predict.</span>
+</span></span><span class="line"><span class="cl"><span class="n">predictions</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">input_fn</span><span class="o">=</span><span class="n">predict_input_fn</span><span class="p">)</span>
+</span></span></code></pre></div><p>在我们加载完成数据之后一般都会进行随机化处理，确保不会出现病态排序结果（这种病态排序可能会损害随机梯度下降法的效果）</p>
 <p>构建模型的步骤：</p>
 <ol>
 <li>
@@ -213,13 +213,13 @@
 </li>
 <li>
 <p>配置回归模型：例如线性回归模型使用 Linear Regressor</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">my_optimizer</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">GradientDescentOptimizer</span><span class="p">(</span><span class="n">learning_rate</span><span class="o">=</span><span class="mf">0.0000001</span><span class="p">)</span>
-<span class="n">my_optimizer</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">estimator</span><span class="o">.</span><span class="n">clip_gradients_by_norm</span><span class="p">(</span><span class="n">my_optimizer</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">)</span>
-<span class="n">linear_regressor</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">estimator</span><span class="o">.</span><span class="n">LinearRegressor</span><span class="p">(</span>
-    <span class="n">feature_columns</span> <span class="o">=</span> <span class="n">feature_columns</span><span class="p">,</span>
-    <span class="n">optimizer</span> <span class="o">=</span> <span class="n">my_optimizer</span>
-<span class="p">)</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">my_optimizer</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">GradientDescentOptimizer</span><span class="p">(</span><span class="n">learning_rate</span><span class="o">=</span><span class="mf">0.0000001</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">my_optimizer</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">estimator</span><span class="o">.</span><span class="n">clip_gradients_by_norm</span><span class="p">(</span><span class="n">my_optimizer</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">linear_regressor</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">estimator</span><span class="o">.</span><span class="n">LinearRegressor</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">feature_columns</span> <span class="o">=</span> <span class="n">feature_columns</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">optimizer</span> <span class="o">=</span> <span class="n">my_optimizer</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span></code></pre></div></li>
 <li>
 <p>定义输入函数：创建一个函数来处理数据（在每一次训练中）<em>这一部分目前不是很清楚，参考教程说法</em></p>
 </li>
@@ -239,11 +239,11 @@
 </li>
 </ol>
 <p>常用参数：</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">steps</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="o">//</span> <span class="err">训练迭代总步数</span>
-<span class="n">batch_size</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="o">//</span> <span class="err">单步的样本数量（随机选择）</span>
-<span class="n">periods</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="o">//</span> <span class="err">方便变量的一种。控制报告的粒度</span>
-<span class="o">//</span> <span class="n">ex</span><span class="o">.</span> <span class="err">此时</span> <span class="n">periods</span> <span class="o">=</span> <span class="mi">1</span><span class="err">，</span><span class="n">steps</span> <span class="o">=</span> <span class="mi">10</span> <span class="err">那么每</span> <span class="mi">10</span> <span class="err">次输出一次损失值</span>
-</code></pre></div><p>成立：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">steps</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="o">//</span> <span class="n">训练迭代总步数</span>
+</span></span><span class="line"><span class="cl"><span class="n">batch_size</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="o">//</span> <span class="n">单步的样本数量</span><span class="err">（</span><span class="n">随机选择</span><span class="err">）</span>
+</span></span><span class="line"><span class="cl"><span class="n">periods</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="o">//</span> <span class="n">方便变量的一种</span><span class="err">。</span><span class="n">控制报告的粒度</span>
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="n">ex</span><span class="o">.</span> <span class="n">此时</span> <span class="n">periods</span> <span class="o">=</span> <span class="mi">1</span><span class="err">，</span><span class="n">steps</span> <span class="o">=</span> <span class="mi">10</span> <span class="n">那么每</span> <span class="mi">10</span> <span class="n">次输出一次损失值</span>
+</span></span></code></pre></div><p>成立：</p>
 <p>$$total\ number\ of\ trained\ examples = batch\ size \times steps$$</p>
 <p>$$number\ of\ training\ examples\ in\ each\ period = \frac{batch\ size \times steps}{periods}$$</p>
 <p><strong>合成特征</strong>：将多个特征处理成一个特征。ex. 地区人口量与地区面积合成为地区人口密度</p>

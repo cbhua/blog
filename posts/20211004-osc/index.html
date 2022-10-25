@@ -109,11 +109,11 @@
                         <span class="date">2021.10.04</span>
                     </div>
                     <div class="post_content markdown"><p>没想到吧，我还会写技术文章。</p>
-<p><img src="https://timegg-1306358676.cos.ap-beijing.myqcloud.com/20211104-osc/unexpected.jpg" width = "200" alt="Wrong Loading" align=center /></p>
+<img src="https://timegg-1306358676.cos.ap-beijing.myqcloud.com/20211104-osc/unexpected.jpg" width = "200" alt="Wrong Loading" align=center />
 <p>前一阵子看了看自己的文章归档，发现我已经半年没有写过技术文章了，为了表示这个博主不是个只会写水文章的大水怪，我决定来写一篇硬核的技术文章，接招吧小伙子们。</p>
 <p>然后我就开始选题，整理下来可以写（水）的有几个：一个是 Linux to Linux 云游戏平台的搭建过程，不过这个教程其实就是用各种别人的包然后改 Bug 的过程，写出来不够优雅，而且这东西搞出来就是为了玩游戏的，总感觉缺少一点专业的感觉。另一个是现在新版 QQ 机器人的创建，不过前一阵子 QQ 机器人遭到了巨大打击，现在也不是那么火了，我也懒得弄（不是），而且就算有估计肯定有很多人都写过了，咱不能重复造轮子，所以就放弃。</p>
 <p>既然要写，就要写点其他人没写过的，什么东西写得人少呢，那当然是数学。</p>
-<p><img src="https://timegg-1306358676.cos.ap-beijing.myqcloud.com/20211104-osc/math.png" width = "500" alt="Wrong Loading" align=center /></p>
+<img src="https://timegg-1306358676.cos.ap-beijing.myqcloud.com/20211104-osc/math.png" width = "500" alt="Wrong Loading" align=center />
 <p>诶别走啊，虽然是数学，我会尽可能用口语化的方法来讲述核心的部分（不过还是要懂一些些高等数学的东西的，相信大家的高等数学 ABC、数学分析 ABC 都是 SSS 以上吧），让大家能够感觉到数学的魅力（确信）。耐心看完，你一定会有所收获。</p>
 <p>那么下面我们开始。</p>
 <h1 id="正文">正文</h1>
@@ -129,7 +129,7 @@
 <p>下面我们选取 Collocation points，其实 Collocation points 的选择也比较自由，只是相比 Partition points，Collocation points 的选择对结果的影响相对大一些。原文章中选取的方法是遵循 <a href="https://en.wikipedia.org/wiki/Gauss%E2%80%93Legendre_quadrature">Gauss-Legendre Quadrature Rule</a>，这样选取的 Collocation points 直观理解上会更容易控制和反映真实解。好消息是基于 Gauss-Legendre Quadrature Rule 选取值我们有表可以查，不用自己算，而且在实现过程中 Numpy 也提供相应的函数直接获取我们需要的值。</p>
 <p>Collocation points 选取的数量比较讲究，这取决于我们准备用几维的函数来拟合解，如果我们用 $r$ 维的函数来拟合，那么在每个 Partition 中我们需要选择 $r-1$ 个 Collocation points。至于为什么是这个数值，我们在下面的推导中会讲解。我们把选好的 Collocation points 标为 $\xi_i, i=1, \cdots, N\times (r-1)$.</p>
 <p>到此为止我们选好了 Partition points 和 Collocation points，这里我来举个具体的例子方便理解。比如我们准备用 $3$ 个分段的函数来拟合函数，我们就需要 $3 + 1 = 4$ 个 Partition points，然后我们想要用三维的函数来拟合，那么每个 Partition 中间我们要找 $3 - 1 = 2$ 个 Collocation points，即此时 $N=4, r=3$，选好的 Partition points 和 Collocation points 画出来就会是这个样子。</p>
-<p><img src="https://timegg-1306358676.cos.ap-beijing.myqcloud.com/20211104-osc/collocation-points.png" width = "500" alt="Wrong Loading" align=center /></p>
+<img src="https://timegg-1306358676.cos.ap-beijing.myqcloud.com/20211104-osc/collocation-points.png" width = "500" alt="Wrong Loading" align=center />
 <h3 id="step-2-将原方程问题转换为线性代数问题">Step 2. 将原方程问题转换为线性代数问题</h3>
 <p>这一步就是 OSC 方法的核心了，也是这个算法最强大的地方。为了方便大家理解，我决定全程用例子来讲，因为我读原论文的时候发现都是一般化的解释，花了好久时间才搞懂，不如一个例子来的快。我们接着上面的设定来，现在我们有 3 个 Partition，在每个 Partition 上面有一个函数，我们记为</p>
 <p>$$h_1(x) = a_{0, 0} + a_{0, 1}x + a_{0, 2}x^2, x\in[x_0, x_1] $$
@@ -144,11 +144,11 @@ $$0 + a_{0, 1} + 2a_{0, 2}x_1 = 0 +  a_{1, 1} + 2a_{1, 2}x_1$$</p>
 <p>如果用一般形式来计算自由度，将会是这样</p>
 <p>$$N\times (r+1)=2+(N-1)\times 2+N\times(r-1)$$</p>
 <p>讨论结束之后我们来用实际的例子来验证一下。假设我们现在的问题是一个一维常微分方程</p>
-<p><img src="https://timegg-1306358676.cos.ap-beijing.myqcloud.com/20211104-osc/ode.png" width = "200" alt="Wrong Loading" align=center /></p>
+<img src="https://timegg-1306358676.cos.ap-beijing.myqcloud.com/20211104-osc/ode.png" width = "200" alt="Wrong Loading" align=center />
 <p>那么我们带入 Collocation points 的时候会得到这样的方程</p>
-<p><img src="https://timegg-1306358676.cos.ap-beijing.myqcloud.com/20211104-osc/subtitute-collocation-points.png" width = "300" alt="Wrong Loading" align=center /></p>
+<img src="https://timegg-1306358676.cos.ap-beijing.myqcloud.com/20211104-osc/subtitute-collocation-points.png" width = "300" alt="Wrong Loading" align=center />
 <p>把所有方程放在一起，我们就可以发现我们得到了一个线性方程组，解这个线性方程组我们就可以得到我们的拟合函数了。</p>
-<p><img src="https://timegg-1306358676.cos.ap-beijing.myqcloud.com/20211104-osc/algebra-equations.png" width = "400" alt="Wrong Loading" align=center /></p>
+<img src="https://timegg-1306358676.cos.ap-beijing.myqcloud.com/20211104-osc/algebra-equations.png" width = "400" alt="Wrong Loading" align=center />
 <p>所以到此为止我们应该已经可以见识到了 OSC 方法的强大之处，只需要给我们一个常微分方程的表达式，我们不需要计算任何具体函数解的值，我们就可以将这个方程转化为一个线性方程组的求解问题，而且据原论文证明，这个方法对于三维以下的方程组都是理论收敛的，也就是保证有解。这么高质量的方法实在是非常帅气。</p>
 <h3 id="step-3-解线性方程组">Step 3. 解线性方程组</h3>
 <p>你可能会好奇其实这个方法的介绍在 Step 2. 就可以宣告结束了，毕竟我们都得到拟合函数了。但是实际上解通过 Step 2 得到的线性方程组并不是那么容易，我们在 Step 2. 中的例子非常的 Toy，在实际中 Partition points 的数量和维度都可能会高不少，主要是 Partition points，对于复杂的问题我们可能会选择十几个到几十个 Partition points，容易想象到这个线性方程组会很 Large Scale。</p>
@@ -158,18 +158,18 @@ $$0 + a_{0, 1} + 2a_{0, 2}x_1 = 0 +  a_{1, 1} + 2a_{1, 2}x_1$$</p>
 <h3 id="结果">结果</h3>
 <p>好的，到现在为止我们的模型已经介绍完了，那么我们来看一些简单的结果吧。这样可以方便大家形像地理解这个方法。</p>
 <p>和前面我们讲解中选择的 N 和 r 值一样，这里我们依然使用 N=3, r=3, 所要拟合的方程是</p>
-<p>$$u'' + u' + u = 10x^3 + 14x^2 - 34x - 26$$</p>
+<p>$$u&rsquo;&rsquo; + u&rsquo; + u = 10x^3 + 14x^2 - 34x - 26$$</p>
 <p>$$u(0)=0$$</p>
 <p>$$u(1)=0$$</p>
 <p>一顿操作猛如虎，我们的拟合结果画出来是这样的</p>
-<p><img src="https://timegg-1306358676.cos.ap-beijing.myqcloud.com/20211104-osc/solution1.png" width = "500" alt="Wrong Loading" align=center /></p>
+<img src="https://timegg-1306358676.cos.ap-beijing.myqcloud.com/20211104-osc/solution1.png" width = "500" alt="Wrong Loading" align=center />
 <p>我们可以看到对于原本真实解就是三次的情况下，我们的 Simulator 可以给出几乎一模一样的结果，即它直接找到了真实解。</p>
 <p>对于高维的真实解，通过这个方法可以得到大致的模拟，目前仍存在的一个问题是低次对于高次的拟合准确度还有待提升，比如下面这张图就是用三次的解来尝试模拟四次的真实解。虽然不是那么完美，但是至少寻找解的方向是对的。</p>
-<p><img src="https://timegg-1306358676.cos.ap-beijing.myqcloud.com/20211104-osc/solution2.png" width = "500" alt="Wrong Loading" align=center /></p>
+<img src="https://timegg-1306358676.cos.ap-beijing.myqcloud.com/20211104-osc/solution2.png" width = "500" alt="Wrong Loading" align=center /> 
 <p>好消息是这个方法对于非线性解是有效的，比如下面这张图就是用三次解来模拟三角函数基的解，也几乎可以达到完美的匹配程度。我们也认为这是这个方法最 Powerful 的地方。</p>
-<p><img src="https://timegg-1306358676.cos.ap-beijing.myqcloud.com/20211104-osc/solution3.png" width = "500" alt="Wrong Loading" align=center /></p>
+<img src="https://timegg-1306358676.cos.ap-beijing.myqcloud.com/20211104-osc/solution3.png" width = "500" alt="Wrong Loading" align=center />
 <p>这里是我们主要给出的三个例子，这个方法可以应用于任何一维常微分方程上面来测试结果，所以如果你对这个方法感兴趣可以亲自试试。我在 <a href="https://github.com/cbhua/model-orthogonal-collocation">GitHub</a> 上提供了一维 OSC 方法的代码，据我了解似乎之前并没有人尝试用过这个方法，姑且算是我的 Contribution 了，欢迎 Refer, Frok 和 Star.</p>
-<p><img src="https://timegg-1306358676.cos.ap-beijing.myqcloud.com/20211104-osc/github.png" width = "500" alt="Wrong Loading" align=center /></p>
+<img src="https://timegg-1306358676.cos.ap-beijing.myqcloud.com/20211104-osc/github.png" width = "500" alt="Wrong Loading" align=center />
 <h3 id="结尾">结尾</h3>
 <p>我们这里讨论的是一维的 OSC 方法，虽然展现了其一些特性和亮点，但是实际上只体现了 OSC 方法很小一部分的能力，更强大的能力在于高维方程的拟合上面。当然，高维的问题必然带来指数级的复杂度上升，这也是我没有一口气把二维 OSC 的讨论一并写在这里的原因。</p>
 <p>如果你对二维 OSC 方法感兴趣的话可以去读一读原论文的第三章，相信你一定会被这个方法的巧妙所吸引的。除此之外，据我搜索在 GitHub 上面还没有人发布二维 OSC 方法的代码。我已经实现了这个方法，只是目前我还要先用于我的 Research 上面，所以暂时先不发布。等我的 Research 告一段落之后我会尝试写一篇更加丰富、更加硬核的针对二维甚至是高维的 OSC 方法的解读。</p>

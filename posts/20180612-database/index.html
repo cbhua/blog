@@ -235,26 +235,26 @@
 <p>SQL 三级结构模式：文件(内模式) -&gt; 表(模式) -&gt; 视图(外模式)。</p>
 <p>SQL 实现：数据定义，数据查询，数据更新，数据操作。</p>
 <p>SQL 结构框架：</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">instance // 实例
-{
-	database // 数据库
-	{
-		schema // 模式
-		{
-			table // 表
-			view // 视图
-			index // 索引
-		}
-	}
-}
-</code></pre></div><h3 id="sql-数据定义">SQL 数据定义</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">instance // 实例
+</span></span><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">	database // 数据库
+</span></span><span class="line"><span class="cl">	{
+</span></span><span class="line"><span class="cl">		schema // 模式
+</span></span><span class="line"><span class="cl">		{
+</span></span><span class="line"><span class="cl">			table // 表
+</span></span><span class="line"><span class="cl">			view // 视图
+</span></span><span class="line"><span class="cl">			index // 索引
+</span></span><span class="line"><span class="cl">		}
+</span></span><span class="line"><span class="cl">	}
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></div><h3 id="sql-数据定义">SQL 数据定义</h3>
 <p><strong>创建模式与删除模式</strong></p>
 <p><code>create schema schema_name</code></p>
 <p><code>drop schema schema_name &lt;cascade / restricte&gt;</code></p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
-create schema test_schame authorization auth_name;
-drop schema test_schame cascade;
-</code></pre></div><p>关于 cascade &amp; restricte :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// e.g.
+</span></span><span class="line"><span class="cl">create schema test_schame authorization auth_name;
+</span></span><span class="line"><span class="cl">drop schema test_schame cascade;
+</span></span></code></pre></div><p>关于 cascade &amp; restricte :</p>
 <blockquote>
 <p>标注 cascade 是级联操作，其操作（例如drop）会对子目录下项目同等操作；</p>
 <p>标注 restricte 是限制操作，其操作（例如drop）当子目录下项目非空将报错；</p>
@@ -262,150 +262,150 @@ drop schema test_schame cascade;
 <p><strong>创建表与删除表</strong></p>
 <p><code>create table table_name</code></p>
 <p><code>drop table teble_name &lt;cascade / restricte&gt;</code></p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
-create table test_table
-(
-    sno char(10) unique, // 属性名 数据类型 完整性约束
-    sname char(10) not null,
-    stel char(10),
-    dno char(10),
-
-    primary key(sno), // 设置 sno 为主码
-    foreign key(dno)
-        references test_table2(sno), // 设置 dno 为外码，引用自 test_table2
-);
-
-drop table test_table cascade;
-</code></pre></div><p><strong>创建视图与删除视图</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// e.g.
+</span></span><span class="line"><span class="cl">create table test_table
+</span></span><span class="line"><span class="cl">(
+</span></span><span class="line"><span class="cl">    sno char(10) unique, // 属性名 数据类型 完整性约束
+</span></span><span class="line"><span class="cl">    sname char(10) not null,
+</span></span><span class="line"><span class="cl">    stel char(10),
+</span></span><span class="line"><span class="cl">    dno char(10),
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    primary key(sno), // 设置 sno 为主码
+</span></span><span class="line"><span class="cl">    foreign key(dno)
+</span></span><span class="line"><span class="cl">        references test_table2(sno), // 设置 dno 为外码，引用自 test_table2
+</span></span><span class="line"><span class="cl">);
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">drop table test_table cascade;
+</span></span></code></pre></div><p><strong>创建视图与删除视图</strong></p>
 <p><code>create view view_name</code></p>
 <p><code>drop view view_name &lt;cascade / restricte&gt;</code></p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
-create view test_view as
-select column_name // 涉及到 select 一会再说
-from test_table
-where condition;
-
-drop view test_view;
-</code></pre></div><p><strong>创建索引与删除索引</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// e.g.
+</span></span><span class="line"><span class="cl">create view test_view as
+</span></span><span class="line"><span class="cl">select column_name // 涉及到 select 一会再说
+</span></span><span class="line"><span class="cl">from test_table
+</span></span><span class="line"><span class="cl">where condition;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">drop view test_view;
+</span></span></code></pre></div><p><strong>创建索引与删除索引</strong></p>
 <p><code>create unique / cluster index index_name</code></p>
 <p><code>drop index index_name &lt;cascade / restricte&gt;</code></p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
-create unique index test_index on
-test_table(sno, sname);
-
-drop index test_index;
-</code></pre></div><h3 id="sql-数据查询">SQL 数据查询</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// e.g.
+</span></span><span class="line"><span class="cl">create unique index test_index on
+</span></span><span class="line"><span class="cl">test_table(sno, sname);
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">drop index test_index;
+</span></span></code></pre></div><h3 id="sql-数据查询">SQL 数据查询</h3>
 <p>select 语法很多，具体内容介绍在众多教程网站上也有很多。这里的笔记就是针对比较常见的 student 表进行的各类操作实例，以此复习各类 select 语法。</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
-
-// 从 student 表中选取 sno 与 sname
-select sno, sname from student;
-
-// 从 student 表中选取所有
-select * from student;
-
-// 从 student 表中选取 sage 并减 2015；选取 sname 并小写，输出时重命名为 NAME
-select sage-2015, lower(sname) NAME from student;
-
-// 从 student 表中选取 sno 的和，并计 sname 数
-select sum(sno), count(sname) from student;
-
-// 从 student 表中选取 sno 并去除重复数据
-select distinct sno from student;
-
-// 从 student 表中选取 dno 为 cs 的 sname
-select sname from student where dno = &#39;cs&#39;;
-
-// 从 student 表中选取 dno 为 cs 或者 ms 的 sname
-select sname from studnet where dno in (&#39;cs&#39;,&#39;ms&#39;);
-
-// 从 student 表中选取 sname 倒数第二位为 l 的 sno
-select sno from student where sname like &#39;%l_&#39;;
-
-// 从 student 表中选取 sname 最后一位为 _ 的 sno
-select sno from student where
-	sname like &#39;%\_&#39; escape \;
-
-// 从 student 表中选取 sno = 6 的sname
-select sname from student where
-	(sno&gt;10 or sno&lt;5) and sno=6;
-
-// 从 student 表中选取 cno 为 3 的 sname 并按照 grade, sno 排序
-select sname from student where cno=&#39;3&#39;
-	order by grade desc/asc, sno desc/asc;
-
-// student 表中不同 sname 数
-select count(distinct sname) from studnet;
-
-// 从 student 表中选取 sno 与对应的平均成绩
-select sno, avg(grade) from student group by sno;
-
-// 从 student 表中选取挂两科以上的学生
-select sno from student where grade&lt;60
-	group by sno having count(*)&gt;2;
-	select student.*, sc.* from student, sc where
-	student.sno = sc.sno;
-
-// 同表连接
-select first.sno, second.con from
-	test first, test second where ~;
-
-// 异表 join
-select * from table1 left outer join table2 on...
-	/right outer join on... /full outer join on...
-
-// 从 student 表中选取大于平均成绩的 sno 与 cno
-select sno, cno from sc x where grade &gt;=
-	(select ave(grade) from sc y where x.sno=y.sno)
-
-// 从 student 表中选取 con 有 1 的 sname
-select sname from student where exists
-	(select * from sc where student.sno=sno and cno=&#39;1&#39;);
-
-// 两层 not exists
-select sname from student where not exists
-	(select * from course where not exists
-		(select * from sc where sno=student.sno
-			and cno=course.cno
-		) //course that student didnt choose
-	);
-
-// 两层 not exists
-select distict sno from sc x where not exists
-	(select * from sc y where sno=001 and not eixsts
-		(select * form sc z where z.sno=x.sno
-			and z.cno=y.cno
-		) //course that they all chosed
-	);
-
-// 不同 select 的结合
-select_1 union/union all select_2;
-select_1 intersect select_2;
-select_1 except select_2;
-
-// 临时表
-select sno, cno from sc,
-	(select sno, avg(grade) from sc group by sno)
-	as avg(avg_sno, avg_grade)
-	where sc.sno=avg.avg_sno
-	and sc.grade&gt;avg.avg_grade;
-</code></pre></div><h3 id="sql-数据更新">SQL 数据更新</h3>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
-
-// 插入数据
-insert into student(sno, sname) values(002, zerotwo);
-
-// 从另一个表选中数据插入
-insert into student(sno, sname) 
-    select sno, sname from other_tabel;
-
-// 更新数据
-update student set sage=22 where sno=002;
-
-// 选择性更新数据
-update sc set grade=100 where &#39;ma&#39;=
-	(select dno from student where student.sno=sc.sno);
-</code></pre></div><p>除此之外还有 delete 等各类操作，都是大同小异。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// e.g.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 从 student 表中选取 sno 与 sname
+</span></span><span class="line"><span class="cl">select sno, sname from student;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 从 student 表中选取所有
+</span></span><span class="line"><span class="cl">select * from student;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 从 student 表中选取 sage 并减 2015；选取 sname 并小写，输出时重命名为 NAME
+</span></span><span class="line"><span class="cl">select sage-2015, lower(sname) NAME from student;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 从 student 表中选取 sno 的和，并计 sname 数
+</span></span><span class="line"><span class="cl">select sum(sno), count(sname) from student;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 从 student 表中选取 sno 并去除重复数据
+</span></span><span class="line"><span class="cl">select distinct sno from student;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 从 student 表中选取 dno 为 cs 的 sname
+</span></span><span class="line"><span class="cl">select sname from student where dno = &#39;cs&#39;;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 从 student 表中选取 dno 为 cs 或者 ms 的 sname
+</span></span><span class="line"><span class="cl">select sname from studnet where dno in (&#39;cs&#39;,&#39;ms&#39;);
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 从 student 表中选取 sname 倒数第二位为 l 的 sno
+</span></span><span class="line"><span class="cl">select sno from student where sname like &#39;%l_&#39;;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 从 student 表中选取 sname 最后一位为 _ 的 sno
+</span></span><span class="line"><span class="cl">select sno from student where
+</span></span><span class="line"><span class="cl">	sname like &#39;%\_&#39; escape \;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 从 student 表中选取 sno = 6 的sname
+</span></span><span class="line"><span class="cl">select sname from student where
+</span></span><span class="line"><span class="cl">	(sno&gt;10 or sno&lt;5) and sno=6;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 从 student 表中选取 cno 为 3 的 sname 并按照 grade, sno 排序
+</span></span><span class="line"><span class="cl">select sname from student where cno=&#39;3&#39;
+</span></span><span class="line"><span class="cl">	order by grade desc/asc, sno desc/asc;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// student 表中不同 sname 数
+</span></span><span class="line"><span class="cl">select count(distinct sname) from studnet;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 从 student 表中选取 sno 与对应的平均成绩
+</span></span><span class="line"><span class="cl">select sno, avg(grade) from student group by sno;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 从 student 表中选取挂两科以上的学生
+</span></span><span class="line"><span class="cl">select sno from student where grade&lt;60
+</span></span><span class="line"><span class="cl">	group by sno having count(*)&gt;2;
+</span></span><span class="line"><span class="cl">	select student.*, sc.* from student, sc where
+</span></span><span class="line"><span class="cl">	student.sno = sc.sno;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 同表连接
+</span></span><span class="line"><span class="cl">select first.sno, second.con from
+</span></span><span class="line"><span class="cl">	test first, test second where ~;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 异表 join
+</span></span><span class="line"><span class="cl">select * from table1 left outer join table2 on...
+</span></span><span class="line"><span class="cl">	/right outer join on... /full outer join on...
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 从 student 表中选取大于平均成绩的 sno 与 cno
+</span></span><span class="line"><span class="cl">select sno, cno from sc x where grade &gt;=
+</span></span><span class="line"><span class="cl">	(select ave(grade) from sc y where x.sno=y.sno)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 从 student 表中选取 con 有 1 的 sname
+</span></span><span class="line"><span class="cl">select sname from student where exists
+</span></span><span class="line"><span class="cl">	(select * from sc where student.sno=sno and cno=&#39;1&#39;);
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 两层 not exists
+</span></span><span class="line"><span class="cl">select sname from student where not exists
+</span></span><span class="line"><span class="cl">	(select * from course where not exists
+</span></span><span class="line"><span class="cl">		(select * from sc where sno=student.sno
+</span></span><span class="line"><span class="cl">			and cno=course.cno
+</span></span><span class="line"><span class="cl">		) //course that student didnt choose
+</span></span><span class="line"><span class="cl">	);
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 两层 not exists
+</span></span><span class="line"><span class="cl">select distict sno from sc x where not exists
+</span></span><span class="line"><span class="cl">	(select * from sc y where sno=001 and not eixsts
+</span></span><span class="line"><span class="cl">		(select * form sc z where z.sno=x.sno
+</span></span><span class="line"><span class="cl">			and z.cno=y.cno
+</span></span><span class="line"><span class="cl">		) //course that they all chosed
+</span></span><span class="line"><span class="cl">	);
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 不同 select 的结合
+</span></span><span class="line"><span class="cl">select_1 union/union all select_2;
+</span></span><span class="line"><span class="cl">select_1 intersect select_2;
+</span></span><span class="line"><span class="cl">select_1 except select_2;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 临时表
+</span></span><span class="line"><span class="cl">select sno, cno from sc,
+</span></span><span class="line"><span class="cl">	(select sno, avg(grade) from sc group by sno)
+</span></span><span class="line"><span class="cl">	as avg(avg_sno, avg_grade)
+</span></span><span class="line"><span class="cl">	where sc.sno=avg.avg_sno
+</span></span><span class="line"><span class="cl">	and sc.grade&gt;avg.avg_grade;
+</span></span></code></pre></div><h3 id="sql-数据更新">SQL 数据更新</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// e.g.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 插入数据
+</span></span><span class="line"><span class="cl">insert into student(sno, sname) values(002, zerotwo);
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 从另一个表选中数据插入
+</span></span><span class="line"><span class="cl">insert into student(sno, sname) 
+</span></span><span class="line"><span class="cl">    select sno, sname from other_tabel;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 更新数据
+</span></span><span class="line"><span class="cl">update student set sage=22 where sno=002;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 选择性更新数据
+</span></span><span class="line"><span class="cl">update sc set grade=100 where &#39;ma&#39;=
+</span></span><span class="line"><span class="cl">	(select dno from student where student.sno=sc.sno);
+</span></span></code></pre></div><p>除此之外还有 delete 等各类操作，都是大同小异。</p>
 <h2 id="数据库编程">数据库编程</h2>
 <blockquote>
 <p>SQL 编程技术可以有效克服 SQL 语言实现复杂应用方面的不足，提高应用系统和数据库管理系统之间的互操作性。</p>
@@ -419,64 +419,64 @@ update sc set grade=100 where &#39;ma&#39;=
 </ul>
 <p><strong>嵌入式 SQL ：</strong></p>
 <p>实例：（更为完善的例子在书上 page.247）</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
-
-exec sql begin declare section; // 声明主变量
-char sno;
-char cno;
-char sname;
-exec sql end declare section;
-
-exec sql include sqlca; // sql通信区
-int main(){
-	...
-	exec sql connect to database_1; // 连接数据库
-	exec sql declare v cursor for // 声明游标v，指向select的表
-		select...
-	exec sql open v;
-	for(;;){
-		exec sql fetch v into :sno, :cno, :sname; // 推进游标
-		if(sqlca.sqlcode != 0) break;
-		... // 可以各种操作，也可以内嵌sql语句
-	}
-	exec sql close v; // 关闭游标
-	exec sql commit work; // 提交事务
-	exec sql disconnect database_1; // 关闭数据库连接
-	return 0;
-}
-</code></pre></div><p>由于学期课程中并没有涉及太多的数据库编程部分，这边就先空下来，后来有空了再补充。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// e.g.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">exec sql begin declare section; // 声明主变量
+</span></span><span class="line"><span class="cl">char sno;
+</span></span><span class="line"><span class="cl">char cno;
+</span></span><span class="line"><span class="cl">char sname;
+</span></span><span class="line"><span class="cl">exec sql end declare section;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">exec sql include sqlca; // sql通信区
+</span></span><span class="line"><span class="cl">int main(){
+</span></span><span class="line"><span class="cl">	...
+</span></span><span class="line"><span class="cl">	exec sql connect to database_1; // 连接数据库
+</span></span><span class="line"><span class="cl">	exec sql declare v cursor for // 声明游标v，指向select的表
+</span></span><span class="line"><span class="cl">		select...
+</span></span><span class="line"><span class="cl">	exec sql open v;
+</span></span><span class="line"><span class="cl">	for(;;){
+</span></span><span class="line"><span class="cl">		exec sql fetch v into :sno, :cno, :sname; // 推进游标
+</span></span><span class="line"><span class="cl">		if(sqlca.sqlcode != 0) break;
+</span></span><span class="line"><span class="cl">		... // 可以各种操作，也可以内嵌sql语句
+</span></span><span class="line"><span class="cl">	}
+</span></span><span class="line"><span class="cl">	exec sql close v; // 关闭游标
+</span></span><span class="line"><span class="cl">	exec sql commit work; // 提交事务
+</span></span><span class="line"><span class="cl">	exec sql disconnect database_1; // 关闭数据库连接
+</span></span><span class="line"><span class="cl">	return 0;
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></div><p>由于学期课程中并没有涉及太多的数据库编程部分，这边就先空下来，后来有空了再补充。</p>
 <h2 id="数据库的完整性">数据库的完整性</h2>
 <p><strong>三种数据完整性：</strong></p>
 <p>实体完整性：(primary key)</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
-sno char(10) primary key; // 列级定义主码
-primary key(sno, cno); // 表级定义主码
-</code></pre></div><p>参照完整性：(foreign key)</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
-foreign key(sno) references student(sno)
-    on delete/update cascade;
-foreign key(cno) references studnet(cno)
-    on delete no action;
-</code></pre></div><p>用户定义完整性：</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
-sno char(10) not null; // 设置 sno 非空
-cno char(10) nuique; // 设置 cno 非重复
-
-check(sex in(&#39;mail&#39;, &#39;famail&#39;)); // 设置 sex ‘选项’
-check(sex=&#39;famail&#39; or sname not like&#39;ms.%&#39;);
-</code></pre></div><p><strong>对数据库完整性的操作：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// e.g.
+</span></span><span class="line"><span class="cl">sno char(10) primary key; // 列级定义主码
+</span></span><span class="line"><span class="cl">primary key(sno, cno); // 表级定义主码
+</span></span></code></pre></div><p>参照完整性：(foreign key)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// e.g.
+</span></span><span class="line"><span class="cl">foreign key(sno) references student(sno)
+</span></span><span class="line"><span class="cl">    on delete/update cascade;
+</span></span><span class="line"><span class="cl">foreign key(cno) references studnet(cno)
+</span></span><span class="line"><span class="cl">    on delete no action;
+</span></span></code></pre></div><p>用户定义完整性：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// e.g.
+</span></span><span class="line"><span class="cl">sno char(10) not null; // 设置 sno 非空
+</span></span><span class="line"><span class="cl">cno char(10) nuique; // 设置 cno 非重复
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">check(sex in(&#39;mail&#39;, &#39;famail&#39;)); // 设置 sex ‘选项’
+</span></span><span class="line"><span class="cl">check(sex=&#39;famail&#39; or sname not like&#39;ms.%&#39;);
+</span></span></code></pre></div><p><strong>对数据库完整性的操作：</strong></p>
 <p>完整性约束</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
-sno char(3) constrant c1 &lt;...&gt;; // 命名约束，把设置给 sno 的完整性约束命名为 c1
-alter table student
-    add constraint c1 &lt;...&gt;; // 修改约束
-</code></pre></div><p>断言</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
-create assertion [assertion_name] &lt;sql...&gt;;
-</code></pre></div><p>触发器</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g.
-create trigger [trigger_name] &lt;sql...&gt;;
-</code></pre></div><p>关于检查约束、断言与触发器的区别：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// e.g.
+</span></span><span class="line"><span class="cl">sno char(3) constrant c1 &lt;...&gt;; // 命名约束，把设置给 sno 的完整性约束命名为 c1
+</span></span><span class="line"><span class="cl">alter table student
+</span></span><span class="line"><span class="cl">    add constraint c1 &lt;...&gt;; // 修改约束
+</span></span></code></pre></div><p>断言</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// e.g.
+</span></span><span class="line"><span class="cl">create assertion [assertion_name] &lt;sql...&gt;;
+</span></span></code></pre></div><p>触发器</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// e.g.
+</span></span><span class="line"><span class="cl">create trigger [trigger_name] &lt;sql...&gt;;
+</span></span></code></pre></div><p>关于检查约束、断言与触发器的区别：</p>
 <ul>
 <li>
 <p>检查约束：检查是一个SQL，它确保在记录上执行操作之前满足条件；</p>
@@ -492,22 +492,22 @@ create trigger [trigger_name] &lt;sql...&gt;;
 <p><strong>常通过下面几种方式控制数据库安全性：</strong></p>
 <p>用户识别：即最常见的‘登陆’控制。</p>
 <p>存取控制：自主存取控制(DAC)、强制存取控制(MAC)。</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g. DAC
-
-grant select on table table_1 to user_1; // 授予权限
-grant all priviliges on table student, course
-    to user_2, user_3; // 授予全部权限
-grant select on table table_1 to public; // 授予角色权限
-grant update(sno) on table table_1 to user_1;
-    with grant option; // 授予可再授权权限
-
-revoke select on table table_1 from user_1
-    cascade/restrict; // 收回可再授权权限需要cascade
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">// e.g. MAC
-// 包含 主体：许可证级别；客体：密级，并满足：
-* 仅当主体的许可证级别大于或等于客体的密级时，该主体才能读相应的客体；
-* 仅当主体的许可证级别小于或等于客体的密级时，该主体才能写相应的客体；
-</code></pre></div><p>视图：前面已大致介绍；</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// e.g. DAC
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">grant select on table table_1 to user_1; // 授予权限
+</span></span><span class="line"><span class="cl">grant all priviliges on table student, course
+</span></span><span class="line"><span class="cl">    to user_2, user_3; // 授予全部权限
+</span></span><span class="line"><span class="cl">grant select on table table_1 to public; // 授予角色权限
+</span></span><span class="line"><span class="cl">grant update(sno) on table table_1 to user_1;
+</span></span><span class="line"><span class="cl">    with grant option; // 授予可再授权权限
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">revoke select on table table_1 from user_1
+</span></span><span class="line"><span class="cl">    cascade/restrict; // 收回可再授权权限需要cascade
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// e.g. MAC
+</span></span><span class="line"><span class="cl">// 包含 主体：许可证级别；客体：密级，并满足：
+</span></span><span class="line"><span class="cl">* 仅当主体的许可证级别大于或等于客体的密级时，该主体才能读相应的客体；
+</span></span><span class="line"><span class="cl">* 仅当主体的许可证级别小于或等于客体的密级时，该主体才能写相应的客体；
+</span></span></code></pre></div><p>视图：前面已大致介绍；</p>
 <p>审计：用户级审计 &amp; 系统级审计；</p>
 <p>加密：常见；</p>
 <h2 id="关系数据理论">关系数据理论</h2>
@@ -616,30 +616,30 @@ R(U)上关系r，给定的一对（x，z）值，有一组Y的值，这组值仅
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="o">//</span> <span class="n">e</span><span class="p">.</span><span class="k">g</span><span class="p">.</span> <span class="err">求函数最小依赖集实例</span>
-<span class="n">F</span> <span class="o">=</span> <span class="err">{</span> <span class="n">A</span> <span class="err">→</span> <span class="n">BC</span> <span class="err">，</span> <span class="n">B</span> <span class="err">→</span> <span class="n">AC</span> <span class="err">，</span> <span class="k">C</span> <span class="err">→</span> <span class="n">A</span> <span class="err">}，求</span> <span class="n">Fmin</span>
-
-<span class="err">{</span>
-	<span class="p">[</span><span class="n">step</span><span class="p">.</span><span class="mi">1</span><span class="p">]</span>
-	<span class="n">F</span><span class="o">=</span> <span class="err">{</span> <span class="n">A</span> <span class="err">→</span> <span class="n">B</span> <span class="err">，</span> <span class="n">A</span> <span class="err">→</span> <span class="k">C</span> <span class="err">，</span> <span class="n">B</span> <span class="err">→</span> <span class="n">A</span><span class="err">，</span><span class="n">B</span>  <span class="err">→</span> <span class="k">C</span><span class="err">，</span><span class="k">C</span> <span class="err">→</span> <span class="n">A</span> <span class="err">}</span>
-
-	<span class="p">[</span><span class="n">step</span><span class="p">.</span><span class="mi">2</span><span class="p">]</span>
-	<span class="k">G</span><span class="o">=</span><span class="n">F</span><span class="o">-</span><span class="err">{</span> <span class="n">A</span> <span class="err">→</span> <span class="n">B</span> <span class="err">}</span>
-		<span class="n">AG</span> <span class="o">+=</span> <span class="n">AC</span><span class="err">，不包含</span> <span class="n">B</span><span class="err">，所以</span> <span class="n">A</span> <span class="err">→</span> <span class="n">B</span> <span class="err">保留</span>
-	<span class="k">G</span><span class="o">=</span><span class="n">F</span><span class="o">-</span><span class="err">{</span> <span class="n">A</span> <span class="err">→</span> <span class="k">C</span> <span class="err">}</span>
-		<span class="n">AG</span> <span class="o">+=</span> <span class="n">ABC</span><span class="err">，包含</span> <span class="k">C</span><span class="err">，所以</span> <span class="n">A</span> <span class="err">→</span> <span class="k">C</span> <span class="err">删除，令</span> <span class="n">F</span><span class="o">=</span><span class="k">G</span> <span class="err">，</span>
-		<span class="n">F</span><span class="o">=</span><span class="err">{</span><span class="n">A</span> <span class="err">→</span> <span class="n">B</span> <span class="err">，</span> <span class="n">B</span> <span class="err">→</span> <span class="n">A</span><span class="err">，</span><span class="n">B</span>  <span class="err">→</span> <span class="k">C</span><span class="err">，</span> <span class="k">C</span> <span class="err">→</span> <span class="n">A</span><span class="err">}</span>
-	<span class="k">G</span><span class="o">=</span><span class="n">F</span><span class="o">-</span><span class="err">{</span> <span class="n">B</span> <span class="err">→</span> <span class="n">A</span> <span class="err">}，</span>
-		<span class="n">BG</span> <span class="o">+=</span> <span class="n">BAC</span><span class="err">，包含</span><span class="n">A</span><span class="err">，所以</span> <span class="n">B</span> <span class="err">→</span> <span class="n">A</span> <span class="err">删除，令</span><span class="n">F</span><span class="o">=</span><span class="k">G</span><span class="err">，</span><span class="n">F</span><span class="o">=</span><span class="err">{</span><span class="n">A</span> <span class="err">→</span> <span class="n">B</span><span class="err">，</span><span class="n">BC</span><span class="err">，</span> <span class="k">C</span> <span class="err">→</span> <span class="n">A</span><span class="err">}</span>
-	<span class="k">G</span><span class="o">=</span><span class="n">F</span><span class="o">-</span><span class="err">{</span> <span class="n">B</span> <span class="err">→</span> <span class="k">C</span> <span class="err">}，</span>
-		<span class="n">BG</span> <span class="o">+=</span><span class="n">B</span><span class="err">，不包含</span> <span class="k">C</span><span class="err">，所以</span> <span class="n">B</span> <span class="err">→</span> <span class="k">C</span> <span class="err">保留</span>
-	<span class="k">G</span><span class="o">=</span><span class="n">F</span><span class="o">-</span><span class="err">{</span> <span class="k">C</span> <span class="err">→</span> <span class="n">A</span> <span class="err">}，</span>
-		<span class="n">CG</span> <span class="o">+=</span> <span class="k">C</span><span class="err">，不包含</span> <span class="n">A</span><span class="err">，所以</span> <span class="k">C</span> <span class="err">→</span> <span class="n">A</span> <span class="err">保留</span>
-
-	<span class="p">[</span><span class="n">step</span><span class="p">.</span><span class="mi">3</span><span class="p">]</span>
-	<span class="n">F</span><span class="o">=</span><span class="err">{</span> <span class="n">A</span> <span class="err">→</span> <span class="n">B</span> <span class="err">，</span><span class="n">B</span> <span class="err">→</span> <span class="k">C</span> <span class="err">，</span><span class="k">C</span> <span class="err">→</span> <span class="n">A</span> <span class="err">}</span>
-<span class="err">}</span>
-</code></pre></div><h2 id="数据库设计">数据库设计</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="o">//</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="k">g</span><span class="p">.</span><span class="w"> </span><span class="err">求函数最小依赖集实例</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">F</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">{</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">BC</span><span class="w"> </span><span class="err">，</span><span class="w"> </span><span class="n">B</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">AC</span><span class="w"> </span><span class="err">，</span><span class="w"> </span><span class="k">C</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="err">}，求</span><span class="w"> </span><span class="n">Fmin</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">[</span><span class="n">step</span><span class="p">.</span><span class="mi">1</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">F</span><span class="o">=</span><span class="w"> </span><span class="err">{</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">B</span><span class="w"> </span><span class="err">，</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="k">C</span><span class="w"> </span><span class="err">，</span><span class="w"> </span><span class="n">B</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">A</span><span class="err">，</span><span class="n">B</span><span class="w">  </span><span class="err">→</span><span class="w"> </span><span class="k">C</span><span class="err">，</span><span class="k">C</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="err">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">[</span><span class="n">step</span><span class="p">.</span><span class="mi">2</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">G</span><span class="o">=</span><span class="n">F</span><span class="o">-</span><span class="err">{</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">B</span><span class="w"> </span><span class="err">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">AG</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">AC</span><span class="err">，不包含</span><span class="w"> </span><span class="n">B</span><span class="err">，所以</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">B</span><span class="w"> </span><span class="err">保留</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">G</span><span class="o">=</span><span class="n">F</span><span class="o">-</span><span class="err">{</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="k">C</span><span class="w"> </span><span class="err">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">AG</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">ABC</span><span class="err">，包含</span><span class="w"> </span><span class="k">C</span><span class="err">，所以</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="k">C</span><span class="w"> </span><span class="err">删除，令</span><span class="w"> </span><span class="n">F</span><span class="o">=</span><span class="k">G</span><span class="w"> </span><span class="err">，</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">F</span><span class="o">=</span><span class="err">{</span><span class="n">A</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">B</span><span class="w"> </span><span class="err">，</span><span class="w"> </span><span class="n">B</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">A</span><span class="err">，</span><span class="n">B</span><span class="w">  </span><span class="err">→</span><span class="w"> </span><span class="k">C</span><span class="err">，</span><span class="w"> </span><span class="k">C</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">A</span><span class="err">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">G</span><span class="o">=</span><span class="n">F</span><span class="o">-</span><span class="err">{</span><span class="w"> </span><span class="n">B</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="err">}，</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">BG</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">BAC</span><span class="err">，包含</span><span class="n">A</span><span class="err">，所以</span><span class="w"> </span><span class="n">B</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="err">删除，令</span><span class="n">F</span><span class="o">=</span><span class="k">G</span><span class="err">，</span><span class="n">F</span><span class="o">=</span><span class="err">{</span><span class="n">A</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">B</span><span class="err">，</span><span class="n">BC</span><span class="err">，</span><span class="w"> </span><span class="k">C</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">A</span><span class="err">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">G</span><span class="o">=</span><span class="n">F</span><span class="o">-</span><span class="err">{</span><span class="w"> </span><span class="n">B</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="k">C</span><span class="w"> </span><span class="err">}，</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">BG</span><span class="w"> </span><span class="o">+=</span><span class="n">B</span><span class="err">，不包含</span><span class="w"> </span><span class="k">C</span><span class="err">，所以</span><span class="w"> </span><span class="n">B</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="k">C</span><span class="w"> </span><span class="err">保留</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">G</span><span class="o">=</span><span class="n">F</span><span class="o">-</span><span class="err">{</span><span class="w"> </span><span class="k">C</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="err">}，</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">CG</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="k">C</span><span class="err">，不包含</span><span class="w"> </span><span class="n">A</span><span class="err">，所以</span><span class="w"> </span><span class="k">C</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="err">保留</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">[</span><span class="n">step</span><span class="p">.</span><span class="mi">3</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">F</span><span class="o">=</span><span class="err">{</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">B</span><span class="w"> </span><span class="err">，</span><span class="n">B</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="k">C</span><span class="w"> </span><span class="err">，</span><span class="k">C</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="err">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">}</span><span class="w">
+</span></span></span></code></pre></div><h2 id="数据库设计">数据库设计</h2>
 <ol>
 <li>需求分析阶段：了解分析用户需求 (数据 and 处理)；</li>
 <li>概念结构设计：综合归纳用户需求形成概念模型，形成概念模式 (E-R)；</li>

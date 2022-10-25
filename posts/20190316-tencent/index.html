@@ -142,41 +142,41 @@
 </li>
 </ul>
 <h2 id="part-3-部署酷q至云服务器">Part 3. 部署酷Q至云服务器</h2>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">系统：CentOS 7.4
-
-SSH App：MobaXterm
-
-环境：Docker cotainer
-
-下述 Linux 操作：用户 - root；主机名 - CentOS；
-</code></pre></div><p><strong>Step 1. 配置 Docker</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">系统：CentOS 7.4
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">SSH App：MobaXterm
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">环境：Docker cotainer
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">下述 Linux 操作：用户 - root；主机名 - CentOS；
+</span></span></code></pre></div><p><strong>Step 1. 配置 Docker</strong></p>
 <p>安装 Docker：</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">[root@CentOS ~]# sudo yum install docker
-</code></pre></div><p>安装完成之后启动 Docker：</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">[root@CentOS ~]# sudo systemctl start docker
-</code></pre></div><p>查看 Docker 运行情况：</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">[root@CentOS ~]# docker info
-</code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[root@CentOS ~]# sudo yum install docker
+</span></span></code></pre></div><p>安装完成之后启动 Docker：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[root@CentOS ~]# sudo systemctl start docker
+</span></span></code></pre></div><p>查看 Docker 运行情况：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[root@CentOS ~]# docker info
+</span></span></code></pre></div><hr>
 <p><strong>Step 2. 配置 CoolQ (酷Q) 镜像</strong></p>
 <p>下载 CoolQ 镜像（coolq.io）：</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">[root@CentOS ~]# sudo docker pull coolq/wine-coolq
-</code></pre></div><p>查看镜像情况：</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">[root@CentOS ~]# sudo docker images
-</code></pre></div><p>创建一个用以存放数据的 coolq-data 文件夹，创建的路径可以任意选择，这里为最顶层目录：</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">[root@CentOS ~]# sudo mkdir /coolq-data
-</code></pre></div><p>运行 CoolQ 容器，这是最关键的一步，请仔细按照下述参数说明进行操作：</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">[root@CentOS ~]# docker run --restart=always --name wine-coolq -d \
--p 8080:9000 \
--v /coolq-data:/home/user/coolq \
--e VNC_PASSWD=12345678 \
--e COOLQ_ACCOUNT=1000000000 \
-coolq/wine-coolq
-</code></pre></div><p>参数说明 (其余部分均不需要修改)：</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">8080 - 远程监听端口,此端口需要云服务器防火墙通过,请参考你选择的服务商提供的信息
-/coolq-data - 刚才创建的存放数据的文件夹路径
-12345678 - 过一会需要登陆一个东西,这里是你要设置的登陆密码(不超8位)
-1000000000 - 用以登陆酷Q的QQ号
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[root@CentOS ~]# sudo docker pull coolq/wine-coolq
+</span></span></code></pre></div><p>查看镜像情况：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[root@CentOS ~]# sudo docker images
+</span></span></code></pre></div><p>创建一个用以存放数据的 coolq-data 文件夹，创建的路径可以任意选择，这里为最顶层目录：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[root@CentOS ~]# sudo mkdir /coolq-data
+</span></span></code></pre></div><p>运行 CoolQ 容器，这是最关键的一步，请仔细按照下述参数说明进行操作：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[root@CentOS ~]# docker run --restart=always --name wine-coolq -d \
+</span></span><span class="line"><span class="cl">-p 8080:9000 \
+</span></span><span class="line"><span class="cl">-v /coolq-data:/home/user/coolq \
+</span></span><span class="line"><span class="cl">-e VNC_PASSWD=12345678 \
+</span></span><span class="line"><span class="cl">-e COOLQ_ACCOUNT=1000000000 \
+</span></span><span class="line"><span class="cl">coolq/wine-coolq
+</span></span></code></pre></div><p>参数说明 (其余部分均不需要修改)：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">8080 - 远程监听端口,此端口需要云服务器防火墙通过,请参考你选择的服务商提供的信息
+</span></span><span class="line"><span class="cl">/coolq-data - 刚才创建的存放数据的文件夹路径
+</span></span><span class="line"><span class="cl">12345678 - 过一会需要登陆一个东西,这里是你要设置的登陆密码(不超8位)
+</span></span><span class="line"><span class="cl">1000000000 - 用以登陆酷Q的QQ号
+</span></span></code></pre></div><ul>
 <li><strong>注意</strong>：远程监听端口设置的合适与否关系着后面能否连接酷Q，请务必选择防火墙开放的端口。以阿里云为例，选择 <code>概览 -&gt; 服务器安全设置 -&gt; 防火墙</code> 其中 HTTP 这一行的端口范围就是服务器开放的端口，这样上述操作中就用 <code>-p 80:9000</code> 即可。</li>
 </ul>
 <p><strong>Step 3. 连接 CoolQ 并调整</strong></p>
@@ -193,9 +193,9 @@ coolq/wine-coolq
 <p>至此，酷Q配置完毕。</p>
 <h2 id="part-4-后续调整">Part 4. 后续调整</h2>
 <p>参考 <a href="https://legacy.gitbook.com/book/yeasy/docker_practice/details">Docker 从入门到实践</a> 控制容器运行与停止：</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">[root@CentOS ~]# docker start coolq
-[root@CentOS ~]# docker stop coolq
-</code></pre></div><p>当然，比较好的选择就是在酷Q中安装一个机器人控制插件，这样就可以比较方便的启用和关闭机器人，并且监控机器人状态。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[root@CentOS ~]# docker start coolq
+</span></span><span class="line"><span class="cl">[root@CentOS ~]# docker stop coolq
+</span></span></code></pre></div><p>当然，比较好的选择就是在酷Q中安装一个机器人控制插件，这样就可以比较方便的启用和关闭机器人，并且监控机器人状态。</p>
 <p>稳定性方面，依服务器的带宽而定，反应偶有延迟，其中的一些需要联网的功能偶尔会宕机，整体上影响不大。</p>
 <p><strong>2019.3.25 Update</strong> - 经过一段时间的测试，酷Q的回复延迟越来越长，最后稳定在 20s 左右，具体原因是系统问题、主机问题还是网络问题还在分析。另一个遇到的问题就是酷Q更新之后是需要重新登陆的，在远程的情况下需要定期连接，是比较麻烦的，而酷Q也不提供停止更新或者静默更新，目前还没有比较好的解决方法。</p>
 </div>

@@ -129,22 +129,22 @@
 <p>当你完成了 ZeroTier 官网注册和网络配置的步骤之后，就可以开始配置 Ubuntu 云服务器上的内容了。对于 Linux 系统 <a href="https://www.zerotier.com/download/">ZeroTier 官网</a>有提供快速的安装脚本：</p>
 <p>SSL base <code>curl -s https://install.zerotier.com | sudo bash</code></p>
 <p>GPG base：（在连接过程中基于 GPG 隐私控制会让流量更加安全）</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">curl -s <span class="s1">&#39;https://raw.githubusercontent.com/zerotier/ZeroTierOne/master/doc/contact%40zerotier.com.gpg&#39;</span> <span class="p">|</span> gpg --import <span class="o">&amp;&amp;</span> <span class="se">\
-</span><span class="se"></span><span class="k">if</span> <span class="nv">z</span><span class="o">=</span><span class="k">$(</span>curl -s <span class="s1">&#39;https://install.zerotier.com/&#39;</span> <span class="p">|</span> gpg<span class="k">)</span><span class="p">;</span> <span class="k">then</span> <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$z</span><span class="s2">&#34;</span> <span class="p">|</span> sudo bash<span class="p">;</span> <span class="k">fi</span>
-</code></pre></div><p>装完之后连上刚才在 ZeroTier 上创建的网络：<code>sudo zerotier-cli join aabbccdd</code> ，<code>aabbccdd</code> 是 ZeroTier 上的 Network ID。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">curl -s <span class="s1">&#39;https://raw.githubusercontent.com/zerotier/ZeroTierOne/master/doc/contact%40zerotier.com.gpg&#39;</span> <span class="p">|</span> gpg --import <span class="o">&amp;&amp;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="k">if</span> <span class="nv">z</span><span class="o">=</span><span class="k">$(</span>curl -s <span class="s1">&#39;https://install.zerotier.com/&#39;</span> <span class="p">|</span> gpg<span class="k">)</span><span class="p">;</span> <span class="k">then</span> <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$z</span><span class="s2">&#34;</span> <span class="p">|</span> sudo bash<span class="p">;</span> <span class="k">fi</span>
+</span></span></code></pre></div><p>装完之后连上刚才在 ZeroTier 上创建的网络：<code>sudo zerotier-cli join aabbccdd</code> ，<code>aabbccdd</code> 是 ZeroTier 上的 Network ID。</p>
 <p>加入成功会有 <code>200 join OK</code> 的提示，如果这时候去看 ZeroTier 后台的话也是能看到这个设备的，如果网络设置成 Private 的话，别忘了在后台同意一下。</p>
 <p><strong>N.B.</strong> 虽然连接网络是可以交给用户而不用 <code>sudo</code>，但是下一步生成 Moon 配置文件需要写入 <code>/var</code> ，早晚还是要转到 root 权限，所以直接全部 <code>sudo</code> 好了。</p>
 <p>之后生成 Moon 配置文件（需要 root 权限，而且是要切换 root）：</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">cd</span> /var/lib/zerotier-one
-su
-zerotier-idtool initmoon identity.public &gt; moon.json
-</code></pre></div><p>然后此目录下会生成 moon.json 文件，将文件中的<code>&quot;stableEndpoints&quot;: []</code>中填入云服务器的公网 IP，如 <code>&quot;stableEndpoints&quot;: [&quot;100.100.100.100/9993&quot;]</code>，别忘了 9993 的端口和引号。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> /var/lib/zerotier-one
+</span></span><span class="line"><span class="cl">su
+</span></span><span class="line"><span class="cl">zerotier-idtool initmoon identity.public &gt; moon.json
+</span></span></code></pre></div><p>然后此目录下会生成 moon.json 文件，将文件中的<code>&quot;stableEndpoints&quot;: []</code>中填入云服务器的公网 IP，如 <code>&quot;stableEndpoints&quot;: [&quot;100.100.100.100/9993&quot;]</code>，别忘了 9993 的端口和引号。</p>
 <p>说到端口，这个时候需要在你云服务器的运营商后台的安全管理上把 TCP 的 9993 端口开放，这样之后才能生效。</p>
 <p>修改完 moon.json 之后运行指令 <code>zerotier-idtool genmoon moon.json</code> 以生成签名文件。该签名文件就在本目录下，名称格式为六个 0 + Network ID.moon。</p>
 <p>这个签名放这里还不行，需要在本目录下创建一个名为 moon.d 的文件夹，将这个签名文件挪进去：</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">mkdir moon.d
-mv 000000aabbccdd.moom ./moon.d/
-</code></pre></div><p>到这服务器端的配置就完成了，重启一下 Zero Tier 服务就会生效：<code>service zerotier-one restart</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mkdir moon.d
+</span></span><span class="line"><span class="cl">mv 000000aabbccdd.moom ./moon.d/
+</span></span></code></pre></div><p>到这服务器端的配置就完成了，重启一下 Zero Tier 服务就会生效：<code>service zerotier-one restart</code></p>
 <h2 id="windows-客户端主机配置-zerotier">Windows 客户端主机配置 ZeroTier</h2>
 <p>好，网上大部分教程都到这里为止。剩下的内容简单，问题也多。</p>
 <p>毕竟我准备用这个来联机游戏，所以除了服务器，其他平台都是 Windows。Windows 上的 ZeroTier 软件安装很简单，一个 msi 安装包直接运行就可以。</p>

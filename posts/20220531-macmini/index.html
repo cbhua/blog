@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Chuanbo" />
+	
+	
+	
+	<title>开箱 Mac mini ｜ TIMEGG</title>
+	
+    
+    
+    <meta name="description" content="开箱一个新的 Mac mini，准备放在实验室作为主力设备之一，但是在配置的过程中遇到了一个完全没料到的问题，最后还是通过钞能力解决了。整体上来说 Mac mini 是很适合作为终端的一个设备，很多 macOS 的软件都对写论文有非常大的帮助而且仅限 macOS，买完之后干活的动力提升了！" />
+    
+
+    
+    
+    <meta name="keywords" content="Hugo, theme, zozo" />
+    
+
+	
+    
+    <link rel="shortcut icon" href="https://timegg.top/images/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://timegg.top/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://timegg.top/css/zozo.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://timegg.top/css/highlight.css" />
+
+    
+    
+</head>
+
+<body>
+    <div class="main animate__animated animate__fadeInDown">
+        <div class="nav_container animated fadeInDown">
+    <div class="site_nav" id="site_nav">
+        <ul>
+            
+            <li>
+                <a href="/">主页</a>
+            </li>
+            
+            <li>
+                <a href="/posts/">归档</a>
+            </li>
+            
+            <li>
+                <a href="/tags/">标签</a>
+            </li>
+            
+            <li>
+                <a href="/links/">链接</a>
+            </li>
+            
+            <li>
+                <a href="/about/">关于</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="menu_icon">
+        <a id="menu_icon"><i class="ri-menu-line"></i></a>
+    </div>
+</div>
+        <div class="header animated fadeInDown">
+    <div class="site_title_container">
+        <div class="site_title">
+            <a href="https://timegg.top/">
+                <img src="https://timegg.top/images/favicon.ico" alt="TIMEGG">
+                
+            </a>
+            
+        </div>
+        <div class="description">
+            <p class="sub_title">放进时光蛋里。</p>
+            <div class="my_socials">
+                
+                
+                <a href="https://github.com/cbhua" title="github" target="_blank"><i class="ri-github-fill"></i></a>
+                
+                
+                
+                <a href="%20" title="instagram" target="_blank"><i class="ri-instagram-fill"></i></a>
+                
+                
+                
+                <a href="https://twitter.com/huachuanbo" title="twitter" target="_blank"><i class="ri-twitter-fill"></i></a>
+                
+                
+                
+                <a href="https://weibo.com/u/6177306082" title="weibo" target="_blank"><i class="ri-weibo-fill"></i></a>
+                
+                
+                <a href="https://timegg.top/index.xml" type="application/rss+xml" title="rss" target="_blank"><i
+                        class="ri-rss-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="content">
+            <div class="post_page">
+                <div class="post animate__animated animate__fadeInDown">
+                    <div class="post_title post_detail_title">
+                        <h2><a href='/posts/20220531-macmini/'>开箱 Mac mini</a></h2>
+                        <span class="date">2022.05.31</span>
+                    </div>
+                    <div class="post_content markdown"><p>自从上次调整实验室工作区布置之后我就一直拿着我的服务器直接用，直接用服务器做开发自然方便，直接本地修改代码，Terminal 调用和运行都原生体验，而且也不用受到偶尔网速不好加载 Jupyter Notebook 卡顿的折磨了。</p>
+<p>但是用得时间久了还是发现了一些问题。首先是软件的不支持问题，我在服务器上安装的是 PopOS，它是 Ubuntu 的衍生发行版，对于一般的软件兼容问题不大：Office 软件可以通过 Google Office 在线解决、开发用 VSCode、其他的一些能通过网页版解决的都通过网页版解决。</p>
+<p>但是对于一些比较专业性的软件，比如我喜欢用 Omnigraffle 来绘制论文里面的图，还有偶尔会用 Photoshop 来做一些流程图、Final Cut Pro 剪一些 Presentation 视频等等，这些软件在 Linux 上就用不了了，用到的时候我还要专门掏出小 MacBook 在旁边搞，这样个工作流弄下来会发现文件分享、资源库分享、成品导出什么的都不太方便。</p>
+<p>除了这些学术相关的软件，还有一些我个人生活中比较喜欢用的软件，比如我在 Apple Podcast 上面听博客、Apple Music 上面听歌还有微信、QQ 等软件，虽然其中一些都可以通过 Wine，Docker 或者其他的多平台兼容工具使用，但是整体上还是麻烦不够流畅。</p>
+<p>与此同时我也要准备开始读 PhD 了，所以给自己买个新设备就当作是 Start Up Gift 了~~（论消费主义）~~。</p>
+<p>所以在整理了自己的需求并且思考了可行性之后，我决定在实验室配一个 Mac 作为开发终端，和服务器分离开。论文、图片、工作流整理和规划等比较“表面”的事情都在 Mac 上完成，服务器只用来保存和运行代码、训练模型、生成结果，不需要负责其他的任何事情。这样把工作“前端” Mac 和“后端”服务器分离之后，工作会更加清晰易整理。再加上 Mac 的 Apple 生态和 MacBook 联动，在同步和协力方面就有了更好的体验。</p>
+<p>在确定需求之后就开始挑 Mac 啦。虽然说是挑，但是其实可选项非常少：Mac mini (Intel), Mac mini (M1), Mac Studio. 首先在不需要进行太多思考的情况下我们排除第三个（）然后因为我之前买了 M1 的 MacBook，对 M1 芯片很有好感，所以就没有纠结太久直接买了 Mac mini (M1)，配置的话毕竟是主力设备，就上到了 16G RAM 和 1T SSD，足够支持整个 PhD 的阶段了。</p>
+<p>下单下单，刷卡刷卡。</p>
+<p>第二天满心激动地拿到了新 Mac，带到实验室开始安装配置。</p>
+<p>首先需要解决的问题是我的服务器就在我的桌子下，本来只需要服务器的线缆（网线、电源线等等），但是现在需要再添加 Mac 的电源而且还要再扯过来一条网线，再加上一个新的插线板，导致桌面后方的线变得非常混乱，即使是强迫如我也整理不动了，决定摆烂，用显示器遮住就当不存在了！好的下一个！</p>
+<p>点亮之后进入系统开始装各种软件，这个过程因为我折腾过好几次了所以也没遇到什么问题，就是比较费时间。</p>
+<p>然后就出现了这个新 Mac mini setup 过程中出现的最大的问题：第三块屏幕不亮了。</p>
+<p>我在实验室有三块屏幕，实在非常方便。我比较喜欢的排布方式是左边两个屏幕竖向显示，右边一个屏幕横向显示，这样平常写论文的时候可以一个写（Overleaf）、一个参考（Zotero）、一个搜索（Safari）。或者是用左边两个屏幕显示 Overleaf，半边源码、半边渲染，因为平常 Overleaf 的编辑空间实在有点局促。</p>
+<p>总之就是在我尝试连接三个屏幕到 Mac mini 的时候，我发现虽然三个屏幕都被点亮了，但是不管我怎么设置，第三块屏幕都在 Mirror 第一块屏幕。</p>
+<p>最开始我怀疑是我线接得有问题，Mac mini 只有一个 HDMI，还有两个 Type C，因为有一个 Type C 我要用来留着连接拓展坞或者是移动硬盘什么的，就把第三个屏幕通过 USB 连接了。</p>
+<p>但是在我把第三个屏幕也用 Type C 连接问题没有得到改观之后，我意识到好像不是比较表面的连接问题。于是搜了搜发现 Apple 的 M1 芯片不知道出于什么原因（钱）最多只能连接两个屏幕，从第三个屏幕开始就只能镜像之前的屏幕了。</p>
+<p>知道情况的我陷入了沉思，真有你的啊，库克。</p>
+<p>网上提供的解决方案绝大部分都是通过虚拟显卡解决的，有一个软件专门解决这样的问题，叫做 Display Link，如果能买到一个支持 Display Link 的转换坞，我们就可以通过这个转换坞来生成虚拟屏幕信号，这个虚拟信号是通过软件计算出来的，所以可以绕开 M1 芯片的限制。真有你的啊，Display Link —— 来自库克。</p>
+<p>让我来看看你这转换坞卖多少钱——噔噔咚——，在 Coupang 上面能买到的最便宜的 Display Link 支持的转换坞是 Tengus 的一个产品，价格大概是人民币 2000 左右。这个价格，一个转换坞都快赶上 1/4 的我 Mac mini 的价格了，这就是第三个屏幕的代价吗。</p>
+<p>最后思来想去搜索了好多其他的方案发现还是不行，只能买这个转换坞了，姑且安慰自己这个转换坞还可以用在不少其他的地方，不亏不亏，买一个用十年。</p>
+<p>由于 Targus 还挺贵的我打算专门写个开箱好了，东西可不能白买。</p>
+<p>这个转接坞到了之后重新理了理桌面的线，把能藏的都给藏起来，能绑的都给绑起来，桌面干净多了，赏心悦目。Mac mini 用起来的感觉只能说是爽到，三屏幕配合 Magic Trackpad 的手势操作流畅切换，macOS 的动画流畅度也是赏心悦目，各种 App 也都支持回来了，比如可以在电脑上微信吹水了（）</p>
+<p>正经活动的话，一些我之前在 MacBook Air 上常用的软件可以直接在主机上用，各方面来说都方便很多，干活的动力增加了！希望可以多持久一阵子！</p>
+</div>
+                    <div class="post_footer">
+                        
+                        <div class="meta">
+                            <div class="info">
+                                <span class="field tags">
+                                    <i class="ri-stack-line"></i>
+                                    
+                                    <a href="https://timegg.top/tags/%E5%BC%80%E7%AE%B1%E6%B5%8B%E8%AF%84/">开箱测评</a>
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                
+<div class="doc_comments">
+    <div class="comments_block_title">发表评论</div>
+    <div id="vcomments"></div>
+</div>
+
+<link rel="stylesheet" href="https://timegg.top/css/comments.css" />
+
+<script src="//code.bdstatic.com/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<script type="text/javascript">
+    new Valine({
+        el: '#vcomments',
+        appId: '12HKA37DAChBWQgBC7PA4eBw-gzGzoHsz',
+        appKey: 'UxknCfg5bWmkI2eGar5hDxWq',
+        placeholder: ' ',
+        visitor: 'true',
+        
+    })
+</script>
+
+
+
+                
+            </div>
+        </div>
+    </div>
+    <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
+    <footer class="footer">
+    <div class="powered_by">
+        <a href="https://timegg.top">TIMEGG © 2017 - 2022,</a>
+        <a href="http://www.gohugo.io/">Powered by Hugo.</a>
+    </div>
+
+    <div class="footer_slogan">
+        <span>重拾写作的乐趣。</span>
+    </div>
+</footer>
+
+<script>
+	(function () {
+		const customFont = document.createElement('link');
+		customFont.href = "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&display=swap";
+		customFont.type = "text/css";
+		customFont.rel = "stylesheet";
+		document.head.appendChild(customFont);
+	}());
+	
+	
+	
+	
+	
+	
+	
+</script>
+    <script src="https://timegg.top/js/jquery-3.5.1.min.js"></script>
+<link href="https://timegg.top/css/fancybox.min.css" rel="stylesheet">
+<script src="https://timegg.top/js/fancybox.min.js"></script>
+<script src="https://timegg.top/js/zozo.js"></script>
+
+
+<script type="text/javascript" async
+    src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+                processEscapes: true,
+                processEnvironments: true,
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                TeX: {
+                    equationNumbers: { autoNumber: "AMS" },
+                    extensions: ["AMSmath.js", "AMSsymbols.js"]
+                }
+            }
+        });
+
+        MathJax.Hub.Queue(function () {
+            
+            
+            
+            var all = MathJax.Hub.getAllJax(), i;
+            for (i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+<style>
+    code.has-jax {
+        font: inherit;
+        font-size: 100%;
+        background: inherit;
+        border: inherit;
+        color: #515151;
+    }
+</style>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-164502321-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>

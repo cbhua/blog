@@ -6,7 +6,34 @@
     <description>Recent content in 开箱测评 on TIMEGG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 17 Nov 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/tags/%E5%BC%80%E7%AE%B1%E6%B5%8B%E8%AF%84/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Jun 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/tags/%E5%BC%80%E7%AE%B1%E6%B5%8B%E8%AF%84/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>开箱 Targus 转接坞</title>
+      <link>https://timegg.top/posts/20220606-targus/</link>
+      <pubDate>Mon, 06 Jun 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220606-targus/</guid>
+      <description>书接上回，买了新的 M1 芯片的 Mac mini 回来之后发现 M1 芯片只限制连接两个屏幕，从第三个屏幕开始就自动 Mirror 第一个屏幕，这个还是系统级别的操作，我们还什么都做不了。如果想要第三个屏幕怎么办呢？要加钱上 M1 pro 或者 M1 Ultra 芯片，真有你的啊，库克。最后通过 Targus 这种第三方的方法解决了。</description>
+    </item>
+    
+    <item>
+      <title>开箱 Mac mini</title>
+      <link>https://timegg.top/posts/20220531-macmini/</link>
+      <pubDate>Tue, 31 May 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220531-macmini/</guid>
+      <description>开箱一个新的 Mac mini，准备放在实验室作为主力设备之一，但是在配置的过程中遇到了一个完全没料到的问题，最后还是通过钞能力解决了。整体上来说 Mac mini 是很适合作为终端的一个设备，很多 macOS 的软件都对写论文有非常大的帮助而且仅限 macOS，买完之后干活的动力提升了！</description>
+    </item>
+    
+    <item>
+      <title>板式自由主义</title>
+      <link>https://timegg.top/posts/20220422-formatfree/</link>
+      <pubDate>Fri, 22 Apr 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220422-formatfree/</guid>
+      <description>今天我在 VSCode 写代码的时候不知道为什么，突然对自己 VSCode 用的主题感觉到腻了，于是就想换个主题。在挑选主题的过程中对字体、排版有了一些思考，逐渐产生了一些合理到离谱的客制化需求，进而拓展到对不同文本编辑器的自由度思考。我把这种对排版自由度的追求叫做板式自由主义。</description>
+    </item>
+    
     <item>
       <title>开箱 Home Pod</title>
       <link>https://timegg.top/posts/20211117-homepod/</link>

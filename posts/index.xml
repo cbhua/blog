@@ -6,7 +6,133 @@
     <description>Recent content in Posts on TIMEGG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 25 Feb 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Oct 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>论文四色原理</title>
+      <link>https://timegg.top/posts/20221010-papermark/</link>
+      <pubDate>Mon, 10 Oct 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20221010-papermark/</guid>
+      <description>大家在平常读论文的时候肯定会习惯性的用荧光笔标记一些内容，不管是疑问还是兴趣点什么的，我在之前阅读论文的时候都是一股脑的用黄色的荧光笔乱画一通，这个习惯可能是来自于阅读纸质论文的经历。这次我准备规范化论文的颜色标记，寻找适合自己的论文阅读方式。</description>
+    </item>
+    
+    <item>
+      <title>FXC 文件管理强迫症</title>
+      <link>https://timegg.top/posts/20220925-finalcutpro/</link>
+      <pubDate>Sun, 25 Sep 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220925-finalcutpro/</guid>
+      <description>最近开始动手剪我们夏季去济州岛旅行的视频啦，因为是五天四夜的旅行，所以这次的素材数量非常的大，不能像之前剪视频一样素材随便放随便导入了，这时候确实认识到了素材管理的重要性，所以就打算学习学习素材管理。在总结了自己的文件管理理解之后写了这篇文章帮助其他也有剪辑需求的朋友们更好的理解 FXC 文件结构。。</description>
+    </item>
+    
+    <item>
+      <title>一本书的价值</title>
+      <link>https://timegg.top/posts/20220911-bookvalue/</link>
+      <pubDate>Sun, 11 Sep 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220911-bookvalue/</guid>
+      <description>最近读书集中在日本文学，在网络上搜索日本文学或者是在书店逛日本文学的时候，有一本书在我眼中出现过无数次，次次都没有避开，那就是《人间失格》。这本书在互联网时代背上了“文艺青年必读书籍”的恶名，曾经劝退了我这种什么火就不看什么的具有奇怪性格的人。在读完这本书中之后我开始了对一本书价值的思考。</description>
+    </item>
+    
+    <item>
+      <title>生活固化剂</title>
+      <link>https://timegg.top/posts/20220707-life/</link>
+      <pubDate>Thu, 07 Jul 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220707-life/</guid>
+      <description>欢迎来到我们旧日科技有限公司的夏季讨论会，很可惜我们这个季度没有新产品问世，但是我们带来了有趣的想法。就像我在很多之前的文章中提到的，在生活的长度不能发生变化的前提下，我们要尝试增加生活的厚度。我们难免有些时候会遇到需要我们全身心投入去做一件事的一段时间，不管愿意与否，在这种状态下我们会感觉到时间过得飞快。</description>
+    </item>
+    
+    <item>
+      <title>对数字的概念</title>
+      <link>https://timegg.top/posts/20220628-number/</link>
+      <pubDate>Tue, 28 Jun 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220628-number/</guid>
+      <description>最近我发现通过对一些数字的概念来了解某一个领域似乎是一个不错的方法，相反，对于我们不太熟悉的领域，我们很难对其中的数字有特定的概念。数字的概念不像很多其他入门一个方向所需要了解的信息，不是那么容易在我们脑海中形成概念。想要得到一个领域数字的概念往往需要了解大量的例子。</description>
+    </item>
+    
+    <item>
+      <title>开箱 Targus 转接坞</title>
+      <link>https://timegg.top/posts/20220606-targus/</link>
+      <pubDate>Mon, 06 Jun 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220606-targus/</guid>
+      <description>书接上回，买了新的 M1 芯片的 Mac mini 回来之后发现 M1 芯片只限制连接两个屏幕，从第三个屏幕开始就自动 Mirror 第一个屏幕，这个还是系统级别的操作，我们还什么都做不了。如果想要第三个屏幕怎么办呢？要加钱上 M1 pro 或者 M1 Ultra 芯片，真有你的啊，库克。最后通过 Targus 这种第三方的方法解决了。</description>
+    </item>
+    
+    <item>
+      <title>开箱 Mac mini</title>
+      <link>https://timegg.top/posts/20220531-macmini/</link>
+      <pubDate>Tue, 31 May 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220531-macmini/</guid>
+      <description>开箱一个新的 Mac mini，准备放在实验室作为主力设备之一，但是在配置的过程中遇到了一个完全没料到的问题，最后还是通过钞能力解决了。整体上来说 Mac mini 是很适合作为终端的一个设备，很多 macOS 的软件都对写论文有非常大的帮助而且仅限 macOS，买完之后干活的动力提升了！</description>
+    </item>
+    
+    <item>
+      <title>八股论文</title>
+      <link>https://timegg.top/posts/20220521-paper/</link>
+      <pubDate>Sat, 21 May 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220521-paper/</guid>
+      <description>八股文并不是一个好听的词汇，所以其实这里与其是八股文，不如说是故有模板，但是这个模板备用的多了就被很多人嫌弃起来了，所以就可以用八股文来说论文。对于论文的结构，我们可以用一套公式来构造整个文章，具体到每一句话每个位置应该放什么东西。即使我们没有什么思路来写文章，也可以硬编上什么东西。。</description>
+    </item>
+    
+    <item>
+      <title>每人一个垃圾桶</title>
+      <link>https://timegg.top/posts/20220506-trashbin/</link>
+      <pubDate>Sat, 07 May 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220506-trashbin/</guid>
+      <description>今天在丢垃圾的时候看到了有个人丢了一个垃圾桶，所以我就想：如果想要丢垃圾桶，我们就需要另一个垃圾桶来丢这个垃圾桶，如果这个假设成立，每个人至少需要一个垃圾桶来丢垃圾，但是如果这个人的垃圾桶坏了，想要换一个新的垃圾桶，就需要去先购买一个新的垃圾桶，然后把旧的垃圾桶装进去。这样证明当我们需要丢一个东西的时候，记得要买一个新的（神经病）。</description>
+    </item>
+    
+    <item>
+      <title>板式自由主义</title>
+      <link>https://timegg.top/posts/20220422-formatfree/</link>
+      <pubDate>Fri, 22 Apr 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220422-formatfree/</guid>
+      <description>今天我在 VSCode 写代码的时候不知道为什么，突然对自己 VSCode 用的主题感觉到腻了，于是就想换个主题。在挑选主题的过程中对字体、排版有了一些思考，逐渐产生了一些合理到离谱的客制化需求，进而拓展到对不同文本编辑器的自由度思考。我把这种对排版自由度的追求叫做板式自由主义。</description>
+    </item>
+    
+    <item>
+      <title>时差与认知世界</title>
+      <link>https://timegg.top/posts/20220415-timegap/</link>
+      <pubDate>Fri, 15 Apr 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220415-timegap/</guid>
+      <description>最近和美国同学合作项目的时候经常需要商量会议时间，因为时差很长所以经常会出现在我在休息的时候他在工作，而我在工作的时候他也可能在休息。对于我来说这样的状态失去了睡眠带来的停滞感。即使自己在休息，世界上还有千千万万的人在一直努力着，让我切实感觉到世界很小。</description>
+    </item>
+    
+    <item>
+      <title>人际时间</title>
+      <link>https://timegg.top/posts/20220401-network/</link>
+      <pubDate>Fri, 01 Apr 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220401-network/</guid>
+      <description>现代的互联网让每个人相互之间花的时间非常少，导致人与人会有很多不可理解的东西，这种不可相互理解也适用于不同的文化和思想。曾经交通很慢的时候人们会花很多时间在相互了解上，大家会强调找到大家相同的东西，而现在大家更多去寻找差异的东西。</description>
+    </item>
+    
+    <item>
+      <title>对周围事物的感知力</title>
+      <link>https://timegg.top/posts/20220320-fill/</link>
+      <pubDate>Sun, 20 Mar 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220320-fill/</guid>
+      <description>在精神不是很集中的时候，或者最近有其他各种事情占用自己生活的时候，自己对身边事物的感知力会变差，随手在身边可以发现的快乐的事物也不再感兴趣了，大脑中都被一件事给覆盖着。这样就有一种做任何事情都浑浑噩噩的感觉。</description>
+    </item>
+    
+    <item>
+      <title>熟悉事物遗忘器</title>
+      <link>https://timegg.top/posts/20220310-forget/</link>
+      <pubDate>Thu, 10 Mar 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220310-forget/</guid>
+      <description>欢迎来到我们旧日科技有限公司的春季发布会。不知道大家在生活中有没有这样的一种感受，在某一瞬间我们看到了一件最熟悉不过的事物，但是我们突然对它感觉到非常的陌生，这种奇妙的感觉往往能给我们带来很多的思考，重新认知身边的世界，重新思考事物之间的关系。所以我们开发了一款新的产品来帮助大家实现这样的思考。</description>
+    </item>
+    
     <item>
       <title>知与不可知的矛盾</title>
       <link>https://timegg.top/posts/20220225-know/</link>

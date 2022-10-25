@@ -6,7 +6,34 @@
     <description>Recent content in 教程文档 on TIMEGG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 22 Dec 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/tags/%E6%95%99%E7%A8%8B%E6%96%87%E6%A1%A3/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Oct 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/tags/%E6%95%99%E7%A8%8B%E6%96%87%E6%A1%A3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>论文四色原理</title>
+      <link>https://timegg.top/posts/20221010-papermark/</link>
+      <pubDate>Mon, 10 Oct 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20221010-papermark/</guid>
+      <description>大家在平常读论文的时候肯定会习惯性的用荧光笔标记一些内容，不管是疑问还是兴趣点什么的，我在之前阅读论文的时候都是一股脑的用黄色的荧光笔乱画一通，这个习惯可能是来自于阅读纸质论文的经历。这次我准备规范化论文的颜色标记，寻找适合自己的论文阅读方式。</description>
+    </item>
+    
+    <item>
+      <title>FXC 文件管理强迫症</title>
+      <link>https://timegg.top/posts/20220925-finalcutpro/</link>
+      <pubDate>Sun, 25 Sep 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220925-finalcutpro/</guid>
+      <description>最近开始动手剪我们夏季去济州岛旅行的视频啦，因为是五天四夜的旅行，所以这次的素材数量非常的大，不能像之前剪视频一样素材随便放随便导入了，这时候确实认识到了素材管理的重要性，所以就打算学习学习素材管理。在总结了自己的文件管理理解之后写了这篇文章帮助其他也有剪辑需求的朋友们更好的理解 FXC 文件结构。。</description>
+    </item>
+    
+    <item>
+      <title>八股论文</title>
+      <link>https://timegg.top/posts/20220521-paper/</link>
+      <pubDate>Sat, 21 May 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220521-paper/</guid>
+      <description>八股文并不是一个好听的词汇，所以其实这里与其是八股文，不如说是故有模板，但是这个模板备用的多了就被很多人嫌弃起来了，所以就可以用八股文来说论文。对于论文的结构，我们可以用一套公式来构造整个文章，具体到每一句话每个位置应该放什么东西。即使我们没有什么思路来写文章，也可以硬编上什么东西。。</description>
+    </item>
+    
     <item>
       <title>对科研的思考</title>
       <link>https://timegg.top/posts/20211222-research/</link>

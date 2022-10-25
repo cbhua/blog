@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Chuanbo" />
+	
+	
+	
+	<title>FXC 文件管理强迫症 ｜ TIMEGG</title>
+	
+    
+    
+    <meta name="description" content="最近开始动手剪我们夏季去济州岛旅行的视频啦，因为是五天四夜的旅行，所以这次的素材数量非常的大，不能像之前剪视频一样素材随便放随便导入了，这时候确实认识到了素材管理的重要性，所以就打算学习学习素材管理。在总结了自己的文件管理理解之后写了这篇文章帮助其他也有剪辑需求的朋友们更好的理解 FXC 文件结构。。" />
+    
+
+    
+    
+    <meta name="keywords" content="Hugo, theme, zozo" />
+    
+
+	
+    
+    <link rel="shortcut icon" href="https://timegg.top/images/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://timegg.top/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://timegg.top/css/zozo.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://timegg.top/css/highlight.css" />
+
+    
+    
+</head>
+
+<body>
+    <div class="main animate__animated animate__fadeInDown">
+        <div class="nav_container animated fadeInDown">
+    <div class="site_nav" id="site_nav">
+        <ul>
+            
+            <li>
+                <a href="/">主页</a>
+            </li>
+            
+            <li>
+                <a href="/posts/">归档</a>
+            </li>
+            
+            <li>
+                <a href="/tags/">标签</a>
+            </li>
+            
+            <li>
+                <a href="/links/">链接</a>
+            </li>
+            
+            <li>
+                <a href="/about/">关于</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="menu_icon">
+        <a id="menu_icon"><i class="ri-menu-line"></i></a>
+    </div>
+</div>
+        <div class="header animated fadeInDown">
+    <div class="site_title_container">
+        <div class="site_title">
+            <a href="https://timegg.top/">
+                <img src="https://timegg.top/images/favicon.ico" alt="TIMEGG">
+                
+            </a>
+            
+        </div>
+        <div class="description">
+            <p class="sub_title">放进时光蛋里。</p>
+            <div class="my_socials">
+                
+                
+                <a href="https://github.com/cbhua" title="github" target="_blank"><i class="ri-github-fill"></i></a>
+                
+                
+                
+                <a href="%20" title="instagram" target="_blank"><i class="ri-instagram-fill"></i></a>
+                
+                
+                
+                <a href="https://twitter.com/huachuanbo" title="twitter" target="_blank"><i class="ri-twitter-fill"></i></a>
+                
+                
+                
+                <a href="https://weibo.com/u/6177306082" title="weibo" target="_blank"><i class="ri-weibo-fill"></i></a>
+                
+                
+                <a href="https://timegg.top/index.xml" type="application/rss+xml" title="rss" target="_blank"><i
+                        class="ri-rss-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="content">
+            <div class="post_page">
+                <div class="post animate__animated animate__fadeInDown">
+                    <div class="post_title post_detail_title">
+                        <h2><a href='/posts/20220925-finalcutpro/'>FXC 文件管理强迫症</a></h2>
+                        <span class="date">2022.09.25</span>
+                    </div>
+                    <div class="post_content markdown"><p>最近我开始动手剪我们夏季去济州岛旅行的视频啦，因为是五天四夜的旅行，所以这次的素材数量非常的大，不能像之前剪视频一样素材随便放随便导入了，这时候确实认识到了素材管理的重要性，所以就打算学习学习素材管理。</p>
+<p>我用过好几种剪辑软件，比如 Adobe 的 Pr，达芬奇还有 Final Cut Pro，虽然经常看影视飓风的视频被强烈推荐了达芬奇，但是我还是没办法抛弃我之前用的 Final Cut Pro，所以这次剪辑我还是坚持用了 FCP. 也是因为我用过不同的软件，他们不同的文件管理方式在我脑海中混合，让我搞不清楚素材管理应该是怎么样的方式了，所以这次就专注于一点。</p>
+<p>我去搜了不少视频，发现很多讲得并不是很清楚，都是直接创建好一堆东西之后直接开始剪辑，对于素材的整理又集中在内容和分类上面，对于 FCP 和素材中间的这一层文件管理很少有人给一个比较全面比较清楚的概念，所以在结合了各种资料研究之后我来尝试总结一下 FCP 里面的文件管理应该是什么样子的。</p>
+<p>对于 Final Cut Pro 的素材文件管理，在开始之前我们需要知道三个基本的概念：<em>事件（Event）</em>、<em>项目（Project）<em>和</em>资源库（Library）</em>。这些概念里面很多细节和其他的视频剪辑软件都不太一样。</p>
+<p>我们按照隶属关系：<strong>Library &gt; Event &gt; Project</strong> 来一个一个看。</p>
+<p>首先 Library 是最大的一个单位，我们从它的名字就能看出来，这个单位举个例子我们可以把一个设备看作一个 Library，比如说我的剪辑工作站是 Mac mini 同时外界一个移动硬盘，那么我们就可以在 Mac mini 上面创建一个 Mac Local 的 Library，而移动硬盘上面可以创建一个 Mobile Disk Library.</p>
+<p>这些 Library 的存储形式是一个 Apple 包文件的格式，所以其实我们可以在一个设备上创建多个 Library，但是按照目前我的理解，因为 Library 的子项目已经足够充分且灵活地安排各种剪辑工作，而且考虑到 FCP 打开 Library 是作为最高级别目录的逻辑，一个存储设备设置为一个 Library 是比较符合直觉的。</p>
+<p>在 Library 之下我们可以创建多个 Event，这个 Event 和 PR 里面的工程文件还不太一样，在 FCP 里面，Event 更适合被理解为一系列视频的主题。举一个例子就是，我们去济州岛旅行了好几天，这些素材我们估计就剪辑为多个视频，那么我们就可以创建一个济州岛旅行的 Event，里面每一个视频我们创建一个 Project，这里的 Project 理解起来就比较像 PR 里面的工程文件了，但是不完全相同的是 Event 里面的素材资源是共享给所有的 Projects 的，而 PR 的工程文件相互不是那么方便共享。</p>
+<p>如果有用过 AE 的朋友可能会意识到 FCP 里面的 Project 和 AE 里面的工程文件管理思路是类似的，也就是 Project 可以作为素材放在素材堆里面。</p>
+<p>那么下一步关键的问题来了，我们的素材放在什么位置？素材的位置和 FCP 的 Library 和 Event 有什么关系？</p>
+<p>根据经验和理解得出的结论是，我们的素材最好放置的位置是和 Library 位置平行的文件夹，里面素材的管理可以按照个人喜好进行分配，网上也有很多素材整理的技巧，这些素材的整理其实就是视频音频文件的整理、分类放置在文件夹当中。这样处理的原因是 Final Cut Pro 取用素材也是用的软连接的方式，也因此当我们决定好素材文件夹框架之后就不要轻易进行修改，否则软连接丢失太严重很难复原项目。</p>
+<p>对于第二个问题，当我们进行剪辑的时候，我们会把素材拖入 Event 当中，然后在其中进行重新打组、分类、打 Tag 等过程，这些操作全部都是基于原本素材的软连接，与素材本体相对 Event 的位置关系没有任何联系，同理也和 Library 没有太大关系。</p>
+<p>Library 在电脑磁盘中以一个 Apple Package 的单独文件存在，这个格式就是让我们不要手动对其内容进行文件层面的修改，所有内容通过 FCP 进行即可，所以这就是为什么素材文件夹最好要和 Library 文件夹平行而不是直接把素材复制到 Library 的 Package 里面。</p>
+<p>在清楚了上面的全部流程之后，我们就可以比较好的分配和整理我们的素材资源库了，清晰而且快速。至于素材整理本身就比较依赖个人的经验了，如果有多个机位的话可以按照多机位划分，如果是旅行 Vlog 的话也可以按照天数划分。这些经验可以随着剪辑不断提升，多多锻炼。</p>
+</div>
+                    <div class="post_footer">
+                        
+                        <div class="meta">
+                            <div class="info">
+                                <span class="field tags">
+                                    <i class="ri-stack-line"></i>
+                                    
+                                    <a href="https://timegg.top/tags/%E6%95%99%E7%A8%8B%E6%96%87%E6%A1%A3/">教程文档</a>
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                
+<div class="doc_comments">
+    <div class="comments_block_title">发表评论</div>
+    <div id="vcomments"></div>
+</div>
+
+<link rel="stylesheet" href="https://timegg.top/css/comments.css" />
+
+<script src="//code.bdstatic.com/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<script type="text/javascript">
+    new Valine({
+        el: '#vcomments',
+        appId: '12HKA37DAChBWQgBC7PA4eBw-gzGzoHsz',
+        appKey: 'UxknCfg5bWmkI2eGar5hDxWq',
+        placeholder: ' ',
+        visitor: 'true',
+        
+    })
+</script>
+
+
+
+                
+            </div>
+        </div>
+    </div>
+    <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
+    <footer class="footer">
+    <div class="powered_by">
+        <a href="https://timegg.top">TIMEGG © 2017 - 2022,</a>
+        <a href="http://www.gohugo.io/">Powered by Hugo.</a>
+    </div>
+
+    <div class="footer_slogan">
+        <span>重拾写作的乐趣。</span>
+    </div>
+</footer>
+
+<script>
+	(function () {
+		const customFont = document.createElement('link');
+		customFont.href = "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&display=swap";
+		customFont.type = "text/css";
+		customFont.rel = "stylesheet";
+		document.head.appendChild(customFont);
+	}());
+	
+	
+	
+	
+	
+	
+	
+</script>
+    <script src="https://timegg.top/js/jquery-3.5.1.min.js"></script>
+<link href="https://timegg.top/css/fancybox.min.css" rel="stylesheet">
+<script src="https://timegg.top/js/fancybox.min.js"></script>
+<script src="https://timegg.top/js/zozo.js"></script>
+
+
+<script type="text/javascript" async
+    src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+                processEscapes: true,
+                processEnvironments: true,
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                TeX: {
+                    equationNumbers: { autoNumber: "AMS" },
+                    extensions: ["AMSmath.js", "AMSsymbols.js"]
+                }
+            }
+        });
+
+        MathJax.Hub.Queue(function () {
+            
+            
+            
+            var all = MathJax.Hub.getAllJax(), i;
+            for (i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+<style>
+    code.has-jax {
+        font: inherit;
+        font-size: 100%;
+        background: inherit;
+        border: inherit;
+        color: #515151;
+    }
+</style>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-164502321-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>

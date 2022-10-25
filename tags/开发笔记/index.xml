@@ -6,7 +6,16 @@
     <description>Recent content in 开发笔记 on TIMEGG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 25 Feb 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/tags/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Apr 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/tags/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>板式自由主义</title>
+      <link>https://timegg.top/posts/20220422-formatfree/</link>
+      <pubDate>Fri, 22 Apr 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://timegg.top/posts/20220422-formatfree/</guid>
+      <description>今天我在 VSCode 写代码的时候不知道为什么，突然对自己 VSCode 用的主题感觉到腻了，于是就想换个主题。在挑选主题的过程中对字体、排版有了一些思考，逐渐产生了一些合理到离谱的客制化需求，进而拓展到对不同文本编辑器的自由度思考。我把这种对排版自由度的追求叫做板式自由主义。</description>
+    </item>
+    
     <item>
       <title>知与不可知的矛盾</title>
       <link>https://timegg.top/posts/20220225-know/</link>

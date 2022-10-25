@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Chuanbo" />
+	
+	
+	
+	<title>板式自由主义 ｜ TIMEGG</title>
+	
+    
+    
+    <meta name="description" content="今天我在 VSCode 写代码的时候不知道为什么，突然对自己 VSCode 用的主题感觉到腻了，于是就想换个主题。在挑选主题的过程中对字体、排版有了一些思考，逐渐产生了一些合理到离谱的客制化需求，进而拓展到对不同文本编辑器的自由度思考。我把这种对排版自由度的追求叫做板式自由主义。" />
+    
+
+    
+    
+    <meta name="keywords" content="Hugo, theme, zozo" />
+    
+
+	
+    
+    <link rel="shortcut icon" href="https://timegg.top/images/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://timegg.top/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://timegg.top/css/zozo.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://timegg.top/css/highlight.css" />
+
+    
+    
+</head>
+
+<body>
+    <div class="main animate__animated animate__fadeInDown">
+        <div class="nav_container animated fadeInDown">
+    <div class="site_nav" id="site_nav">
+        <ul>
+            
+            <li>
+                <a href="/">主页</a>
+            </li>
+            
+            <li>
+                <a href="/posts/">归档</a>
+            </li>
+            
+            <li>
+                <a href="/tags/">标签</a>
+            </li>
+            
+            <li>
+                <a href="/links/">链接</a>
+            </li>
+            
+            <li>
+                <a href="/about/">关于</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="menu_icon">
+        <a id="menu_icon"><i class="ri-menu-line"></i></a>
+    </div>
+</div>
+        <div class="header animated fadeInDown">
+    <div class="site_title_container">
+        <div class="site_title">
+            <a href="https://timegg.top/">
+                <img src="https://timegg.top/images/favicon.ico" alt="TIMEGG">
+                
+            </a>
+            
+        </div>
+        <div class="description">
+            <p class="sub_title">放进时光蛋里。</p>
+            <div class="my_socials">
+                
+                
+                <a href="https://github.com/cbhua" title="github" target="_blank"><i class="ri-github-fill"></i></a>
+                
+                
+                
+                <a href="%20" title="instagram" target="_blank"><i class="ri-instagram-fill"></i></a>
+                
+                
+                
+                <a href="https://twitter.com/huachuanbo" title="twitter" target="_blank"><i class="ri-twitter-fill"></i></a>
+                
+                
+                
+                <a href="https://weibo.com/u/6177306082" title="weibo" target="_blank"><i class="ri-weibo-fill"></i></a>
+                
+                
+                <a href="https://timegg.top/index.xml" type="application/rss+xml" title="rss" target="_blank"><i
+                        class="ri-rss-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="content">
+            <div class="post_page">
+                <div class="post animate__animated animate__fadeInDown">
+                    <div class="post_title post_detail_title">
+                        <h2><a href='/posts/20220422-formatfree/'>板式自由主义</a></h2>
+                        <span class="date">2022.04.22</span>
+                    </div>
+                    <div class="post_content markdown"><p>今天我在 VSCode 写代码的时候不知道为什么，突然对自己 VSCode 用的主题感觉到腻了，于是就想换个主题。在搜索其他主题的过程中我注意到很多主题都自带字体或者是内嵌字体，应用这样的主题就会覆盖我现在正在使用的 Fira Code 字体，实在非常不舍，因为 Fira Code 最吸引我的地方就是对于一些符号的组合它可以自动替换，看起来非常好看。最简单的比如箭头：<code>→</code> 还有等于<code>==</code>、不等于<code>≠</code>，让 Code 整体上看起来顺眼很多。</p>
+<p>然后我又观察到在 VSCode 中方法都是被赋予下划线标示的，这在 VSCode 上面属于内置功能。下划线是大家已经用得很多的样式，除此之外还有斜体、粗体之类的，这些版式在绝大部分文本编辑界面都可以选用。但是对于一些稍微 Advanced 的功能，比如上标、下标，在很多编辑器里面就没有类似的选项了，更 Advanced 一些，我们想在划掉的词汇上有一个从左上角到右下角的斜线，这个样式就属于非常客制化的需求了，在大部分文本编辑工具中都难以实现。</p>
+<p>想到这里我就有一个好奇，有没有一个文本编辑器可以满足我们所有的样式需求呢？我们可以把文本版式的自定义程度称为文本工具的<strong>样式自由度</strong>。</p>
+<p>在 TXT 中我们只能打文字，没有太多的版式可言。在更高级的一些地方，比如一些 Markdown 工具和Notion，我们有了更多的样式选择，比如下划线、斜体或者其他之类的文字版式，但是还是有很多我们想要的没办法实现，比如角标文字之类的，还是不够自由。更加自由的还有 Latex，正如 Latex 的 LOGO 一样 Latex 在版式上面有很多甚至我都没见过的选择，比如文字下沉一段之类的，Latex 都是可以实现的。</p>
+<p>但是，即使是 Latex 依然不能说得上完全自由创作，那么真的完全自由创作是什么呢？那不就是白纸吗，可以直接拿起笔来在纸上乱画，这就是一种方法，没有任何人可以限制你的版式。甚至我们可以用 Photoshop，也是自由发挥完全没有限制。</p>
+<p>不过这个问题讨论到这种程度已经没有意义了，毕竟 Photoshop 都早已脱离文本编辑软件的范畴了。那么什么才能算是可接受范围的文本编辑软件呢？我觉得一个重要的因素是<strong>可复用性</strong>。设想一下，如果每个文字都需要我们一个一个手动摆上去，有时候手抖了字都没有摆到一条直线上，就像在没有划线的白纸上写字，写着写着就歪了的样子。</p>
+<p>所以说这么看来，一个文本编辑软件需要一定的限制性，比如文字默认在同一行，到达行底的时候会自动出现在下一行，让我们可以接连不断的输入下去。在达成这个基础的限制之后，我们就需要给出各种场景需要破坏这样的基础限制，比如文字下沉、文字上标，而这<strong>样的变化可以是任何不受限制的，但是又有共同标准的</strong>。</p>
+<p>这句话可能比较难理解，举个例子就是，无论何时我们需要文字斜体的时候，文字就会遵循一种样式来变成斜体，这个斜体在任何时候用在任何文字都是一样的。类似的粗体、下划线都是，即使是比较怪异的样式，也都是所有文字通用而且符合同一个标准的。</p>
+<p>这么来看我们可以感觉到相比 Photoshop 这样的自由绘制软件，文本编辑软件处处受到着限制，但是又可以充满着自由，直观体验上是一种“粒度比较大的自由”。</p>
+<p>讨论到这里我也不知道这些有什么意义，这只是一个代码下划线带来的思考。嗯……好像也还算有趣？我们划定了自由绘制软件和文本编辑软件的界限，我们是世界定义者（混乱）。</p>
+</div>
+                    <div class="post_footer">
+                        
+                        <div class="meta">
+                            <div class="info">
+                                <span class="field tags">
+                                    <i class="ri-stack-line"></i>
+                                    
+                                    <a href="https://timegg.top/tags/%E8%84%91%E6%B4%9E%E6%96%87%E7%AB%A0/">脑洞文章</a>
+                                    
+                                    <a href="https://timegg.top/tags/%E5%BC%80%E7%AE%B1%E6%B5%8B%E8%AF%84/">开箱测评</a>
+                                    
+                                    <a href="https://timegg.top/tags/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/">开发笔记</a>
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                
+<div class="doc_comments">
+    <div class="comments_block_title">发表评论</div>
+    <div id="vcomments"></div>
+</div>
+
+<link rel="stylesheet" href="https://timegg.top/css/comments.css" />
+
+<script src="//code.bdstatic.com/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<script type="text/javascript">
+    new Valine({
+        el: '#vcomments',
+        appId: '12HKA37DAChBWQgBC7PA4eBw-gzGzoHsz',
+        appKey: 'UxknCfg5bWmkI2eGar5hDxWq',
+        placeholder: ' ',
+        visitor: 'true',
+        
+    })
+</script>
+
+
+
+                
+            </div>
+        </div>
+    </div>
+    <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
+    <footer class="footer">
+    <div class="powered_by">
+        <a href="https://timegg.top">TIMEGG © 2017 - 2022,</a>
+        <a href="http://www.gohugo.io/">Powered by Hugo.</a>
+    </div>
+
+    <div class="footer_slogan">
+        <span>重拾写作的乐趣。</span>
+    </div>
+</footer>
+
+<script>
+	(function () {
+		const customFont = document.createElement('link');
+		customFont.href = "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&display=swap";
+		customFont.type = "text/css";
+		customFont.rel = "stylesheet";
+		document.head.appendChild(customFont);
+	}());
+	
+	
+	
+	
+	
+	
+	
+</script>
+    <script src="https://timegg.top/js/jquery-3.5.1.min.js"></script>
+<link href="https://timegg.top/css/fancybox.min.css" rel="stylesheet">
+<script src="https://timegg.top/js/fancybox.min.js"></script>
+<script src="https://timegg.top/js/zozo.js"></script>
+
+
+<script type="text/javascript" async
+    src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+                processEscapes: true,
+                processEnvironments: true,
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                TeX: {
+                    equationNumbers: { autoNumber: "AMS" },
+                    extensions: ["AMSmath.js", "AMSsymbols.js"]
+                }
+            }
+        });
+
+        MathJax.Hub.Queue(function () {
+            
+            
+            
+            var all = MathJax.Hub.getAllJax(), i;
+            for (i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+<style>
+    code.has-jax {
+        font: inherit;
+        font-size: 100%;
+        background: inherit;
+        border: inherit;
+        color: #515151;
+    }
+</style>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-164502321-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>
