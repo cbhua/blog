@@ -8,6 +8,42 @@
     <language>zh-cn</language>
     <lastBuildDate>Mon, 10 Oct 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>关于</title>
+      <link>https://timegg.top/about/</link>
+      <pubDate>Fri, 18 Nov 2022 20:24:28 +0800</pubDate>
+      
+      <guid>https://timegg.top/about/</guid>
+      <description>你好，这里是 Chuanbo，你可以在这个页面看到关于我。 这个网站 Timegg 创建于 2017 年的秋季，和不少个人网站创建的契机类似，当时的我受到其他个人网站的启发，就做了自己的网站。 最初的三年间，Timegg 的发展走向</description>
+    </item>
+    
+    <item>
+      <title>关于我</title>
+      <link>https://timegg.top/aboutme/</link>
+      <pubDate>Fri, 18 Nov 2022 20:24:28 +0800</pubDate>
+      
+      <guid>https://timegg.top/aboutme/</guid>
+      <description>Education does for the mind, experience does for the soul. 2016.09 - 2020.06 哈尔滨工业大学，数学系，Bachelor 2018.07 - 2018.09 中国华融资产管理有限公司，数据库工程师，Intern 2019.07 - 2019.09 华为技术有限公司，算法工程师，Intern 2019.09 - 2020.01 POSTECH，计算机</description>
+    </item>
+    
+    <item>
+      <title>桌游列表</title>
+      <link>https://timegg.top/boardgame/</link>
+      <pubDate>Thu, 17 Nov 2022 20:24:28 +0800</pubDate>
+      
+      <guid>https://timegg.top/boardgame/</guid>
+      <description>想象力即是边际。 这里是我和我朋友们从 16 年到现在玩过的桌游，虽然身边的大家不断在变，但是桌游带来的快乐、制造的回忆都一直在。 玩过桌游的不完全收集，之后想到遗漏的再补上。我们玩桌游相对比较随缘，偶尔跟跟风</description>
+    </item>
+    
+    <item>
+      <title>桌游列表</title>
+      <link>https://timegg.top/static/</link>
+      <pubDate>Thu, 17 Nov 2022 20:24:28 +0800</pubDate>
+      
+      <guid>https://timegg.top/static/</guid>
+      <description>想象力即是边际。 这里是我和我朋友们从 16 年到现在玩过的桌游，虽然身边的大家不断在变，但是桌游带来的快乐、制造的回忆都一直在。 玩过桌游的不完全收集，之后想到遗漏的再补上。我们玩桌游相对比较随缘，偶尔跟跟风</description>
+    </item>
+    
+    <item>
       <title>论文四色原理</title>
       <link>https://timegg.top/posts/20221010-papermark/</link>
       <pubDate>Mon, 10 Oct 2022 00:00:00 +0900</pubDate>
@@ -625,24 +661,6 @@
       <pubDate>Sun, 20 Jun 2021 20:24:28 +0800</pubDate>
       
       <guid>https://timegg.top/album/202104_changyuan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>test1</title>
-      <link>https://timegg.top/static/2021-06-20-test1/</link>
-      <pubDate>Sun, 20 Jun 2021 20:24:28 +0800</pubDate>
-      
-      <guid>https://timegg.top/static/2021-06-20-test1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>test2</title>
-      <link>https://timegg.top/static/2021-06-20-test2/</link>
-      <pubDate>Sun, 20 Jun 2021 20:24:28 +0800</pubDate>
-      
-      <guid>https://timegg.top/static/2021-06-20-test2/</guid>
       <description></description>
     </item>
     
