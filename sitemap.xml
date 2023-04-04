@@ -2,6 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://timegg.top/posts/</loc>
+    <lastmod>2023-04-01T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://timegg.top/tags/</loc>
+    <lastmod>2023-04-01T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://timegg.top/</loc>
+    <lastmod>2023-04-01T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://timegg.top/tags/%E6%95%99%E7%A8%8B%E6%96%87%E6%A1%A3/</loc>
+    <lastmod>2023-04-01T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://timegg.top/posts/20230401-timeggomakase/</loc>
+    <lastmod>2023-04-01T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://timegg.top/posts/20230328-eldenking/</loc>
+    <lastmod>2023-03-28T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://timegg.top/tags/%E5%BC%80%E7%AE%B1%E6%B5%8B%E8%AF%84/</loc>
+    <lastmod>2023-03-28T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://timegg.top/tags/%E7%94%9F%E6%B4%BB%E4%BA%8B%E8%AE%B0/</loc>
+    <lastmod>2023-03-28T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://timegg.top/tags/%E7%94%9F%E6%B4%BB%E6%80%9D%E8%80%83/</loc>
+    <lastmod>2023-03-28T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://timegg.top/posts/20230301-boardgameomakase/</loc>
+    <lastmod>2023-03-01T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://timegg.top/tags/%E8%84%91%E6%B4%9E%E6%96%87%E7%AB%A0/</loc>
+    <lastmod>2023-02-24T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://timegg.top/posts/20230224-abyss/</loc>
+    <lastmod>2023-02-24T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://timegg.top/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2022-12-18T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://timegg.top/posts/20221218-loveletter/</loc>
+    <lastmod>2022-12-18T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://timegg.top/posts/20221123-humanculture/</loc>
+    <lastmod>2022-11-23T00:00:00+09:00</lastmod>
+  </url><url>
     <loc>https://timegg.top/about/</loc>
     <lastmod>2022-11-18T20:24:28+08:00</lastmod>
   </url><url>
@@ -14,17 +59,17 @@
     <loc>https://timegg.top/static/</loc>
     <lastmod>2022-11-17T20:24:28+08:00</lastmod>
   </url><url>
-    <loc>https://timegg.top/posts/</loc>
-    <lastmod>2022-10-10T00:00:00+09:00</lastmod>
+    <loc>https://timegg.top/posts/20221115-universegraphiccard/</loc>
+    <lastmod>2022-11-15T00:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://timegg.top/tags/</loc>
-    <lastmod>2022-10-10T00:00:00+09:00</lastmod>
+    <loc>https://timegg.top/posts/20221103-travelobservation/</loc>
+    <lastmod>2022-11-03T00:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://timegg.top/</loc>
-    <lastmod>2022-10-10T00:00:00+09:00</lastmod>
+    <loc>https://timegg.top/posts/20221025-lifepatience/</loc>
+    <lastmod>2022-10-25T00:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://timegg.top/tags/%E6%95%99%E7%A8%8B%E6%96%87%E6%A1%A3/</loc>
-    <lastmod>2022-10-10T00:00:00+09:00</lastmod>
+    <loc>https://timegg.top/posts/20221017-metamorphosis/</loc>
+    <lastmod>2022-10-17T00:00:00+09:00</lastmod>
   </url><url>
     <loc>https://timegg.top/posts/20221010-papermark/</loc>
     <lastmod>2022-10-10T00:00:00+09:00</lastmod>
@@ -32,28 +77,16 @@
     <loc>https://timegg.top/posts/20220925-finalcutpro/</loc>
     <lastmod>2022-09-25T00:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://timegg.top/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2022-09-11T00:00:00+09:00</lastmod>
-  </url><url>
     <loc>https://timegg.top/posts/20220911-bookvalue/</loc>
     <lastmod>2022-09-11T00:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://timegg.top/tags/%E8%84%91%E6%B4%9E%E6%96%87%E7%AB%A0/</loc>
-    <lastmod>2022-07-07T00:00:00+09:00</lastmod>
-  </url><url>
     <loc>https://timegg.top/posts/20220707-life/</loc>
-    <lastmod>2022-07-07T00:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://timegg.top/tags/%E7%94%9F%E6%B4%BB%E6%80%9D%E8%80%83/</loc>
     <lastmod>2022-07-07T00:00:00+09:00</lastmod>
   </url><url>
     <loc>https://timegg.top/posts/20220628-number/</loc>
     <lastmod>2022-06-28T00:00:00+09:00</lastmod>
   </url><url>
     <loc>https://timegg.top/posts/20220606-targus/</loc>
-    <lastmod>2022-06-06T00:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://timegg.top/tags/%E5%BC%80%E7%AE%B1%E6%B5%8B%E8%AF%84/</loc>
     <lastmod>2022-06-06T00:00:00+09:00</lastmod>
   </url><url>
     <loc>https://timegg.top/posts/20220531-macmini/</loc>
@@ -63,9 +96,6 @@
     <lastmod>2022-05-21T00:00:00+09:00</lastmod>
   </url><url>
     <loc>https://timegg.top/posts/20220506-trashbin/</loc>
-    <lastmod>2022-05-07T00:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://timegg.top/tags/%E7%94%9F%E6%B4%BB%E4%BA%8B%E8%AE%B0/</loc>
     <lastmod>2022-05-07T00:00:00+09:00</lastmod>
   </url><url>
     <loc>https://timegg.top/posts/20220422-formatfree/</loc>
