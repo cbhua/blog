@@ -2,377 +2,377 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>教程文档 on TIMEGG</title>
-    <link>https://timegg.top/tags/%E6%95%99%E7%A8%8B%E6%96%87%E6%A1%A3/</link>
+    <link>https://cbhua.github.io/tags/%E6%95%99%E7%A8%8B%E6%96%87%E6%A1%A3/</link>
     <description>Recent content in 教程文档 on TIMEGG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 15 Sep 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://timegg.top/tags/%E6%95%99%E7%A8%8B%E6%96%87%E6%A1%A3/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Sep 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://cbhua.github.io/tags/%E6%95%99%E7%A8%8B%E6%96%87%E6%A1%A3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>文化冰山</title>
-      <link>https://timegg.top/posts/20230915-cultureiceberg/</link>
+      <link>https://cbhua.github.io/posts/20230915-cultureiceberg/</link>
       <pubDate>Fri, 15 Sep 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20230915-cultureiceberg/</guid>
+      <guid>https://cbhua.github.io/posts/20230915-cultureiceberg/</guid>
       <description>在这个地方留学的这么长时间里，我不止一次想写一篇文章来聊聊这个国家的文化，但是一直不知道从哪下手。于是我决定反主为客，在这篇文章中尝试总结和列举我能想到的和文化相关的比较有趣的问题，尽可能地覆盖比较广的关于文化的讨论范围，希望这些问题可以帮助我来梳理我对一个国家/地区的文化了解，也希望能给大家在了解一个文化的时候提供一些工具。</description>
     </item>
     
     <item>
       <title>这个网站的 Omakase</title>
-      <link>https://timegg.top/posts/20230401-timeggomakase/</link>
+      <link>https://cbhua.github.io/posts/20230401-timeggomakase/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20230401-timeggomakase/</guid>
+      <guid>https://cbhua.github.io/posts/20230401-timeggomakase/</guid>
       <description>虽然我之前口口声声说我要让大家随缘喜欢上我的网站，而不是像推销一样塞到大家的嘴里。但是网站更新时间久了，文章数量确实逐渐多了起来，我确实担心有一些朋友因为读到我的划水文章之后被赶走（不是）。所以仿照着之前的桌游 Omakase 文章，我也来写个 Timegg 的 Omakase，给大家主动卖弄卖弄这个网站。</description>
     </item>
     
     <item>
       <title>桌游 Omakase</title>
-      <link>https://timegg.top/posts/20230301-boardgameomakase/</link>
+      <link>https://cbhua.github.io/posts/20230301-boardgameomakase/</link>
       <pubDate>Wed, 01 Mar 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20230301-boardgameomakase/</guid>
+      <guid>https://cbhua.github.io/posts/20230301-boardgameomakase/</guid>
       <description>欢迎光临，这里是荣获桌其林一星推荐的鸽子窝桌游店，请您按照预约的座位落座，我们的用餐将会在 10 分钟之后开始，今天的大将是鸽鸽，希望可以给大家带来最好的桌游 Omakase 体验。</description>
     </item>
     
     <item>
       <title>论文四色原理</title>
-      <link>https://timegg.top/posts/20221010-papermark/</link>
+      <link>https://cbhua.github.io/posts/20221010-papermark/</link>
       <pubDate>Mon, 10 Oct 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20221010-papermark/</guid>
+      <guid>https://cbhua.github.io/posts/20221010-papermark/</guid>
       <description>大家在平常读论文的时候肯定会习惯性的用荧光笔标记一些内容，不管是疑问还是兴趣点什么的，我在之前阅读论文的时候都是一股脑的用黄色的荧光笔乱画一通，这个习惯可能是来自于阅读纸质论文的经历。这次我准备规范化论文的颜色标记，寻找适合自己的论文阅读方式。</description>
     </item>
     
     <item>
       <title>FXC 文件管理强迫症</title>
-      <link>https://timegg.top/posts/20220925-finalcutpro/</link>
+      <link>https://cbhua.github.io/posts/20220925-finalcutpro/</link>
       <pubDate>Sun, 25 Sep 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20220925-finalcutpro/</guid>
+      <guid>https://cbhua.github.io/posts/20220925-finalcutpro/</guid>
       <description>最近开始动手剪我们夏季去济州岛旅行的视频啦，因为是五天四夜的旅行，所以这次的素材数量非常的大，不能像之前剪视频一样素材随便放随便导入了，这时候确实认识到了素材管理的重要性，所以就打算学习学习素材管理。在总结了自己的文件管理理解之后写了这篇文章帮助其他也有剪辑需求的朋友们更好的理解 FXC 文件结构。。</description>
     </item>
     
     <item>
       <title>八股论文</title>
-      <link>https://timegg.top/posts/20220521-paper/</link>
+      <link>https://cbhua.github.io/posts/20220521-paper/</link>
       <pubDate>Sat, 21 May 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20220521-paper/</guid>
+      <guid>https://cbhua.github.io/posts/20220521-paper/</guid>
       <description>八股文并不是一个好听的词汇，所以其实这里与其是八股文，不如说是故有模板，但是这个模板备用的多了就被很多人嫌弃起来了，所以就可以用八股文来说论文。对于论文的结构，我们可以用一套公式来构造整个文章，具体到每一句话每个位置应该放什么东西。即使我们没有什么思路来写文章，也可以硬编上什么东西。。</description>
     </item>
     
     <item>
       <title>对科研的思考</title>
-      <link>https://timegg.top/posts/20211222-research/</link>
+      <link>https://cbhua.github.io/posts/20211222-research/</link>
       <pubDate>Wed, 22 Dec 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20211222-research/</guid>
+      <guid>https://cbhua.github.io/posts/20211222-research/</guid>
       <description>前一阵子和实验室的师兄聊天，因为最近我也在思考是否读 PhD 的事情，师兄给我分享了一位他很喜欢的老师在自己的 Webpage 上面写的一段给 Machine Learning 方向 PhD 的指导，这简直就是我当下迷茫状态中最需要的指导之一，我想要去了解如果作为一个 PhD 我该成为什么样子、我会遇到哪些情况、我应该怎么面对我遇到的不同的情况。</description>
     </item>
     
     <item>
       <title>成为雀圣吧</title>
-      <link>https://timegg.top/posts/20211012-majsoul/</link>
+      <link>https://cbhua.github.io/posts/20211012-majsoul/</link>
       <pubDate>Tue, 12 Oct 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20211012-majsoul/</guid>
+      <guid>https://cbhua.github.io/posts/20211012-majsoul/</guid>
       <description>雀圣是雀魂里面日麻的一个段位，仅次于魂天这一最高段位，意味着极高的日麻能力。前一阵子摸鱼麻将打了个爽，不过都是靠自己莽着打，自己理解自己放铳。最后还是决定好好研究一下，于是读了魔女博客的日本麻将入门，并且总结了这一篇笔记。</description>
     </item>
     
     <item>
       <title>解读一维 OSC 方法</title>
-      <link>https://timegg.top/posts/20211004-osc/</link>
+      <link>https://cbhua.github.io/posts/20211004-osc/</link>
       <pubDate>Mon, 04 Oct 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20211004-osc/</guid>
+      <guid>https://cbhua.github.io/posts/20211004-osc/</guid>
       <description>前一阵子看了看自己的文章归档，发现我已经半年没有写过技术文章了，为了表示这个博主不是个只会写水文章的大水怪，我决定来写一篇硬核的技术文章，接招吧小伙子们。既然要写，就要写点其他人没写过的，什么东西写得人少呢，那当然是数学。虽然是数学，我会尽可能用口语化的方法来讲述核心的部分，让大家能够感觉到数学的魅力（确信）。耐心看完，你一定会有所收获。</description>
     </item>
     
     <item>
       <title>当个云玩家</title>
-      <link>https://timegg.top/posts/20210717-game/</link>
+      <link>https://cbhua.github.io/posts/20210717-game/</link>
       <pubDate>Sat, 17 Jul 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20210717-game/</guid>
+      <guid>https://cbhua.github.io/posts/20210717-game/</guid>
       <description>谁不想随时随地打开任何一个设备就可以畅玩 3A 大作呢，云游戏这个理念给大家带来了无限的可能。这里是一篇比较独特的云游戏平台搭建经验分享，在这篇教程里面我们选择全部通过远程连接的方式，在 Linux 平台上搭建云游戏平台。”</description>
     </item>
     
     <item>
       <title>砥石与刚刃</title>
-      <link>https://timegg.top/posts/20210627-vim/</link>
+      <link>https://cbhua.github.io/posts/20210627-vim/</link>
       <pubDate>Sun, 27 Jun 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20210627-vim/</guid>
+      <guid>https://cbhua.github.io/posts/20210627-vim/</guid>
       <description>“磨刀不误砍柴功”，“工欲善其事，必先利其器”等等。这样的俗语强调我们在做事情的时候应该寻找到一个适合的工具，来帮助我们高效地完成任务。最近集中学习了 Vim 的使用，有种相见恨晚的感觉，我认为每个追求极致效率的人都应该尝试一下 Vim.</description>
     </item>
     
     <item>
       <title>标点符号使用论</title>
-      <link>https://timegg.top/posts/20210325-sign/</link>
+      <link>https://cbhua.github.io/posts/20210325-sign/</link>
       <pubDate>Thu, 25 Mar 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20210325-sign/</guid>
+      <guid>https://cbhua.github.io/posts/20210325-sign/</guid>
       <description>这里是根据中国教育部发行的中文标点使用规范所总结出的一些我们使用标点符号的过程中容易犯的错误，互联网上的很多文章在撰写的过程中对标点符号进行了错误使用或者滥用，这些不良的标点符号使用习惯理应得到纠正。</description>
     </item>
     
     <item>
       <title>Minecraft 联机服务器终极教程</title>
-      <link>https://timegg.top/posts/20210216-minecraft/</link>
+      <link>https://cbhua.github.io/posts/20210216-minecraft/</link>
       <pubDate>Tue, 16 Feb 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20210216-minecraft/</guid>
+      <guid>https://cbhua.github.io/posts/20210216-minecraft/</guid>
       <description>这里是关于如何在 Ubuntu 系统上创建一个长期运行的 Minecraft 服务器的终极教程，该服务器可以自由添加 Mods，或者使用论坛上面的整合包。网络上相关的教程较为零散，各种问题也很多，在这里我准备以我写教程的最高标准来完成这样一个搭建服务器的终极教程，展现我认为理想的教程形态应该是什么样的。</description>
     </item>
     
     <item>
       <title>套辞中的核心问题之一</title>
-      <link>https://timegg.top/posts/20201010-application/</link>
+      <link>https://cbhua.github.io/posts/20201010-application/</link>
       <pubDate>Sat, 10 Oct 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20201010-application/</guid>
+      <guid>https://cbhua.github.io/posts/20201010-application/</guid>
       <description>套辞是研究型留学申请的重要步骤。相较于邮件撰写、论文阅读、面试准备、文书修改等有章可循的环节，寻找自己想做的的方向是一个很模糊的问题，也是很多申请经验贴中不重点提及的问题。</description>
     </item>
     
     <item>
       <title>不要重复造轮子：早点学哲学</title>
-      <link>https://timegg.top/posts/20200928-philosophy/</link>
+      <link>https://cbhua.github.io/posts/20200928-philosophy/</link>
       <pubDate>Mon, 28 Sep 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20200928-philosophy/</guid>
+      <guid>https://cbhua.github.io/posts/20200928-philosophy/</guid>
       <description>不要重复造轮子是计算机领域非常常用的一句话，强调既然有现成的东西可以用，就不要自己从零再造。用在哲学方面也没有问题，与其独自纠结思考，不如直接参考其他哲学家的思想成果，化为己用。</description>
     </item>
     
     <item>
       <title>在留学申请的过程中学到的</title>
-      <link>https://timegg.top/posts/20200521-application/</link>
+      <link>https://cbhua.github.io/posts/20200521-application/</link>
       <pubDate>Thu, 21 May 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20200521-application/</guid>
+      <guid>https://cbhua.github.io/posts/20200521-application/</guid>
       <description>留学申请是个很好的学习过程，在此期间可以发现自己的很多问题。反思去年半年的申请过程，我总结出了当时所遇到的几个问题，这些问题都或多或少给当时的我带来了一些消极的影响，复盘这些问题必要且有用。</description>
     </item>
     
     <item>
       <title>基于 IDX 数据文件创建 Dataset</title>
-      <link>https://timegg.top/posts/20200511-idx/</link>
+      <link>https://cbhua.github.io/posts/20200511-idx/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20200511-idx/</guid>
+      <guid>https://cbhua.github.io/posts/20200511-idx/</guid>
       <description>不少数据集的存储文件类型是 IDX，如 MNIST 数据集的官方存储格式。如何从 IDX 文件创建 Dataset 是 ML 模型中重要一步。这里是一个从 IDX 数据集创建 Dataset 类的模版。</description>
     </item>
     
     <item>
       <title>虚拟局域网的终极解决方案</title>
-      <link>https://timegg.top/posts/20200421-zerotier/</link>
+      <link>https://cbhua.github.io/posts/20200421-zerotier/</link>
       <pubDate>Tue, 21 Apr 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20200421-zerotier/</guid>
+      <guid>https://cbhua.github.io/posts/20200421-zerotier/</guid>
       <description>联机游戏最大的问题之一是网络连接，糟糕的网络连接会极大影响大家的游戏体验，甚至使游戏无法进行下去。我们有多种方法来解决这个问题：租用第三方服务器运行游戏、网络连接加速器等等。虚拟局域网是一种无视游戏种类的终极解决方案，如果完美搭建则可以成为联机游戏的终极解决方案</description>
     </item>
     
     <item>
       <title>哈工大对外交换生的申请</title>
-      <link>https://timegg.top/posts/20200403-exchange/</link>
+      <link>https://cbhua.github.io/posts/20200403-exchange/</link>
       <pubDate>Fri, 03 Apr 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20200403-exchange/</guid>
+      <guid>https://cbhua.github.io/posts/20200403-exchange/</guid>
       <description>这里提供了哈工大对外申请交换生的信息，包括交换前的准备、交换时选校、申请材料准备、和简单的交换生活介绍等，希望可以给工大的其他同学提供交换生申请的参考。</description>
     </item>
     
     <item>
       <title>2019 KDD 推荐系统方向论文总结</title>
-      <link>https://timegg.top/posts/20200215-kdd/</link>
+      <link>https://cbhua.github.io/posts/20200215-kdd/</link>
       <pubDate>Sat, 15 Feb 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20200215-kdd/</guid>
+      <guid>https://cbhua.github.io/posts/20200215-kdd/</guid>
       <description>KDD 全称 Special Interest Group on Knowledge Discovery and Data Mining。由于最近对推荐系统方向比较感兴趣，所以搜索了其中的一些文章来读，写了一份 PPT 和文档作为总结，可以作为笔记存留，也可以为有需要的同学提供帮助。</description>
     </item>
     
     <item>
       <title>搭建 Minecraft Froge 服务器</title>
-      <link>https://timegg.top/posts/20200215-minecraft/</link>
+      <link>https://cbhua.github.io/posts/20200215-minecraft/</link>
       <pubDate>Sat, 15 Feb 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20200215-minecraft/</guid>
+      <guid>https://cbhua.github.io/posts/20200215-minecraft/</guid>
       <description>最近找不到好玩的联机游戏了？不如来玩 Minecraft 吧。这篇文章包含如何搭建一个 Minecraft Forge 服务器并添加 Mod 和服务器管理系统，同时针对许多常见问题提供解决方案。</description>
     </item>
     
     <item>
       <title>数值分析笔记</title>
-      <link>https://timegg.top/posts/20191002-numerical/</link>
+      <link>https://cbhua.github.io/posts/20191002-numerical/</link>
       <pubDate>Wed, 02 Oct 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20191002-numerical/</guid>
+      <guid>https://cbhua.github.io/posts/20191002-numerical/</guid>
       <description>数值分析这门课程是我在本科三年级学的一门专业核心课程，难度很高但是在各种领域都有着广泛的使用。这些笔记是在期末考试复习期间完成的，强调内容精简易于记忆和脉络熟路，可以方便在考试之前回忆课程学习结构，从而在遇到问题时可以快速分析出要使用的解法。</description>
     </item>
     
     <item>
       <title>大学第四年的实习</title>
-      <link>https://timegg.top/posts/20190917-huawei/</link>
+      <link>https://cbhua.github.io/posts/20190917-huawei/</link>
       <pubDate>Tue, 17 Sep 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20190917-huawei/</guid>
+      <guid>https://cbhua.github.io/posts/20190917-huawei/</guid>
       <description>我在大学第四年申请了多家互联网公司的实习，最后选择了去华为进行为期三个月的实习。在这个实习的申请过程中学到了很多的东西，也总结一些经验，希望这些经验可以给同校后辈们提供一些帮助。</description>
     </item>
     
     <item>
       <title>偏微分方程数值解法笔记</title>
-      <link>https://timegg.top/posts/20190915-pde/</link>
+      <link>https://cbhua.github.io/posts/20190915-pde/</link>
       <pubDate>Sun, 15 Sep 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20190915-pde/</guid>
+      <guid>https://cbhua.github.io/posts/20190915-pde/</guid>
       <description>偏微分方程在机器学习领域有着广泛的用途，很多优化问题都是偏微分方程，同时很多物理方面的数值模拟问题最后都会化为解决偏微分方程和常微分方程的问题，这门课是数学系本科三年级的核心课程之一。</description>
     </item>
     
     <item>
       <title>数学物理方程笔记</title>
-      <link>https://timegg.top/posts/20190902-mathphysics/</link>
+      <link>https://cbhua.github.io/posts/20190902-mathphysics/</link>
       <pubDate>Mon, 02 Sep 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20190902-mathphysics/</guid>
+      <guid>https://cbhua.github.io/posts/20190902-mathphysics/</guid>
       <description>数学物理方程不是数学系的核心课程之一，一般作为选修课供工科方向发展的学生学习。其本质内容和偏微分方程数值解法接近，都是使用不同的数值模拟和逼近方法获取常微分方程或者偏微分方程的解，以用于实际的工程问题当中。。</description>
     </item>
     
     <item>
       <title>拓扑学笔记</title>
-      <link>https://timegg.top/posts/20190814-topology/</link>
+      <link>https://cbhua.github.io/posts/20190814-topology/</link>
       <pubDate>Wed, 14 Aug 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20190814-topology/</guid>
+      <guid>https://cbhua.github.io/posts/20190814-topology/</guid>
       <description>拓扑学是我作为数学系本科生本科期间最后一门核心课程，其内容事实上是颠覆性的，拓扑空间被大家亲切地叫做橡皮泥空间，很多特性在此空间都发生了根本上的改变。总之这是一门又难但是又非常独特的学科，作为一个开头。</description>
     </item>
     
     <item>
       <title>信息论笔记</title>
-      <link>https://timegg.top/posts/20190602-information/</link>
+      <link>https://cbhua.github.io/posts/20190602-information/</link>
       <pubDate>Sun, 02 Jun 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20190602-information/</guid>
+      <guid>https://cbhua.github.io/posts/20190602-information/</guid>
       <description>信息论更加偏向于工科，计算机方向一些。这门课程中的很多内容非常有意思，可以脱离这门科目去思考，其思想在很多地方都在使用，可以说是现代信息社会的基石科目之一。</description>
     </item>
     
     <item>
       <title>Procreate 使用体验</title>
-      <link>https://timegg.top/posts/20190503-procreate/</link>
+      <link>https://cbhua.github.io/posts/20190503-procreate/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20190503-procreate/</guid>
+      <guid>https://cbhua.github.io/posts/20190503-procreate/</guid>
       <description>Procreate 是 iPad 上最有名的绘画 APP 之一，也是我在几个 APP 中最终挑选的。在画了几幅画之后来谈一谈这个 APP 的使用体验。</description>
     </item>
     
     <item>
       <title>信息论实验</title>
-      <link>https://timegg.top/posts/20190503-information/</link>
+      <link>https://cbhua.github.io/posts/20190503-information/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20190503-information/</guid>
+      <guid>https://cbhua.github.io/posts/20190503-information/</guid>
       <description>这是信息论这门课程学期中我们所做的几个实验，主要基于 Python，集中于几种信息编码和信道编码方式的实现，同时包含一些常用工具的实现，如信息熵的计算、信道容量的计算等等。</description>
     </item>
     
     <item>
       <title>创建饥荒联机版多人服务器</title>
-      <link>https://timegg.top/posts/20190415-dst/</link>
+      <link>https://cbhua.github.io/posts/20190415-dst/</link>
       <pubDate>Mon, 15 Apr 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20190415-dst/</guid>
+      <guid>https://cbhua.github.io/posts/20190415-dst/</guid>
       <description>饥荒联机版是我们很喜欢的一个联机游戏，但是官方服务器的联机质量实在不能保证，而且本地联机网络要求和配置要求都比较高。因此创建一个多人联机的服务器就很有必要了，这篇文章记录了如何在 Ubuntu 平台创建饥荒联机版的服务器。</description>
     </item>
     
     <item>
       <title>创建腾讯 QQ 机器人</title>
-      <link>https://timegg.top/posts/20190316-tencent/</link>
+      <link>https://cbhua.github.io/posts/20190316-tencent/</link>
       <pubDate>Sat, 16 Mar 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20190316-tencent/</guid>
+      <guid>https://cbhua.github.io/posts/20190316-tencent/</guid>
       <description>在和好朋友的群里创建一个具有点歌、发图、统计、提供小游戏的机器人是一个非常有趣的事情，可以给群里带来很多欢乐。该方法目前已全面失效，腾讯已完全封禁该机器人。</description>
     </item>
     
     <item>
       <title>哈恩巴拿赫定理证明</title>
-      <link>https://timegg.top/posts/20190210-hahnbanach/</link>
+      <link>https://cbhua.github.io/posts/20190210-hahnbanach/</link>
       <pubDate>Sun, 10 Feb 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20190210-hahnbanach/</guid>
+      <guid>https://cbhua.github.io/posts/20190210-hahnbanach/</guid>
       <description>Hahn-Banach Theorem 哈恩巴拿赫定理被称为泛函分析三大定理之一，是泛函分析中极其重要的一个工具。在经济学领域，该定理与市场经济的福利经济学第二定理有密切的关系。关于这个定理证明的资料在网上可以搜索到的不多，大多为应用，因此在这里展示对该定理的证明。</description>
     </item>
     
     <item>
       <title>概率论与数理统计笔记</title>
-      <link>https://timegg.top/posts/20181219-probability/</link>
+      <link>https://cbhua.github.io/posts/20181219-probability/</link>
       <pubDate>Wed, 19 Dec 2018 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20181219-probability/</guid>
+      <guid>https://cbhua.github.io/posts/20181219-probability/</guid>
       <description>概率论与数理统计是数学系核心课程之一，其实是分开的两部分。我们在这个学期所学的概率论和数理统计主要集中于定理证明和结论推导，与工科不同数学系少强调应用。这些笔记可以帮助我更好的理解一些概率论定理运行的原理。</description>
     </item>
     
     <item>
       <title>泛函分析笔记</title>
-      <link>https://timegg.top/posts/20181213-functional/</link>
+      <link>https://cbhua.github.io/posts/20181213-functional/</link>
       <pubDate>Thu, 13 Dec 2018 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20181213-functional/</guid>
+      <guid>https://cbhua.github.io/posts/20181213-functional/</guid>
       <description>泛函分析和实变函数论都是数学系最核心的课程之一，同时也是之后要学到的拓扑学的基础。这些笔记可以帮助我快速复习回忆课程内容以及定理方程的使用，以针对考试。想要进一步的理解需要阅读原教案，内容量相对较多。</description>
     </item>
     
     <item>
       <title>几种常用的插值法的实现</title>
-      <link>https://timegg.top/posts/20181102-polynomial/</link>
+      <link>https://cbhua.github.io/posts/20181102-polynomial/</link>
       <pubDate>Fri, 02 Nov 2018 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20181102-polynomial/</guid>
+      <guid>https://cbhua.github.io/posts/20181102-polynomial/</guid>
       <description>插值法在数值分析中很常用，用于各种函数分析的拟合和逼近，以及关于最佳一致逼近和最佳平方逼近的证明。在这篇文章中记录了使用 Matlab 实现的 Lagrange 插值法、Newton 插值法、Hermit 插值法和三次样条插值法。。</description>
     </item>
     
     <item>
       <title>解线性方程组的几类直接方法</title>
-      <link>https://timegg.top/posts/20181012-linear/</link>
+      <link>https://cbhua.github.io/posts/20181012-linear/</link>
       <pubDate>Fri, 12 Oct 2018 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20181012-linear/</guid>
+      <guid>https://cbhua.github.io/posts/20181012-linear/</guid>
       <description>对于实线性方程组，通过恰当的变换，都可以得到任意精确度的数值解或者直接获得解析解，在数值处理上属于最简单的一个类型。在数值分析中，这些过程需要交给计算机计算，所以就需要着重考虑其中会由计算机计算产生的误差。因此诞生出了诸多的方法并不断优化，避免了 7种情况 带来的计算误差，使得数据处理更加精确可信。</description>
     </item>
     
     <item>
       <title>爬取 Vol.moe 的漫画资源</title>
-      <link>https://timegg.top/posts/20180727-volmoe/</link>
+      <link>https://cbhua.github.io/posts/20180727-volmoe/</link>
       <pubDate>Fri, 27 Jul 2018 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20180727-volmoe/</guid>
+      <guid>https://cbhua.github.io/posts/20180727-volmoe/</guid>
       <description>Vol.moe 是我最喜欢的漫画资源下载网站，虽然收费，但是使用体验很好。网站有一个缺陷即无法批量下载，所以尝试用 Python 写一个脚本帮助我批量下载漫画。该方法已失效，目前网站已开放批量下载功能。</description>
     </item>
     
     <item>
       <title>数据库系统概论笔记</title>
-      <link>https://timegg.top/posts/20180612-database/</link>
+      <link>https://cbhua.github.io/posts/20180612-database/</link>
       <pubDate>Tue, 12 Jun 2018 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20180612-database/</guid>
+      <guid>https://cbhua.github.io/posts/20180612-database/</guid>
       <description>数据库系统概论这门课是数学系与计算机系联动开放的课程，主要作用给数学系学生提供一些数据处理方面的工具。这门课程主要学习 SQL 的基本编程与使用，不涉及太多内嵌功能，属于很基础的开放课。</description>
     </item>
     
     <item>
       <title>关于 PhotoShop 的学习</title>
-      <link>https://timegg.top/posts/20180403-photoshop/</link>
+      <link>https://cbhua.github.io/posts/20180403-photoshop/</link>
       <pubDate>Tue, 03 Apr 2018 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20180403-photoshop/</guid>
+      <guid>https://cbhua.github.io/posts/20180403-photoshop/</guid>
       <description>我接触 Photoshop 大概已经一年了，在此期间断断续续地学了一些东西，也教了一些身边的朋友去使用 PS。为了方便别人和自己，之前写过一些教程，不过效果并不是很好，因为 PS 使用中的知识大量且琐碎，很难在短时间都掌握下来。所以与其细致的手把手交别人怎么用某一个工具，不如记录一些我在使用 PS 中的一些理解。</description>
     </item>
     
     <item>
       <title>Windows 美化计划</title>
-      <link>https://timegg.top/posts/20180202-beautify/</link>
+      <link>https://cbhua.github.io/posts/20180202-beautify/</link>
       <pubDate>Fri, 02 Feb 2018 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20180202-beautify/</guid>
+      <guid>https://cbhua.github.io/posts/20180202-beautify/</guid>
       <description>因为自己做过平面设计，所以对于自己使用的电脑也有着一定的美学要求。Windows 作为主力操作系统，有很多地方都不尽如人意。所以出于对美学的追求，我与 Windows 打起了长久的美化攻坚战，这就是 Windows 美化计划。</description>
     </item>
     
     <item>
       <title>Google 机器学习中文教程笔记</title>
-      <link>https://timegg.top/posts/20180104-googleml/</link>
+      <link>https://cbhua.github.io/posts/20180104-googleml/</link>
       <pubDate>Thu, 04 Jan 2018 00:00:00 +0900</pubDate>
       
-      <guid>https://timegg.top/posts/20180104-googleml/</guid>
+      <guid>https://cbhua.github.io/posts/20180104-googleml/</guid>
       <description>Google 做了一个关于机器学习的中文教程，感兴趣地去学了前几章，因为没有很好的代码基础，所以学起来有很多不太理解的地方。整体上教程作为入门会很方便，但是难度梯度对我来说还是太高。</description>
     </item>
     
