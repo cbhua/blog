@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>开发笔记 on TIMEGG</title>
-    <link>https://cbhua.github.io/tags/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/</link>
+    <link>https://cbhua.github.io/blog/tags/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/</link>
     <description>Recent content in 开发笔记 on TIMEGG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 22 Apr 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://cbhua.github.io/tags/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Apr 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://cbhua.github.io/blog/tags/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>板式自由主义</title>
-      <link>https://cbhua.github.io/posts/20220422-formatfree/</link>
+      <link>https://cbhua.github.io/blog/posts/20220422-formatfree/</link>
       <pubDate>Fri, 22 Apr 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20220422-formatfree/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20220422-formatfree/</guid>
       <description>今天我在 VSCode 写代码的时候不知道为什么，突然对自己 VSCode 用的主题感觉到腻了，于是就想换个主题。在挑选主题的过程中对字体、排版有了一些思考，逐渐产生了一些合理到离谱的客制化需求，进而拓展到对不同文本编辑器的自由度思考。我把这种对排版自由度的追求叫做板式自由主义。</description>
     </item>
     
     <item>
       <title>知与不可知的矛盾</title>
-      <link>https://cbhua.github.io/posts/20220225-know/</link>
+      <link>https://cbhua.github.io/blog/posts/20220225-know/</link>
       <pubDate>Fri, 25 Feb 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20220225-know/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20220225-know/</guid>
       <description>最近我在设计一个桌游，在游戏的设计过程中，我遇到了一个关于玩家进行操作和隐藏自己身份之间的矛盾。这个问题看似很简单，但是确实让我思考了好久，所以我姑且把问题描述在这里，并且附上自己的思考，想要听听大家的想法。</description>
     </item>
     
     <item>
       <title>网站的更新报告</title>
-      <link>https://cbhua.github.io/posts/20220222-update/</link>
+      <link>https://cbhua.github.io/blog/posts/20220222-update/</link>
       <pubDate>Tue, 22 Feb 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20220222-update/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20220222-update/</guid>
       <description>这里是网站的更新报告，TIMEGG 从 2017 年运行至今经历了多次更新，每次更新的内容将会记录在此。网站在几次大型更新中遗失了很多内容，这些旧网站存档将会在另一个 GitHub Repository 中展示。</description>
     </item>
     
     <item>
       <title>解读一维 OSC 方法</title>
-      <link>https://cbhua.github.io/posts/20211004-osc/</link>
+      <link>https://cbhua.github.io/blog/posts/20211004-osc/</link>
       <pubDate>Mon, 04 Oct 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20211004-osc/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20211004-osc/</guid>
       <description>前一阵子看了看自己的文章归档，发现我已经半年没有写过技术文章了，为了表示这个博主不是个只会写水文章的大水怪，我决定来写一篇硬核的技术文章，接招吧小伙子们。既然要写，就要写点其他人没写过的，什么东西写得人少呢，那当然是数学。虽然是数学，我会尽可能用口语化的方法来讲述核心的部分，让大家能够感觉到数学的魅力（确信）。耐心看完，你一定会有所收获。</description>
     </item>
     
     <item>
       <title>当个云玩家</title>
-      <link>https://cbhua.github.io/posts/20210717-game/</link>
+      <link>https://cbhua.github.io/blog/posts/20210717-game/</link>
       <pubDate>Sat, 17 Jul 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210717-game/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210717-game/</guid>
       <description>谁不想随时随地打开任何一个设备就可以畅玩 3A 大作呢，云游戏这个理念给大家带来了无限的可能。这里是一篇比较独特的云游戏平台搭建经验分享，在这篇教程里面我们选择全部通过远程连接的方式，在 Linux 平台上搭建云游戏平台。”</description>
     </item>
     
     <item>
       <title>博客百景</title>
-      <link>https://cbhua.github.io/posts/20210428-blog/</link>
+      <link>https://cbhua.github.io/blog/posts/20210428-blog/</link>
       <pubDate>Wed, 28 Apr 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210428-blog/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210428-blog/</guid>
       <description>虽然网站已经建立三年多了，但是很长时间内我似乎都没有重视过友链这个东西，导致今年网站重建的时候，我还只有两个友链，都是身边朋友的。那时候我突然想到，我已经闭门造车了这么长时间了，是不是可以出门看看外边的世界了。于是开始思考网站和友链的存在形式。</description>
     </item>
     
     <item>
       <title>远程工作流</title>
-      <link>https://cbhua.github.io/posts/20210416-workbyhome/</link>
+      <link>https://cbhua.github.io/blog/posts/20210416-workbyhome/</link>
       <pubDate>Fri, 16 Apr 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210416-workbyhome/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210416-workbyhome/</guid>
       <description>留学期间，因为反反复复的疫情我需要经常在远程工作与实验室工作之间反复交换。为了自己的研究方便于是搭建了自己的一套远程工作流，记录下这远程工作流的同时，我也希望可以通过这种方式记录下疫情下留学的工作和生活状态。</description>
     </item>
     
     <item>
       <title>小程序开发笔记：我是欧皇吗</title>
-      <link>https://cbhua.github.io/posts/20200609-wechatapp/</link>
+      <link>https://cbhua.github.io/blog/posts/20200609-wechatapp/</link>
       <pubDate>Tue, 09 Jun 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20200609-wechatapp/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20200609-wechatapp/</guid>
       <description>因为疫情在家没有事情做，决定用四十八小时挑战制作一个微信小程序。这个小程序用于计算各种扭蛋游戏的结果概率，在平常玩各种手游中具有参考价值和使用价值。目前该小程序已登陆微信小程序商店，搜索“我今天是欧皇吗”即可找到。</description>
     </item>
     

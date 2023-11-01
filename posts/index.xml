@@ -2,1205 +2,1205 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on TIMEGG</title>
-    <link>https://cbhua.github.io/posts/</link>
+    <link>https://cbhua.github.io/blog/posts/</link>
     <description>Recent content in Posts on TIMEGG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 15 Sep 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://cbhua.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Sep 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://cbhua.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>文化冰山</title>
-      <link>https://cbhua.github.io/posts/20230915-cultureiceberg/</link>
+      <link>https://cbhua.github.io/blog/posts/20230915-cultureiceberg/</link>
       <pubDate>Fri, 15 Sep 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20230915-cultureiceberg/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20230915-cultureiceberg/</guid>
       <description>在这个地方留学的这么长时间里，我不止一次想写一篇文章来聊聊这个国家的文化，但是一直不知道从哪下手。于是我决定反主为客，在这篇文章中尝试总结和列举我能想到的和文化相关的比较有趣的问题，尽可能地覆盖比较广的关于文化的讨论范围，希望这些问题可以帮助我来梳理我对一个国家/地区的文化了解，也希望能给大家在了解一个文化的时候提供一些工具。</description>
     </item>
     
     <item>
       <title>生活的 DDL</title>
-      <link>https://cbhua.github.io/posts/20230914-goodbye/</link>
+      <link>https://cbhua.github.io/blog/posts/20230914-goodbye/</link>
       <pubDate>Thu, 14 Sep 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20230914-goodbye/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20230914-goodbye/</guid>
       <description>这篇文章写于送别我最好的朋友之一前往德国留学的前夕。分别在即难免会想到很多比较远大、飘渺的事情来聊以安慰，但是落点在于希望互相都可以享受自己的人生，吃到好的饭、看到漂亮的景色、认识有趣的人，最后晚上回到家里睡个无梦好觉。一叶浮萍归大海，人生何处不相逢。祝他顺利！</description>
     </item>
     
     <item>
       <title>集体主义和性别不等式</title>
-      <link>https://cbhua.github.io/posts/20230830-genderequality/</link>
+      <link>https://cbhua.github.io/blog/posts/20230830-genderequality/</link>
       <pubDate>Wed, 30 Aug 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20230830-genderequality/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20230830-genderequality/</guid>
       <description>在这篇文章里面，我们来做一道推导题：证明：性别不平等问题来源于错误的集体主义。虽然我读了包括上野千鹤子老师作品在内的很多关于性别冲突的书，但是在之前的文章里面我其实不怎么谈论性别问题。不过前一阵子我突然想到一个思考性别问题的角度，它涉及到社会文化，变得复杂、严肃但是有趣了起来。那我们就来就这个观点思考思考性别问题吧。</description>
     </item>
     
     <item>
       <title>梦境信条</title>
-      <link>https://cbhua.github.io/posts/20230513-inversedream/</link>
+      <link>https://cbhua.github.io/blog/posts/20230513-inversedream/</link>
       <pubDate>Sat, 13 May 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20230513-inversedream/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20230513-inversedream/</guid>
       <description>有句俗话大家一定都听说过：“梦是反的”。原文“阴极则吉，阳极则凶，谓之反”可以解释为在梦中梦见不好的东西为凶兆、梦到好的东西为吉兆，物极必反，在现实中分别对应吉兆和凶兆。但是“梦是反的”说的是醒来之后的事情，也就是说我们醒来的一瞬间，时间开始流动。那么，我们醒来之前的事情到底是怎么回事呢？</description>
     </item>
     
     <item>
       <title>爱好螺旋完</title>
-      <link>https://cbhua.github.io/posts/20230503-spiralrise/</link>
+      <link>https://cbhua.github.io/blog/posts/20230503-spiralrise/</link>
       <pubDate>Wed, 03 May 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20230503-spiralrise/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20230503-spiralrise/</guid>
       <description>大家多多少少都会遇到一些个人发展的“瓶颈“，或是主观的或是客观的，这些瓶颈可能是无论如何努力都达不到的成就，也可能是一次持续一个月的生病，也或者是一段时间的心情低落、无心学习，但是总归人是在不断成长的。更细致地来描述一个人的成长的话，我们可以说一个人所掌握的技能是分别螺旋上升的。在这篇文章里我们来讨论讨论螺旋上升和爱好的关系。</description>
     </item>
     
     <item>
       <title>透明的中年人</title>
-      <link>https://cbhua.github.io/posts/20230421-transparentpeople/</link>
+      <link>https://cbhua.github.io/blog/posts/20230421-transparentpeople/</link>
       <pubDate>Fri, 21 Apr 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20230421-transparentpeople/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20230421-transparentpeople/</guid>
       <description>之前在听播客的时候了解到了一个有趣的概念：愤怒的中年人。在思考这个概念的时候想起来了另外一个有趣的话题：透明的中年人。怎么看都像是跟年龄过不去了的样子。</description>
     </item>
     
     <item>
       <title>喜茶</title>
-      <link>https://cbhua.github.io/posts/20230409-heytea/</link>
+      <link>https://cbhua.github.io/blog/posts/20230409-heytea/</link>
       <pubDate>Sun, 09 Apr 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20230409-heytea/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20230409-heytea/</guid>
       <description>此喜茶非彼喜茶，咱不收广告费。不知道什么时候开始的，我逐渐开始喝茶了，原本只是找点有味道的东西添加一些在实验室干活的乐趣，随着喝茶越来越多，发现喝茶还是一件很有意思的事情，所以就把自己对茶叶简单的入门了解过程罗列了一下，或许能吸引到更多的朋友一起来喝茶。</description>
     </item>
     
     <item>
       <title>这个网站的 Omakase</title>
-      <link>https://cbhua.github.io/posts/20230401-timeggomakase/</link>
+      <link>https://cbhua.github.io/blog/posts/20230401-timeggomakase/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20230401-timeggomakase/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20230401-timeggomakase/</guid>
       <description>虽然我之前口口声声说我要让大家随缘喜欢上我的网站，而不是像推销一样塞到大家的嘴里。但是网站更新时间久了，文章数量确实逐渐多了起来，我确实担心有一些朋友因为读到我的划水文章之后被赶走（不是）。所以仿照着之前的桌游 Omakase 文章，我也来写个 Timegg 的 Omakase，给大家主动卖弄卖弄这个网站。</description>
     </item>
     
     <item>
       <title>艾尔登之王</title>
-      <link>https://cbhua.github.io/posts/20230328-eldenking/</link>
+      <link>https://cbhua.github.io/blog/posts/20230328-eldenking/</link>
       <pubDate>Tue, 28 Mar 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20230328-eldenking/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20230328-eldenking/</guid>
       <description>这篇文章的原文写于整整一年前，去年的这个时候我沉迷在艾尔登法环的世界里面，不断感叹这个游戏带给我的惊艳。这篇文章的原文内容集中于讨论老头环的内容和我喜欢的点，和大多数网上的测评文章差不多，我不是专业的游戏测评家，所以写不出什么非常特别的点。在我成为艾尔登之王一年后的今天，我重新修改了这篇文章，想聊一聊“游戏阳痿”的事情。</description>
     </item>
     
     <item>
       <title>桌游 Omakase</title>
-      <link>https://cbhua.github.io/posts/20230301-boardgameomakase/</link>
+      <link>https://cbhua.github.io/blog/posts/20230301-boardgameomakase/</link>
       <pubDate>Wed, 01 Mar 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20230301-boardgameomakase/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20230301-boardgameomakase/</guid>
       <description>欢迎光临，这里是荣获桌其林一星推荐的鸽子窝桌游店，请您按照预约的座位落座，我们的用餐将会在 10 分钟之后开始，今天的大将是鸽鸽，希望可以给大家带来最好的桌游 Omakase 体验。</description>
     </item>
     
     <item>
       <title>深渊遗物列表</title>
-      <link>https://cbhua.github.io/posts/20230224-abyss/</link>
+      <link>https://cbhua.github.io/blog/posts/20230224-abyss/</link>
       <pubDate>Fri, 24 Feb 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20230224-abyss/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20230224-abyss/</guid>
       <description>这是旧日科技无限公司近期来最隆重的发布会，2023 春季发布会。在这场发布会上，我们将会展示我们公司在深渊探索科研几年来的重大发现，并且公开我们的研究论文，与全球的深渊学者们探讨分析。</description>
     </item>
     
     <item>
       <title>恋文的技术</title>
-      <link>https://cbhua.github.io/posts/20221218-loveletter/</link>
+      <link>https://cbhua.github.io/blog/posts/20221218-loveletter/</link>
       <pubDate>Sun, 18 Dec 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20221218-loveletter/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20221218-loveletter/</guid>
       <description>这篇文章是对于森见登美彦《恋文的技术》的读书笔记，这本书最近成为了我最喜欢的森见的书，虽然已经是第三遍读了，依然给我不一样的感受。希望这篇文章也可以让你对这本书有所兴趣，强烈安利，安利塞嘴里。</description>
     </item>
     
     <item>
       <title>人类迷惑节日概述</title>
-      <link>https://cbhua.github.io/posts/20221123-humanculture/</link>
+      <link>https://cbhua.github.io/blog/posts/20221123-humanculture/</link>
       <pubDate>Wed, 23 Nov 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20221123-humanculture/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20221123-humanculture/</guid>
       <description>欢迎大家来到旧日科技无限公司的宇宙文化科研小组的新闻发布会现场。我们的小组在前两天获得了一份来自格利泽 581C 文明的一份文稿，这里面记载了一些其他文明对人类文明文化的了解和看法，虽然里面的不少内容都已经被宇宙社会学研究过了，但是我们依然有一些新的发现。</description>
     </item>
     
     <item>
       <title>借宇宙的显卡用用</title>
-      <link>https://cbhua.github.io/posts/20221115-universegraphiccard/</link>
+      <link>https://cbhua.github.io/blog/posts/20221115-universegraphiccard/</link>
       <pubDate>Tue, 15 Nov 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20221115-universegraphiccard/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20221115-universegraphiccard/</guid>
       <description>做深度学习科研就是矛盾集合体，数据集少了各种发愁，东拼西凑地扩充，最后扩充地一塌糊涂模型摆烂就差直接告诉你老子不学了；数据集多了就会直接尬住，算不动了。在困难的解决算力问题的时候想到了这个脑洞。</description>
     </item>
     
     <item>
       <title>旅行观察日记</title>
-      <link>https://cbhua.github.io/posts/20221103-travelobservation/</link>
+      <link>https://cbhua.github.io/blog/posts/20221103-travelobservation/</link>
       <pubDate>Thu, 03 Nov 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20221103-travelobservation/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20221103-travelobservation/</guid>
       <description>大家都说旅行是观察一个人很好的机会，有的人喜欢旅行，有的人更喜欢在家里呆着，在旅行中遇到各种各样的事情和我们相应的做法都是观察的物料。观念是多年成长经历在个人性格表层的展现，对各种事情的看法都体现了个人的观念，研究这些观念就可以反过来探索内心真正想的东西。</description>
     </item>
     
     <item>
       <title>耐心生活</title>
-      <link>https://cbhua.github.io/posts/20221025-lifepatience/</link>
+      <link>https://cbhua.github.io/blog/posts/20221025-lifepatience/</link>
       <pubDate>Tue, 25 Oct 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20221025-lifepatience/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20221025-lifepatience/</guid>
       <description>最近在生活中我发现有很多明明只需要很短的时间就可以去解决的小事，但是我就是不情愿去做，宁可花费更多的时间在看视频、玩游戏上。生活是一件大事，但是生活中没有那么多大事。耐心生活，这些小事都是生活的一部分，享受生活就也要试着享受这些繁琐的小事。</description>
     </item>
     
     <item>
       <title>变形记</title>
-      <link>https://cbhua.github.io/posts/20221017-metamorphosis/</link>
+      <link>https://cbhua.github.io/blog/posts/20221017-metamorphosis/</link>
       <pubDate>Mon, 17 Oct 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20221017-metamorphosis/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20221017-metamorphosis/</guid>
       <description>这篇文章是我对《变形记》的读后思考，《变形记》是卡夫卡众多短篇作品中的一篇，而且估计是最为大家熟知的一篇。在读这本书的过程中我对这本书想要表达的内容有所困惑，于是进而开始思考对于一部文学作品的理解和阐释这件事情。</description>
     </item>
     
     <item>
       <title>论文四色原理</title>
-      <link>https://cbhua.github.io/posts/20221010-papermark/</link>
+      <link>https://cbhua.github.io/blog/posts/20221010-papermark/</link>
       <pubDate>Mon, 10 Oct 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20221010-papermark/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20221010-papermark/</guid>
       <description>大家在平常读论文的时候肯定会习惯性的用荧光笔标记一些内容，不管是疑问还是兴趣点什么的，我在之前阅读论文的时候都是一股脑的用黄色的荧光笔乱画一通，这个习惯可能是来自于阅读纸质论文的经历。这次我准备规范化论文的颜色标记，寻找适合自己的论文阅读方式。</description>
     </item>
     
     <item>
       <title>FXC 文件管理强迫症</title>
-      <link>https://cbhua.github.io/posts/20220925-finalcutpro/</link>
+      <link>https://cbhua.github.io/blog/posts/20220925-finalcutpro/</link>
       <pubDate>Sun, 25 Sep 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20220925-finalcutpro/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20220925-finalcutpro/</guid>
       <description>最近开始动手剪我们夏季去济州岛旅行的视频啦，因为是五天四夜的旅行，所以这次的素材数量非常的大，不能像之前剪视频一样素材随便放随便导入了，这时候确实认识到了素材管理的重要性，所以就打算学习学习素材管理。在总结了自己的文件管理理解之后写了这篇文章帮助其他也有剪辑需求的朋友们更好的理解 FXC 文件结构。。</description>
     </item>
     
     <item>
       <title>一本书的价值</title>
-      <link>https://cbhua.github.io/posts/20220911-bookvalue/</link>
+      <link>https://cbhua.github.io/blog/posts/20220911-bookvalue/</link>
       <pubDate>Sun, 11 Sep 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20220911-bookvalue/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20220911-bookvalue/</guid>
       <description>最近读书集中在日本文学，在网络上搜索日本文学或者是在书店逛日本文学的时候，有一本书在我眼中出现过无数次，次次都没有避开，那就是《人间失格》。这本书在互联网时代背上了“文艺青年必读书籍”的恶名，曾经劝退了我这种什么火就不看什么的具有奇怪性格的人。在读完这本书中之后我开始了对一本书价值的思考。</description>
     </item>
     
     <item>
       <title>生活固化剂</title>
-      <link>https://cbhua.github.io/posts/20220707-life/</link>
+      <link>https://cbhua.github.io/blog/posts/20220707-life/</link>
       <pubDate>Thu, 07 Jul 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20220707-life/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20220707-life/</guid>
       <description>欢迎来到我们旧日科技有限公司的夏季讨论会，很可惜我们这个季度没有新产品问世，但是我们带来了有趣的想法。就像我在很多之前的文章中提到的，在生活的长度不能发生变化的前提下，我们要尝试增加生活的厚度。我们难免有些时候会遇到需要我们全身心投入去做一件事的一段时间，不管愿意与否，在这种状态下我们会感觉到时间过得飞快。</description>
     </item>
     
     <item>
       <title>对数字的概念</title>
-      <link>https://cbhua.github.io/posts/20220628-number/</link>
+      <link>https://cbhua.github.io/blog/posts/20220628-number/</link>
       <pubDate>Tue, 28 Jun 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20220628-number/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20220628-number/</guid>
       <description>最近我发现通过对一些数字的概念来了解某一个领域似乎是一个不错的方法，相反，对于我们不太熟悉的领域，我们很难对其中的数字有特定的概念。数字的概念不像很多其他入门一个方向所需要了解的信息，不是那么容易在我们脑海中形成概念。想要得到一个领域数字的概念往往需要了解大量的例子。</description>
     </item>
     
     <item>
       <title>开箱 Targus 转接坞</title>
-      <link>https://cbhua.github.io/posts/20220606-targus/</link>
+      <link>https://cbhua.github.io/blog/posts/20220606-targus/</link>
       <pubDate>Mon, 06 Jun 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20220606-targus/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20220606-targus/</guid>
       <description>书接上回，买了新的 M1 芯片的 Mac mini 回来之后发现 M1 芯片只限制连接两个屏幕，从第三个屏幕开始就自动 Mirror 第一个屏幕，这个还是系统级别的操作，我们还什么都做不了。如果想要第三个屏幕怎么办呢？要加钱上 M1 pro 或者 M1 Ultra 芯片，真有你的啊，库克。最后通过 Targus 这种第三方的方法解决了。</description>
     </item>
     
     <item>
       <title>开箱 Mac mini</title>
-      <link>https://cbhua.github.io/posts/20220531-macmini/</link>
+      <link>https://cbhua.github.io/blog/posts/20220531-macmini/</link>
       <pubDate>Tue, 31 May 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20220531-macmini/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20220531-macmini/</guid>
       <description>开箱一个新的 Mac mini，准备放在实验室作为主力设备之一，但是在配置的过程中遇到了一个完全没料到的问题，最后还是通过钞能力解决了。整体上来说 Mac mini 是很适合作为终端的一个设备，很多 macOS 的软件都对写论文有非常大的帮助而且仅限 macOS，买完之后干活的动力提升了！</description>
     </item>
     
     <item>
       <title>八股论文</title>
-      <link>https://cbhua.github.io/posts/20220521-paper/</link>
+      <link>https://cbhua.github.io/blog/posts/20220521-paper/</link>
       <pubDate>Sat, 21 May 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20220521-paper/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20220521-paper/</guid>
       <description>八股文并不是一个好听的词汇，所以其实这里与其是八股文，不如说是故有模板，但是这个模板备用的多了就被很多人嫌弃起来了，所以就可以用八股文来说论文。对于论文的结构，我们可以用一套公式来构造整个文章，具体到每一句话每个位置应该放什么东西。即使我们没有什么思路来写文章，也可以硬编上什么东西。。</description>
     </item>
     
     <item>
       <title>每人一个垃圾桶</title>
-      <link>https://cbhua.github.io/posts/20220506-trashbin/</link>
+      <link>https://cbhua.github.io/blog/posts/20220506-trashbin/</link>
       <pubDate>Sat, 07 May 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20220506-trashbin/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20220506-trashbin/</guid>
       <description>今天在丢垃圾的时候看到了有个人丢了一个垃圾桶，所以我就想：如果想要丢垃圾桶，我们就需要另一个垃圾桶来丢这个垃圾桶，如果这个假设成立，每个人至少需要一个垃圾桶来丢垃圾，但是如果这个人的垃圾桶坏了，想要换一个新的垃圾桶，就需要去先购买一个新的垃圾桶，然后把旧的垃圾桶装进去。这样证明当我们需要丢一个东西的时候，记得要买一个新的（神经病）。</description>
     </item>
     
     <item>
       <title>板式自由主义</title>
-      <link>https://cbhua.github.io/posts/20220422-formatfree/</link>
+      <link>https://cbhua.github.io/blog/posts/20220422-formatfree/</link>
       <pubDate>Fri, 22 Apr 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20220422-formatfree/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20220422-formatfree/</guid>
       <description>今天我在 VSCode 写代码的时候不知道为什么，突然对自己 VSCode 用的主题感觉到腻了，于是就想换个主题。在挑选主题的过程中对字体、排版有了一些思考，逐渐产生了一些合理到离谱的客制化需求，进而拓展到对不同文本编辑器的自由度思考。我把这种对排版自由度的追求叫做板式自由主义。</description>
     </item>
     
     <item>
       <title>时差与认知世界</title>
-      <link>https://cbhua.github.io/posts/20220415-timegap/</link>
+      <link>https://cbhua.github.io/blog/posts/20220415-timegap/</link>
       <pubDate>Fri, 15 Apr 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20220415-timegap/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20220415-timegap/</guid>
       <description>最近和美国同学合作项目的时候经常需要商量会议时间，因为时差很长所以经常会出现在我在休息的时候他在工作，而我在工作的时候他也可能在休息。对于我来说这样的状态失去了睡眠带来的停滞感。即使自己在休息，世界上还有千千万万的人在一直努力着，让我切实感觉到世界很小。</description>
     </item>
     
     <item>
       <title>人际时间</title>
-      <link>https://cbhua.github.io/posts/20220401-network/</link>
+      <link>https://cbhua.github.io/blog/posts/20220401-network/</link>
       <pubDate>Fri, 01 Apr 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20220401-network/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20220401-network/</guid>
       <description>现代的互联网让每个人相互之间花的时间非常少，导致人与人会有很多不可理解的东西，这种不可相互理解也适用于不同的文化和思想。曾经交通很慢的时候人们会花很多时间在相互了解上，大家会强调找到大家相同的东西，而现在大家更多去寻找差异的东西。</description>
     </item>
     
     <item>
       <title>对周围事物的感知力</title>
-      <link>https://cbhua.github.io/posts/20220320-fill/</link>
+      <link>https://cbhua.github.io/blog/posts/20220320-fill/</link>
       <pubDate>Sun, 20 Mar 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20220320-fill/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20220320-fill/</guid>
       <description>在精神不是很集中的时候，或者最近有其他各种事情占用自己生活的时候，自己对身边事物的感知力会变差，随手在身边可以发现的快乐的事物也不再感兴趣了，大脑中都被一件事给覆盖着。这样就有一种做任何事情都浑浑噩噩的感觉。</description>
     </item>
     
     <item>
       <title>熟悉事物遗忘器</title>
-      <link>https://cbhua.github.io/posts/20220310-forget/</link>
+      <link>https://cbhua.github.io/blog/posts/20220310-forget/</link>
       <pubDate>Thu, 10 Mar 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20220310-forget/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20220310-forget/</guid>
       <description>欢迎来到我们旧日科技有限公司的春季发布会。不知道大家在生活中有没有这样的一种感受，在某一瞬间我们看到了一件最熟悉不过的事物，但是我们突然对它感觉到非常的陌生，这种奇妙的感觉往往能给我们带来很多的思考，重新认知身边的世界，重新思考事物之间的关系。所以我们开发了一款新的产品来帮助大家实现这样的思考。</description>
     </item>
     
     <item>
       <title>知与不可知的矛盾</title>
-      <link>https://cbhua.github.io/posts/20220225-know/</link>
+      <link>https://cbhua.github.io/blog/posts/20220225-know/</link>
       <pubDate>Fri, 25 Feb 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20220225-know/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20220225-know/</guid>
       <description>最近我在设计一个桌游，在游戏的设计过程中，我遇到了一个关于玩家进行操作和隐藏自己身份之间的矛盾。这个问题看似很简单，但是确实让我思考了好久，所以我姑且把问题描述在这里，并且附上自己的思考，想要听听大家的想法。</description>
     </item>
     
     <item>
       <title>消失的一月份</title>
-      <link>https://cbhua.github.io/posts/20220224-jan/</link>
+      <link>https://cbhua.github.io/blog/posts/20220224-jan/</link>
       <pubDate>Thu, 24 Feb 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20220224-jan/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20220224-jan/</guid>
       <description>这个网站的站长一月份失踪啦，让我们看看他会编怎么样的理由来糊弄过去。所以这篇文章的作用就是尝试让一月份鸽掉四篇文章合理化、合法化，并且证明自己写了文章但是并没有完全写的事实。</description>
     </item>
     
     <item>
       <title>网站的更新报告</title>
-      <link>https://cbhua.github.io/posts/20220222-update/</link>
+      <link>https://cbhua.github.io/blog/posts/20220222-update/</link>
       <pubDate>Tue, 22 Feb 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20220222-update/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20220222-update/</guid>
       <description>这里是网站的更新报告，TIMEGG 从 2017 年运行至今经历了多次更新，每次更新的内容将会记录在此。网站在几次大型更新中遗失了很多内容，这些旧网站存档将会在另一个 GitHub Repository 中展示。</description>
     </item>
     
     <item>
       <title>人类文明倒计时</title>
-      <link>https://cbhua.github.io/posts/20220217-human/</link>
+      <link>https://cbhua.github.io/blog/posts/20220217-human/</link>
       <pubDate>Thu, 17 Feb 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20220217-human/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20220217-human/</guid>
       <description>前一阵子在玩《守墓人》的时候突然有了一个想法：在比较大的尺度上，并没有什么东西来给人类设定 Deadline，即使以太阳寿命为限度的话，人类还有 50 亿年的时间，参考目前人类的发展速度，这些时间几乎可以理解为无限。那么既然人类有着近乎无限的时间，那么我们为什么要事事都着急呢？</description>
     </item>
     
     <item>
       <title>贪小便宜钓鱼模拟器</title>
-      <link>https://cbhua.github.io/posts/20220214-fish/</link>
+      <link>https://cbhua.github.io/blog/posts/20220214-fish/</link>
       <pubDate>Mon, 14 Feb 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20220214-fish/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20220214-fish/</guid>
       <description>这是一篇脑洞文章。欢迎大家来到旧日科技有限公司的新春发布会，首先在这里恭祝大家新年快乐。大家在新年的拜年中自然要接触到很多的人，在这个过程中难免会见到各种各样的人，与和自己性格不符的人社交总是令人讨厌，从而降低自己的幸福感，这样下去无助于社会整体幸福感的提升，我们今天的产品就是为了解决其中的一种问题：贪小便宜。</description>
     </item>
     
     <item>
       <title>混乱即快速</title>
-      <link>https://cbhua.github.io/posts/20220207-mass/</link>
+      <link>https://cbhua.github.io/blog/posts/20220207-mass/</link>
       <pubDate>Mon, 07 Feb 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20220207-mass/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20220207-mass/</guid>
       <description>在读到一篇描述相对混乱的笔记管理和灵感之间的关系的文章的时候，我想到了在我之前的论文写作过程中将混乱即快速应用在写代码和做实验方面的收获。这是我在论文准备过程中学到的很重要的道理之一，因此我就打算就此写下这篇文章，专门讲讲这个收获。</description>
     </item>
     
     <item>
       <title>这一年的总结</title>
-      <link>https://cbhua.github.io/posts/20211231-summary/</link>
+      <link>https://cbhua.github.io/blog/posts/20211231-summary/</link>
       <pubDate>Fri, 31 Dec 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20211231-summary/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20211231-summary/</guid>
       <description>2021 年过完了，在一年的最后，我还是规规矩矩地留出了一些时间，看着午后阴沉的将要下雪的天，写下这一篇对过去一年的总结。</description>
     </item>
     
     <item>
       <title>对科研的思考</title>
-      <link>https://cbhua.github.io/posts/20211222-research/</link>
+      <link>https://cbhua.github.io/blog/posts/20211222-research/</link>
       <pubDate>Wed, 22 Dec 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20211222-research/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20211222-research/</guid>
       <description>前一阵子和实验室的师兄聊天，因为最近我也在思考是否读 PhD 的事情，师兄给我分享了一位他很喜欢的老师在自己的 Webpage 上面写的一段给 Machine Learning 方向 PhD 的指导，这简直就是我当下迷茫状态中最需要的指导之一，我想要去了解如果作为一个 PhD 我该成为什么样子、我会遇到哪些情况、我应该怎么面对我遇到的不同的情况。</description>
     </item>
     
     <item>
       <title>万事万物意义论</title>
-      <link>https://cbhua.github.io/posts/20211203-meaningful/</link>
+      <link>https://cbhua.github.io/blog/posts/20211203-meaningful/</link>
       <pubDate>Fri, 03 Dec 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20211203-meaningful/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20211203-meaningful/</guid>
       <description>我本身不是很喜欢看剧，几乎不会主动去看。这其实也不是因为这些剧不好看，只是每当我看这些剧的时候，我就会莫名地有一种在浪费时间的感觉，就会不自觉地去想，我花费的看剧的这些时间，为什么不拿来读读文章，看看代码什么的。这肯定不是自然的想法，我开始思考这种想法的原因。</description>
     </item>
     
     <item>
       <title>极端作恶保护器</title>
-      <link>https://cbhua.github.io/posts/20211127-evil/</link>
+      <link>https://cbhua.github.io/blog/posts/20211127-evil/</link>
       <pubDate>Sat, 27 Nov 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20211127-evil/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20211127-evil/</guid>
       <description>这是一篇脑洞文章。欢迎大家来到旧日科技有限公司的十一月份发布会，我们在生活中并不一定可以一帆风顺，免不了与身边的人有摩擦或者矛盾，甚至会出现人与人之间的恶意，所以这个月我们公司推出一款非常有助于大家生活、社会稳定的产品：极端作恶保护器。</description>
     </item>
     
     <item>
       <title>开箱 Home Pod</title>
-      <link>https://cbhua.github.io/posts/20211117-homepod/</link>
+      <link>https://cbhua.github.io/blog/posts/20211117-homepod/</link>
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20211117-homepod/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20211117-homepod/</guid>
       <description>最近天气慢慢冷起来了，起床出门的阻力越来越大，不想去实验室在家干活的次数多了起来。既然都在家干活了，就要把工作环境给布置得舒服一些。难得可以在家干活了，必须要提升一下体验，于是就想着买个音箱。某天在 B 站看一个智能家居的视频的时候看到了 HomePod mini，于是受到推荐买了它。</description>
     </item>
     
     <item>
       <title>大型饥荒连续剧</title>
-      <link>https://cbhua.github.io/posts/20211108-dst/</link>
+      <link>https://cbhua.github.io/blog/posts/20211108-dst/</link>
       <pubDate>Mon, 08 Nov 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20211108-dst/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20211108-dst/</guid>
       <description>今年的 10 月到 11 月我和我的好朋友们完成了一个壮举：饥荒五人组完成了饥荒旧神归来从头到尾的全部内容。在这个过程中我们一共联机了 7 次，总游戏时长 30 个小时左右。打完了所有 Boss，包括最近更新的 Terraria 联动 Boss，见证了所有的事件，完美完结。这篇文章就是我们游戏过程的简单记录。</description>
     </item>
     
     <item>
       <title>等价转换机器</title>
-      <link>https://cbhua.github.io/posts/20211031-exchangemachine/</link>
+      <link>https://cbhua.github.io/blog/posts/20211031-exchangemachine/</link>
       <pubDate>Sun, 31 Oct 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20211031-exchangemachine/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20211031-exchangemachine/</guid>
       <description>这是一篇沙雕的脑洞文章，是某天懒惰的我在路上散步的时候想到的。欢迎来到旧日科技有限公司的圣诞发布会，今天我们为大家展示的本公司科技产品叫做“等价转换机器”，我们相信等价转换机器可以极大地造福人类，给人们提供无比的生活幸福感。</description>
     </item>
     
     <item>
       <title>风来之国</title>
-      <link>https://cbhua.github.io/posts/20211022-eastward/</link>
+      <link>https://cbhua.github.io/blog/posts/20211022-eastward/</link>
       <pubDate>Fri, 22 Oct 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20211022-eastward/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20211022-eastward/</guid>
       <description>两年前偶然了解到风来之国这个游戏，等待了两年之后终于发售了。在总计 20 个小时的游玩之后，我完成了风来之国的主线流程。虽然这个游戏本应是我这么多年游戏生涯中的一个普通过客，但是总有一些原因让我想要好好讲讲这个游戏。或许不仅是为了这个游戏，也是为了最近我玩游戏的心态。</description>
     </item>
     
     <item>
       <title>成为雀圣吧</title>
-      <link>https://cbhua.github.io/posts/20211012-majsoul/</link>
+      <link>https://cbhua.github.io/blog/posts/20211012-majsoul/</link>
       <pubDate>Tue, 12 Oct 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20211012-majsoul/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20211012-majsoul/</guid>
       <description>雀圣是雀魂里面日麻的一个段位，仅次于魂天这一最高段位，意味着极高的日麻能力。前一阵子摸鱼麻将打了个爽，不过都是靠自己莽着打，自己理解自己放铳。最后还是决定好好研究一下，于是读了魔女博客的日本麻将入门，并且总结了这一篇笔记。</description>
     </item>
     
     <item>
       <title>解读一维 OSC 方法</title>
-      <link>https://cbhua.github.io/posts/20211004-osc/</link>
+      <link>https://cbhua.github.io/blog/posts/20211004-osc/</link>
       <pubDate>Mon, 04 Oct 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20211004-osc/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20211004-osc/</guid>
       <description>前一阵子看了看自己的文章归档，发现我已经半年没有写过技术文章了，为了表示这个博主不是个只会写水文章的大水怪，我决定来写一篇硬核的技术文章，接招吧小伙子们。既然要写，就要写点其他人没写过的，什么东西写得人少呢，那当然是数学。虽然是数学，我会尽可能用口语化的方法来讲述核心的部分，让大家能够感觉到数学的魅力（确信）。耐心看完，你一定会有所收获。</description>
     </item>
     
     <item>
       <title>为什么历史选择了黄前久美子</title>
-      <link>https://cbhua.github.io/posts/20210926-jiasheng/</link>
+      <link>https://cbhua.github.io/blog/posts/20210926-jiasheng/</link>
       <pubDate>Sun, 26 Sep 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210926-jiasheng/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210926-jiasheng/</guid>
       <description>本文主要探讨了以黄前同志为核心的北宇治吹奏乐部新一代领导团体为什么能够成功，简要介绍了其面对的历史环境，从多个方面回答了吹学著名问题“为什么历史选择了黄前久美子”。同时本文也回顾了黄前十五年、黄前十六年的两代领导团体，并简单介绍了后黄前时代吹奏乐部的部长人选的斗争与妥协。</description>
     </item>
     
     <item>
       <title>阿莱桑公寓</title>
-      <link>https://cbhua.github.io/posts/20210915-alaisang/</link>
+      <link>https://cbhua.github.io/blog/posts/20210915-alaisang/</link>
       <pubDate>Wed, 15 Sep 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210915-alaisang/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210915-alaisang/</guid>
       <description>这是一篇长文，来分享一个我喜欢的同人作品。我喜欢 SCP 风格的脑洞，与认知、奇怪的事物、怪异相关的创作和想法。《阿莱桑公寓》是我认为其中非常优质的同人作品，在这里我会根据每篇原作收集到的官方的、论坛上的讨论给出我的猜测和总结，希望这样整理出来的总结可以帮助大家更方便地理解阿莱桑公寓并感受这个作品。</description>
     </item>
     
     <item>
       <title>自我催眠学习法</title>
-      <link>https://cbhua.github.io/posts/20210908-study/</link>
+      <link>https://cbhua.github.io/blog/posts/20210908-study/</link>
       <pubDate>Wed, 08 Sep 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210908-study/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210908-study/</guid>
       <description>最近要赶一个 Conference 的 DDL，导致每天工作量剧增，不断挤压摸鱼的时间，刚开始还好，到后来摸鱼的欲望越来越强烈。后来发现了一个类似于心里暗示、自我催眠的好用的方法来解决这个问题。本文将会从多方面探讨这个方法的合理性和效果。</description>
     </item>
     
     <item>
       <title>开箱妙控板二代</title>
-      <link>https://cbhua.github.io/posts/20210831-trackpad/</link>
+      <link>https://cbhua.github.io/blog/posts/20210831-trackpad/</link>
       <pubDate>Tue, 31 Aug 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210831-trackpad/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210831-trackpad/</guid>
       <description>久违地发一篇开箱文章，上一次写开箱文章还是一年半之前拿到 Niz 键盘的时候写的，当时懒得不行，写文章不想配图，所以那篇文章观感并不好，缺乏开箱的灵魂，所以这次准备好好写一写这篇开箱文章。这次开箱的是 Apple Magic Trackpad 2 代。</description>
     </item>
     
     <item>
       <title>超能力大逃杀</title>
-      <link>https://cbhua.github.io/posts/20210816-superpower/</link>
+      <link>https://cbhua.github.io/blog/posts/20210816-superpower/</link>
       <pubDate>Mon, 16 Aug 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210816-superpower/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210816-superpower/</guid>
       <description>这是一篇关于超能力的脑洞文章，某天我在实验室看着窗户外边天上的云发呆，那天的云特别漂亮，像是动漫里面的一样，就在那时突然想起来小的时候看过的哆啦A梦云之王国，然后就想到会不会有人在云中移动被我看到了。然后扩展了一下形成了这个脑洞思考。</description>
     </item>
     
     <item>
       <title>思考大事件</title>
-      <link>https://cbhua.github.io/posts/20210807-news/</link>
+      <link>https://cbhua.github.io/blog/posts/20210807-news/</link>
       <pubDate>Sat, 07 Aug 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210807-news/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210807-news/</guid>
       <description>最近一阵子出现了好多大新闻，不管是吃瓜的、国际的还是企业的，这些事情都引起了很大范围的讨论。我在这段时间持续输入了这些内容，就从中思考出了几个可供讨论的关于新闻和事件讨论相关的话题。”</description>
     </item>
     
     <item>
       <title>黑客的时代画笔</title>
-      <link>https://cbhua.github.io/posts/20210726-hack/</link>
+      <link>https://cbhua.github.io/blog/posts/20210726-hack/</link>
       <pubDate>Mon, 26 Jul 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210726-hack/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210726-hack/</guid>
       <description>这是《黑客与画家》的读书笔记。这是一本关于互联网领域创新的一本书，不管是互联网领域的人们，还是非互联网领域的人们都可以在这本书中了解到一些有趣的、关于我们所处的互联网时代创业的观点。算是一本易读的大众科普书籍。</description>
     </item>
     
     <item>
       <title>当个云玩家</title>
-      <link>https://cbhua.github.io/posts/20210717-game/</link>
+      <link>https://cbhua.github.io/blog/posts/20210717-game/</link>
       <pubDate>Sat, 17 Jul 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210717-game/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210717-game/</guid>
       <description>谁不想随时随地打开任何一个设备就可以畅玩 3A 大作呢，云游戏这个理念给大家带来了无限的可能。这里是一篇比较独特的云游戏平台搭建经验分享，在这篇教程里面我们选择全部通过远程连接的方式，在 Linux 平台上搭建云游戏平台。”</description>
     </item>
     
     <item>
       <title>自下而上</title>
-      <link>https://cbhua.github.io/posts/20210710-evolution/</link>
+      <link>https://cbhua.github.io/blog/posts/20210710-evolution/</link>
       <pubDate>Sat, 10 Jul 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210710-evolution/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210710-evolution/</guid>
       <description>这是关于 Matt Ridle 的作品《自下而上》的读书笔记。这本书尝试使用自下向上这样的过程来描述社会中的各个方面：它是渐进式的演变，既不是痉挛式的跳跃，也不是散漫的停滞。它是一个“永久的进行过程——转瞬即逝、动态、混乱、富有成效、可望而不可即、自下而上。”</description>
     </item>
     
     <item>
       <title>一是无限产品发布会</title>
-      <link>https://cbhua.github.io/posts/20210701-oneisfinite/</link>
+      <link>https://cbhua.github.io/blog/posts/20210701-oneisfinite/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210701-oneisfinite/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210701-oneisfinite/</guid>
       <description>这是一篇和科学完全不挂钩的脑洞文章。欢迎来到一是无限产品发布会的现场，我们将要在今天的发布会上发布一款基于量子纠缠的无限复制产品，它可以实现只用一个轴体就可以使用整块键盘、只用一个晶体管就可以运行整个 CPU，机不可失，为什么不来试试。</description>
     </item>
     
     <item>
       <title>砥石与刚刃</title>
-      <link>https://cbhua.github.io/posts/20210627-vim/</link>
+      <link>https://cbhua.github.io/blog/posts/20210627-vim/</link>
       <pubDate>Sun, 27 Jun 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210627-vim/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210627-vim/</guid>
       <description>“磨刀不误砍柴功”，“工欲善其事，必先利其器”等等。这样的俗语强调我们在做事情的时候应该寻找到一个适合的工具，来帮助我们高效地完成任务。最近集中学习了 Vim 的使用，有种相见恨晚的感觉，我认为每个追求极致效率的人都应该尝试一下 Vim.</description>
     </item>
     
     <item>
       <title>我的近况</title>
-      <link>https://cbhua.github.io/posts/20210620-update/</link>
+      <link>https://cbhua.github.io/blog/posts/20210620-update/</link>
       <pubDate>Sun, 20 Jun 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210620-update/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210620-update/</guid>
       <description>关于最近好久网站为什么没有更新，还有最近我在做什么。同时总结一下上半年的成果，还有下半年的思考和安排。2021 已经过去一半了，看看自己做得怎么样了。</description>
     </item>
     
     <item>
       <title>拉普拉斯兽的逃逸</title>
-      <link>https://cbhua.github.io/posts/20210408-laplace/</link>
+      <link>https://cbhua.github.io/blog/posts/20210408-laplace/</link>
       <pubDate>Fri, 07 May 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210408-laplace/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210408-laplace/</guid>
       <description>拉普拉斯兽这一物理神兽已经被近代量子力学的尖利长矛钉死，它的威严已不在，不能像过去一样以一己之力横跨在物理学之上，肆意妄为。但是曾经这样强大而又富于力量的魔王，它真的会被轻易赶尽杀绝吗，或许它的能力尚未被完全消除，依然散落在某些地方，即使无法卷土重来，但还是在潜移默化中影响着这个世界。</description>
     </item>
     
     <item>
       <title>博客百景</title>
-      <link>https://cbhua.github.io/posts/20210428-blog/</link>
+      <link>https://cbhua.github.io/blog/posts/20210428-blog/</link>
       <pubDate>Wed, 28 Apr 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210428-blog/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210428-blog/</guid>
       <description>虽然网站已经建立三年多了，但是很长时间内我似乎都没有重视过友链这个东西，导致今年网站重建的时候，我还只有两个友链，都是身边朋友的。那时候我突然想到，我已经闭门造车了这么长时间了，是不是可以出门看看外边的世界了。于是开始思考网站和友链的存在形式。</description>
     </item>
     
     <item>
       <title>远程工作流</title>
-      <link>https://cbhua.github.io/posts/20210416-workbyhome/</link>
+      <link>https://cbhua.github.io/blog/posts/20210416-workbyhome/</link>
       <pubDate>Fri, 16 Apr 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210416-workbyhome/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210416-workbyhome/</guid>
       <description>留学期间，因为反反复复的疫情我需要经常在远程工作与实验室工作之间反复交换。为了自己的研究方便于是搭建了自己的一套远程工作流，记录下这远程工作流的同时，我也希望可以通过这种方式记录下疫情下留学的工作和生活状态。</description>
     </item>
     
     <item>
       <title>泾渭分明</title>
-      <link>https://cbhua.github.io/posts/20210408-classify/</link>
+      <link>https://cbhua.github.io/blog/posts/20210408-classify/</link>
       <pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210408-classify/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210408-classify/</guid>
       <description>世界不是非黑即白的。这句话我们都听说过。它指导我们就事论事，理解事物背后的复杂性，不能轻易下定论。这很有道理，如果可以很好的遵守这样的思考原则，那么无意义的争端会减少很多。不过，在我们对事情思考的过程中，能否立下一些很像二元论的“准则”来帮助我们思考。</description>
     </item>
     
     <item>
       <title>和时间讨价还价</title>
-      <link>https://cbhua.github.io/posts/20210330-time/</link>
+      <link>https://cbhua.github.io/blog/posts/20210330-time/</link>
       <pubDate>Tue, 30 Mar 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210330-time/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210330-time/</guid>
       <description>我们在生活中经常强调时间的力量，大如沧海桑田的变化，小如时间可以治愈精神的创伤。我们明知时间的力量，但是有些时候还是会忍不住与时间讨价还价，尝试妥协。这些妥协又会给我们带来不同的麻烦。</description>
     </item>
     
     <item>
       <title>标点符号使用论</title>
-      <link>https://cbhua.github.io/posts/20210325-sign/</link>
+      <link>https://cbhua.github.io/blog/posts/20210325-sign/</link>
       <pubDate>Thu, 25 Mar 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210325-sign/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210325-sign/</guid>
       <description>这里是根据中国教育部发行的中文标点使用规范所总结出的一些我们使用标点符号的过程中容易犯的错误，互联网上的很多文章在撰写的过程中对标点符号进行了错误使用或者滥用，这些不良的标点符号使用习惯理应得到纠正。</description>
     </item>
     
     <item>
       <title>价值观股市</title>
-      <link>https://cbhua.github.io/posts/20210314-stock/</link>
+      <link>https://cbhua.github.io/blog/posts/20210314-stock/</link>
       <pubDate>Sun, 14 Mar 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210314-stock/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210314-stock/</guid>
       <description>每个人有不同的价值观，这些观念会影响一个人的所作所为。同时，一个人的价值观是会随着时间不断改变的，这就是价值观股市。今天的投资课程将会给予大家一些关于价值观股市投资的一些指导。</description>
     </item>
     
     <item>
       <title>从结绳记事开始</title>
-      <link>https://cbhua.github.io/posts/20210301-dairy/</link>
+      <link>https://cbhua.github.io/blog/posts/20210301-dairy/</link>
       <pubDate>Mon, 01 Mar 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210301-dairy/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210301-dairy/</guid>
       <description>每个人开始记录日记都需要一个契机，我现在觉得记录日记是人生经历的必选，人生这么漫长，完全放弃对它的记录是不是亏得太多了。就像 Soul 中 “I am going to live every minute of it. ” 一样，在用心享受每一秒生活的时候，记得留出一点点精力，来提升一下生活的厚度。</description>
     </item>
     
     <item>
       <title>正态模拟人生</title>
-      <link>https://cbhua.github.io/posts/20210224-life/</link>
+      <link>https://cbhua.github.io/blog/posts/20210224-life/</link>
       <pubDate>Wed, 24 Feb 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210224-life/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210224-life/</guid>
       <description>如果我们所经历的每件事情都可以用一个标准去衡量其好坏程度，比如让我们开心的事情，也就是好事，我们给予这件事情正值；让我们难过的事情我们给予其负值。那么将我们所经历的所有事情对应的值加起来，这个值应该遵循中心极限定理：大家的值服从正态分布，绝大部分人的值差异不大，分布在正态分布的中间部分。</description>
     </item>
     
     <item>
       <title>Minecraft 联机服务器终极教程</title>
-      <link>https://cbhua.github.io/posts/20210216-minecraft/</link>
+      <link>https://cbhua.github.io/blog/posts/20210216-minecraft/</link>
       <pubDate>Tue, 16 Feb 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210216-minecraft/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210216-minecraft/</guid>
       <description>这里是关于如何在 Ubuntu 系统上创建一个长期运行的 Minecraft 服务器的终极教程，该服务器可以自由添加 Mods，或者使用论坛上面的整合包。网络上相关的教程较为零散，各种问题也很多，在这里我准备以我写教程的最高标准来完成这样一个搭建服务器的终极教程，展现我认为理想的教程形态应该是什么样的。</description>
     </item>
     
     <item>
       <title>交往的成分</title>
-      <link>https://cbhua.github.io/posts/20210215-love/</link>
+      <link>https://cbhua.github.io/blog/posts/20210215-love/</link>
       <pubDate>Mon, 15 Feb 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210215-love/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210215-love/</guid>
       <description>在我二十岁生日的那天，我被问到了一个问题：“朋友与恋人的区别是什么？”。在此之后的很长时间内，我只顾一味自己一个人向前跑，再也没认真思考过这个问题。我还有很多其他事情去做：我有想做的游戏、有想写的文章、有想旅游的地方等等，这些我都可以一个人做。但是现在，是时候思考这个问题了。</description>
     </item>
     
     <item>
       <title>无节律推进的世界</title>
-      <link>https://cbhua.github.io/posts/20210207-season/</link>
+      <link>https://cbhua.github.io/blog/posts/20210207-season/</link>
       <pubDate>Sun, 07 Feb 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210207-season/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210207-season/</guid>
       <description>我们现在所处的世界处处都有节律的存在，我们思考一个假设，如果人们失去了对节律的感知会怎么样？这个世界上再也没有按照节奏划分的事物，人们只能按照自己的感觉随意进行自己想做的事情，再也无法精准地衡量时间和进行规划。对于太理想的情况我们难以讨论，不如就日常生活中的一些事情进行探讨。</description>
     </item>
     
     <item>
       <title>我的行文进步了吗</title>
-      <link>https://cbhua.github.io/posts/20210121-article/</link>
+      <link>https://cbhua.github.io/blog/posts/20210121-article/</link>
       <pubDate>Thu, 21 Jan 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210121-article/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210121-article/</guid>
       <description>自我开始写文章到现在已经三年了，粗略估计在这期间我写下了十五万字或者更多的原创文字。这么久时间之后，我的行文水平是否有进步，我又应该从哪些方面提升我的行文水平。</description>
     </item>
     
     <item>
       <title>技能树升级史</title>
-      <link>https://cbhua.github.io/posts/20210114-skilltree/</link>
+      <link>https://cbhua.github.io/blog/posts/20210114-skilltree/</link>
       <pubDate>Thu, 14 Jan 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210114-skilltree/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210114-skilltree/</guid>
       <description>想当一个全栈游戏开发者要考虑的东西很多，需要自己实现编程、美术、音乐、设计等等，混合了多方面的技能。所以在这个项目开始的时候，来捋一下自己的技能树，看看自己能做哪些部分，哪些部分还需要努力。</description>
     </item>
     
     <item>
       <title>鸽子理论</title>
-      <link>https://cbhua.github.io/posts/20210108-pigeon/</link>
+      <link>https://cbhua.github.io/blog/posts/20210108-pigeon/</link>
       <pubDate>Fri, 08 Jan 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210108-pigeon/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210108-pigeon/</guid>
       <description>鸽子，指不能按时兑现承诺，答应的事情没能做到的人。这种行为本身被称为“鸽”。鸽子这个意象在生活中有着广泛的用处，在不同的场景下它也有着一套自己的理论，我们称之为“鸽子理论”。本文将会总结鸽子理论中的一部分原理并加以阐释，多加学习，可以化为己用，不断进步。</description>
     </item>
     
     <item>
       <title>社交风险管理</title>
-      <link>https://cbhua.github.io/posts/20210107-risk/</link>
+      <link>https://cbhua.github.io/blog/posts/20210107-risk/</link>
       <pubDate>Thu, 07 Jan 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20210107-risk/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20210107-risk/</guid>
       <description>每个人都很难保证自己的社交不会出现问题，最常见的社交问题即与他人闹矛盾，从而关系淡化甚至绝交，也有很多其他的情况使得我们必须与他人分开。这种事情往往是痛苦的，如何应对这样的社交风险是我们生活管理中的一个重要课题。</description>
     </item>
     
     <item>
       <title>这一年的总结</title>
-      <link>https://cbhua.github.io/posts/20201231-yearlysummary/</link>
+      <link>https://cbhua.github.io/blog/posts/20201231-yearlysummary/</link>
       <pubDate>Thu, 31 Dec 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20201231-yearlysummary/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20201231-yearlysummary/</guid>
       <description>2020 年过完了，写网站的大家都喜欢在自己网站上写一个年度总结，来记录一下自己在这一年中经历的不论有趣或难过的事情。往年的我都没有这么做，但是今年突然有了兴致，想要写点东西。所以在跨年前夕，各种跨年晚会的背景音下，我写下了这篇关于这一年的总结。</description>
     </item>
     
     <item>
       <title>人间观察日记</title>
-      <link>https://cbhua.github.io/posts/20201207-myself/</link>
+      <link>https://cbhua.github.io/blog/posts/20201207-myself/</link>
       <pubDate>Mon, 07 Dec 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20201207-myself/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20201207-myself/</guid>
       <description>人间观察日记将会是一系列文章，主要强调对我自己本身对不同事物不同反应的观察，从而更深层次的了解自己。了解将是一个长久的课题，在这个过程中发现自己的问题并进行改正，或者发现有趣的地方加以发展。期待系列文章与你们相见。</description>
     </item>
     
     <item>
       <title>我吐槽了你的吐槽：语言上一层</title>
-      <link>https://cbhua.github.io/posts/20201125-communicate/</link>
+      <link>https://cbhua.github.io/blog/posts/20201125-communicate/</link>
       <pubDate>Wed, 25 Nov 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20201125-communicate/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20201125-communicate/</guid>
       <description>当你吐槽别人的时候，别人也会吐槽你的吐槽，别人的别人也会吐槽吐槽你的吐槽。想要在吐槽的语言沟通中占据上一层，就需要有独特的技巧，寻找终极的语言表达。屠龙勇士终成龙。</description>
     </item>
     
     <item>
       <title>魔术小课堂：教你如何复制物品</title>
-      <link>https://cbhua.github.io/posts/20201107-magic/</link>
+      <link>https://cbhua.github.io/blog/posts/20201107-magic/</link>
       <pubDate>Sat, 07 Nov 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20201107-magic/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20201107-magic/</guid>
       <description>欢迎来到魔术小课堂，该课堂的目的是教大家使用一些简单实用的魔术，这些魔术可以在一定程度上提升你的生活质量。该课堂是系列课程，我们今天来开第一课，教你如何复制身边的物品。拿好笔记本认真听，我们现在开始。</description>
     </item>
     
     <item>
       <title>找到真正想做的事情</title>
-      <link>https://cbhua.github.io/posts/20201027-hobbit/</link>
+      <link>https://cbhua.github.io/blog/posts/20201027-hobbit/</link>
       <pubDate>Tue, 27 Oct 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20201027-hobbit/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20201027-hobbit/</guid>
       <description>上一个周末和大学的好朋友们聊了聊天，已经工作的朋友似乎有着生活方面精力管理上的问题。反思自己的状态，似乎也需要进行一定的调整，尝试找到自己真正想做的事情，给予生活驱动力。</description>
     </item>
     
     <item>
       <title>用不可解释的方法去夸别人</title>
-      <link>https://cbhua.github.io/posts/20201015-boast/</link>
+      <link>https://cbhua.github.io/blog/posts/20201015-boast/</link>
       <pubDate>Thu, 15 Oct 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20201015-boast/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20201015-boast/</guid>
       <description>我们经常去夸别人，以表达自己的态度。有的时候我们会因为夸奖程度过重而陷入震惊的状态，表现为无法用语言去描述自己的感受。也就是说，真正登峰造极的夸奖应该是无言的、不可解释的。所以当我们想要夸别人的时候，应该用无法解释的方式去做。</description>
     </item>
     
     <item>
       <title>套辞中的核心问题之一</title>
-      <link>https://cbhua.github.io/posts/20201010-application/</link>
+      <link>https://cbhua.github.io/blog/posts/20201010-application/</link>
       <pubDate>Sat, 10 Oct 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20201010-application/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20201010-application/</guid>
       <description>套辞是研究型留学申请的重要步骤。相较于邮件撰写、论文阅读、面试准备、文书修改等有章可循的环节，寻找自己想做的的方向是一个很模糊的问题，也是很多申请经验贴中不重点提及的问题。</description>
     </item>
     
     <item>
       <title>气味便利店</title>
-      <link>https://cbhua.github.io/posts/20201002-smell/</link>
+      <link>https://cbhua.github.io/blog/posts/20201002-smell/</link>
       <pubDate>Fri, 02 Oct 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20201002-smell/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20201002-smell/</guid>
       <description>气味便利店顾名思义就是出售各种气味的商店，当客人来到我们店时，我们都会客制化地为每位客人调制他们专属的气味，这些气味可以帮助他们精准地回忆起曾经的经历。</description>
     </item>
     
     <item>
       <title>不要重复造轮子：早点学哲学</title>
-      <link>https://cbhua.github.io/posts/20200928-philosophy/</link>
+      <link>https://cbhua.github.io/blog/posts/20200928-philosophy/</link>
       <pubDate>Mon, 28 Sep 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20200928-philosophy/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20200928-philosophy/</guid>
       <description>不要重复造轮子是计算机领域非常常用的一句话，强调既然有现成的东西可以用，就不要自己从零再造。用在哲学方面也没有问题，与其独自纠结思考，不如直接参考其他哲学家的思想成果，化为己用。</description>
     </item>
     
     <item>
       <title>一个关于逻辑的科幻脑洞</title>
-      <link>https://cbhua.github.io/posts/20200920-logic/</link>
+      <link>https://cbhua.github.io/blog/posts/20200920-logic/</link>
       <pubDate>Sun, 20 Sep 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20200920-logic/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20200920-logic/</guid>
       <description>逻辑，其最根本的元素是“是”和“不是”，基于这两个基本元素我们推广出复杂的逻辑讨论。但是如果宇宙中的逻辑不止二元呢？思考这个时候世界会变成什么样子。</description>
     </item>
     
     <item>
       <title>森见登美彦作品：夜行</title>
-      <link>https://cbhua.github.io/posts/20200908-night/</link>
+      <link>https://cbhua.github.io/blog/posts/20200908-night/</link>
       <pubDate>Tue, 08 Sep 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20200908-night/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20200908-night/</guid>
       <description>《夜行》是日本小说作家森见登美彦创作的小说作品，讲述了学生时代结为好友的六人结伴旅行讲述怪谈的故事，表达友情、感情和失去，是森见妖怪系小说的最新作。</description>
     </item>
     
     <item>
       <title>秋季开学流水账</title>
-      <link>https://cbhua.github.io/posts/20200903-gotokaist/</link>
+      <link>https://cbhua.github.io/blog/posts/20200903-gotokaist/</link>
       <pubDate>Thu, 03 Sep 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20200903-gotokaist/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20200903-gotokaist/</guid>
       <description>终于顺利抵达 KAIST 了，准备开始我的 Master 生活。整个开学准备过程前前后后持续了一个多月的时间，包括开学资料准备、签证准备和生活准备，总体上是一次印象深刻的开学。</description>
     </item>
     
     <item>
       <title>桌游的可重复性思考</title>
-      <link>https://cbhua.github.io/posts/20200722-broadgame/</link>
+      <link>https://cbhua.github.io/blog/posts/20200722-broadgame/</link>
       <pubDate>Wed, 22 Jul 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20200722-broadgame/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20200722-broadgame/</guid>
       <description>游戏有很多种性质，可重复性是其中的一种，强调重复进行游戏的体验，这点与游戏的生命周期息息相关。最近斥巨资买了一套全球惊悚，在和朋友游玩的过程中思考到了这么一个问题。</description>
     </item>
     
     <item>
       <title>智云云台 M2 测评与对比</title>
-      <link>https://cbhua.github.io/posts/20200623-zhiyun/</link>
+      <link>https://cbhua.github.io/blog/posts/20200623-zhiyun/</link>
       <pubDate>Tue, 23 Jun 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20200623-zhiyun/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20200623-zhiyun/</guid>
       <description>买了一个新云台智云 M2，相较于之前用的智云 Smooth 4 有了较大的升级迭代，因此来对比一下专业云台和入门手机云台在功能和使用上的差异。</description>
     </item>
     
     <item>
       <title>Steam 手柄简易测评</title>
-      <link>https://cbhua.github.io/posts/20200622-controller/</link>
+      <link>https://cbhua.github.io/blog/posts/20200622-controller/</link>
       <pubDate>Mon, 22 Jun 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20200622-controller/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20200622-controller/</guid>
       <description>在去年黑五用 5 刀买到的原价 45 刀的 Steam 手柄。非常异型的手柄设计给我带来了很不一样的使用体验，用了半年时间来讲一讲它的一些特点。</description>
     </item>
     
     <item>
       <title>美丽新世界中的自由与幸福</title>
-      <link>https://cbhua.github.io/posts/20200618-newworld/</link>
+      <link>https://cbhua.github.io/blog/posts/20200618-newworld/</link>
       <pubDate>Thu, 18 Jun 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20200618-newworld/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20200618-newworld/</guid>
       <description>在读完反乌托邦名作之一《美丽新世界》之后，我想到了一个不错的对于幸福的定义，可以用来串联整个新世界的设定，并且解释人们的思想和状态，从而概括地解释书中的大部分设定。</description>
     </item>
     
     <item>
       <title>小程序开发笔记：我是欧皇吗</title>
-      <link>https://cbhua.github.io/posts/20200609-wechatapp/</link>
+      <link>https://cbhua.github.io/blog/posts/20200609-wechatapp/</link>
       <pubDate>Tue, 09 Jun 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20200609-wechatapp/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20200609-wechatapp/</guid>
       <description>因为疫情在家没有事情做，决定用四十八小时挑战制作一个微信小程序。这个小程序用于计算各种扭蛋游戏的结果概率，在平常玩各种手游中具有参考价值和使用价值。目前该小程序已登陆微信小程序商店，搜索“我今天是欧皇吗”即可找到。</description>
     </item>
     
     <item>
       <title>小时候玩过的桌游</title>
-      <link>https://cbhua.github.io/posts/20200601-broadgame/</link>
+      <link>https://cbhua.github.io/blog/posts/20200601-broadgame/</link>
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20200601-broadgame/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20200601-broadgame/</guid>
       <description>我在小学的时候接触到了游戏王卡牌游戏系列，在几年间我和我的朋友们基于游戏王卡牌创造出了类跑团的游戏模式，这样一个童年壮举给我留下了深刻的印象，也给我之后玩更多种类的桌游带来了启发。</description>
     </item>
     
     <item>
       <title>铁鼠之槛中的十牛图</title>
-      <link>https://cbhua.github.io/posts/20200531-tesoori/</link>
+      <link>https://cbhua.github.io/blog/posts/20200531-tesoori/</link>
       <pubDate>Sun, 31 May 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20200531-tesoori/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20200531-tesoori/</guid>
       <description>铁鼠之槛是日本作家京极夏彦的长篇妖怪推理小说，百鬼夜行系列的一部作品。在读完这本书之后对其中的关于佛教禅宗修行的一系列画作《十牛图》产生了兴趣，结合书中的描述写下了自己的理解。</description>
     </item>
     
     <item>
       <title>我喜欢的一首歌被下架了</title>
-      <link>https://cbhua.github.io/posts/20200525-endingworld/</link>
+      <link>https://cbhua.github.io/blog/posts/20200525-endingworld/</link>
       <pubDate>Mon, 25 May 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20200525-endingworld/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20200525-endingworld/</guid>
       <description>End of the World 是我很喜欢的一个日本乐队，其歌曲多为末世风格，反战、歌颂人性、揭露丑恶。但是今天发现他们歌曲中我最喜欢的一首歌 Never Ending the World 被下架了，非常的不解。</description>
     </item>
     
     <item>
       <title>在留学申请的过程中学到的</title>
-      <link>https://cbhua.github.io/posts/20200521-application/</link>
+      <link>https://cbhua.github.io/blog/posts/20200521-application/</link>
       <pubDate>Thu, 21 May 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20200521-application/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20200521-application/</guid>
       <description>留学申请是个很好的学习过程，在此期间可以发现自己的很多问题。反思去年半年的申请过程，我总结出了当时所遇到的几个问题，这些问题都或多或少给当时的我带来了一些消极的影响，复盘这些问题必要且有用。</description>
     </item>
     
     <item>
       <title>基于 IDX 数据文件创建 Dataset</title>
-      <link>https://cbhua.github.io/posts/20200511-idx/</link>
+      <link>https://cbhua.github.io/blog/posts/20200511-idx/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20200511-idx/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20200511-idx/</guid>
       <description>不少数据集的存储文件类型是 IDX，如 MNIST 数据集的官方存储格式。如何从 IDX 文件创建 Dataset 是 ML 模型中重要一步。这里是一个从 IDX 数据集创建 Dataset 类的模版。</description>
     </item>
     
     <item>
       <title>国内老土键盘开箱测评</title>
-      <link>https://cbhua.github.io/posts/20200509-keyboard/</link>
+      <link>https://cbhua.github.io/blog/posts/20200509-keyboard/</link>
       <pubDate>Sat, 09 May 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20200509-keyboard/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20200509-keyboard/</guid>
       <description>年轻人不要碰的东西里面有一个是国外老土键盘，但是这次不是，变成了国内老土键盘。入手了国产静电容键盘品牌宁芝的一块 86 键 35g 键盘，使用一周之后说说这块静电容键盘的使用体验，同时对比一下我之前使用过的红轴机械键盘。</description>
     </item>
     
     <item>
       <title>生活需要一些期待</title>
-      <link>https://cbhua.github.io/posts/20200507-hope/</link>
+      <link>https://cbhua.github.io/blog/posts/20200507-hope/</link>
       <pubDate>Thu, 07 May 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20200507-hope/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20200507-hope/</guid>
       <description>生活的推进需要一些驱动力，否则容易陷入失去目标的迷茫，感觉生活失去了意义。期待就是一种极好的生活驱动力，它可以让我们暂时忽略生活中的寂寞和无聊，把自己的心情寄托于未来，从而减轻现在生活的辛苦，保持一种少年感。</description>
     </item>
     
     <item>
       <title>虚拟局域网的终极解决方案</title>
-      <link>https://cbhua.github.io/posts/20200421-zerotier/</link>
+      <link>https://cbhua.github.io/blog/posts/20200421-zerotier/</link>
       <pubDate>Tue, 21 Apr 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20200421-zerotier/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20200421-zerotier/</guid>
       <description>联机游戏最大的问题之一是网络连接，糟糕的网络连接会极大影响大家的游戏体验，甚至使游戏无法进行下去。我们有多种方法来解决这个问题：租用第三方服务器运行游戏、网络连接加速器等等。虚拟局域网是一种无视游戏种类的终极解决方案，如果完美搭建则可以成为联机游戏的终极解决方案</description>
     </item>
     
     <item>
       <title>关于游记视频的反思</title>
-      <link>https://cbhua.github.io/posts/20200407-vlog/</link>
+      <link>https://cbhua.github.io/blog/posts/20200407-vlog/</link>
       <pubDate>Tue, 07 Apr 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20200407-vlog/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20200407-vlog/</guid>
       <description>去年秋季到现在为止旅游了几个城市，拍了好多视频，也做成了几个游记剪辑作品，但是整体上并没有达到我想要的效果，或者说还有很大 提升空间。在准备新一年的拍摄前，分别从前后期总结一下这些视频中出现的问题。</description>
     </item>
     
     <item>
       <title>哈工大对外交换生的申请</title>
-      <link>https://cbhua.github.io/posts/20200403-exchange/</link>
+      <link>https://cbhua.github.io/blog/posts/20200403-exchange/</link>
       <pubDate>Fri, 03 Apr 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20200403-exchange/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20200403-exchange/</guid>
       <description>这里提供了哈工大对外申请交换生的信息，包括交换前的准备、交换时选校、申请材料准备、和简单的交换生活介绍等，希望可以给工大的其他同学提供交换生申请的参考。</description>
     </item>
     
     <item>
       <title>2019 KDD 推荐系统方向论文总结</title>
-      <link>https://cbhua.github.io/posts/20200215-kdd/</link>
+      <link>https://cbhua.github.io/blog/posts/20200215-kdd/</link>
       <pubDate>Sat, 15 Feb 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20200215-kdd/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20200215-kdd/</guid>
       <description>KDD 全称 Special Interest Group on Knowledge Discovery and Data Mining。由于最近对推荐系统方向比较感兴趣，所以搜索了其中的一些文章来读，写了一份 PPT 和文档作为总结，可以作为笔记存留，也可以为有需要的同学提供帮助。</description>
     </item>
     
     <item>
       <title>搭建 Minecraft Froge 服务器</title>
-      <link>https://cbhua.github.io/posts/20200215-minecraft/</link>
+      <link>https://cbhua.github.io/blog/posts/20200215-minecraft/</link>
       <pubDate>Sat, 15 Feb 2020 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20200215-minecraft/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20200215-minecraft/</guid>
       <description>最近找不到好玩的联机游戏了？不如来玩 Minecraft 吧。这篇文章包含如何搭建一个 Minecraft Forge 服务器并添加 Mod 和服务器管理系统，同时针对许多常见问题提供解决方案。</description>
     </item>
     
     <item>
       <title>森见登美彦作品：四叠半神话大系</title>
-      <link>https://cbhua.github.io/posts/20191128-tatami/</link>
+      <link>https://cbhua.github.io/blog/posts/20191128-tatami/</link>
       <pubDate>Thu, 28 Nov 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20191128-tatami/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20191128-tatami/</guid>
       <description>《四叠半神话大系》是森见登美彦的小说作品，由四篇短篇所构成。主角是京都大学三年级男学生，随着一年级社团选择不同，而经历了不同的大学生活。该作品也被改编为同名动漫作品，是我最喜欢的动漫之一。这篇文章是对原作的摘录与思考</description>
     </item>
     
     <item>
       <title>森见登美彦作品：春宵苦短</title>
-      <link>https://cbhua.github.io/posts/20191010-otome/</link>
+      <link>https://cbhua.github.io/blog/posts/20191010-otome/</link>
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20191010-otome/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20191010-otome/</guid>
       <description>《春宵苦短，少女前进吧！》是森见登美彦撰写的小说，故事描述“学长”迷恋的“黑发少女”，每天为了吸引她的目光而费尽心思，在他们的周遭，还有着各式各样风格奇特的角色们，围绕在主角、少女、以及荒诞角色间的故事就此展开。该作亦被改编为动漫作品，是我最喜欢的动漫之一。</description>
     </item>
     
     <item>
       <title>数值分析笔记</title>
-      <link>https://cbhua.github.io/posts/20191002-numerical/</link>
+      <link>https://cbhua.github.io/blog/posts/20191002-numerical/</link>
       <pubDate>Wed, 02 Oct 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20191002-numerical/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20191002-numerical/</guid>
       <description>数值分析这门课程是我在本科三年级学的一门专业核心课程，难度很高但是在各种领域都有着广泛的使用。这些笔记是在期末考试复习期间完成的，强调内容精简易于记忆和脉络熟路，可以方便在考试之前回忆课程学习结构，从而在遇到问题时可以快速分析出要使用的解法。</description>
     </item>
     
     <item>
       <title>大学第四年的实习</title>
-      <link>https://cbhua.github.io/posts/20190917-huawei/</link>
+      <link>https://cbhua.github.io/blog/posts/20190917-huawei/</link>
       <pubDate>Tue, 17 Sep 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20190917-huawei/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20190917-huawei/</guid>
       <description>我在大学第四年申请了多家互联网公司的实习，最后选择了去华为进行为期三个月的实习。在这个实习的申请过程中学到了很多的东西，也总结一些经验，希望这些经验可以给同校后辈们提供一些帮助。</description>
     </item>
     
     <item>
       <title>偏微分方程数值解法笔记</title>
-      <link>https://cbhua.github.io/posts/20190915-pde/</link>
+      <link>https://cbhua.github.io/blog/posts/20190915-pde/</link>
       <pubDate>Sun, 15 Sep 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20190915-pde/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20190915-pde/</guid>
       <description>偏微分方程在机器学习领域有着广泛的用途，很多优化问题都是偏微分方程，同时很多物理方面的数值模拟问题最后都会化为解决偏微分方程和常微分方程的问题，这门课是数学系本科三年级的核心课程之一。</description>
     </item>
     
     <item>
       <title>数学物理方程笔记</title>
-      <link>https://cbhua.github.io/posts/20190902-mathphysics/</link>
+      <link>https://cbhua.github.io/blog/posts/20190902-mathphysics/</link>
       <pubDate>Mon, 02 Sep 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20190902-mathphysics/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20190902-mathphysics/</guid>
       <description>数学物理方程不是数学系的核心课程之一，一般作为选修课供工科方向发展的学生学习。其本质内容和偏微分方程数值解法接近，都是使用不同的数值模拟和逼近方法获取常微分方程或者偏微分方程的解，以用于实际的工程问题当中。。</description>
     </item>
     
     <item>
       <title>森见登美彦作品：神圣懒汉的冒险</title>
-      <link>https://cbhua.github.io/posts/20190825-lazyman/</link>
+      <link>https://cbhua.github.io/blog/posts/20190825-lazyman/</link>
       <pubDate>Sun, 25 Aug 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20190825-lazyman/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20190825-lazyman/</guid>
       <description>本书是借助日本的传统节日祗园展开的幻想故事。一位普通科长, 为了实现助人为乐的理想扮作了戴着狸猫面具的怪人嘭嘭假面, 但由于精力有限, 他一直想找到继任者。于是认准了生活闲适的同事小和田君, 但小和田却不愿接受此重任。最终嘭嘭假面的身份被赋予了每一个普通人。本作也是森见无厘头作品中有趣的一部。</description>
     </item>
     
     <item>
       <title>森见登美彦作品：宵山万华筒</title>
-      <link>https://cbhua.github.io/posts/20190820-gionmatsuri/</link>
+      <link>https://cbhua.github.io/blog/posts/20190820-gionmatsuri/</link>
       <pubDate>Tue, 20 Aug 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20190820-gionmatsuri/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20190820-gionmatsuri/</guid>
       <description>《宵山万华镜》是最具森见登美彦特色的短篇小说集。共收录六篇小说，这些小说相互呼应、人物彼此穿插，共同构造出一个灵异神秘的京都祇园祭。这是森见妖怪系小说中的一部，也是我最喜欢的一部。</description>
     </item>
     
     <item>
       <title>拓扑学笔记</title>
-      <link>https://cbhua.github.io/posts/20190814-topology/</link>
+      <link>https://cbhua.github.io/blog/posts/20190814-topology/</link>
       <pubDate>Wed, 14 Aug 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20190814-topology/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20190814-topology/</guid>
       <description>拓扑学是我作为数学系本科生本科期间最后一门核心课程，其内容事实上是颠覆性的，拓扑空间被大家亲切地叫做橡皮泥空间，很多特性在此空间都发生了根本上的改变。总之这是一门又难但是又非常独特的学科，作为一个开头。</description>
     </item>
     
     <item>
       <title>信息论笔记</title>
-      <link>https://cbhua.github.io/posts/20190602-information/</link>
+      <link>https://cbhua.github.io/blog/posts/20190602-information/</link>
       <pubDate>Sun, 02 Jun 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20190602-information/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20190602-information/</guid>
       <description>信息论更加偏向于工科，计算机方向一些。这门课程中的很多内容非常有意思，可以脱离这门科目去思考，其思想在很多地方都在使用，可以说是现代信息社会的基石科目之一。</description>
     </item>
     
     <item>
       <title>Procreate 使用体验</title>
-      <link>https://cbhua.github.io/posts/20190503-procreate/</link>
+      <link>https://cbhua.github.io/blog/posts/20190503-procreate/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20190503-procreate/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20190503-procreate/</guid>
       <description>Procreate 是 iPad 上最有名的绘画 APP 之一，也是我在几个 APP 中最终挑选的。在画了几幅画之后来谈一谈这个 APP 的使用体验。</description>
     </item>
     
     <item>
       <title>信息论实验</title>
-      <link>https://cbhua.github.io/posts/20190503-information/</link>
+      <link>https://cbhua.github.io/blog/posts/20190503-information/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20190503-information/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20190503-information/</guid>
       <description>这是信息论这门课程学期中我们所做的几个实验，主要基于 Python，集中于几种信息编码和信道编码方式的实现，同时包含一些常用工具的实现，如信息熵的计算、信道容量的计算等等。</description>
     </item>
     
     <item>
       <title>创建饥荒联机版多人服务器</title>
-      <link>https://cbhua.github.io/posts/20190415-dst/</link>
+      <link>https://cbhua.github.io/blog/posts/20190415-dst/</link>
       <pubDate>Mon, 15 Apr 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20190415-dst/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20190415-dst/</guid>
       <description>饥荒联机版是我们很喜欢的一个联机游戏，但是官方服务器的联机质量实在不能保证，而且本地联机网络要求和配置要求都比较高。因此创建一个多人联机的服务器就很有必要了，这篇文章记录了如何在 Ubuntu 平台创建饥荒联机版的服务器。</description>
     </item>
     
     <item>
       <title>创建腾讯 QQ 机器人</title>
-      <link>https://cbhua.github.io/posts/20190316-tencent/</link>
+      <link>https://cbhua.github.io/blog/posts/20190316-tencent/</link>
       <pubDate>Sat, 16 Mar 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20190316-tencent/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20190316-tencent/</guid>
       <description>在和好朋友的群里创建一个具有点歌、发图、统计、提供小游戏的机器人是一个非常有趣的事情，可以给群里带来很多欢乐。该方法目前已全面失效，腾讯已完全封禁该机器人。</description>
     </item>
     
     <item>
       <title>我读过的一些刘慈欣科幻作品</title>
-      <link>https://cbhua.github.io/posts/20190211-liucixin/</link>
+      <link>https://cbhua.github.io/blog/posts/20190211-liucixin/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20190211-liucixin/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20190211-liucixin/</guid>
       <description>刘慈欣在 2018 年获得了克拉克想象力社会贡献奖，他在颁奖典礼上发言 “The vast ocean of stars can always carry our infinite imagination. 浩瀚的星空永远是我们无穷的想象力的归宿。”，我在高中时期从三体开始，读过不少他的作品。</description>
     </item>
     
     <item>
       <title>哈恩巴拿赫定理证明</title>
-      <link>https://cbhua.github.io/posts/20190210-hahnbanach/</link>
+      <link>https://cbhua.github.io/blog/posts/20190210-hahnbanach/</link>
       <pubDate>Sun, 10 Feb 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20190210-hahnbanach/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20190210-hahnbanach/</guid>
       <description>Hahn-Banach Theorem 哈恩巴拿赫定理被称为泛函分析三大定理之一，是泛函分析中极其重要的一个工具。在经济学领域，该定理与市场经济的福利经济学第二定理有密切的关系。关于这个定理证明的资料在网上可以搜索到的不多，大多为应用，因此在这里展示对该定理的证明。</description>
     </item>
     
     <item>
       <title>2019 MCM/ICM 参赛总结</title>
-      <link>https://cbhua.github.io/posts/20190129-mcm/</link>
+      <link>https://cbhua.github.io/blog/posts/20190129-mcm/</link>
       <pubDate>Tue, 29 Jan 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20190129-mcm/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20190129-mcm/</guid>
       <description>2019 年美国大学生建模竞赛举办于 2019.1.26，为期四天四夜。我和我的两位好朋友组成队伍一同参加了这场竞赛，在这期间发生了很多有趣的事情。虽然这不是我们第一次参加建模比赛了，但这是我第一次尝试记录下来我们参赛的过程。</description>
     </item>
     
     <item>
       <title>2018 年我听的一些歌</title>
-      <link>https://cbhua.github.io/posts/20190125-songs/</link>
+      <link>https://cbhua.github.io/blog/posts/20190125-songs/</link>
       <pubDate>Fri, 25 Jan 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20190125-songs/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20190125-songs/</guid>
       <description>2018 年也是沉迷听歌的一年，这一年听的歌多集中于 Niconico 唱见的歌曲，原曲也是 V 家知名的作品。虽然会出现一首曲目反复出现在歌曲列表中，但是不同唱见的演绎使得这些歌曲的听感差异丰富，这就是翻唱的魅力吧。</description>
     </item>
     
     <item>
       <title>概率论与数理统计笔记</title>
-      <link>https://cbhua.github.io/posts/20181219-probability/</link>
+      <link>https://cbhua.github.io/blog/posts/20181219-probability/</link>
       <pubDate>Wed, 19 Dec 2018 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20181219-probability/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20181219-probability/</guid>
       <description>概率论与数理统计是数学系核心课程之一，其实是分开的两部分。我们在这个学期所学的概率论和数理统计主要集中于定理证明和结论推导，与工科不同数学系少强调应用。这些笔记可以帮助我更好的理解一些概率论定理运行的原理。</description>
     </item>
     
     <item>
       <title>泛函分析笔记</title>
-      <link>https://cbhua.github.io/posts/20181213-functional/</link>
+      <link>https://cbhua.github.io/blog/posts/20181213-functional/</link>
       <pubDate>Thu, 13 Dec 2018 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20181213-functional/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20181213-functional/</guid>
       <description>泛函分析和实变函数论都是数学系最核心的课程之一，同时也是之后要学到的拓扑学的基础。这些笔记可以帮助我快速复习回忆课程内容以及定理方程的使用，以针对考试。想要进一步的理解需要阅读原教案，内容量相对较多。</description>
     </item>
     
     <item>
       <title>几种常用的插值法的实现</title>
-      <link>https://cbhua.github.io/posts/20181102-polynomial/</link>
+      <link>https://cbhua.github.io/blog/posts/20181102-polynomial/</link>
       <pubDate>Fri, 02 Nov 2018 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20181102-polynomial/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20181102-polynomial/</guid>
       <description>插值法在数值分析中很常用，用于各种函数分析的拟合和逼近，以及关于最佳一致逼近和最佳平方逼近的证明。在这篇文章中记录了使用 Matlab 实现的 Lagrange 插值法、Newton 插值法、Hermit 插值法和三次样条插值法。。</description>
     </item>
     
     <item>
       <title>解线性方程组的几类直接方法</title>
-      <link>https://cbhua.github.io/posts/20181012-linear/</link>
+      <link>https://cbhua.github.io/blog/posts/20181012-linear/</link>
       <pubDate>Fri, 12 Oct 2018 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20181012-linear/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20181012-linear/</guid>
       <description>对于实线性方程组，通过恰当的变换，都可以得到任意精确度的数值解或者直接获得解析解，在数值处理上属于最简单的一个类型。在数值分析中，这些过程需要交给计算机计算，所以就需要着重考虑其中会由计算机计算产生的误差。因此诞生出了诸多的方法并不断优化，避免了 7种情况 带来的计算误差，使得数据处理更加精确可信。</description>
     </item>
     
     <item>
       <title>爬取 Vol.moe 的漫画资源</title>
-      <link>https://cbhua.github.io/posts/20180727-volmoe/</link>
+      <link>https://cbhua.github.io/blog/posts/20180727-volmoe/</link>
       <pubDate>Fri, 27 Jul 2018 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20180727-volmoe/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20180727-volmoe/</guid>
       <description>Vol.moe 是我最喜欢的漫画资源下载网站，虽然收费，但是使用体验很好。网站有一个缺陷即无法批量下载，所以尝试用 Python 写一个脚本帮助我批量下载漫画。该方法已失效，目前网站已开放批量下载功能。</description>
     </item>
     
     <item>
       <title>数据库系统概论笔记</title>
-      <link>https://cbhua.github.io/posts/20180612-database/</link>
+      <link>https://cbhua.github.io/blog/posts/20180612-database/</link>
       <pubDate>Tue, 12 Jun 2018 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20180612-database/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20180612-database/</guid>
       <description>数据库系统概论这门课是数学系与计算机系联动开放的课程，主要作用给数学系学生提供一些数据处理方面的工具。这门课程主要学习 SQL 的基本编程与使用，不涉及太多内嵌功能，属于很基础的开放课。</description>
     </item>
     
     <item>
       <title>Windows 常用软件记录</title>
-      <link>https://cbhua.github.io/posts/20180505-windows/</link>
+      <link>https://cbhua.github.io/blog/posts/20180505-windows/</link>
       <pubDate>Sat, 05 May 2018 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20180505-windows/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20180505-windows/</guid>
       <description>对 Linux 的喜欢日益增加，或许过一阵子会转战 Linux，在此之前我先把自己 Win 平台上常用的软件列出来，以作备份，也供未来参考。</description>
     </item>
     
     <item>
       <title>关于 PhotoShop 的学习</title>
-      <link>https://cbhua.github.io/posts/20180403-photoshop/</link>
+      <link>https://cbhua.github.io/blog/posts/20180403-photoshop/</link>
       <pubDate>Tue, 03 Apr 2018 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20180403-photoshop/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20180403-photoshop/</guid>
       <description>我接触 Photoshop 大概已经一年了，在此期间断断续续地学了一些东西，也教了一些身边的朋友去使用 PS。为了方便别人和自己，之前写过一些教程，不过效果并不是很好，因为 PS 使用中的知识大量且琐碎，很难在短时间都掌握下来。所以与其细致的手把手交别人怎么用某一个工具，不如记录一些我在使用 PS 中的一些理解。</description>
     </item>
     
     <item>
       <title>Windows 美化计划</title>
-      <link>https://cbhua.github.io/posts/20180202-beautify/</link>
+      <link>https://cbhua.github.io/blog/posts/20180202-beautify/</link>
       <pubDate>Fri, 02 Feb 2018 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20180202-beautify/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20180202-beautify/</guid>
       <description>因为自己做过平面设计，所以对于自己使用的电脑也有着一定的美学要求。Windows 作为主力操作系统，有很多地方都不尽如人意。所以出于对美学的追求，我与 Windows 打起了长久的美化攻坚战，这就是 Windows 美化计划。</description>
     </item>
     
     <item>
       <title>Google 机器学习中文教程笔记</title>
-      <link>https://cbhua.github.io/posts/20180104-googleml/</link>
+      <link>https://cbhua.github.io/blog/posts/20180104-googleml/</link>
       <pubDate>Thu, 04 Jan 2018 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20180104-googleml/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20180104-googleml/</guid>
       <description>Google 做了一个关于机器学习的中文教程，感兴趣地去学了前几章，因为没有很好的代码基础，所以学起来有很多不太理解的地方。整体上教程作为入门会很方便，但是难度梯度对我来说还是太高。</description>
     </item>
     
     <item>
       <title>Hello World</title>
-      <link>https://cbhua.github.io/posts/20170713-helloworld/</link>
+      <link>https://cbhua.github.io/blog/posts/20170713-helloworld/</link>
       <pubDate>Thu, 13 Jul 2017 00:00:00 +0900</pubDate>
       
-      <guid>https://cbhua.github.io/posts/20170713-helloworld/</guid>
+      <guid>https://cbhua.github.io/blog/posts/20170713-helloworld/</guid>
       <description>你好，欢迎来到我的网站。这是网站的第一篇文章，来日方长，请坚持更新。</description>
     </item>
     
